@@ -6,6 +6,7 @@ import type { Schema } from "@/amplify/data/resource";
 import Link from 'next/link';
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import ChatTutor from "@/components/ChatTutor";
 
 const client = generateClient<Schema>();
 
@@ -100,6 +101,7 @@ export default function LessonPage() {
                     </p>
                 </div>
 
+                <ChatTutor context={`Topic: ${lesson.title} (${lesson.topicId})\nContent: ${lesson.content}`} />
             </main>
         </div>
     );
