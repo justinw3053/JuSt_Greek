@@ -10,20 +10,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - 'echo "DEBUG: Frontend preBuild PWD:"'
-        - 'pwd'
-        - 'echo "DEBUG: Listing files:"'
-        - 'ls -la'
-        - 'if [ -d "web_app" ]; then cd web_app; else echo "web_app directory missing!"; fi'
-        - 'if [ -f "package.json" ]; then npm ci --legacy-peer-deps; else echo "No package.json found in current directory"; fi'
+        - 'cd web_app'
+        - 'npm ci --legacy-peer-deps'
     build:
       commands:
-        - 'echo "DEBUG: Frontend Build PWD:"'
-        - 'pwd'
-        - 'if [ -d "web_app" ]; then cd web_app; fi'
+        - 'cd web_app'
         - 'npm run build'
   artifacts:
-    baseDirectory: web_app/.next
+    baseDirectory: web_app/.amplify-hosting
     files:
       - '**/*'
   cache:
