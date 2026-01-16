@@ -10,14 +10,14 @@ frontend:
   phases:
     preBuild:
       commands:
-        - 'cd web_app'
-        - 'npm ci --legacy-peer-deps'
+        - 'if [ -d "web_app" ]; then cd web_app; else echo "web_app directory missing!"; fi'
+        - 'if [ -f "package.json" ]; then npm ci --legacy-peer-deps; fi'
     build:
       commands:
-        - 'cd web_app'
+        - 'if [ -d "web_app" ]; then cd web_app; fi'
         - 'npm run build'
   artifacts:
-    baseDirectory: web_app/.amplify-hosting
+    baseDirectory: web_app
     files:
       - '**/*'
   cache:
