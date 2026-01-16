@@ -17,7 +17,7 @@ frontend:
         - 'if [ -d "web_app" ]; then cd web_app; fi'
         - 'npm run build'
   artifacts:
-    baseDirectory: web_app
+    baseDirectory: web_app/.next
     files:
       - '**/*'
   cache:
