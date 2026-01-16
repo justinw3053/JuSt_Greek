@@ -10,11 +10,11 @@ frontend:
   phases:
     preBuild:
       commands:
-        - 'if [ -d "web_app" ]; then cd web_app; else echo "web_app directory missing!"; fi'
-        - 'if [ -f "package.json" ]; then npm ci --legacy-peer-deps; fi'
+        - 'cd web_app'
+        - 'npm ci --legacy-peer-deps'
     build:
       commands:
-        - 'if [ -d "web_app" ]; then cd web_app; fi'
+        - 'cd web_app'
         - 'npm run build'
   artifacts:
     baseDirectory: web_app/.next
