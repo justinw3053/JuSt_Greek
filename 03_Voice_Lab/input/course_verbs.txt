@@ -1,0 +1,24 @@
+Top 100 Greek Verbs (A1/A2)
+===========================
+
+1. είμαι (imai) - to be
+2. έχω (echo) - to have
+3. κάνω (kano) - to do/make
+4. λέω (leo) - to say
+5. πηγαίνω / πάω (pigeno/pao) - to go
+6. βλέπω (vlepo) - to see
+7. τρώω (troo) - to eat
+8. πίνω (pino) - to drink
+9. θέλω (thelo) - to want
+10. ξέρω (xero) - to know
+11. έρχομαι (erchomai) - to come
+12. μένω (meno) - to stay/live
+13. μιλάω (milao) - to speak
+14. καταλαβαίνω (katalaveno) - to understand
+15. αγοράζω (agorazo) - to buy
+16. δουλεύω (doulevo) - to work
+17. παίρνω (perno) - to take
+18. περιμένω (perimeno) - to wait
+19. γράφω (grafo) - to write
+20. διαβάζω (diavazo) - to read
+... (List continues for NotebookLM to digest)

@@ -1,0 +1,5 @@
+edge-tts
+beautifulsoup4
+requests
+pandas
+tabulate
