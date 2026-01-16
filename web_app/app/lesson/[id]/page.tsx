@@ -56,7 +56,7 @@ export default function LessonPage() {
             <header className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center gap-4">
                 <Link href="/" className="text-2xl">←</Link>
                 <div>
-                    <span className="text-xs font-mono text-blue-500 uppercase">Week {lesson.week} • Topic {lesson.topicId}</span>
+                    <span className="text-xs font-mono text-blue-500 uppercase">Chapter {lesson.chapter} • Topic {lesson.topicId}</span>
                     <h1 className="text-xl font-bold leading-tight">{lesson.title}</h1>
                 </div>
             </header>

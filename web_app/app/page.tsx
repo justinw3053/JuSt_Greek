@@ -13,9 +13,9 @@ export default function Home() {
   useEffect(() => {
     async function fetchSyllabus() {
       const { data: items } = await client.models.Syllabus.list();
-      // Sort by week then topicId
+      // Sort by chapter then topicId
       const sorted = items.sort((a, b) => {
-        if (a.week !== b.week) return a.week - b.week;
+        if (a.chapter !== b.chapter) return a.chapter - b.chapter;
         return a.topicId.localeCompare(b.topicId);
       });
       setSyllabus(sorted);
@@ -23,26 +23,26 @@ export default function Home() {
     fetchSyllabus();
   }, []);
 
-  // Group by Week
-  const weeks: Record<number, typeof syllabus> = {};
+  // Group by Chapter
+  const chapters: Record<number, typeof syllabus> = {};
   syllabus.forEach((item) => {
-    if (!weeks[item.week]) weeks[item.week] = [];
-    weeks[item.week].push(item);
+    if (!chapters[item.chapter]) chapters[item.chapter] = [];
+    chapters[item.chapter].push(item);
   });
 
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 p-4 pb-24">
       <header className="mb-8 pt-4">
         <h1 className="text-3xl font-bold text-blue-600 dark:text-blue-400">JuSt_Greek</h1>
-        <p className="text-sm text-gray-500 dark:text-gray-400">A1 Proficiency Quarter</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">A1 Proficiency Quarter (PDF Curriculum)</p>
       </header>
 
       <div className="space-y-6">
-        {Object.entries(weeks).map(([weekNum, lessons]) => (
-          <section key={weekNum} className="bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden p-4 border border-gray-100 dark:border-gray-700">
+        {Object.entries(chapters).map(([chapterNum, lessons]) => (
+          <section key={chapterNum} className="bg-white dark:bg-gray-800 rounded-xl shadow-sm overflow-hidden p-4 border border-gray-100 dark:border-gray-700">
             <div className="flex justify-between items-center mb-3 border-b border-gray-100 dark:border-gray-700 pb-2">
               <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
-                Week {weekNum} <span className="text-xs font-normal text-gray-400">{lessons[0].month}</span>
+                Chapter {chapterNum} <span className="text-xs font-normal text-gray-400">{lessons[0].month}</span>
               </h2>
               <span className="text-xs font-bold px-2 py-1 bg-green-100 text-green-700 rounded-full">
                 {lessons.length} Topics

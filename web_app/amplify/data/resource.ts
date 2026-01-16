@@ -8,7 +8,7 @@ const schema = a.schema({
   Syllabus: a
     .model({
       topicId: a.id().required(),      // e.g. "1.1"
-      week: a.integer().required(),    // e.g. 1
+      chapter: a.integer().required(), // e.g. 1
       month: a.string().required(),    // e.g. "The Foundation"
       title: a.string().required(),    // e.g. "The Alphabet"
       description: a.string(),
