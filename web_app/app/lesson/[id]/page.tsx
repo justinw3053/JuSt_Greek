@@ -96,9 +96,30 @@ export default function LessonPage() {
                 {/* Transcript / Content */}
                 <div className="w-full max-w-md mt-4">
                     <h3 className="font-bold text-gray-500 text-sm mb-2 uppercase">Transcript Preview</h3>
-                    <p className="text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-sm leading-relaxed">
-                        {lesson.content}
-                    </p>
+                    <div className="text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-sm leading-relaxed">
+                        {lesson.content ? (
+                            (() => {
+                                try {
+                                    const detailed = JSON.parse(lesson.content);
+                                    return (
+                                        <div className="space-y-4">
+                                            <p className="whitespace-pre-wrap">{detailed.audio_script}</p>
+                                            <hr className="border-gray-200 dark:border-gray-800" />
+                                            <div>
+                                                <p className="font-bold mb-1 text-black dark:text-white">{detailed.reading_greek}</p>
+                                                <p className="italic text-gray-500">{detailed.reading_english}</p>
+                                            </div>
+                                        </div>
+                                    );
+                                } catch (e) {
+                                    // Fallback if content isn't JSON (legacy)
+                                    return <p className="whitespace-pre-wrap">{lesson.content}</p>;
+                                }
+                            })()
+                        ) : (
+                            <p className="italic">No content available.</p>
+                        )}
+                    </div>
                 </div>
 
                 <ChatTutor context={`Topic: ${lesson.title} (${lesson.topicId})\nContent: ${lesson.content}`} />
