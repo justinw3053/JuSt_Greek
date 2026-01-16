@@ -3,23 +3,24 @@ backend:
   phases:
     build:
       commands:
-        - 'cd web_app'
+        - 'if [ -d "web_app" ]; then cd web_app; fi'
         - 'npm ci --legacy-peer-deps'
         - 'npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID'
 frontend:
   phases:
     preBuild:
       commands:
-        - 'cd web_app'
+        - 'if [ -d "web_app" ]; then cd web_app; fi'
         - 'npm ci --legacy-peer-deps'
     build:
       commands:
-        - 'cd web_app'
+        - 'if [ -d "web_app" ]; then cd web_app; fi'
         - 'npm run build'
   artifacts:
-    baseDirectory: web_app/.next
+    baseDirectory: .next
     files:
       - '**/*'
   cache:
     paths:
+      - node_modules/**/*
       - web_app/node_modules/**/*
