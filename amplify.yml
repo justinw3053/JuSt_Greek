@@ -3,24 +3,24 @@ backend:
   phases:
     build:
       commands:
-        - echo "DEBUG: Starting Backend Build"
-        - pwd
-        - ls -la
-        - npm ci --legacy-peer-deps
-        - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
+        - 'echo "DEBUG: Starting Backend Build"'
+        - 'pwd'
+        - 'ls -la'
+        - 'npm ci --legacy-peer-deps'
+        - 'npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID'
 frontend:
   phases:
     preBuild:
       commands:
-        - echo "DEBUG: Starting Frontend preBuild"
-        - pwd
-        - ls -laR
-        - cd web_app || echo "web_app not found"
-        - npm ci --legacy-peer-deps
+        - 'echo "DEBUG: Starting Frontend preBuild"'
+        - 'pwd'
+        - 'ls -la'
+        - 'ls -F'
+        - 'if [ -d "web_app" ]; then cd web_app && npm ci --legacy-peer-deps; else echo "web_app not found"; fi'
     build:
       commands:
-        - echo "DEBUG: Starting Frontend Build"
-        - npm run build
+        - 'echo "DEBUG: Starting Frontend Build"'
+        - 'cd web_app && npm run build'
   artifacts:
     baseDirectory: web_app/.next
     files:
