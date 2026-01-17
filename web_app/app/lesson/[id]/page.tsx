@@ -20,13 +20,18 @@ export default function LessonPage() {
     const [audioUrl, setAudioUrl] = useState<string>("");
     const [userId, setUserId] = useState<string>("");
     const [isCompleted, setIsCompleted] = useState(false);
+    const [isChatOpen, setIsChatOpen] = useState(false);
 
     useEffect(() => {
         getCurrentUser().then(u => setUserId(u.userId)).catch(() => { });
     }, []);
 
     const handleComplete = async () => {
-        if (!userId || !lesson) return;
+        if (!userId) {
+            alert("Please Sign In to track your progress and earn XP!");
+            return;
+        }
+        if (!lesson) return;
 
         try {
             const { data: progressList } = await client.models.UserProgress.list({
@@ -139,7 +144,10 @@ export default function LessonPage() {
                         <span className="text-2xl mb-1">🎙️</span>
                         <span className="text-sm font-bold">Record</span>
                     </button>
-                    <button className="flex flex-col items-center justify-center p-4 bg-purple-600 text-white rounded-xl shadow-lg active:scale-95 transition-transform">
+                    <button
+                        onClick={() => setIsChatOpen(true)}
+                        className="flex flex-col items-center justify-center p-4 bg-purple-600 text-white rounded-xl shadow-lg active:scale-95 transition-transform"
+                    >
                         <span className="text-2xl mb-1">🤖</span>
                         <span className="text-sm font-bold">Ask Tutor</span>
                     </button>
@@ -184,7 +192,11 @@ export default function LessonPage() {
                     </div>
                 </div>
 
-                <ChatTutor context={`Topic: ${lesson.title} (${lesson.topicId})\nContent: ${lesson.content}`} />
+                <ChatTutor
+                    context={`Topic: ${lesson.title} (${lesson.topicId})\nContent: ${lesson.content}`}
+                    isOpen={isChatOpen}
+                    setIsOpen={setIsChatOpen}
+                />
             </main>
         </div>
     );

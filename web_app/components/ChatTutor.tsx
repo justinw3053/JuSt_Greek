@@ -7,8 +7,13 @@ interface ChatMessage {
     text: string;
 }
 
-export default function ChatTutor({ context }: { context?: string }) {
-    const [isOpen, setIsOpen] = useState(false);
+interface ChatTutorProps {
+    context?: string;
+    isOpen: boolean;
+    setIsOpen: (open: boolean) => void;
+}
+
+export default function ChatTutor({ context, isOpen, setIsOpen }: ChatTutorProps) {
     const [messages, setMessages] = useState<ChatMessage[]>([]);
     const [input, setInput] = useState("");
     const [loading, setLoading] = useState(false);
