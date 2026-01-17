@@ -31,12 +31,46 @@ export default function LessonPage() {
     const [isQuizOpen, setIsQuizOpen] = useState(false);
 
     // TTS Helper
+    // TTS Helper
+    const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
+
+    useEffect(() => {
+        const loadVoices = () => {
+            const v = window.speechSynthesis.getVoices();
+            console.log("Loaded voices:", v.map(voice => `${voice.name} (${voice.lang})`));
+            setVoices(v);
+        };
+
+        loadVoices();
+        // Chrome loads voices asynchronously
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }, []);
+
     const speakGreek = (text: string) => {
         if (!text) return;
         window.speechSynthesis.cancel(); // Stop previous
+
         const utterance = new SpeechSynthesisUtterance(text);
+
+        // Try to find a specific Greek voice
+        // 1. Exact match for 'el-GR'
+        // 2. Include 'Google' (Google Greek commonly available on Android/Chrome)
+        // 3. Any 'el' language
+        const greekVoice = voices.find(v => v.lang === 'el-GR') ||
+            voices.find(v => v.lang.startsWith('el')) ||
+            voices.find(v => v.name.includes('Greek'));
+
+        if (greekVoice) {
+            utterance.voice = greekVoice;
+            console.log("Using voice:", greekVoice.name);
+        } else {
+            console.warn("No Greek voice found. Using default.");
+        }
+
+        // Always set lang as hint
         utterance.lang = 'el-GR';
-        utterance.rate = 0.9; // Slightly slower for clarity
+        utterance.rate = 0.9;
+
         window.speechSynthesis.speak(utterance);
     };
 
@@ -224,8 +258,8 @@ export default function LessonPage() {
                         }}
                         disabled={isCompleted}
                         className={`w-full p-4 rounded-xl font-bold text-lg shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2 ${isCompleted
-                                ? "bg-green-100 text-green-700 cursor-default border border-green-200"
-                                : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-xl"
+                            ? "bg-green-100 text-green-700 cursor-default border border-green-200"
+                            : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-xl"
                             }`}
                     >
                         {isCompleted ? (

@@ -14,75 +14,60 @@ PROFILE = "greek-tutor"
 BASE_DIR = Path(__file__).parent.parent
 SYLLABUS_FILE = BASE_DIR / "01_Curriculum" / "A1" / "A1_Quarterly_Syllabus.md"
 
-def parse_syllabus():
-    """Parse the markdown syllabus structure."""
-    if not SYLLABUS_FILE.exists():
-        print(f"Error: {SYLLABUS_FILE} not found.")
-        return []
-
-    with open(SYLLABUS_FILE, 'r') as f:
-        lines = f.readlines()
-
-    syllabus = []
-    current_chapter = 0
-    current_month = ""
-
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-        
-        if line.startswith("## Month"):
-            current_month = line.split(":")[1].strip()
-            continue
-
-        if line.startswith("### Chapter"):
-            match = re.search(r"Chapter (\d+)", line)
-            if match:
-                current_chapter = int(match.group(1))
-            continue
-
-        if line.startswith("*") and "**Topic" in line:
-            match = re.search(r"\*\*Topic (\d+\.\d+)\*\*: (.+)", line)
-            if match:
-                topic_id = match.group(1)
-                title = match.group(2)
+def scan_detailed_content():
+    """Scan the JSON files in detail_content directory."""
+    json_dir = BASE_DIR / "01_Curriculum" / "A1" / "detailed_content"
+    
+    syllabus_items = []
+    
+    # Iterate over all .json files
+    # Sort them by filename (which corresponds to 1.1, 1.2 etc) to be safe
+    # Actually, simplistic string sort '10.1' vs '1.1' is tricky, but for scanning it doesn't matter much
+    # as long as we insert them all. The frontend does the sorting.
+    
+    for json_file in sorted(json_dir.glob("*.json")):
+        try:
+            with open(json_file, 'r') as f:
+                data = json.load(f)
                 
-                entry = {
-                    "topicId": topic_id,
-                    "chapter": current_chapter,
-                    "month": current_month,
-                    "title": title,
-                    "description": f"Lesson for Chapter {current_chapter}: {title}",
-                    "content": f"Content for {title}. Detailed Greek lesson goes here."
-                }
-                syllabus.append(entry)
+            # Extract metadata
+            topic_id = data.get("topicId", json_file.stem) # Fallback to filename
+            
+            # Infer chapter from topicId (e.g. "1.5" -> 1)
+            try:
+                chapter = int(topic_id.split('.')[0])
+            except:
+                chapter = 0
                 
-    return syllabus
+            title = data.get("title", f"Topic {topic_id}")
+            month = data.get("month", "Month 1")
+            
+            entry = {
+                "topicId": topic_id,
+                "chapter": chapter,
+                "month": month,
+                "title": title,
+                "description": f"Detailed Lesson {topic_id}",
+                "content": json.dumps(data, ensure_ascii=False)
+            }
+            syllabus_items.append(entry)
+            
+        except Exception as e:
+            print(f"⚠️ Failed to parse {json_file.name}: {e}")
+            
+    return syllabus_items
 
 def seed_database():
     session = boto3.Session(profile_name=PROFILE, region_name=REGION)
     dynamodb = session.client('dynamodb')
     
-    items = parse_syllabus()
-    print(f"Parsed {len(items)} items from syllabus.")
-
-    json_dir = BASE_DIR / "01_Curriculum" / "A1" / "detailed_content"
+    # Switch to scanning JSONs directly
+    items = scan_detailed_content()
+    print(f"Found {len(items)} lesson files.")
     
     for item in items:
-        # Try to load detailed content
-        json_path = json_dir / f"{item['topicId']}.json"
-        if json_path.exists():
-            try:
-                with open(json_path, 'r') as f:
-                    details = json.load(f)
-                    
-                # Format content for the frontend
-                # We store the full JSON object as a string so the frontend can parse it
-                item['content'] = json.dumps(details, ensure_ascii=False)
-                print(f"📖 Loaded content for {item['topicId']}")
-            except Exception as e:
-                print(f"⚠️ Failed to load JSON for {item['topicId']}: {e}")
+        # Content is already loaded in item['content']
+        print(f"📖 Processing {item['topicId']}")
 
         # Construct DynamoDB Item
         # PK: id (UUID)
