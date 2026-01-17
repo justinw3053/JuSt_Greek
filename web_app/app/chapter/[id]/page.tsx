@@ -133,7 +133,46 @@ export default function ChapterPage() {
 
                 {/* 3. Matching Game */}
                 <section>
-                    <MatchingGame pairs={reviewData.matchingPairs} />
+                    <MatchingGame
+                        pairs={reviewData.matchingPairs}
+                        onComplete={async () => {
+                            try {
+                                const user = await import('aws-amplify/auth').then(m => m.getCurrentUser()).catch(() => null);
+                                if (!user) {
+                                    alert("Great job! Sign in to save your XP.");
+                                    return;
+                                }
+
+                                const now = new Date().toISOString();
+                                const { data: progressList } = await client.models.UserProgress.list({
+                                    filter: { userId: { eq: user.userId } }
+                                });
+
+                                // Boss Level Reward: 500 XP
+                                if (progressList.length > 0) {
+                                    const prog = progressList[0];
+                                    await client.models.UserProgress.update({
+                                        id: prog.id,
+                                        xp: (prog.xp || 0) + 500,
+                                        lastActivity: now
+                                    });
+                                } else {
+                                    await client.models.UserProgress.create({
+                                        userId: user.userId,
+                                        xp: 500,
+                                        currentStreak: 1,
+                                        lastActivity: now,
+                                        completedTopics: []
+                                    });
+                                }
+
+                                alert("🎉 BOSS DEFEATED! \n\nYou earned 500 XP!");
+                                window.location.href = "/stats";
+                            } catch (e) {
+                                console.error(e);
+                            }
+                        }}
+                    />
                 </section>
 
             </main>

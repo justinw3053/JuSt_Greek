@@ -10,6 +10,7 @@ interface MatchPair {
 
 interface MatchingGameProps {
     pairs: MatchPair[];
+    onComplete?: () => void;
 }
 
 interface GameItem {
@@ -19,10 +20,10 @@ interface GameItem {
     isResolved: boolean;
 }
 
-export default function MatchingGame({ pairs }: MatchingGameProps) {
+export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
     const [items, setItems] = useState<GameItem[]>([]);
     const [selectedId, setSelectedId] = useState<string | null>(null); // uniqueId
-    const [isMatched, setIsMatched] = useState(false);
+    const [hasCompleted, setHasCompleted] = useState(false);
 
     useEffect(() => {
         // Break pairs into individual items and shuffle
@@ -39,6 +40,7 @@ export default function MatchingGame({ pairs }: MatchingGameProps) {
         }
 
         setItems(allItems);
+        setHasCompleted(false);
     }, [pairs]);
 
     const handleCardClick = (uniqueId: string, pairId: string) => {
@@ -60,17 +62,23 @@ export default function MatchingGame({ pairs }: MatchingGameProps) {
                 setSelectedId(null);
             } else {
                 // NO MATCH
-                setSelectedId(uniqueId); // Just switch selection? Or flash error? 
-                // Let's simpler: switch selection to new card implies "Wrong, trying this one"
-                // Or maybe clear selection?
-                // Let's implement auto-clear with small delay for UX, but for now simple switch is faster.
-                // Actually, standard memory game behavior:
-                // Show both, then hide. But here text is always visible.
-                // So if mismatch, just update selection to the new one.
                 setSelectedId(uniqueId);
             }
         }
     };
+
+    // Check completion
+    useEffect(() => {
+        if (items.length === 0) return;
+
+        const isComplete = items.every(i => i.isResolved);
+        if (isComplete && !hasCompleted) {
+            setHasCompleted(true);
+            if (onComplete) {
+                setTimeout(onComplete, 1500); // 1.5s delay for celebration
+            }
+        }
+    }, [items, hasCompleted, onComplete]);
 
     const isComplete = items.length > 0 && items.every(i => i.isResolved);
 
@@ -82,7 +90,7 @@ export default function MatchingGame({ pairs }: MatchingGameProps) {
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {items.map((item) => {
-                    if (item.isResolved) return null; // Hide matched items? Or show as faded? hiding is cleaner.
+                    if (item.isResolved) return null;
 
                     const isSelected = selectedId === item.uniqueId;
 
