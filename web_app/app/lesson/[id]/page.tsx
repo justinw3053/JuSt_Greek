@@ -46,11 +46,16 @@ export default function LessonPage() {
         window.speechSynthesis.onvoiceschanged = loadVoices;
     }, []);
 
-    const speakGreek = (text: string) => {
+    const speakGreek = (text: string, rate: number = 0.9) => {
         if (!text) return;
         window.speechSynthesis.cancel(); // Stop previous
 
-        const utterance = new SpeechSynthesisUtterance(text);
+        // cleaner: strip non-Greek chars (keep spaces and punctuation mostly, but remove English text in parens)
+        // Also: separate adjacent Uppercase Greek letters (Digraphs like ΜΠ) so they are spelled out
+        let cleanText = text.replace(/[a-zA-Z]/g, '').replace(/[()]/g, '');
+        cleanText = cleanText.replace(/([Α-Ω])(?=[Α-Ω])/g, '$1, ');
+
+        const utterance = new SpeechSynthesisUtterance(cleanText);
 
         // Try to find a specific Greek voice
         // 1. Exact match for 'el-GR'
@@ -62,17 +67,19 @@ export default function LessonPage() {
 
         if (greekVoice) {
             utterance.voice = greekVoice;
-            console.log("Using voice:", greekVoice.name);
-        } else {
-            console.warn("No Greek voice found. Using default.");
+            // console.log("Using voice:", greekVoice.name);
         }
 
         // Always set lang as hint
         utterance.lang = 'el-GR';
-        utterance.rate = 0.9;
+        utterance.rate = rate;
 
         window.speechSynthesis.speak(utterance);
     };
+
+    // Helper to determine if a line should have TTS controls
+    // It should contain at least one Greek character
+    const hasGreek = (text: string) => /[α-ωΑ-Ω]/.test(text);
 
     useEffect(() => {
         getCurrentUser().then(u => setUserId(u.userId)).catch(() => { });
@@ -225,16 +232,36 @@ export default function LessonPage() {
                     <div className="space-y-4">
                         {content.reading_greek.split('\n').map((line, i) => {
                             if (!line.trim()) return null;
+                            const isGreek = hasGreek(line);
+
+                            // If it's a header (no Greek), just render text nicely
+                            if (!isGreek) {
+                                return (
+                                    <div key={i} className="py-4 border-b border-gray-100 dark:border-gray-800">
+                                        <h3 className="font-bold text-gray-500 uppercase tracking-widest text-xs">{line}</h3>
+                                    </div>
+                                );
+                            }
+
                             return (
-                                <div key={i} className="flex gap-4 items-start group">
-                                    <button
-                                        onClick={() => speakGreek(line)}
-                                        className="mt-1 p-2 bg-white dark:bg-gray-700 rounded-full shadow-sm hover:bg-indigo-100 dark:hover:bg-indigo-900 transition-colors shrink-0"
-                                        aria-label="Listen"
-                                    >
-                                        <SpeakerWaveIcon className="w-4 h-4 text-indigo-500" />
-                                    </button>
-                                    <p className="text-lg md:text-xl font-medium text-gray-800 dark:text-white leading-relaxed">
+                                <div key={i} className="flex gap-4 items-center group py-2 border-b border-gray-100 dark:border-gray-800 last:border-0">
+                                    <div className="flex flex-col gap-2 shrink-0">
+                                        <button
+                                            onClick={() => speakGreek(line, 1.0)}
+                                            className="p-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full hover:bg-blue-200 dark:hover:bg-blue-900 transition-colors"
+                                            title="Normal Speed"
+                                        >
+                                            <SpeakerWaveIcon className="w-5 h-5" />
+                                        </button>
+                                        <button
+                                            onClick={() => speakGreek(line, 0.7)}
+                                            className="p-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full hover:bg-green-200 dark:hover:bg-green-900 transition-colors flex items-center justify-center"
+                                            title="Slow Speed (75%)"
+                                        >
+                                            <span className="text-[10px] font-bold">0.75x</span>
+                                        </button>
+                                    </div>
+                                    <p className="text-lg md:text-xl font-medium text-gray-800 dark:text-gray-100 leading-relaxed font-greek">
                                         {line}
                                     </p>
                                 </div>
