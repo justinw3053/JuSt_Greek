@@ -3,7 +3,13 @@ import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
     try {
-        const { chapterContent } = await req.json();
+        // Parse body - if too large, this typically fails in the platform layer, 
+        // but we can try to be safe.
+        const body = await req.json();
+        const chapterContent = body.chapterContent || "";
+
+        // Log check (cloud logs)
+        console.log("Review Request Content Length:", chapterContent.length);
         const apiKey = process.env.GOOGLE_API_KEY;
 
         if (!apiKey) {
@@ -60,10 +66,10 @@ export async function POST(req: Request) {
 
         return NextResponse.json({ review: data });
 
-    } catch (error) {
+    } catch (error: any) {
         console.error("Chapter Review Gen Error:", error);
         return NextResponse.json(
-            { error: "Failed to generate review." },
+            { error: `Gen Error: ${error.message || "Unknown"}` },
             { status: 500 }
         );
     }
