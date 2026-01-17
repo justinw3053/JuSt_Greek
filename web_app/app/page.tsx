@@ -68,6 +68,17 @@ export default function Home() {
                 </Link>
               ))}
             </div>
+
+            {/* Chapter Review Button */}
+            <div className="mt-4 flex justify-end">
+              <Link
+                href={`/chapter/${chapterNum}`}
+                className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-full font-bold shadow-md hover:shadow-lg hover:scale-105 transition flex items-center gap-2 text-sm"
+              >
+                <span>🏆</span>
+                <span>Boss Level: Review Chapter {chapterNum}</span>
+              </Link>
+            </div>
           </section>
         ))}
       </div>
