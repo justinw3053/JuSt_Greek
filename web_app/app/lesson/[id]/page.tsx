@@ -93,20 +93,24 @@ export default function LessonPage() {
         if (!lesson) return;
 
         try {
+            console.log("Saving progress for user:", userId);
+            // Explicitly use userPool auth because the model is protected by allow.owner()
             const { data: progressList } = await client.models.UserProgress.list({
-                filter: { userId: { eq: userId } }
+                filter: { userId: { eq: userId } },
+                authMode: 'userPool'
             });
 
             const now = new Date().toISOString();
 
             if (progressList.length === 0) {
+                console.log("Creating new progress record...");
                 await client.models.UserProgress.create({
                     userId: userId,
                     completedTopics: [lesson.topicId],
                     xp: 100,
                     currentStreak: 1,
                     lastActivity: now
-                });
+                }, { authMode: 'userPool' });
             } else {
                 const prog = progressList[0];
                 const cleanTopics = (prog.completedTopics || []).filter(t => t !== null) as string[];
@@ -122,12 +126,14 @@ export default function LessonPage() {
                         xp: (prog.xp || 0) + 100,
                         currentStreak: isSameDay ? (prog.currentStreak || 1) : ((prog.currentStreak || 0) + 1),
                         lastActivity: now
-                    });
+                    }, { authMode: 'userPool' });
                 }
             }
+            console.log("Progress saved!");
             setIsCompleted(true);
         } catch (e) {
-            console.error(e);
+            console.error("Failed to save progress:", e);
+            alert("Error saving progress. Check console.");
         }
     };
 
@@ -145,7 +151,8 @@ export default function LessonPage() {
 
                 if (userId) {
                     const { data: prog } = await client.models.UserProgress.list({
-                        filter: { userId: { eq: userId } }
+                        filter: { userId: { eq: userId } },
+                        authMode: 'userPool'
                     });
                     if (prog.length > 0) {
                         const topics = prog[0].completedTopics || [];

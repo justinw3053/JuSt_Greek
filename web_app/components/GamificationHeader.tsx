@@ -29,7 +29,8 @@ export default function GamificationHeader() {
 
         // Subscribe to real-time updates
         const sub = client.models.UserProgress.observeQuery({
-            filter: { userId: { eq: userId } }
+            filter: { userId: { eq: userId } },
+            authMode: 'userPool'
         }).subscribe({
             next: ({ items }) => {
                 if (items.length > 0) {

@@ -22,11 +22,16 @@ export default function StatsPage() {
         if (!userId) return;
 
         async function fetchStats() {
-            const { data } = await client.models.UserProgress.list({
-                filter: { userId: { eq: userId } }
-            });
-            if (data.length > 0) {
-                setStats(data[0]);
+            try {
+                const { data } = await client.models.UserProgress.list({
+                    filter: { userId: { eq: userId } },
+                    authMode: 'userPool'
+                });
+                if (data.length > 0) {
+                    setStats(data[0]);
+                }
+            } catch (e) {
+                console.error("Stats fetch error:", e);
             }
             setLoading(false);
         }
