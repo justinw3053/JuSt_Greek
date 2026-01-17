@@ -30,7 +30,10 @@ export async function POST(req: Request) {
 
         INSTRUCTIONS:
         1. Identify the key Grammar Rule(s) in the text.
-        2. Create 3 Multiple Choice Questions.
+        2. Create a comprehensive set of Multiple Choice Questions (Minimum 3, Maximum 10).
+           - The number of questions should be "Open Ended" based on how much content there is to test.
+           - If the text is dense, generate more questions (up to 10).
+           - If the text is simple, 3-4 is sufficient.
         3. For each question, provide an "explanation" that teaches the rule.
         4. Return ONLY valid JSON.
 

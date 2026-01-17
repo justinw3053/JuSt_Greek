@@ -63,9 +63,11 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
             setShowFeedback(false);
         } else {
             setQuizFinished(true);
-            // If Passed (2/3 or better)
-            const isPass = (score + (selectedOption === questions[currentIndex].correctIndex ? 1 : 0)) >= 2;
-            if (isPass) {
+            // If Passed (> 60%)
+            const finalScore = score + (selectedOption === questions[currentIndex].correctIndex ? 1 : 0);
+            const passed = (finalScore / questions.length) >= 0.6;
+
+            if (passed) {
                 setTimeout(onComplete, 2000); // Auto close after success? Or let user click finish
             }
         }
@@ -96,14 +98,13 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
                         </div>
                     ) : quizFinished ? (
                         <div className="text-center py-8">
-                            <div className="text-6xl mb-4">{score >= 2 ? "🏆" : "📚"}</div>
-                            <h3 className="text-2xl font-bold mb-2">{score >= 2 ? "Challenge Passed!" : "Needs Review"}</h3>
+                            <div className="text-6xl mb-4">{(score / questions.length) >= 0.6 ? "🏆" : "📚"}</div>
+                            <h3 className="text-2xl font-bold mb-2">{(score / questions.length) >= 0.6 ? "Challenge Passed!" : "Needs Review"}</h3>
                             <p className="text-gray-500 mb-6">You scored {score} / {questions.length}</p>
 
-                            {score >= 2 ? (
-                                <button onClick={onComplete} className="bg-green-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-green-700 hover:scale-105 transition">
-                                    Claim Reward
-                                </button>
+                            {(score / questions.length) >= 0.6 ? (<button onClick={onComplete} className="bg-green-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-green-700 hover:scale-105 transition">
+                                Claim Reward
+                            </button>
                             ) : (
                                 <button onClick={onClose} className="bg-gray-200 dark:bg-zinc-800 text-gray-700 dark:text-gray-200 px-8 py-3 rounded-xl font-bold hover:bg-gray-300 transition">
                                     Try Again Later
