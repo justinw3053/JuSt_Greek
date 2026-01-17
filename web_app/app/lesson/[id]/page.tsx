@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import ChatTutor from "@/components/ChatTutor";
+import QuizModal from "@/components/QuizModal";
 import { getCurrentUser } from 'aws-amplify/auth';
 
 const client = generateClient<Schema>();
@@ -21,6 +22,7 @@ export default function LessonPage() {
     const [userId, setUserId] = useState<string>("");
     const [isCompleted, setIsCompleted] = useState(false);
     const [isChatOpen, setIsChatOpen] = useState(false);
+    const [isQuizOpen, setIsQuizOpen] = useState(false);
 
     useEffect(() => {
         getCurrentUser().then(u => setUserId(u.userId)).catch(() => { });
@@ -155,15 +157,33 @@ export default function LessonPage() {
 
                 {/* COMPLETE LESSON BUTTON */}
                 <button
-                    onClick={handleComplete}
+                    onClick={() => {
+                        if (!userId) {
+                            alert("Please Sign In to track your progress and earn XP!");
+                            return;
+                        }
+                        if (isCompleted) return;
+                        setIsQuizOpen(true);
+                    }}
                     disabled={isCompleted}
                     className={`w-full max-w-md p-4 rounded-xl font-bold text-lg shadow-lg active:scale-95 transition-all ${isCompleted
-                        ? "bg-green-100 text-green-700 cursor-default"
-                        : "bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600"
+                            ? "bg-green-100 text-green-700 cursor-default"
+                            : "bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600"
                         }`}
                 >
-                    {isCompleted ? "✅ Lesson Completed (+100 XP)" : "🔥 Complete Lesson"}
+                    {isCompleted ? "✅ Lesson Completed (+100 XP)" : "🔥 Take Challenge (Complete Lesson)"}
                 </button>
+
+                <QuizModal
+                    isOpen={isQuizOpen}
+                    onClose={() => setIsQuizOpen(false)}
+                    onComplete={() => {
+                        handleComplete();
+                        setIsQuizOpen(false);
+                    }}
+                    topicTitle={lesson.title}
+                    content={lesson.content || ""}
+                />
 
                 <div className="w-full max-w-md mt-4">
                     <h3 className="font-bold text-gray-500 text-sm mb-2 uppercase">Transcript Preview</h3>
