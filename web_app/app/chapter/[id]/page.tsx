@@ -23,6 +23,8 @@ export default function ChapterPage() {
     const [reviewData, setReviewData] = useState<ReviewData | null>(null);
     const [topicCount, setTopicCount] = useState(0);
 
+    const [errorMsg, setErrorMsg] = useState<string>("");
+
     useEffect(() => {
         if (!chapterId) return;
 
@@ -52,10 +54,17 @@ export default function ChapterPage() {
                     const data = await res.json();
                     if (data.review) {
                         setReviewData(data.review);
+                    } else if (data.error) {
+                        setErrorMsg(data.error);
+                    } else {
+                        setErrorMsg("Unknown API Error");
                     }
+                } else {
+                    setErrorMsg("No content found for this chapter.");
                 }
-            } catch (e) {
+            } catch (e: any) {
                 console.error(e);
+                setErrorMsg(e.message || "Network Error");
             } finally {
                 setLoading(false);
             }
@@ -75,8 +84,11 @@ export default function ChapterPage() {
 
     if (!reviewData) {
         return (
-            <div className="p-8 text-center text-red-500">
-                Failed to load review. Please try refreshing.
+            <div className="p-8 text-center text-red-500 flex flex-col items-center justify-center min-h-screen">
+                <div className="text-4xl mb-4">⚠️</div>
+                <h2 className="text-xl font-bold mb-2">Failed to load review</h2>
+                <p className="opacity-80 mb-4">{errorMsg || "Please try refreshing."}</p>
+                <Link href="/" className="bg-gray-100 px-4 py-2 rounded-lg text-sm text-gray-700">Back Home</Link>
             </div>
         );
     }
