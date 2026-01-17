@@ -1,27 +1,9 @@
 {
   "topicId": "3.2",
   "week": 3,
-  "month": "The Foundation (Literacy & Identification)",
+  "month": "Month 1",
   "title": "Basic Nouns (House, Car, Book, Money).",
-  "reading_greek": "Αυτό είναι το σπίτι μου. Έχω ένα βιβλίο και χρήματα. Δεν έχω αυτοκίνητο. Το σπίτι είναι μεγάλο.",
-  "reading_english": "This is my house. I have a book and money. I don't have a car. The house is big.",
-  "audio_script": "Welcome to Week 3... Today we are focusing on four essential Greek nouns: House, Car, Book, and Money... The Greek words are: 'Σπίτι' (Spíti) for House... 'Αυτοκίνητο' (Aftokínito) for Car... 'Βιβλίο' (Vivlío) for Book... and 'Χρήματα' (Chrímata) for Money... Note that 'Χρήματα' is often used in the plural... Now, listen to a short reading passage using these words... 'Αυτό είναι το σπίτι μου. Έχω ένα βιβλίο και χρήματα. Δεν έχω αυτοκίνητο. Το σπίτι είναι μεγάλο.'... The translation is: This is my house. I have a book and money. I don't have a car. The house is big... Let's review the vocabulary... Listen and repeat... Σπίτι... Αυτοκίνητο... Βιβλίο... Χρήματα... Great job. Continue practicing these nouns this week.",
-  "vocabulary": [
-    {
-      "greek": "σπίτι",
-      "english": "house"
-    },
-    {
-      "greek": "αυτοκίνητο",
-      "english": "car"
-    },
-    {
-      "greek": "βιβλίο",
-      "english": "book"
-    },
-    {
-      "greek": "χρήματα",
-      "english": "money"
-    }
-  ]
+  "reading_greek": "1. Το βιβλίο είναι εδώ.\n2. Ο Πέτρος διαβάζει το βιβλίο.\n3. Τα βιβλία είναι στο τραπέζι.\n4. Το σπίτι είναι μεγάλο.\n5. Βλέπω το σπίτι.\n6. Τα σπίτια είναι στην Αθήνα.\n7. Το αυτοκίνητο είναι μπροστά.\n8. Πού είναι τα λεφτά;",
+  "reading_english": "1. The book is here.\n2. Peter is reading the book.\n3. The books are on the table.\n4. The house is big.\n5. I see the house.\n6. The houses are in Athens.\n7. The car is in front.\n8. Where is the money?",
+  "audio_script": "Hello! Today we are looking at some basic nouns you will use every day: house, car, book, and money. In Modern Greek, we categorize these by gender. ... Let’s look at our first three examples: το βιβλίο, which is 'the book', το σπίτι, which is 'the house', and το αυτοκίνητο, which is 'the car'. ... Did you notice something? They all use the article 'το'. This means they are Neuter nouns. ... According to our textbook on page 37, Neuter nouns are at the bottom of the 'Scale of Inflectional Complexity'. This is great news for you! ... Why? Because Neuter nouns like 'το βιβλίο' or 'το σπίτι' do not change their form between the Nominative case—when they are the subject—and the Accusative case—when they are the object. ... Look at examples 4 and 5: 'Το σπίτι είναι μεγάλο' and 'Βλέπω το σπίτι'. The word 'σπίτι' remains exactly the same. ... Now, let's talk about the plural. For nouns ending in -ο like 'βιβλίο', the plural ending is -α, so we say 'τα βιβλία'. For nouns ending in -ι like 'σπίτι', we also add -α, but listen closely: 'τα σπίτια'. The 'ι' sound blends into a 'y' sound, making it 'spitya'. ... Finally, look at example 8: 'τα λεφτά'. This is the word for money. As noted on page 47 of your grammar notes, 'λεφτά' is always plural in Greek, unlike in English. You can't have just one 'money', you always have 'τα λεφτά'. ... Practice saying these neuter nouns; they are the easiest to master because they stay so stable! ... Keep practicing and I will see you in the next lesson."
 }

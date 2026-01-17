@@ -25,6 +25,7 @@ const schema = a.schema({
       completedTopics: a.string().array(), // List of topicIds
       currentStreak: a.integer().default(0),
       xp: a.integer().default(0),
+      lastActivity: a.datetime(), // To track daily streaks
     })
     .authorization((allow) => [
       allow.owner(), // Users can only see/edit their own progress

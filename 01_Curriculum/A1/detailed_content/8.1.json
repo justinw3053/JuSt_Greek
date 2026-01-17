@@ -1,9 +1,25 @@
 {
-  "topicId": "8.1",
-  "week": 8,
-  "month": "The Physical World (Description)",
-  "title": "Present Tense Conjugation (-ω, -eis, -ei).",
-  "reading_greek": "Εγώ μένω στην Αθήνα. Εσύ μένεις στην Πάτρα. Αυτός μένει στο σπίτι. Εμείς μένουμε εδώ.",
-  "reading_english": "I live in Athens. You (singular) live in Patras. He lives at home. We live here.",
-  "audio_script": "Welcome to Week 8 of your Greek lessons. Today we focus on the Present Tense Conjugation, specifically the endings for singular subjects and the first person plural: -ω, -εις, -ει, and -ουμε. ... Remember that in Greek, the verb ending tells you who is performing the action. ... Let’s use the verb 'μένω', meaning 'I live' or 'I stay', as our example. ...  Listen to the full conjugation now. ... Εγώ μένω, I live. ... Εσύ μένεις, you live. ... Αυτός, αυτή, or αυτό μένει, he, she, or it lives. ... And finally, Εμείς μένουμε, we live. ...  Now, listen to a short reading passage using these forms. ...  [Reading Greek] ... Εγώ μένω στην Αθήνα. Εσύ μένεις στην Πάτρα. Αυτός μένει στο σπίτι. Εμείς μένουμε εδώ. ... Now, repeat after me: ... Μένω. ... Μένεις. ... Μένει. ... Μένουμε. ... Great work. Now try reading the passage yourself."
+  "topicId": "4.1",
+  "week": 4,
+  "month": "Month 1",
+  "title": "The Form of the Present Tense",
+  "reading_greek": [
+    "Group A1: κάνω\nΕγώ κάνω\nΕσύ κάνεις\nΑυτός/Αυτή/Αυτό κάνει\nΕμείς κάνουμε\nΕσείς κάνετε\nΑυτοί/Αυτές/Αυτά κάνουν",
+    "Group A2: τρώω\nΕγώ τρώω\nΕσύ τρως\nΑυτός/Αυτή/Αυτό τρώει\nΕμείς τρώμε\nΕσείς τρώτε\nΑυτοί/Αυτές/Αυτά τρώνε",
+    "Group B1: μιλάω/-ώ\nΕγώ μιλάω/-ώ\nΕσύ μιλάς/-άς\nΑυτός/Αυτή/Αυτό μιλάει/-ά\nΕμείς μιλάμε/-άμε\nΕσείς μιλάτε/-άτε\nΑυτοί/Αυτές/Αυτά μιλάνε/-άνε",
+    "Group B2: μπορώ\nΕγώ μπορώ\nΕσύ μπορείς\nΑυτός/Αυτή/Αυτό μπορεί\nΕμείς μπορούμε\nΕσείς μπορείτε\nΑυτοί/Αυτές/Αυτά μπορούν",
+    "“Passive” Group 1: έρχομαι\nΕγώ έρχομαι\nΕσύ έρχεσαι\nΑυτός/Αυτή/Αυτό έρχεται\nΕμείς ερχόμαστε\nΕσείς έρχεστε\nΑυτοί/Αυτές/Αυτά έρχονται",
+    "“Passive” Group 2: θυμάμαι\nΕγώ θυμάμαι\nΕσύ θυμάσαι\nΑυτός/Αυτή/Αυτό θυμάται\nΕμείς θυμόμαστε\nΕσείς θυμάστε\nΑυτοί/Αυτές/Αυτά θυμούνται",
+    "Modern Greek Verbs in Two Steps:\nStep 1: Identify the verb group.\nStep 2: Apply the appropriate endings."
+  ],
+  "reading_english": [
+    "Group A1: κάνω (to do/make)\nI do/make\nYou do/make\nHe/She/It does/makes\nWe do/make\nYou (pl.) do/make\nThey do/make",
+    "Group A2: τρώω (to eat)\nI eat\nYou eat\nHe/She/It eats\nWe eat\nYou (pl.) eat\nThey eat",
+    "Group B1: μιλάω/-ώ (to speak)\nI speak\nYou speak\nHe/She/It speaks\nWe speak\nYou (pl.) speak\nThey speak",
+    "Group B2: μπορώ (to be able to/can)\nI can\nYou can\nHe/She/It can\nWe can\nYou (pl.) can\nThey can",
+    "“Passive” Group 1: έρχομαι (to come)\nI come\nYou come\nHe/She/It comes\nWe come\nYou (pl.) come\nThey come",
+    "“Passive” Group 2: θυμάμαι (to remember)\nI remember\nYou remember\nHe/She/It remembers\nWe remember\nYou (pl.) remember\nThey remember",
+    "Modern Greek Verbs in Two Steps:\nStep 1: Identify the verb group.\nStep 2: Apply the appropriate endings."
+  ],
+  "audio_script": "Welcome to our lesson on the present tense in Modern Greek! This is a fundamental part of speaking and understanding Greek, and our textbook, 'Modern Greek: Grammar Notes for Absolute Beginners,' makes it quite manageable. Let's dive in!\n\nIn Modern Greek, verbs change their endings to show who is performing the action – that's person – and whether it's one person or more – that's number. This is called conjugation. Today, we'll focus on the present tense. Our textbook groups verbs into different categories based on how they conjugate in the present. Let's look at them.\n\nFirst, we have Group A1, with the verb κάνω, meaning 'to do' or 'to make'. Here's how it conjugates:\nΕγώ κάνω... (I do/make)\nΕσύ κάνεις... (You do/make)\nΑυτός/Αυτή/Αυτό κάνει... (He/She/It does/makes)\nΕμείς κάνουμε... (We do/make)\nΕσείς κάνετε... (You plural do/make)\nΑυτοί/Αυτές/Αυτά κάνουν. (They do/make)\n\nNext is Group A2, featuring the verb τρώω, meaning 'to eat'. Notice the slight changes:\nΕγώ τρώω... (I eat)\nΕσύ τρως... (You eat)\nΑυτός/Αυτή/Αυτό τρώει... (He/She/It eats)\nΕμείς τρώμε... (We eat)\nΕσείς τρώτε... (You plural eat)\nΑυτοί/Αυτές/Αυτά τρώνε. (They eat)\n\nThen we have Group B1, with verbs like μιλάω, or its contracted form μιλώ, meaning 'to speak'.\nΕγώ μιλάω ή μιλώ... (I speak)\nΕσύ μιλάς ή μιλάς... (You speak)\nΑυτός/Αυτή/Αυτό μιλάει ή μιλά... (He/She/It speaks)\nΕμείς μιλάμε ή μιλάμε... (We speak)\nΕσείς μιλάτε ή μιλάτε... (You plural speak)\nΑυτοί/Αυτές/Αυτά μιλάνε ή μιλάνε. (They speak)\n\nGroup B2 includes verbs like μπορώ, meaning 'to be able to' or 'can'.\nΕγώ μπορώ... (I can)\nΕσύ μπορείς... (You can)\nΑυτός/Αυτή/Αυτό μπορεί... (He/She/It can)\nΕμείς μπορούμε... (We can)\nΕσείς μπορείτε... (You plural can)\nΑυτοί/Αυτές/Αυτά μπορούν. (They can)\n\nOur textbook also introduces 'passive' verbs. While they might look different, they follow similar patterns. Let's look at 'Passive' Group 1, with έρχομαι, meaning 'to come'.\nΕγώ έρχομαι... (I come)\nΕσύ έρχεσαι... (You come)\nΑυτός/Αυτή/Αυτό έρχεται... (He/She/It comes)\nΕμείς ερχόμαστε... (We come)\nΕσείς έρχεστε... (You plural come)\nΑυτοί/Αυτές/Αυτά έρχονται. (They come)\n\nAnd 'Passive' Group 2, with θυμάμαι, meaning 'to remember'.\nΕγώ θυμάμαι... (I remember)\nΕσύ θυμάσαι... (You remember)\nΑυτός/Αυτή/Αυτό θυμάται... (He/She/It remembers)\nΕμείς θυμόμαστε... (We remember)\nΕσείς θυμάστε... (You plural remember)\nΑυτοί/Αυτές/Αυτά θυμούνται. (They remember)\n\nThe key takeaway from our textbook is that learning Modern Greek verbs in the present tense can be simplified into two steps:\nStep 1: Identify which group the verb belongs to.\nStep 2: Apply the correct endings for that group.\n\nIt might seem like a lot, but with practice, these patterns will become second nature. Keep practicing these conjugations, and you'll be speaking Greek in no time!"
 }

@@ -1,15 +1,9 @@
 {
   "topicId": "7.1",
   "week": 7,
-  "month": "The Physical World (Description)",
+  "month": "Month 1",
   "title": "Prepositions (In, On, Under, With).",
-  "reading_greek": "Η γάτα είναι πάνω στο τραπέζι. Ο σκύλος είναι κάτω από την καρέκλα. Το βιβλίο είναι μέσα στην τσάντα. Είμαι με τον φίλο μου.",
-  "reading_english": "The cat is on the table. The dog is under the chair. The book is in the bag. I am with my friend.",
-  "audio_script": "Welcome to Week 7 of your Greek journey... Today, we focus on four common prepositions: 'In', 'On', 'Under', and 'With'... In Greek, these are: 'μέσα' (in), 'πάνω' (on), 'κάτω' (under), and 'με' (with)... Notice that these words often change the ending of the following noun... This is called the 'case' system... Don't worry about the grammar rules yet, just focus on understanding the meaning... Listen to a short reading passage using these prepositions... Η γάτα είναι πάνω στο τραπέζι... Ο σκύλος είναι κάτω από την καρέκλα... Το βιβλίο είναι μέσα στην τσάντα... Είμαι με τον φίλο μου... Now, let's break down the translation... 'Η γάτα είναι πάνω στο τραπέζι' means 'The cat is on the table'... The word for 'on' is 'πάνω'... 'Ο σκύλος είναι κάτω από την καρέκλα' means 'The dog is under the chair'... The word for 'under' is 'κάτω'... 'Το βιβλίο είναι μέσα στην τσάντα' means 'The book is in the bag'... The word for 'in' is 'μέσα'... Finally, 'Είμαι με τον φίλο μου' means 'I am with my friend'... The word for 'with' is 'με'... Practice saying these four prepositions aloud: 'μέσα', 'πάνω', 'κάτω', and 'με'... Good work! Review the reading passage one more time...",
-  "vocabulary_focus": {
-    "in": "μέσα",
-    "on": "πάνω",
-    "under": "κάτω",
-    "with": "με"
-  }
+  "reading_greek": "1. Μένω στην Ελλάδα.\n2. Είμαι στο σχολείο.\n3. Ο Γιάννης μένει με τον Πέτρο.\n4. Το βιβλίο είναι πάνω στο τραπέζι.\n5. Η γάτα είναι κάτω από την καρέκλα.\n6. Το βιβλίο είναι για τον Πέτρο.",
+  "reading_english": "1. I live in Greece.\n2. I am at school.\n3. John lives with Peter.\n4. The book is on the table.\n5. The cat is under the chair.\n6. The book is for Peter.",
+  "audio_script": "Hello. I am your Greek tutor. Today we are looking at Chapter 7, specifically Prepositions. ... In Modern Greek, prepositions are very important because they always require the noun to be in the Accusative case. Remember what we learned in Chapter 3? The article changes to 'ton', 'tin', or 'to'. ... Let's start with the most common preposition: 'se'. This represents 'in', 'at', 'on', or 'to'. ... When 'se' meets the definite article, they merge. So, 'se' plus 'to' becomes 'sto'. 'Se' plus 'tin' becomes 'stin'. ... For example: 'Meno stin Ellada' – I live in Greece. Or 'Eimai sto scholeio' – I am at school. ... Next is 'me', which means 'with'. ... Look at example three: 'O Giannis menei me ton Petro' – John lives with Peter. ... Now, let's look at what the textbook calls Complex Prepositions in section 7.1.2. These use an adverb plus a simple preposition. ... To say 'on' or 'on top of' specifically, we use 'pano se'. ... Example four: 'To vivlio einai pano sto trapezi'. ... To say 'under', we use 'kato apo'. ... Example five: 'I gata einai kato apo tin karekla' – The cat is under the chair. ... Practice these carefully, and always remember to check your noun endings for the Accusative case."
 }

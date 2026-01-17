@@ -17,7 +17,9 @@ export default function ChatTutor({ context }: { context?: string }) {
         if (!input.trim()) return;
 
         const userMsg = input;
-        setMessages((prev) => [...prev, { role: "user", text: userMsg }]);
+        const newHistory = [...messages, { role: "user" as const, text: userMsg }];
+
+        setMessages(newHistory);
         setInput("");
         setLoading(true);
 
@@ -25,7 +27,7 @@ export default function ChatTutor({ context }: { context?: string }) {
             const res = await fetch("/api/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ message: userMsg, context }),
+                body: JSON.stringify({ messages: newHistory, context }),
             });
 
             const data = await res.json();
@@ -74,8 +76,8 @@ export default function ChatTutor({ context }: { context?: string }) {
                             <div
                                 key={idx}
                                 className={`max-w-[80%] p-3 rounded-xl text-sm ${msg.role === "user"
-                                        ? "bg-blue-600 text-white self-end ml-auto rounded-tr-none"
-                                        : "bg-white dark:bg-zinc-800 text-gray-800 dark:text-gray-200 border border-gray-100 dark:border-gray-700 mr-auto rounded-tl-none"
+                                    ? "bg-blue-600 text-white self-end ml-auto rounded-tr-none"
+                                    : "bg-white dark:bg-zinc-800 text-gray-800 dark:text-gray-200 border border-gray-100 dark:border-gray-700 mr-auto rounded-tl-none"
                                     }`}
                             >
                                 {msg.text}

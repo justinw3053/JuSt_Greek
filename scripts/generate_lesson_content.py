@@ -5,9 +5,10 @@ import time
 import re
 from pathlib import Path
 
-# Configuration
-# USING gemini-2.0-flash FOR HIGH INTELLIGENCE w/ REFERENCE MATERIAL
-MODEL_NAME = "gemini-2.0-flash" 
+# List of models to try in order of preference
+MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-3-flash-preview", "gemini-2.5-flash-lite"]
+
+MODEL_NAME = "gemini-2.5-flash" # Default/Fallback
 
 BASE_DIR = Path(__file__).parent.parent
 SYLLABUS_FILE = BASE_DIR / "01_Curriculum" / "A1" / "A1_Quarterly_Syllabus.md"
@@ -49,6 +50,64 @@ def parse_syllabus():
                 })
     return topics
 
+def generate_with_retry(client, prompt, source_text):
+    """Attempt generation across multiple models with smart backoff."""
+    
+    for model_name in MODELS_TO_TRY:
+        print(f"  Attempting with model: {model_name}...")
+        
+        # Try up to 3 times per model for transient errors
+        for attempt in range(3):
+            try:
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt,
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=f"You are a strict Greek Tutor. Here is the Textbook content you must teach from:\n\n{source_text[:100000]}..."
+                    )
+                )
+                
+                text = response.text.strip()
+                if text.startswith("```json"):
+                    text = text[7:-3]
+                elif text.startswith("```"):
+                    text = text[3:-3]
+                
+                # Validation: Simple check if it looks like JSON
+                if text.strip().startswith("{") and text.strip().endswith("}"):
+                    return text
+                else:
+                    raise ValueError("Output does not look like valid JSON")
+
+            except Exception as e:
+                print(f"    Error ({model_name}, attempt {attempt+1}): {e}")
+                
+                # Check for Quota/Rate Limits
+                if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
+                    # If it's a daily quota limit, break and try next model
+                    if "GenerateRequestsPerDay" in str(e) or "limit: 0" in str(e):
+                         print(f"    Daily quota exhausted for {model_name}. Switching models...")
+                         break # Break inner loop, move to next model in outer loop
+                    
+                    # If it's a rate limit (RPM), wait and retry same model
+                    match = re.search(r"Please retry in (\d+(\.\d+)?)s", str(e))
+                    if match:
+                        wait_time = float(match.group(1)) + 1.0
+                        if wait_time < 20: wait_time = 20 # Enforce min 20s for 3 RPM (Safe for 5 RPM limit)
+                        print(f"    Rate limited (RPM). Sleeping {wait_time:.2f}s...")
+                        time.sleep(wait_time)
+                    else:
+                        print(f"    Rate limited. Sleeping 20s...")
+                        time.sleep(20)
+                else:
+                    # Non-rate-limit error (e.g. server error), short sleep and retry
+                    time.sleep(20)
+        
+        # If we exhausted attempts for this model, or broke due to daily limit, continue to next model
+        print(f"  Skipping {model_name} due to errors/quota.")
+
+    return None
+
 def generate_content():
     api_key = os.environ.get("GOOGLE_API_KEY")
     if not api_key:
@@ -67,10 +126,17 @@ def generate_content():
     for topic in topics:
         output_file = OUTPUT_DIR / f"{topic['id']}.json"
         
+        # Check if already exists and is valid
         if output_file.exists():
-            print(f"Skipping {topic['id']} (already exists)")
-            continue
-
+            try:
+                with open(output_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                    if "audio_script" in data and len(data["audio_script"]) > 100:
+                        print(f"Skipping {topic['id']} (Already Valid Deep Content)")
+                        continue
+            except:
+                pass # If invalid JSON, regenerate
+        
         print(f"Generating {topic['id']}: {topic['title']}...")
 
         prompt = f"""
@@ -104,42 +170,21 @@ If the topic is NOT explicitly covered, stick to standard A1 Greek grammar but e
   "audio_script": "A detailed, engaging script for the TTS engine. It should explain the concept using the examples. Use '...' for pauses."
 }}
 """
-        # We pass the full source text as system instruction to ground the model
-        max_retries = 5
-        base_delay = 10
-        
-        for attempt in range(max_retries):
-            try:
-                response = client.models.generate_content(
-                    model=MODEL_NAME,
-                    contents=prompt,
-                    config=genai.types.GenerateContentConfig(
-                        system_instruction=f"You are a strict Greek Tutor. Here is the Textbook content you must teach from:\n\n{source_text[:100000]}..." # Truncating if too large, but 100k chars is fine for flash/pro usually. 2.0 Flash context is huge.
-                    )
-                )
-                
-                text = response.text.strip()
-                if text.startswith("```json"):
-                    text = text[7:-3]
-                elif text.startswith("```"):
-                    text = text[3:-3]
-                
-                # Save raw strict JSON
-                with open(output_file, 'w', encoding='utf-8') as f:
-                    f.write(text)
-                    
-                time.sleep(2) # Rate limit safety
-                break # Success
-                
-            except Exception as e:
-                print(f"Attempt {attempt+1} failed for {topic['id']}: {e}")
-                if "429" in str(e) or "RESOURCE_EXHAUSTED" in str(e):
-                    wait_time = base_delay * (2 ** attempt)
-                    print(f"Rate limited. Waiting {wait_time}s...")
-                    time.sleep(wait_time)
-                else:
-                    time.sleep(5) # Other error, short wait and retry or break?
-                    # For now we retry all errors
+        result_text = generate_with_retry(client, prompt, source_text)
+
+        if result_text:
+            # Save raw strict JSON
+            with open(output_file, 'w', encoding='utf-8') as f:
+                f.write(result_text)
+            print(f"Success for {topic['id']}! Sleeping 20s (3 RPM limit)...")
+            time.sleep(20)
+        else:
+            print(f"FAILED to generate content for {topic['id']} with all models.")
+            # Optional: stop completely if one fails? Or try next?
+            # Let's try next topic in case it was a specific content filter issue, 
+            # though usually quota affects all.
+
+
 
 
 if __name__ == "__main__":
