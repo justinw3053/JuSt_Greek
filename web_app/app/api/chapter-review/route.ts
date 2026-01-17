@@ -44,7 +44,18 @@ export async function POST(req: Request) {
         const result = await model.generateContent(prompt);
         const text = result.response.text();
 
-        const jsonStr = text.replace(/```json/g, "").replace(/```/g, "").trim();
+        // Robust JSON extraction
+        let jsonStr = text;
+        const firstOpen = text.indexOf('{');
+        const lastClose = text.lastIndexOf('}');
+
+        if (firstOpen !== -1 && lastClose !== -1) {
+            jsonStr = text.substring(firstOpen, lastClose + 1);
+        } else {
+            // Fallback cleanup if braces not found (unlikely)
+            jsonStr = text.replace(/```json/g, "").replace(/```/g, "").trim();
+        }
+
         const data = JSON.parse(jsonStr);
 
         return NextResponse.json({ review: data });

@@ -45,7 +45,15 @@ export default function GamificationHeader() {
         return () => sub.unsubscribe();
     }, [userId]);
 
-    if (!userId) return null; // Don't show for guests
+    if (!userId) {
+        return (
+            <div className="fixed top-4 right-4 z-50">
+                <a href="/login" className="bg-blue-600 text-white px-4 py-2 rounded-full font-bold shadow-lg hover:bg-blue-700 transition text-sm">
+                    Sign In
+                </a>
+            </div>
+        );
+    }
 
     return (
         <div className="fixed top-4 right-4 z-50 flex gap-3">

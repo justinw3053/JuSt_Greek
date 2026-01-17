@@ -83,19 +83,19 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="fixed bottom-0 left-0 w-full bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 p-4 flex justify-around shadow-lg">
-        <button className="flex flex-col items-center text-blue-600">
+      <div className="fixed bottom-0 left-0 w-full bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 p-4 flex justify-around shadow-lg z-50">
+        <Link href="/" className="flex flex-col items-center text-blue-600">
           <span className="text-xl">🏠</span>
           <span className="text-xs">Home</span>
-        </button>
-        <button className="flex flex-col items-center text-gray-400">
+        </Link>
+        <Link href="/stats" className="flex flex-col items-center text-gray-400 hover:text-blue-500">
           <span className="text-xl">🔥</span>
           <span className="text-xs">Stats</span>
-        </button>
-        <button className="flex flex-col items-center text-gray-400">
+        </Link>
+        <Link href="/tutor" className="flex flex-col items-center text-gray-400 hover:text-blue-500">
           <span className="text-xl">🤖</span>
           <span className="text-xs">Tutor</span>
-        </button>
+        </Link>
       </div>
     </main>
   );
