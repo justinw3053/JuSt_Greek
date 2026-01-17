@@ -15,9 +15,10 @@ interface QuizModalProps {
     onComplete: () => void;
     topicTitle: string;
     content: string;
+    preloadedQuestions?: Question[];
 }
 
-export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, content }: QuizModalProps) {
+export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, content, preloadedQuestions }: QuizModalProps) {
     const [questions, setQuestions] = useState<Question[]>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [score, setScore] = useState(0);
@@ -29,7 +30,17 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
 
     // Load Quiz
     useEffect(() => {
-        if (isOpen && questions.length === 0) {
+        if (!isOpen) return;
+
+        if (preloadedQuestions && preloadedQuestions.length > 0) {
+            // Select 5 random questions
+            const shuffled = [...preloadedQuestions].sort(() => 0.5 - Math.random());
+            setQuestions(shuffled.slice(0, 5));
+            setLoading(false);
+            return;
+        }
+
+        if (questions.length === 0) {
             setLoading(true);
             fetch("/api/quiz", {
                 method: "POST",
@@ -46,7 +57,7 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
                     setLoading(false);
                 });
         }
-    }, [isOpen, topicTitle, content]);
+    }, [isOpen, topicTitle, content, preloadedQuestions]);
 
     const handleAnswer = (index: number) => {
         setSelectedOption(index);
@@ -127,8 +138,9 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
                                 {questions[currentIndex].options.map((opt, idx) => {
                                     const isSelected = selectedOption === idx;
                                     const isCorrect = idx === questions[currentIndex].correctIndex;
+                                    const isGreek = /[\u0370-\u03FF]/.test(opt);
 
-                                    let btnClass = "p-4 rounded-xl text-left border-2 transition-all ";
+                                    let btnClass = "p-4 rounded-xl text-left border-2 transition-all relative group ";
                                     if (showFeedback) {
                                         if (isCorrect) btnClass += "border-green-500 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300";
                                         else if (isSelected) btnClass += "border-red-500 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300";
@@ -138,14 +150,46 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
                                     }
 
                                     return (
-                                        <button
-                                            key={idx}
-                                            onClick={() => !showFeedback && handleAnswer(idx)}
-                                            disabled={showFeedback}
-                                            className={btnClass}
-                                        >
-                                            {opt}
-                                        </button>
+                                        <div key={idx} className={btnClass}>
+                                            <button
+                                                onClick={() => !showFeedback && handleAnswer(idx)}
+                                                disabled={showFeedback}
+                                                className="w-full text-left outline-none"
+                                            >
+                                                {opt}
+                                            </button>
+
+                                            {isGreek && (
+                                                <div className="absolute right-2 top-1/2 -translate-y-1/2 flex gap-2 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity bg-white/80 dark:bg-black/50 rounded-lg p-1 backdrop-blur-sm shadow-sm z-10">
+                                                    <button
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            const u = new SpeechSynthesisUtterance(opt);
+                                                            u.lang = 'el-GR';
+                                                            u.rate = 1.0;
+                                                            window.speechSynthesis.speak(u);
+                                                        }}
+                                                        className="hover:scale-110 active:scale-95 text-blue-600 p-1"
+                                                        title="Play Audio"
+                                                    >
+                                                        🔊
+                                                    </button>
+                                                    <button
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            const u = new SpeechSynthesisUtterance(opt);
+                                                            u.lang = 'el-GR';
+                                                            u.rate = 0.5; // Snail speed
+                                                            window.speechSynthesis.speak(u);
+                                                        }}
+                                                        className="hover:scale-110 active:scale-95 text-purple-600 p-1"
+                                                        title="Play Slow (50%)"
+                                                    >
+                                                        🐢
+                                                    </button>
+                                                </div>
+                                            )}
+                                        </div>
                                     );
                                 })}
                             </div>

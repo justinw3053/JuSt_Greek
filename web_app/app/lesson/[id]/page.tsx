@@ -167,8 +167,8 @@ export default function LessonPage() {
                     }}
                     disabled={isCompleted}
                     className={`w-full max-w-md p-4 rounded-xl font-bold text-lg shadow-lg active:scale-95 transition-all ${isCompleted
-                            ? "bg-green-100 text-green-700 cursor-default"
-                            : "bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600"
+                        ? "bg-green-100 text-green-700 cursor-default"
+                        : "bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600"
                         }`}
                 >
                     {isCompleted ? "✅ Lesson Completed (+100 XP)" : "🔥 Take Challenge (Complete Lesson)"}
@@ -183,6 +183,12 @@ export default function LessonPage() {
                     }}
                     topicTitle={lesson.title}
                     content={lesson.content || ""}
+                    preloadedQuestions={(() => {
+                        try {
+                            const parsed = JSON.parse(lesson.content || "{}");
+                            return parsed.quiz_questions || [];
+                        } catch { return []; }
+                    })()}
                 />
 
                 <div className="w-full max-w-md mt-4">

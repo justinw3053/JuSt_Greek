@@ -132,8 +132,13 @@ def generate_content():
                 with open(output_file, 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     if "audio_script" in data and len(data["audio_script"]) > 100:
-                        print(f"Skipping {topic['id']} (Already Valid Deep Content)")
-                        continue
+                        if "quiz_questions" in data and len(data["quiz_questions"]) >= 10:
+                            print(f"Skipping {topic['id']} (Already Valid Deep Content + Quiz)")
+                            continue
+                        else:
+                             print(f"Updating {topic['id']} (Missing Quiz Questions)...")
+                    else:
+                        print(f"Regenerating {topic['id']} (Invalid Content)...")
             except:
                 pass # If invalid JSON, regenerate
         
