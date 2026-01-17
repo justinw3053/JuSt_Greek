@@ -1,10 +1,110 @@
-
 {
   "topicId": "2.1",
   "week": 2,
   "month": "Month 1",
-  "title": "The Verb \"To Be\" (Είμαι). I am, You are.",
-  "reading_greek": "είμαι\nείσαι\nείναι\nείμαστε\nείστε\nείναι\n\nΕίμαι από την Ιταλία.\nΕίσαι καλά;\nO Πέτρος είναι γιατρός.\nΕίμαστε Έλληνες.\nΕίστε εδώ;\nΕίναι αργά.",
-  "reading_english": "I am\nyou are (singular, informal)\nhe/she/it is\nwe are\nyou are (plural or formal singular)\nthey are\n\nI am from Italy.\nAre you fine?\nPeter is a doctor.\nWe are Greeks.\nAre you here?\nIt is late.",
-  "audio_script": "Kalimera, class! Today, we delve into one of the most fundamental verbs in Modern Greek: 'to be', or είμαι [eeme]. This verb is absolutely essential for everyday communication, and it's a perfect example of how verbs carry a lot of grammatical information right inside them.\n\nNow, the textbook, on page 59, under section 4.1.7, wisely notes that είμαι is what grammars call an irregular verb. But don't despair! It’s also a very common verb, and thankfully, it’s quite 'well-behaved' in its present tense forms. Our task is simply to memorize them.\n\nLet's look at the full conjugation for είμαι in the present tense:\n\nFor 'I am', we have είμαι [eeme].\nFor 'you are' (singular and informal), it's είσαι [eese].\nThen, for 'he', 'she', or 'it is', we use είναι [eene].\nFor 'we are', we say είμαστε [eemaste].\nFor 'you are' (which can be plural, or a formal singular 'you'), it's είστε [eeste].\nAnd finally, for 'they are', it's again είναι [eene].\n\nExcellent. Now, let's see these forms in action with some practical sentences, drawing directly from our textbook:\n\nFirst: Είμαι από την Ιταλία. [eeme apo teen eetalya] ... 'I am from Italy.'\nNext: Είσαι καλά; [eese kala] ... 'Are you fine?' Notice how just the intonation makes this a question in Greek, similar to English.\nThen: O Πέτρος είναι γιατρός. [o petros eene eatros] ... 'Peter is a doctor.' Here, 'είναι' is 'is' for 'he', referring to Peter.\nMoving on: Είμαστε Έλληνες. [eemaste elinees] ... 'We are Greeks.'\nAnd: Είστε εδώ; [eeste eδo] ... 'Are you here?' This 'είστε' form can be used for a group of people, or when you are politely addressing a single person, like saying 'Are you, sir/madam, here?'\nFinally: Είναι αργά. [eene arga] ... 'It is late.' Here, 'είναι' refers to 'it'.\n\nNow, a couple of important points to remember from Chapter 2 itself:\n\nFirstly, on page 27, Unit 2.2.1, the textbook discusses the 'optional subject'. Because the verb ending in Greek clearly tells you who the subject is (I, you, he, etc.), you don't always need to say the pronoun 'Εγώ' (I) or 'Εσύ' (you). Just saying 'Είμαι' is often enough, unless, of course, you want to add emphasis, as we learned about 'focus' in Chapter 1, Unit 1.7.3.\n\nSecondly, a quick note from Chapter 2, Unit 2.2.4, on page 31: είμαι is categorized as a 'passive' or 'medio-passive' verb. Now, don't let that terminology confuse you! As the text explains, this refers to its *form* or ending, not its actual *meaning*. There's nothing 'passive' about the concept of 'to be' itself!\n\nWell done! Memorizing these forms of είμαι is a crucial step in your Greek journey. Practice them often, and you'll soon find yourself using them naturally in conversation. Until next time, adio!"
+  "title": "Nouns & Verbs: The Basics (To Be)",
+  "reading_greek": "THEORY: INFLECTION\nδρόμ-ος (Standard)\nδρόμ-οι (Plural)\nνερ-ό (Water)\nνερ-ά (Waters)\n\nTHE VERB 'TO BE' (είμαι)\nΕγώ είμαι (I am)\nΕσύ είσαι (You are)\nΑυτός/Αυτή/Αυτό είναι (He/She/It is)\nΕμείς είμαστε (We are)\nΕσείς είστε (You are pl/formal)\nΑυτοί/Αυτές/Αυτά είναι (They are)\n\nEXAMPLES\n1. Είμαι από την Ιταλία.\n2. Είσαι καλά;\n3. O Πέτρος είναι γιατρός.\n4. Είμαστε Έλληνες.\n5. Είστε εδώ;",
+  "reading_english": "GRAMMAR NOTES (Page 21)\n\n1. INFLECTION: Modern Greek words change their endings to show meaning.\n   - Base (Stem): 'drom-' (street)\n   - Ending: '-os' (singular) / '-oi' (plural)\n\n2. THE VERB 'TO BE' (Page 59 - Irregular)\n   - eimai: I am\n   - eisai: You are\n   - einai: He/She/It is\n   - eimaste: We are\n   - eiste: You are (plural/polite)\n   - einai: They are\n\n3. THE OPTIONAL SUBJECT (Page 27)\n   - You don't need to say 'Ego eimai' (I am). Just 'Eimai' is enough.\n   - The verb ending '-mai' already tells us it is 'I'.",
+  "audio_script": "Welcome to Chapter 2! On Page 21, the book introduces the concept of **Inflection**. Unlike English, where 'street' is always 'street', in Greek, 'dromos' becomes 'dromoi' or 'dromou'. The ending carries the meaning.\n\nToday's verb is **Eimai** (To Be). It is irregular but essential.\n- 'Eimai' (I am).\n- 'Eisai' (You are).\n- 'Einai' (It is).\n\nNotice the example: 'Eisai kala?' (Are you well?). We don't say 'Esu eisai kala?'. We drop the 'Esu' (You) because 'Eisai' specifically means YOU are. This is the 'Optional Subject' rule.",
+  "quiz_questions": [
+    {
+      "question": "Translate 'I am' to Greek.",
+      "options": [
+        "Είναι",
+        "Είμαι",
+        "Είσαι",
+        "Είμαστε"
+      ],
+      "correctIndex": 1,
+      "explanation": "Eimai [ime]"
+    },
+    {
+      "question": "Translate 'You are' (singular/informal) to Greek.",
+      "options": [
+        "The change in a word's ending to show grammatical meaning.",
+        "Είσαι",
+        "Είναι",
+        "Είμαστε"
+      ],
+      "correctIndex": 1,
+      "explanation": "Eisai [ise]"
+    },
+    {
+      "question": "Translate 'He/She/It is' to Greek.",
+      "options": [
+        "No, the verb 'Είμαι' already includes the 'I'.",
+        "Είναι",
+        "Είμαστε",
+        "Είσαι"
+      ],
+      "correctIndex": 1,
+      "explanation": "Einai [ine]"
+    },
+    {
+      "question": "Translate 'We are' to Greek.",
+      "options": [
+        "Είμαστε",
+        "No, the verb 'Είμαι' already includes the 'I'.",
+        "Είστε",
+        "Είμαι από την Ιταλία."
+      ],
+      "correctIndex": 0,
+      "explanation": "Eimaste [imaste]"
+    },
+    {
+      "question": "Translate 'You are' (plural/formal) to Greek.",
+      "options": [
+        "Είστε",
+        "The change in a word's ending to show grammatical meaning.",
+        "Είμαι από την Ιταλία.",
+        "Είναι"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eiste [iste]"
+    },
+    {
+      "question": "Translate 'They are' to Greek.",
+      "options": [
+        "Είμαστε",
+        "Είμαι από την Ιταλία.",
+        "Είμαι",
+        "Είναι"
+      ],
+      "correctIndex": 3,
+      "explanation": "Einai [ine] (Same as singular 'He is'!)"
+    },
+    {
+      "question": "Do you need to say 'Εγώ' (I) when saying 'I am'?",
+      "options": [
+        "Είναι",
+        "Είμαι",
+        "Είμαι από την Ιταλία.",
+        "No, the verb 'Είμαι' already includes the 'I'."
+      ],
+      "correctIndex": 3,
+      "explanation": "This is the 'Optional Subject' rule."
+    },
+    {
+      "question": "What is 'Inflection'?",
+      "options": [
+        "Είσαι",
+        "Είμαστε",
+        "Είναι",
+        "The change in a word's ending to show grammatical meaning."
+      ],
+      "correctIndex": 3,
+      "explanation": "Greek words change form based on number, case, or person."
+    },
+    {
+      "question": "Translate: 'I am from Italy'.",
+      "options": [
+        "Είμαι",
+        "Είναι",
+        "Είμαι από την Ιταλία.",
+        "Είναι"
+      ],
+      "correctIndex": 2,
+      "explanation": "Eimai apo tin Italia."
+    }
+  ]
 }

@@ -1,0 +1,110 @@
+{
+  "topicId": "3.5",
+  "week": 3,
+  "month": "Month 1",
+  "title": "Chapter 3 Exam: Basic Syntax",
+  "reading_greek": "REVIEW\n- Verb 'Exo' (I have)\n- Negation 'Den' (Not)\n- Basic Nouns (Spiti, Nero, Lefta)\n- Preposition 'Se' (Sto, Stin)\n\nCHALLENGE\n- Δεν έχω νερό.\n- Μιλάω στον Πέτρο.\n- Πάω στο σπίτι.",
+  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. 'Exo' conjugation.\n2. Negative sentences (Den).\n3. 'Se' + Article fusion (Sto, Stin).\n\nPass Mark: 80%",
+  "audio_script": "Chapter 3 Exam. \n\nWe focus on sentences. \n'Exo' means I have. 'Den exo' means I don't have. \n\nAnd remember 'Sto' and 'Stin'. \nIf it's Neuter (To spiti), it becomes 'Sto spiti'. \nIf it's Feminine (H poli), it becomes 'Stin poli'. \n\nFocus.",
+  "quiz_questions": [
+    {
+      "question": "Translate 'We have'.",
+      "options": [
+        "Λεφτά.",
+        "Έχουμε.",
+        "Τα λεφτά.",
+        "Στον κύριο Πέτρο."
+      ],
+      "correctIndex": 1,
+      "explanation": "Exoume."
+    },
+    {
+      "question": "Translate 'There is not'.",
+      "options": [
+        "Έχουμε.",
+        "Λεφτά.",
+        "Στον κύριο Πέτρο.",
+        "Δεν υπάρχει."
+      ],
+      "correctIndex": 3,
+      "explanation": "Den."
+    },
+    {
+      "question": "Translate 'In the house'.",
+      "options": [
+        "Στο σπίτι.",
+        "Στην πόλη.",
+        "Στον κύριο Πέτρο.",
+        "Δεν θέλω."
+      ],
+      "correctIndex": 0,
+      "explanation": "Se + To = Sto."
+    },
+    {
+      "question": "Translate 'In the city'.",
+      "options": [
+        "Δεν υπάρχει.",
+        "Δεν θέλω.",
+        "Στην πόλη.",
+        "Λεφτά."
+      ],
+      "correctIndex": 2,
+      "explanation": "Se + Tin = Stin."
+    },
+    {
+      "question": "Translate 'I do not want'.",
+      "options": [
+        "Δεν θέλω.",
+        "Στην πόλη.",
+        "Στο σπίτι.",
+        "Στον κύριο Πέτρο."
+      ],
+      "correctIndex": 0,
+      "explanation": "Den thelo."
+    },
+    {
+      "question": "Translate 'The money'.",
+      "options": [
+        "Τα λεφτά.",
+        "Λεφτά.",
+        "Στην πόλη.",
+        "Δεν θέλω."
+      ],
+      "correctIndex": 0,
+      "explanation": "Neuter Plural."
+    },
+    {
+      "question": "Translate 'Money' (Singular concept but plural form).",
+      "options": [
+        "Είμαι στην Αθήνα.",
+        "Στο σπίτι.",
+        "Τα λεφτά.",
+        "Λεφτά."
+      ],
+      "correctIndex": 3,
+      "explanation": "Lefta."
+    },
+    {
+      "question": "Translate 'To Mr. Peter'.",
+      "options": [
+        "Στον κύριο Πέτρο.",
+        "Δεν θέλω.",
+        "Τα λεφτά.",
+        "Δεν υπάρχει."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ston."
+    },
+    {
+      "question": "Translate 'I am at Athens'.",
+      "options": [
+        "Είμαι στην Αθήνα.",
+        "Τα λεφτά.",
+        "Δεν θέλω.",
+        "Έχουμε."
+      ],
+      "correctIndex": 0,
+      "explanation": "Stin."
+    }
+  ]
+}

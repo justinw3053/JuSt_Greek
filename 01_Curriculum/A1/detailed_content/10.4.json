@@ -1,0 +1,110 @@
+{
+  "topicId": "10.4",
+  "week": 10,
+  "month": "Month 3",
+  "title": "Chapter 10 Exam: Subject vs Object",
+  "reading_greek": "REVIEW\n- Nominative (Subject)\n- Accusative (Object)\n- Masculine Change (O -> Ton, -s -> _)\n\nCHALLENGE\n- Ο Πέτρος βλέπει τον Κώστα.\n- Τον Κώστα βλέπει ο Πέτρος.\n- Θέλω τον καφέ.",
+  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Identifying Subject vs Object.\n2. Masculine changes (Dropping the sigma).\n3. Article changes (O -> Ton, H -> Tin).\n\nPass Mark: 80%",
+  "audio_script": "Chapter 10 Exam. \n\nSyntax. \nWho does it? Nominative. \nWho receives it? Accusative. \n\nIf it's a man, check the 'S'. \nHas 'S'? Subject. \nNo 'S'? Object. \n\nFocus.",
+  "quiz_questions": [
+    {
+      "question": "Accusative of 'O Kafes'.",
+      "options": [
+        "-o/a/i.",
+        "Τον Καφέ.",
+        "-os/as/is.",
+        "Ο Νίκος με βλέπει."
+      ],
+      "correctIndex": 1,
+      "explanation": "No S."
+    },
+    {
+      "question": "Accusative of 'H Maria'.",
+      "options": [
+        "-os/as/is.",
+        "Το Παιδί.",
+        "Την Μαρία.",
+        "Ο δρόμος."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tin."
+    },
+    {
+      "question": "Accusative of 'To Paidi'.",
+      "options": [
+        "Το Παιδί.",
+        "Βλέπω τον Νίκο.",
+        "Τον γιατρό.",
+        "-os/as/is."
+      ],
+      "correctIndex": 0,
+      "explanation": "No change."
+    },
+    {
+      "question": "Translate 'I see Nick'.",
+      "options": [
+        "-o/a/i.",
+        "Τον γιατρό.",
+        "Βλέπω τον Νίκο.",
+        "Την Μαρία."
+      ],
+      "correctIndex": 2,
+      "explanation": "Object."
+    },
+    {
+      "question": "Translate 'Nick sees me'.",
+      "options": [
+        "Ο Νίκος με βλέπει.",
+        "Βλέπω τον Νίκο.",
+        "-o/a/i.",
+        "Το Παιδί."
+      ],
+      "correctIndex": 0,
+      "explanation": "Subject."
+    },
+    {
+      "question": "Subject ending (Masc)?",
+      "options": [
+        "Βλέπω τον Νίκο.",
+        "Ο Νίκος με βλέπει.",
+        "Ο δρόμος.",
+        "-os/as/is."
+      ],
+      "correctIndex": 3,
+      "explanation": "With S."
+    },
+    {
+      "question": "Object ending (Masc)?",
+      "options": [
+        "-o/a/i.",
+        "-os/as/is.",
+        "Τον Καφέ.",
+        "Βλέπω τον Νίκο."
+      ],
+      "correctIndex": 0,
+      "explanation": "Without S."
+    },
+    {
+      "question": "Translate 'The doctor' (Object).",
+      "options": [
+        "Ο δρόμος.",
+        "Την Μαρία.",
+        "Ο Νίκος με βλέπει.",
+        "Τον γιατρό."
+      ],
+      "correctIndex": 3,
+      "explanation": "Ton."
+    },
+    {
+      "question": "Translate 'The street' (Subject).",
+      "options": [
+        "Ο δρόμος.",
+        "Τον γιατρό.",
+        "Το Παιδί.",
+        "-o/a/i."
+      ],
+      "correctIndex": 0,
+      "explanation": "O."
+    }
+  ]
+}

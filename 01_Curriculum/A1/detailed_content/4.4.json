@@ -1,0 +1,110 @@
+{
+  "topicId": "4.4",
+  "week": 4,
+  "month": "Month 1",
+  "title": "Chapter 4 Exam: Plurals & Verbs",
+  "reading_greek": "REVIEW\n- Masculine Plurals (-os -> -oi)\n- Article Plural (O -> Oi)\n- Yparxei (There is/are)\n\nCHALLENGE\n- Οι δρόμοι είναι μεγάλοι.\n- Υπάρχουν πολλοί άνθρωποι.\n- Οι φίλοι μου.",
+  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Masculine Plural Rules.\n2. 'O' vs 'Oi'.\n3. 'Yparxei' (Singular) vs 'Yparxoun' (Plural).\n\nPass Mark: 80%",
+  "audio_script": "Chapter 4 Exam. \n\nPlurals! \nMasculine is tricky. \nO Filos -> Oi Filoi. \nO Dromos -> Oi Dromoi. \n\nAnd 'Yparxei'. \n'Yparxei ena provlima' (There is a problem). \n'Yparxoun polla provlimata' (There are many problems). \n\nLets go.",
+  "quiz_questions": [
+    {
+      "question": "Plural of 'O Dromos'.",
+      "options": [
+        "No, use 'Yparxoun'.",
+        "Οι άνθρωποι.",
+        "Οι δρόμοι.",
+        "Οι σκύλοι."
+      ],
+      "correctIndex": 2,
+      "explanation": "-oi."
+    },
+    {
+      "question": "Plural of 'O Anthropos'.",
+      "options": [
+        "Υπάρχουν.",
+        "Πολλοί φίλοι.",
+        "Οι άνθρωποι.",
+        "No, use 'Yparxoun'."
+      ],
+      "correctIndex": 2,
+      "explanation": "-oi."
+    },
+    {
+      "question": "Translate 'There are'.",
+      "options": [
+        "Οι σκύλοι.",
+        "Οι φίλοι.",
+        "Υπάρχει.",
+        "Υπάρχουν."
+      ],
+      "correctIndex": 3,
+      "explanation": "Plural."
+    },
+    {
+      "question": "Translate 'There is'.",
+      "options": [
+        "Οι φίλοι.",
+        "Οι άνθρωποι.",
+        "Υπάρχει.",
+        "No, use 'Yparxoun'."
+      ],
+      "correctIndex": 2,
+      "explanation": "Singular."
+    },
+    {
+      "question": "Article Plural Masculine?",
+      "options": [
+        "Οι δρόμοι.",
+        "Οι (Oi).",
+        "Υπάρχουν.",
+        "Υπάρχει."
+      ],
+      "correctIndex": 1,
+      "explanation": "Same sound as Fem Sg H, but spelled Oi."
+    },
+    {
+      "question": "Translate 'The friends'.",
+      "options": [
+        "Οι δρόμοι.",
+        "Πολλοί φίλοι.",
+        "Οι φίλοι.",
+        "Οι σκύλοι."
+      ],
+      "correctIndex": 2,
+      "explanation": "Oi."
+    },
+    {
+      "question": "Translate 'Many friends'.",
+      "options": [
+        "Πολλοί φίλοι.",
+        "Οι φίλοι.",
+        "Υπάρχει.",
+        "No, use 'Yparxoun'."
+      ],
+      "correctIndex": 0,
+      "explanation": "Polloi."
+    },
+    {
+      "question": "Is 'Yparxei' used for Plural?",
+      "options": [
+        "No, use 'Yparxoun'.",
+        "Οι (Oi).",
+        "Οι δρόμοι.",
+        "Υπάρχει."
+      ],
+      "correctIndex": 0,
+      "explanation": "Strict agreement."
+    },
+    {
+      "question": "Plural of 'O skilos' (Dog).",
+      "options": [
+        "Οι φίλοι.",
+        "Οι (Oi).",
+        "Οι σκύλοι.",
+        "No, use 'Yparxoun'."
+      ],
+      "correctIndex": 2,
+      "explanation": "-oi."
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 # List of models to try in order of preference
-MODELS_TO_TRY = ["gemini-2.5-flash", "gemini-3-flash-preview", "gemini-2.5-flash-lite"]
+MODELS_TO_TRY = ["gemini-2.0-flash", "gemini-2.0-flash-lite", "gemini-2.5-flash", "gemini-flash-latest", "gemini-2.5-flash-lite"]
 
 MODEL_NAME = "gemini-2.5-flash" # Default/Fallback
 
@@ -172,7 +172,15 @@ If the topic is NOT explicitly covered, stick to standard A1 Greek grammar but e
   "title": "{topic['title']}",
   "reading_greek": "A substantial reading passage or set of examples in Greek, covering the full depth of the topic.",
   "reading_english": "English translation matching the Greek exactly.",
-  "audio_script": "A detailed, engaging script for the TTS engine. It should explain the concept using the examples. Use '...' for pauses."
+  "audio_script": "A detailed, engaging script for the TTS engine. It should explain the concept using the examples. Use '...' for pauses.",
+  "quiz_questions": [
+    {{
+      "question": "Question text...",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "correctIndex": 0,
+      "explanation": "Explanation..."
+    }}
+  ]
 }}
 """
         result_text = generate_with_retry(client, prompt, source_text)

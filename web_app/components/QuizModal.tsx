@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { generateAlgorithmicQuiz } from "../lib/quiz_algorithm";
 
 interface Question {
     question: string;
@@ -26,20 +27,45 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
 
     const [selectedOption, setSelectedOption] = useState<number | null>(null);
     const [showFeedback, setShowFeedback] = useState(false);
+    const [showExplanation, setShowExplanation] = useState(false);
     const [quizFinished, setQuizFinished] = useState(false);
 
     // Load Quiz
     useEffect(() => {
         if (!isOpen) return;
 
+        // 1. Priority: Pre-loaded Questions (e.g. from DB/Batch)
         if (preloadedQuestions && preloadedQuestions.length > 0) {
-            // Select 5 random questions
             const shuffled = [...preloadedQuestions].sort(() => 0.5 - Math.random());
             setQuestions(shuffled.slice(0, 5));
             setLoading(false);
             return;
         }
 
+        // 2. Fallback: Algorithmic Generation (Client-Side, Instant)
+        try {
+            // We need to parse the 'content' prop which is currently just a string? 
+            // Wait, the prop 'content' is seemingly treating it as an object in the implementation below?
+            // Let's verify what 'content' actually is. 
+            // In LessonPage it passes `lesson.content`, which is a JSON object in the DB.
+            // But here the type says `string`. This might be a bug or mismatch.
+            // content is the stringified JSON from the DB
+            if (content) {
+                const parsed = JSON.parse(content);
+                if (parsed.reading_greek && parsed.reading_english) {
+                    const algoQuestions = generateAlgorithmicQuiz(parsed.reading_greek, parsed.reading_english);
+                    if (algoQuestions.length >= 3) {
+                        setQuestions(algoQuestions);
+                        setLoading(false);
+                        return;
+                    }
+                }
+            }
+        } catch (e) {
+            console.error("Algorithmic generation failed", e);
+        }
+
+        // 3. Last Resort: API Fetch (Only if 1 and 2 failed)
         if (questions.length === 0) {
             setLoading(true);
             fetch("/api/quiz", {
@@ -49,7 +75,9 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
             })
                 .then(res => res.json())
                 .then(data => {
-                    if (data.quiz) setQuestions(data.quiz);
+                    if (data.quiz && data.quiz.length > 0) {
+                        setQuestions(data.quiz);
+                    }
                     setLoading(false);
                 })
                 .catch(err => {
@@ -72,6 +100,7 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
             setCurrentIndex(prev => prev + 1);
             setSelectedOption(null);
             setShowFeedback(false);
+            setShowExplanation(false);
         } else {
             setQuizFinished(true);
             // If Passed (> 60%)
@@ -196,13 +225,29 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
 
                             {/* Feedback */}
                             {showFeedback && (
-                                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl border border-blue-100 dark:border-blue-800">
-                                    <p className="text-blue-800 dark:text-blue-200 text-sm">
-                                        <span className="font-bold">Explanation:</span> {questions[currentIndex].explanation}
-                                    </p>
-                                    <button onClick={nextQuestion} className="mt-4 w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-blue-700 transition">
-                                        {currentIndex + 1 === questions.length ? "See Results" : "Next Question →"}
-                                    </button>
+                                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl border border-blue-100 dark:border-blue-800 animate-in fade-in slide-in-from-bottom-4 duration-300">
+                                    <div className="flex gap-3 mb-3">
+                                        <button
+                                            onClick={nextQuestion}
+                                            className="flex-1 bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-500/30"
+                                        >
+                                            {currentIndex + 1 === questions.length ? "See Results" : "Next Question →"}
+                                        </button>
+
+                                        <button
+                                            onClick={() => setShowExplanation(!showExplanation)}
+                                            className="px-4 py-3 bg-white dark:bg-black/20 text-blue-600 dark:text-blue-300 rounded-xl font-bold border-2 border-blue-100 dark:border-blue-800 hover:bg-blue-50 transition flex items-center gap-2"
+                                        >
+                                            <span>{showExplanation ? "Hide" : "💡 Explain"}</span>
+                                        </button>
+                                    </div>
+
+                                    {showExplanation && (
+                                        <div className="bg-white/50 dark:bg-black/20 p-4 rounded-lg text-sm leading-relaxed text-blue-900 dark:text-blue-100 animate-in zoom-in-95 duration-200">
+                                            <span className="font-bold block mb-1 uppercase text-xs tracking-wider opacity-70">Explanation</span>
+                                            {questions[currentIndex].explanation}
+                                        </div>
+                                    )}
                                 </div>
                             )}
                         </div>

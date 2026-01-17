@@ -1,0 +1,110 @@
+{
+  "topicId": "6.5",
+  "week": 6,
+  "month": "Month 2",
+  "title": "Chapter 6 Exam: Adjectives & Numbers",
+  "reading_greek": "REVIEW\n- Adjective Agreement (Kalos/Kali/Kalo)\n- Colors (Variable vs Invariable)\n- Numbers 1-100\n\nCHALLENGE\n- Ο καλός φίλος.\n- Το μεγάλο σπίτι.\n- Τριάντα πέντε ευρώ.",
+  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Matching Adjectives to Nouns.\n2. Invariable Colors (Ble, Roz).\n3. Numbers and Money.\n\nPass Mark: 80%",
+  "audio_script": "Chapter 6 Exam. \n\nAdjectives act like mirrors. \nHe is good -> Kalos. \nShe is good -> Kali. \nIt is good -> Kalo. \n\nAnd watch out for Blue (Ble). It never changes. \n\nGood luck.",
+  "quiz_questions": [
+    {
+      "question": "Feminine form of 'Big'.",
+      "options": [
+        "Μικρό.",
+        "Μεγάλη.",
+        "Κόκκινο.",
+        "Το καλό βιβλίο."
+      ],
+      "correctIndex": 1,
+      "explanation": "-i."
+    },
+    {
+      "question": "Neuter form of 'Small'.",
+      "options": [
+        "Κόκκινο.",
+        "Μικρό.",
+        "Μεγάλη.",
+        "Εκατό."
+      ],
+      "correctIndex": 1,
+      "explanation": "-o."
+    },
+    {
+      "question": "Translate 'Red'.",
+      "options": [
+        "Εκατό.",
+        "Κόκκινο.",
+        "Πενήντα.",
+        "Μικρό."
+      ],
+      "correctIndex": 1,
+      "explanation": "Variable."
+    },
+    {
+      "question": "Translate 'Blue'.",
+      "options": [
+        "Μπλε.",
+        "Μικρό.",
+        "Η μεγάλη πόλη.",
+        "Ροζ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Invariable."
+    },
+    {
+      "question": "Translate 'Pink'.",
+      "options": [
+        "Ροζ.",
+        "Εκατό.",
+        "Μικρό.",
+        "Μπλε."
+      ],
+      "correctIndex": 0,
+      "explanation": "Invariable."
+    },
+    {
+      "question": "Translate '50'.",
+      "options": [
+        "Το καλό βιβλίο.",
+        "Η μεγάλη πόλη.",
+        "Μεγάλη.",
+        "Πενήντα."
+      ],
+      "correctIndex": 3,
+      "explanation": "Peninta."
+    },
+    {
+      "question": "Translate '100'.",
+      "options": [
+        "Το καλό βιβλίο.",
+        "Εκατό.",
+        "Ροζ.",
+        "Πενήντα."
+      ],
+      "correctIndex": 1,
+      "explanation": "Ekato."
+    },
+    {
+      "question": "Translate 'The good book'.",
+      "options": [
+        "Η μεγάλη πόλη.",
+        "Κόκκινο.",
+        "Το καλό βιβλίο.",
+        "Πενήντα."
+      ],
+      "correctIndex": 2,
+      "explanation": "Neuter Match."
+    },
+    {
+      "question": "Translate 'The big city'.",
+      "options": [
+        "Πενήντα.",
+        "Ροζ.",
+        "Μεγάλη.",
+        "Η μεγάλη πόλη."
+      ],
+      "correctIndex": 3,
+      "explanation": "Fem Match."
+    }
+  ]
+}

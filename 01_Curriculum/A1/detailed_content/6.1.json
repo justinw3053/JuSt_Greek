@@ -1,10 +1,88 @@
-
 {
   "topicId": "6.1",
   "week": 6,
   "month": "Month 1",
-  "title": "Adjectives (Good, Bad, Big, Small).",
-  "reading_greek": "1. Ο καλός καφές.\n2. Το καλό βιβλίο.\n3. Η καλή μέρα.\n4. Ο κακός καιρός.\n5. Το κακό παιδί.\n6. Η κακή τροφή.\n7. Ο μεγάλος δρόμος.\n8. Το μεγάλο σπίτι.\n9. Η μεγάλη πόλη.\n10. Ο μικρός άντρας.\n11. Το μικρό αυτοκίνητο.\n12. Η μικρή γάτα.",
-  "reading_english": "1. The good coffee.\n2. The good book.\n3. The good day.\n4. The bad weather.\n5. The bad child.\n6. The bad food.\n7. The big road.\n8. The big house.\n9. The big city.\n10. The small man.\n11. The small car.\n12. The small cat.",
-  "audio_script": "Hello! Today, we're going to talk about adjectives in Modern Greek, focusing on 'good', 'bad', 'big', and 'small'. These are very common words that help us describe things.\n\nIn Modern Greek, adjectives need to agree with the noun they describe in terms of gender, number, and case. But don't worry, for these basic adjectives, it's quite straightforward!\n\nLet's start with 'good'. In Greek, 'good' is 'καλός' (kalos). Notice how it changes to match the noun:\n\nListen to this: 'Ο καλός καφές.' (O kalos kafes). This means 'The good coffee.' Here, 'καλός' is masculine, matching 'καφές' (coffee).\n\nNow, for a neuter noun, like 'βιβλίο' (vivlio - book), it becomes 'Το καλό βιβλίο.' (To kalo vivlio). 'Καλό' (kalo) is the neuter form.\n\nAnd for a feminine noun, like 'μέρα' (mera - day), we say 'Η καλή μέρα.' (I kali mera). Here, 'καλή' (kali) is the feminine form.\n\nSo, we have καλός (masculine), καλό (neuter), and καλή (feminine).\n\nNext, let's look at 'bad'. The Greek word for 'bad' is 'κακός' (kakos).\n\nSimilar to 'good', it changes its ending:\n\n'Ο κακός καιρός.' (O kakos kairos). 'The bad weather.' 'Καλός' becomes 'κακός' (kakos) for the masculine noun 'καιρός' (kairos).\n\nFor a neuter noun, like 'παιδί' (pidi - child), it's 'Το κακό παιδί.' (To kako pidi).\n\nAnd for a feminine noun, like 'τροφή' (trofi - food), we say 'Η κακή τροφή.' (I kaki trofi).\n\nSo, for 'bad', we have κακός (masculine), κακό (neuter), and κακή (feminine).\n\nNow, let's move on to 'big'. The Greek word for 'big' is 'μεγάλος' (megalos).\n\nLet's see how it changes:\n\n'Ο μεγάλος δρόμος.' (O megalos dromos). 'The big road.' Masculine form 'μεγάλος' (megalos) matching 'δρόμος' (dromos).\n\nFor a neuter noun, like 'σπίτι' (spiti - house), it's 'Το μεγάλο σπίτι.' (To megalo spiti).\n\nAnd for a feminine noun, like 'πόλη' (poli - city), we say 'Η μεγάλη πόλη.' (I megali poli).\n\nSo, for 'big', we have μεγάλος (masculine), μεγάλο (neuter), and μεγάλη (feminine).\n\nFinally, let's learn 'small'. In Greek, 'small' is 'μικρός' (mikros).\n\nHere are the examples:\n\n'Ο μικρός άντρας.' (O mikros antras). 'The small man.' The masculine form 'μικρός' (mikros).\n\nFor a neuter noun, like 'αυτοκίνητο' (aftokinito - car), it's 'Το μικρό αυτοκίνητο.' (To mikro aftokinito).\n\nAnd for a feminine noun, like 'γάτα' (gata - cat), we say 'Η μικρή γάτα.' (I mikri gata).\n\nSo, for 'small', we have μικρός (masculine), μικρό (neuter), and μικρή (feminine).\n\nRemember, the key is that the adjective changes its ending to agree with the noun. You'll see patterns here: words ending in -ος for masculine, -ο for neuter, and -η/-ή for feminine. This is a very common pattern in Greek!\n\nKeep practicing these, and you'll be describing things like a native in no time. Well done!"
+  "title": "Adjectives: Good, Big, Small",
+  "reading_greek": "THE RULE OF 3 ENDINGS\nMasculine (-os) | Feminine (-i) | Neuter (-o)\n\nKALOS (Good)\n- Ο καλός φίλος (The good friend)\n- Η καλή φίλη (The good friend-fem)\n- Το καλό βιβλίο (The good book)\n\nMEGALOS (Big)\n- Ο μεγάλος δρόμος\n- Η μεγάλη πόλη\n- Το μεγάλο σπίτι\n\nMIKROS (Small)\n- Ο μικρός σκύλος\n- Η μικρή γάτα\n- Το μικρό παιδί\n\nKAKOS (Bad)\n- Ο κακός καιρός (The bad weather)\n- Η κακή μέρα\n- Το κακό φαγητό",
+  "reading_english": "GRAMMAR: ADJECTIVE AGREEMENT (Page 66)\n\n1. MIRRORING: The adjective MUST mirror the Noun.\n   - If noun is Masc, Adjective is Masc (-os).\n   - If noun is Fem, Adjective is Fem (-i).\n   - If noun is Neut, Adjective is Neut (-o).\n\n2. PLACEMENT: Before the noun.\n   - O kalos filos (Correct).\n   - O filos kalos (Incorrect/Poetic).\n\n3. THE ARTICLE: The Article leads the way.\n   - O ... kalos ... noun.\n   - H ... kali ... noun.",
+  "audio_script": "Adjectives give color to our world. In Greek, they are chameleons. They change to match the noun they sit next to.\n\nTake 'Kalos' (Good).\nIf it's with a masculine noun (Filos), it stays 'Kalos'.\nIf it's with a feminine noun (Fili), it becomes 'Kali'.\nIf it's with a neuter noun (Vivlio), it becomes 'Kalo'.\n\nSo you have three forms for every adjective: -OS, -H, -O.\n\n'Megalos' (Big).\n- Megalos dromos.\n- Megali poli.\n- Megalo spiti.\n\nAlways check the Article! If you see 'To', you know the adjective must end in 'o'. 'To Megalo'.",
+  "quiz_questions": [
+    {
+      "question": "Translate 'The big city'.",
+      "options": [
+        "Το μεγάλο σπίτι.",
+        "Ο κακός καιρός.",
+        "Before.",
+        "Η μεγάλη πόλη."
+      ],
+      "correctIndex": 3,
+      "explanation": "Match Feminine 'Poli'."
+    },
+    {
+      "question": "Translate 'The bad weather'.",
+      "options": [
+        "Μικρό (Mikro)",
+        "Ο κακός καιρός.",
+        "Before.",
+        "Το μεγάλο σπίτι."
+      ],
+      "correctIndex": 1,
+      "explanation": "Match Masculine 'Kairos'."
+    },
+    {
+      "question": "Which form of 'Small' goes with 'Paidi' (Child)?",
+      "options": [
+        "Ο κακός καιρός.",
+        "Το μικρό αυτοκίνητο.",
+        "Μικρό (Mikro)",
+        "Before."
+      ],
+      "correctIndex": 2,
+      "explanation": "Neuter."
+    },
+    {
+      "question": "Which form of 'Good' goes with 'Filos' (Friend)?",
+      "options": [
+        "Before.",
+        "Καλός (Kalos)",
+        "Το μικρό αυτοκίνητο.",
+        "Ο κακός καιρός."
+      ],
+      "correctIndex": 1,
+      "explanation": "Masculine."
+    },
+    {
+      "question": "Does the adjective come before or after the noun?",
+      "options": [
+        "Καλός (Kalos)",
+        "Η μεγάλη πόλη.",
+        "Before.",
+        "Ο κακός καιρός."
+      ],
+      "correctIndex": 2,
+      "explanation": "'O kalos filos', not 'O filos kalos'."
+    },
+    {
+      "question": "Translate 'The small car'.",
+      "options": [
+        "Το μικρό αυτοκίνητο.",
+        "Μικρό (Mikro)",
+        "Η μεγάλη πόλη.",
+        "Before."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mikro (Neuter)."
+    },
+    {
+      "question": "Translate 'The big house'.",
+      "options": [
+        "Μικρό (Mikro)",
+        "Η μεγάλη πόλη.",
+        "Before.",
+        "Το μεγάλο σπίτι."
+      ],
+      "correctIndex": 3,
+      "explanation": "Megalo (Neuter)."
+    }
+  ]
 }

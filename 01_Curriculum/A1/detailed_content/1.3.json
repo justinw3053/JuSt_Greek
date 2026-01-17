@@ -1,10 +1,165 @@
-
 {
   "topicId": "1.3",
   "week": 1,
   "month": "Month 1",
-  "title": "Reading Practice. Transliterating names/cities.",
-  "reading_greek": "1. Αθήνα\n2. Πέτρος\n3. Ελένη\n4. Αντώνης\n5. Ελλάδα\n6. Κρήτη",
-  "reading_english": "1. Athens\n2. Peter\n3. Helen\n4. Antonis\n5. Greece\n6. Crete",
-  "audio_script": "Χαίρετε, students! Welcome back to our Modern Greek journey. Today, we put our alphabet knowledge to the test with some essential reading practice: transliterating names and cities. Remember what our textbook says on page 1? 'All you have to do is learn what each letter (or combination of letters) of the Greek alphabet represents, and then put things together in practice.' That's exactly what we'll do! No new rules, just application.\n\nLet's start with our first word...\n\n**1. Αθήνα**\n\nThis is 'Athens'. Let's break it down. \n\nWe begin with 'Α' which, from Table 1.1 on page 2, you know represents the short [a] sound, like in 'hat'. \nThen comes 'θ', which is [θ], like in 'thin'. \nNext, 'η', which is [i], like in 'tip' – remember, we have several letters for the [i] sound. \nFinally, 'ν' for [n], like in 'noise', followed by 'α' again for [a]. \n\nSo, put it together: Α-θή-να. The accent mark on the 'η' tells us the stress falls there: [aˈθina]. \n\nExcellent. Moving on...\n\n**2. Πέτρος**\n\nThis is a common Greek name, 'Peter'. Let’s read it together.\n\n'Π' is an unaspirated [p] sound, like in 'stop', as per Table 1.1.\n'έ' is [e], like in 'pen'. \nThe combination 'τρ' is simply [tr]. \n'ο' is a short [o], like in 'top'. \nAnd 'ς', at the end of a word, is [s], like in 'see'. \n\nSo we have: Πέ-τρος. The accent mark on the 'έ' shows the stress: [ˈpetros]. \n\nVery good. Next name...\n\n**3. Ελένη**\n\nThis is 'Helen'. Pay close attention to the sounds.\n\n'Ε' is [e], like in 'pen'. \n'λ' is the light [l] of 'like'. \n'έ' is [e] again. \nAnd 'νη' is [ni], with 'η' being [i]. \n\nSo, Ε-λέ-νη. Stress on the second 'έ': [eˈleni]. You are doing well.\n\nNow for a slightly more complex name from page 8 of our text...\n\n**4. Αντώνης**\n\nThis is 'Antonis'. Remember the special consonant combinations from section 1.4.1?\n\n'Α' is [a]. \nThe combination 'ντ' represents the [d] sound, like in 'door'. This is important! Not [nt], but [d] at the beginning or within a word. \n'ώ' is a short [o], like in 'top'. \n'ν' is [n]. \n'η' is [i]. \nAnd 'ς' is [s]. \n\nSo: Αν-τώ-νης. The stress is on the 'ώ': [anˈdonis]. \n\nDon't forget those special consonant groups! Now, let's try a country...\n\n**5. Ελλάδα**\n\nThis is 'Greece', our beloved country!\n\n'Ε' is [e]. \n'λλ' is a combination of two identical consonants. As mentioned on page 7, 'combinations of two identical consonants are pronounced exactly like the single consonant version'. So, it's just a single [l] sound.\n'ά' is [a]. \n'δ' is [δ], like in 'than'. \nAnd finally, 'α' is [a]. \n\nSo: Ελ-λά-δα. Stress on the 'ά': [eˈlaða]. \n\nAnd for our final practice word...\n\n**6. Κρήτη**\n\nThis is the beautiful island of 'Crete'.\n\n'Κ' is an unaspirated [k] sound, close to 'book'. \n'ρ' is the rolled [r], like in Spanish 'Roberto' (remember page 3?). \n'ή' is [i]. \n'τ' is an unaspirated [t] sound, like in 'spot'. \nAnd 'η' is [i] again. \n\nSo, Κρή-τη. The stress is on the 'ή': [ˈkriti]. \n\nBravo! You've just transliterated your first Greek names and cities. The key is to remember each letter and combination's unique sound, apply the stress, and then put it all together. Keep practicing these, and refer back to Table 1.1 and sections 1.4.1 and 1.4.2 in your textbook. The more you read, the more natural it becomes. We will build on this next time. Αντίο!"
+  "title": "Reading Practice: Stress & Diphthongs",
+  "reading_greek": "DRILL 1: Short Words (Page 5)\nμε, μα, μη (me, ma, mi)\nσε, ας, πας (se, as, pas)\nφας, πες, δες (fas, pes, des)\n\nDRILL 2: Capital Letters (Page 5)\nNA, AN, ΘΑ, ΤΑ\nΖΩ, ΔΕΝ, ΠΩΣ\n\nDRILL 3: Stress Pairs (Page 6)\nπότε (when) vs ποτέ (never)\nφόρα (momentum) vs φορά (time/turn)\nΑθηνά (Athena) vs Αθήνα (Athens)\nωμός (raw) vs ώμος (shoulder)\n\nDRILL 4: Transliteration Practice\n1. Αθήνα (Athens)\n2. Πέτρος (Peter)\n3. Ελένη (Helen)\n4. Αντώνης (Antonis)\n5. Ελλάδα (Greece)\n6. Κρήτη (Crete)",
+  "reading_english": "STRESS RULES (From Page 6)\n\n1. Dynamic Stress: Stress is not fixed. It can be on any of the last 3 syllables.\n2. The Accent Mark: In lowercase, the mark (΄) tells you EXACTLY where to put the stress. It is obligatory.\n3. Meaning Change: Changing stress changes meaning! \n   - pote (when) vs poTE (never).\n   - oMOS (raw) vs Omos (shoulder).\n\nTRANSLITERATION NOTES\n\n- Αθήνα: Note the 'η' (i) sound.\n- Πέτρος: Note the rolled 'ρ'.\n- Αντώνης: 'ντ' at the start or middle is [d] or [nd].\n- Ελλάδα: Double 'λλ' is just a single [l] sound.\n- Κρήτη: Both 'η' are [i].",
+  "audio_script": "Exercise Time! Open your Grammar Notes to Page 5. \n\nLet's start with Drill 1: Short Words. \n- 'Με' (me - with), 'Μα' (ma - but), 'Μη' (mi - don't).\n- 'Σε' (se - to you), 'Ας' (as - let).\n\nNow proper reading in Drill 4. \n- Αθήνα: The stress is on the 'i'. Not A-the-na, but A-thi-na.\n- Πέτρος: Stress the first syllable. PE-tros.\n\nNow the most important concept: STRESS (Page 6).\nListen carefully: 'PO-te' means 'When'. 'Po-TE' means 'Never'.\nIf you say 'When I go to Greece' but use 'Never', people will be confused! \nStress is not decoration. It is meaning.",
+  "quiz_questions": [
+    {
+      "question": "Transliterate: Πέτρος",
+      "options": [
+        "Petros (Peter)",
+        "It is pronounced like 'd'.",
+        "You must stress (emphasize) that syllable.",
+        "Kriti (Crete)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Πέ-τρος. Rho is rolled."
+    },
+    {
+      "question": "Transliterate: Ελένη",
+      "options": [
+        "Psomi",
+        "On the 'i' sound (Eta).",
+        "Ellada (Greece)",
+        "Eleni (Helen)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ε-λέ-νη. Lambda is a light 'L'."
+    },
+    {
+      "question": "Transliterate: Ελλάδα",
+      "options": [
+        "You must stress (emphasize) that syllable.",
+        "On the 'e' sound (Epsilon).",
+        "Ellada (Greece)",
+        "Eleni (Helen)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Ελ-λά-δα. Double Lambda is pronounced as a single 'L'."
+    },
+    {
+      "question": "Transliterate: Κρήτη",
+      "options": [
+        "Efcharisto",
+        "Kriti (Crete)",
+        "Petros (Peter)",
+        "Ne"
+      ],
+      "correctIndex": 1,
+      "explanation": "Κρή-τη. Eta (η) makes the 'i' sound."
+    },
+    {
+      "question": "In the word 'Αντώνης', how is 'ντ' pronounced?",
+      "options": [
+        "On the 'e' sound (Epsilon).",
+        "Psomi",
+        "It is pronounced like 'd'.",
+        "Nero"
+      ],
+      "correctIndex": 2,
+      "explanation": "The combination 'ντ' makes a 'd' sound, especially at the start of a syllable."
+    },
+    {
+      "question": "Where is the stress in the word 'Αθήνα'?",
+      "options": [
+        "On the 'i' sound (Eta).",
+        "Nero",
+        "Kriti (Crete)",
+        "Ne"
+      ],
+      "correctIndex": 0,
+      "explanation": "The accent mark is on the 'ή'."
+    },
+    {
+      "question": "Where is the stress in the word 'Πέτρος' (Petros)?",
+      "options": [
+        "On the 'e' sound (Epsilon).",
+        "Psomi",
+        "It is pronounced like 'd'.",
+        "Petros (Peter)"
+      ],
+      "correctIndex": 0,
+      "explanation": "The accent mark is on the 'έ'."
+    },
+    {
+      "question": "If a Greek word has an accent mark on a vowel, what does that mean?",
+      "options": [
+        "Efcharisto",
+        "It is pronounced like 'd'.",
+        "Nero",
+        "You must stress (emphasize) that syllable."
+      ],
+      "correctIndex": 3,
+      "explanation": "Modern Greek stress is dynamic; getting it wrong can change the meaning."
+    },
+    {
+      "question": "Transliterate: Ευχαριστώ (Thank you)",
+      "options": [
+        "Nero",
+        "On the 'e' sound (Epsilon).",
+        "Ne",
+        "Efcharisto"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ευ (Ef) + χα (cha) + ρι (ri) + στω (sto). 'Eu' is 'ef' here because 'ch' is unvoiced."
+    },
+    {
+      "question": "Transliterate: Νερό (Water)",
+      "options": [
+        "Gata",
+        "On the 'i' sound (Eta).",
+        "Psomi",
+        "Nero"
+      ],
+      "correctIndex": 3,
+      "explanation": "Νε-ρό. Nu is 'n', Rho is 'r'."
+    },
+    {
+      "question": "Transliterate: Ψωμί (Bread)",
+      "options": [
+        "Petros (Peter)",
+        "Ochi",
+        "Psomi",
+        "On the 'i' sound (Eta)."
+      ],
+      "correctIndex": 2,
+      "explanation": "Ψω-μί. Psi is 'ps' like in 'lips'."
+    },
+    {
+      "question": "Transliterate: Γάτα (Cat)",
+      "options": [
+        "Psomi",
+        "Ellada (Greece)",
+        "Gata",
+        "You must stress (emphasize) that syllable."
+      ],
+      "correctIndex": 2,
+      "explanation": "Γά-τα. Gamma is a hard 'g' before 'a'."
+    },
+    {
+      "question": "Transliterate: ΟΧΙ (No)",
+      "options": [
+        "Gata",
+        "Petros (Peter)",
+        "Ne",
+        "Ochi"
+      ],
+      "correctIndex": 3,
+      "explanation": "Ό-χι. Chi is a guttural 'h'."
+    },
+    {
+      "question": "Transliterate: ΝΑΙ (Yes)",
+      "options": [
+        "Nero",
+        "Ne",
+        "Psomi",
+        "Eleni (Helen)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Ναι (Ne). 'AI' is pronounced 'e'."
+    }
+  ]
 }

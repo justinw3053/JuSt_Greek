@@ -1,9 +1,88 @@
 {
   "topicId": "7.1",
   "week": 7,
-  "month": "Month 1",
-  "title": "Prepositions (In, On, Under, With).",
-  "reading_greek": "1. Μένω στην Ελλάδα.\n2. Είμαι στο σχολείο.\n3. Ο Γιάννης μένει με τον Πέτρο.\n4. Το βιβλίο είναι πάνω στο τραπέζι.\n5. Η γάτα είναι κάτω από την καρέκλα.\n6. Το βιβλίο είναι για τον Πέτρο.",
-  "reading_english": "1. I live in Greece.\n2. I am at school.\n3. John lives with Peter.\n4. The book is on the table.\n5. The cat is under the chair.\n6. The book is for Peter.",
-  "audio_script": "Hello. I am your Greek tutor. Today we are looking at Chapter 7, specifically Prepositions. ... In Modern Greek, prepositions are very important because they always require the noun to be in the Accusative case. Remember what we learned in Chapter 3? The article changes to 'ton', 'tin', or 'to'. ... Let's start with the most common preposition: 'se'. This represents 'in', 'at', 'on', or 'to'. ... When 'se' meets the definite article, they merge. So, 'se' plus 'to' becomes 'sto'. 'Se' plus 'tin' becomes 'stin'. ... For example: 'Meno stin Ellada' – I live in Greece. Or 'Eimai sto scholeio' – I am at school. ... Next is 'me', which means 'with'. ... Look at example three: 'O Giannis menei me ton Petro' – John lives with Peter. ... Now, let's look at what the textbook calls Complex Prepositions in section 7.1.2. These use an adverb plus a simple preposition. ... To say 'on' or 'on top of' specifically, we use 'pano se'. ... Example four: 'To vivlio einai pano sto trapezi'. ... To say 'under', we use 'kato apo'. ... Example five: 'I gata einai kato apo tin karekla' – The cat is under the chair. ... Practice these carefully, and always remember to check your noun endings for the Accusative case."
+  "month": "Month 2",
+  "title": "Adverbs of Place (Pano, Kato, Mesa)",
+  "reading_greek": "BASIC ADVERBS\n1. Πάνω (Up / On top)\n2. Κάτω (Down / Under)\n3. Μέσα (Inside)\n4. Έξω (Outside)\n5. Δίπλα (Next to)\n6. Μακριά (Far)\n7. Κοντά (Near)\n\nSYNTAX: 'Se' or 'Apo'?\n- Πάνω στο τραπέζι. (On the table - Uses 'Se/Sto')\n- Μέσα στο σπίτι. (Inside the house - Uses 'Se/Sto')\n- Κάτω από το κρεβάτι. (Under the bed - Uses 'Apo')\n- Έξω από το σπίτι. (Outside the house - Uses 'Apo')\n- Κοντά στο σχολείο. (Near the school - Uses 'Sto')",
+  "reading_english": "GRAMMAR: LOCATION (Page 73)\n\n1. THE 'SE' GROUP (Location/Destination):\n   - Pano se (On)\n   - Mesa se (In/Inside)\n   - Dipla se (Next to)\n   - Konta se (Near)\n   Remember: 'Se' combines with articles! (Pano Sto, Mesa Stin).\n\n2. THE 'APO' GROUP (Separation/Distance):\n   - Kato apo (Under/Below - oddly uses 'from')\n   - Exo apo (Outside of)\n   - Makria apo (Far from)",
+  "audio_script": "Where is it? \n\nTo answer this, words like 'In', 'On', 'Under' are key.\n\nIn Greek, these small words (Adverbs) need a partner.\n\nMost use 'Se' (Sto/Stin/Ston):\n- 'Pano sto trapezi' (On the table).\n- 'Mesa stin tsanta' (Inside the bag).\n- 'Konta sto spiti' (Near the house).\n\nBut some use 'Apo' (From):\n- 'Exo apo to spiti' (Outside of the house).\n- 'Kato apo to trapezi' (Under the table).\n\nMemorize the pairs: Pano-Sto, Kato-Apo!",
+  "quiz_questions": [
+    {
+      "question": "Translate 'Under the chair'.",
+      "options": [
+        "Μέσα στο σπίτι.",
+        "Se (Sto/Stin).",
+        "Δίπλα στον Πέτρο.",
+        "Κάτω από την καρέκλα."
+      ],
+      "correctIndex": 3,
+      "explanation": "Kato uses 'Apo' (from)."
+    },
+    {
+      "question": "Translate 'Inside the house'.",
+      "options": [
+        "Se (Sto/Stin).",
+        "Μακριά από την Αθήνα.",
+        "Apo (From).",
+        "Μέσα στο σπίτι."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mesa + Sto."
+    },
+    {
+      "question": "Translate 'Outside the school'.",
+      "options": [
+        "Se (Sto/Stin).",
+        "Έξω από το σχολείο.",
+        "Κάτω από την καρέκλα.",
+        "Μέσα στο σπίτι."
+      ],
+      "correctIndex": 1,
+      "explanation": "Exo + Apo."
+    },
+    {
+      "question": "Translate 'Next to Peter'.",
+      "options": [
+        "Δίπλα στον Πέτρο.",
+        "Μακριά από την Αθήνα.",
+        "Μέσα στο σπίτι.",
+        "Se (Sto/Stin)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dipla + Ston (Masc)."
+    },
+    {
+      "question": "Translate 'Far from Athens'.",
+      "options": [
+        "Apo (From).",
+        "Μακριά από την Αθήνα.",
+        "Δίπλα στον Πέτρο.",
+        "Μέσα στο σπίτι."
+      ],
+      "correctIndex": 1,
+      "explanation": "Makria + Apo."
+    },
+    {
+      "question": "Does 'Kato' (Down) use 'Se' or 'Apo'?",
+      "options": [
+        "Se (Sto/Stin).",
+        "Apo (From).",
+        "Έξω από το σχολείο.",
+        "Κάτω από την καρέκλα."
+      ],
+      "correctIndex": 1,
+      "explanation": "Kato apo..."
+    },
+    {
+      "question": "Does 'Mesa' (Inside) use 'Se' or 'Apo'?",
+      "options": [
+        "Κάτω από την καρέκλα.",
+        "Μακριά από την Αθήνα.",
+        "Apo (From).",
+        "Se (Sto/Stin)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mesa sto..."
+    }
+  ]
 }

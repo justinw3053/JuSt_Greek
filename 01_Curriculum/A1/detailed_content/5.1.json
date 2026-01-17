@@ -2,8 +2,87 @@
   "topicId": "5.1",
   "week": 5,
   "month": "Month 1",
-  "title": "Feminine Plurals (-a/-i -> -es).",
-  "reading_greek": "1. η ώρα -> οι ώρες\n2. η ζώνη -> οι ζώνες\n3. η τυρόπιτα -> οι τυρόπιτες\n4. η πίτσα -> οι πίτσες\n5. η ντομάτα -> οι ντομάτες\n6. η μπανάνα -> οι μπανάνες\n7. η σοκολάτα -> οι σοκολάτες\n8. η φίλη -> οι φίλες",
-  "reading_english": "1. the hour -> the hours\n2. the belt -> the belts\n3. the cheese pie -> the cheese pies\n4. the pizza -> the pizzas\n5. the tomato -> the tomatoes\n6. the banana -> the bananas\n7. the chocolate -> the chocolates\n8. the (female) friend -> the (female) friends",
-  "audio_script": "Hello! Today we are looking at how to make feminine nouns plural. In Modern Greek, this is actually quite simple because two different singular endings merge into one plural ending. ... Take a look at your textbook on page 44. You will see that feminine nouns ending in alpha, like 'η ώρα'—meaning the hour—and nouns ending in ita, like 'η ζώνη'—the belt—both follow the same rule in the plural. ... First, the article 'η' changes to 'οι'. Then, the ending 'α' or 'η' is replaced by 'ες'. ... Let's practice with some examples from our vocabulary lists. ... 'Η ώρα' becomes 'οι ώρες'. ... 'Η ζώνη' becomes 'οι ζώνες'. ... This even applies to loanwords that have entered the Greek system, like 'η πίτσα', which becomes 'οι πίτσες'. ... We also see this in our food vocabulary on page 33: 'η ντομάτα' becomes 'οι ντομάτες' and 'η μπανάνα' becomes 'οι μπανάνες'. ... Remember, as the textbook notes, the plural forms of these nouns are identical in both the Nominative and Accusative cases, though the article will change to 'τις' when it's an object. For now, focus on that 'ες' ending. It is the signature of the feminine plural!"
+  "title": "Feminine Plurals (-a/-i -> -es)",
+  "reading_greek": "GROUP 1: -A NOUNS\nΗ γυναίκα -> Οι γυναίκες\nΗ ώρα -> Οι ώρες\nΗ μέρα -> Οι μέρες\n\nGROUP 2: -H NOUNS\nΗ τιμή (Price) -> Οι τιμές\nΗ φωνή (Voice) -> Οι φωνές\nΗ φίλη (Friend-fem) -> Οι φίλες\n\nACCUSATIVE PLURAL (The Object)\n- Βλέπω τις γυναίκες. (I see the women.)\n- Ακούω τις φωνές. (I hear the voices.)\n- Περιμένω τις φίλες μου. (I am waiting for my friends.)",
+  "reading_english": "GRAMMAR: FEMININE PLURALS (Page 44)\n\n1. THE 'GOLDEN RULE': Feminine nouns are easy in plural. \n   - Almost ALL of them end in -es.\n\n2. ARTICLE CHANGES:\n   - Nominative: 'H' becomes 'Oi'. (H ora -> Oi ores).\n   - Accusative: 'Tin' becomes 'Tis'. (Tin ora -> Tis ores).\n\n3. PRONUNCIATION:\n   - 'Oi' (Nom) and 'H' (Sing) sound identical (ee).\n   - 'Tis' (Acc) is distinct. You can hear the 's'.",
+  "audio_script": "Feminine Plurals are the easiest in Greek. \n\nWhether the word ends in Alpha (H gynaika) or Eta (H timi), the plural ending is always '-es'.\n- Oi gynaikes.\n- Oi times.\n\nThe Article changes too:\n- 'H' becomes 'Oi' (Subject).\n- 'Tin' becomes 'Tis' (Object).\n\nPay attention to the Accusative 'Tis'. \n'Tis' is clearly feminine plural. \nIf you say 'Tous' (Masc), people expect men. \nIf you say 'Tis' (Fem), people expect women or feminine things. \n'Vlepo TIS files mou' (I see my girlfriends).",
+  "quiz_questions": [
+    {
+      "question": "What is the plural of 'Η πόλη'?",
+      "options": [
+        "Τις (Tis)",
+        "Οι πόλεις (Oi poleis)",
+        "Δύο ζώνες.",
+        "No, it is the same."
+      ],
+      "correctIndex": 1,
+      "explanation": "Exceptions exists, but usually -H -> -ES (TiMI -> TiMES)."
+    },
+    {
+      "question": "Translate 'I see the women'.",
+      "options": [
+        "Τις (Tis)",
+        "No, it is the same.",
+        "Οι πόλεις (Oi poleis)",
+        "Βλέπω τις γυναίκες."
+      ],
+      "correctIndex": 3,
+      "explanation": "Accusative Plural 'Tis'."
+    },
+    {
+      "question": "What is the Plural Nominative article for Feminine nouns?",
+      "options": [
+        "Οι (Oi)",
+        "Δύο ζώνες.",
+        "Τις (Tis)",
+        "Οι πίτσες."
+      ],
+      "correctIndex": 0,
+      "explanation": "Same as Masculine!"
+    },
+    {
+      "question": "What is the Plural Accusative article for Feminine nouns?",
+      "options": [
+        "No, it is the same.",
+        "Δύο ζώνες.",
+        "Βλέπω τις γυναίκες.",
+        "Τις (Tis)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Distinctive feminine sound."
+    },
+    {
+      "question": "Translate 'The pizzas'.",
+      "options": [
+        "Οι (Oi)",
+        "Οι πίτσες.",
+        "Βλέπω τις γυναίκες.",
+        "Δύο ζώνες."
+      ],
+      "correctIndex": 1,
+      "explanation": "-a becomes -es."
+    },
+    {
+      "question": "Translate 'Two belts'.",
+      "options": [
+        "Οι πόλεις (Oi poleis)",
+        "Τις (Tis)",
+        "Βλέπω τις γυναίκες.",
+        "Δύο ζώνες."
+      ],
+      "correctIndex": 3,
+      "explanation": "-h becomes -es."
+    },
+    {
+      "question": "Does the article 'Oi' tell you if it is Masculine or Feminine?",
+      "options": [
+        "Οι (Oi)",
+        "Δύο ζώνες.",
+        "No, it is the same.",
+        "Οι πίτσες."
+      ],
+      "correctIndex": 2,
+      "explanation": "You must know the noun or look at the adjective."
+    }
+  ]
 }

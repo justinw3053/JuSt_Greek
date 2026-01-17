@@ -1,9 +1,88 @@
 {
   "topicId": "11.1",
   "week": 11,
-  "month": "Interaction & Survival (Cases)",
-  "title": "Feminine Accusative (H -> Tin).",
-  "reading_greek": "Η Μαρία βλέπει την γάτα. Η γάτα είναι μικρή. Η Μαρία δίνει την τροφή στην γάτα.",
-  "reading_english": "Maria sees the cat. The cat is small. Maria gives the food to the cat.",
-  "audio_script": "Welcome to Week 11. Today we learn about the Feminine Accusative, specifically how 'η' changes to 'την' when it's the direct object of a verb. Listen to this: [Reading Greek: Η Μαρία βλέπει την γάτα. Η γάτα είναι μικρή. Η Μαρία δίνει την τροφή στην γάτα.] Now, let's break it down. In the sentence 'Η Μαρία βλέπει την γάτα', 'η γάτα' is the direct object of the verb 'βλέπει' (sees). Because 'γάτα' is feminine, the article 'η' changes to 'την'. So, it becomes 'την γάτα'.  We see this again with 'την τροφή'. This change is very common with feminine nouns. Practice saying these sentences aloud.  Η Μαρία βλέπει την γάτα.  Η γάτα είναι μικρή.  Η Μαρία δίνει την τροφή στην γάτα."
+  "month": "Month 3",
+  "title": "Pronouns: Weak Forms (Me, Se, Ton)",
+  "reading_greek": "THE SHORT FORMS\n1. Με (Me) - Με ξέρεις; (Do you know me?)\n2. Σε (You) - Σε βλέπω. (I see you)\n3. Τον (Him) - Τον αγαπάω. (I love him)\n4. Την (Her) - Την ξέρω. (I know her)\n5. Το (It) - Το θέλω. (I want it)\n\nPLURAL\n- Μας (Us) - Μας βλέπει.\n- Σας (You pl) - Σας ακούω.\n- Τους (Them m) / Τις (Them f) / Τα (Them n).\n\nPOSITION\n- Short pronouns go BEFORE the verb!\n- 'Se thelo' (I want you).",
+  "reading_english": "GRAMMAR: PERSONAL PRONOUNS (Page 83)\n\n1. WEAK vs STRONG:\n   - Strong: Emena (Me). Used for emphasis.\n   - Weak: Me (Me). Used 90% of the time.\n\n2. WORD ORDER:\n   - Unlike English (I see YOU - after),\n   - Greek puts it BEFORE.\n   - 'Se vlepo' (You I-see).\n   - 'Ton xero' (Him I-know).",
+  "audio_script": "Pronouns. Short words, huge importance. \n\nIn English we say 'I love YOU'. \nIn Greek we say 'S'agapao' (You I-love). \nThe pronoun comes BEFORE the verb.\n\n'Me' -> Me.\n'Se' -> You.\n'Ton' -> Him.\n'Tin' -> Her.\n'To' -> It.\n\n'Ton vlepo'. I see him.\n'Tin vlepo'. I see her.\n\nIf you want to emphasize 'I love YOU (and not her)', use the Strong form 'Esena'. \n'Esena agapao'. \nBut normally: 'S'agapao'.",
+  "quiz_questions": [
+    {
+      "question": "Translate 'I know him'.",
+      "options": [
+        "Εμένα.",
+        "Before the verb.",
+        "Τον ξέρω.",
+        "Το θέλω."
+      ],
+      "correctIndex": 2,
+      "explanation": "Ton (before verb)."
+    },
+    {
+      "question": "Translate 'I want it'.",
+      "options": [
+        "Το θέλω.",
+        "Εμένα.",
+        "Τον ξέρω.",
+        "Before the verb."
+      ],
+      "correctIndex": 0,
+      "explanation": "To."
+    },
+    {
+      "question": "Translate 'Do you hear me?'.",
+      "options": [
+        "Τον ξέρω.",
+        "Με ακούς;",
+        "Το θέλω.",
+        "Την αγαπάω."
+      ],
+      "correctIndex": 1,
+      "explanation": "Me."
+    },
+    {
+      "question": "Translate 'I love her'.",
+      "options": [
+        "Before the verb.",
+        "Τον ξέρω.",
+        "Την αγαπάω.",
+        "Το θέλω."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tin."
+    },
+    {
+      "question": "Strong form of 'Me'.",
+      "options": [
+        "Τον ξέρω.",
+        "Τους βλέπω.",
+        "Εμένα.",
+        "Με ακούς;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Emprhasis."
+    },
+    {
+      "question": "Placement of weak pronouns?",
+      "options": [
+        "Τον ξέρω.",
+        "Τους βλέπω.",
+        "Με ακούς;",
+        "Before the verb."
+      ],
+      "correctIndex": 3,
+      "explanation": "'Se vlepo', not 'Vlepo se'."
+    },
+    {
+      "question": "Translate 'I see them (masc)'.",
+      "options": [
+        "Τους βλέπω.",
+        "Τον ξέρω.",
+        "Before the verb.",
+        "Εμένα."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tous."
+    }
+  ]
 }

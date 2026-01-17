@@ -1,0 +1,110 @@
+{
+  "topicId": "8.4",
+  "week": 8,
+  "month": "Month 2",
+  "title": "Chapter 8 Exam: Verbs",
+  "reading_greek": "REVIEW\n- Group A (Kano)\n- Group B (Milao)\n- Irregulars (Eimai, Exo, Boro)\n\nCHALLENGE\n- Εμείς κάνουμε.\n- Αυτοί μιλάνε.\n- Εγώ μπορώ να...",
+  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Conjugation endings (-o vs -ao).\n2. Stress patterns.\n3. Essential verbs (Have, Be, Can, Want).\n\nPass Mark: 80%",
+  "audio_script": "Chapter 8 Exam. \n\nThe engine of the language. Verbs. \n\nCan you conjugate 'Kano'? \nCan you conjugate 'Milao'? \n\nRemember: Group B has the stress on the end. 'Milo' or 'Milao'. \n\nDo your best.",
+  "quiz_questions": [
+    {
+      "question": "Conjugate 'They speak'.",
+      "options": [
+        "Έχετε.",
+        "Μιλάνε.",
+        "Θέλεις.",
+        "Περπατάω."
+      ],
+      "correctIndex": 1,
+      "explanation": "-ane."
+    },
+    {
+      "question": "Conjugate 'I can'.",
+      "options": [
+        "Θέλεις.",
+        "End stressed (Mil-AO).",
+        "Έχετε.",
+        "Μπορώ."
+      ],
+      "correctIndex": 3,
+      "explanation": "Boro."
+    },
+    {
+      "question": "Conjugate 'You want'.",
+      "options": [
+        "Stem stressed (KA-no).",
+        "Θέλεις.",
+        "Έχετε.",
+        "End stressed (Mil-AO)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Theleis."
+    },
+    {
+      "question": "Conjugate 'He is'.",
+      "options": [
+        "Είναι.",
+        "Μπορώ.",
+        "Μιλάνε.",
+        "Περπατάω."
+      ],
+      "correctIndex": 0,
+      "explanation": "Einai."
+    },
+    {
+      "question": "Conjugate 'You (pl) have'.",
+      "options": [
+        "Μένω.",
+        "Έχετε.",
+        "Είναι.",
+        "Stem stressed (KA-no)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Exete."
+    },
+    {
+      "question": "Stress pattern for Group B?",
+      "options": [
+        "End stressed (Mil-AO).",
+        "Θέλεις.",
+        "Έχετε.",
+        "Μένω."
+      ],
+      "correctIndex": 0,
+      "explanation": "Milao."
+    },
+    {
+      "question": "Stress pattern for Group A?",
+      "options": [
+        "End stressed (Mil-AO).",
+        "Μένω.",
+        "Stem stressed (KA-no).",
+        "Μπορώ."
+      ],
+      "correctIndex": 2,
+      "explanation": "Kano."
+    },
+    {
+      "question": "Translate 'I live'.",
+      "options": [
+        "Είναι.",
+        "Θέλεις.",
+        "Μένω.",
+        "Περπατάω."
+      ],
+      "correctIndex": 2,
+      "explanation": "Meno."
+    },
+    {
+      "question": "Translate 'I walk'.",
+      "options": [
+        "Stem stressed (KA-no).",
+        "Περπατάω.",
+        "Μιλάνε.",
+        "Μένω."
+      ],
+      "correctIndex": 1,
+      "explanation": "Perpatao."
+    }
+  ]
+}

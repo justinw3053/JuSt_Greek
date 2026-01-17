@@ -1,10 +1,88 @@
-
 {
   "topicId": "10.3",
   "week": 10,
-  "month": "Month 1",
-  "title": "Drill: Converting Subjects to Objects.",
-  "reading_greek": "1. Ο Πέτρος αγαπάει την Μαρία. (Subject: Ο Πέτρος)\n2. Η Μαρία αγαπάει τον Πέτρο. (Object: τον Πέτρο)\n3. Ο Γιάννης μένει με τον Πέτρο. (Object: τον Πέτρο)\n4. Ο δάσκαλος βλέπει τον χάρτη. (Object: τον χάρτη)\n5. Η Κατερίνα θέλει την ζώνη. (Object: την ζώνη)\n6. Το παιδί θέλει το βιβλίο. (Object: το βιβλίο)\n7. Ο Γιάννης έχει έναν υπολογιστή. (Object: έναν υπολογιστή)",
-  "reading_english": "1. Peter loves Maria. (Subject: Peter)\n2. Maria loves Peter. (Object: Peter)\n3. John lives with Peter. (Object: Peter)\n4. The teacher sees the map. (Object: the map)\n5. Catherine wants the belt. (Object: the belt)\n6. The child wants the book. (Object: the book)\n7. John has a computer. (Object: a computer)",
-  "audio_script": "Welcome back. Today we are performing a high-precision drill on converting Subjects to Objects, moving from the Nominative case to the Accusative case. Open your textbook to Chapter 3, page 36 and 37. To speak Greek correctly, you must handle the 'inflectional complexity' of these nouns. ... \n\nLook at example one and two. In 'O Petros agapaei tin Maria', Peter is the subject. He is in the Nominative. But when Maria loves him in example two, he becomes the object: 'ton Petro'. ... Notice the two mandatory changes for Masculine nouns: the article 'O' becomes 'Ton', and we drop the final 's' from the name. Petros becomes Petro. Giannis becomes Gianni. ...\n\nNow, look at the Feminine nouns in examples four and five. 'I Katerina' becomes 'tin Katerina'. Here, the ending does not change, only the article. This is what the textbook calls a 'medium' level of complexity. ...\n\nFinally, look at the Neuter nouns in example six. 'To paidi' remains 'to paidi'. 'To vivlio' remains 'to vivlio'. There is zero change. ...\n\nPay attention to example seven. Using the word 'ypologistis' from page 47, we see that the rule applies even to longer words. The subject 'O ypologistis' becomes the object 'ton ypologisti'. ... Remember, the Nominative is your starting point, but the Accusative is where the action is directed. Practice these transformations until they are automatic. Mistakes are part of learning, but precision is the goal."
+  "month": "Month 3",
+  "title": "Drill: Feminine & Neuter (H -> Tin, To -> To)",
+  "reading_greek": "FEMININE (Article Changes Only)\n- Η Μαρία -> Την Μαρία\n- Η Ελλάδα -> Την Ελλάδα\n- Η Τιμή -> Την Τιμή\n(Noun ending usually stays the same!)\n\nNEUTER (No Change)\n- Το Βιβλίο -> Το Βιβλίο\n- Το Παιδί -> Το Παιδί\n- Το Νερό -> Το Νερό\n\nMIXED DRILL\n- Βλέπω τον Κώστα. (M)\n- Βλέπω την Μαρία. (F)\n- Βλέπω το παιδί. (N)",
+  "reading_english": "GRAMMAR: FEM/NEUT ACCUSATIVE\n\n1. FEMININE:\n   - Article: H -> Tin.\n   - Noun: Usually unchanged (exceptions exist but for -a/-i nouns like Poli/Maria, it's just the article).\n\n2. NEUTER:\n   - The easiest case.\n   - Subject = Object.\n   - 'To vivlio einai edo'. 'Thelo to vivlio'. Identical.",
+  "audio_script": "Feminine and Neuter are easier.\n\nFor Feminine, focus on the article 'Tin'. The noun usually doesn't change.\n'H ora' -> 'Tin ora'.\n'H agapi' -> 'Tin agapi'.\n\nFor Neuter, relax. Nothing changes.\n'To nero'. Subject or Object, it is 'To nero'.\n\nSo only Masculine nouns require you to 'Drop the S'.",
+  "quiz_questions": [
+    {
+      "question": "Accusative of 'To Vivlio'.",
+      "options": [
+        "No.",
+        "Βλέπω την Μαρία.",
+        "Την Πόλη.",
+        "Το Βιβλίο."
+      ],
+      "correctIndex": 3,
+      "explanation": "No change."
+    },
+    {
+      "question": "Accusative of 'H Poli'.",
+      "options": [
+        "Βλέπω την Μαρία.",
+        "Την Πόλη.",
+        "No.",
+        "Το Βιβλίο."
+      ],
+      "correctIndex": 1,
+      "explanation": "Tin."
+    },
+    {
+      "question": "Translate 'I see the city'.",
+      "options": [
+        "Το Βιβλίο.",
+        "Την Πόλη.",
+        "Βλέπω την πόλη.",
+        "Βλέπω την Μαρία."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tin poli."
+    },
+    {
+      "question": "Translate 'I want the water'.",
+      "options": [
+        "No.",
+        "Το Βιβλίο.",
+        "Βλέπω την Μαρία.",
+        "Θέλω το νερό."
+      ],
+      "correctIndex": 3,
+      "explanation": "To nero."
+    },
+    {
+      "question": "Translate 'I see Mary'.",
+      "options": [
+        "Την Πόλη.",
+        "Το Βιβλίο.",
+        "Βλέπω την Μαρία.",
+        "No (for basic nouns)."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tin Maria."
+    },
+    {
+      "question": "Does Neuter change in Accusative?",
+      "options": [
+        "Θέλω το νερό.",
+        "Βλέπω την Μαρία.",
+        "No.",
+        "Την Πόλη."
+      ],
+      "correctIndex": 2,
+      "explanation": "To -> To."
+    },
+    {
+      "question": "Does Feminine Noun ending usually change?",
+      "options": [
+        "No (for basic nouns).",
+        "Θέλω το νερό.",
+        "Την Πόλη.",
+        "Βλέπω την Μαρία."
+      ],
+      "correctIndex": 0,
+      "explanation": "Just the article (H -> Tin)."
+    }
+  ]
 }

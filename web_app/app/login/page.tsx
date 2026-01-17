@@ -1,34 +1,47 @@
 "use client";
 
-import { Authenticator } from '@aws-amplify/ui-react';
-import { useTheme, View, Image, Text, Heading, Button, useAuthenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
-
-const components = {
-    Header() {
-        return (
-            <View textAlign="center" padding="large">
-                <div className="text-4xl mb-4">🏛️</div>
-                <Heading level={3}>JuSt_Greek</Heading>
-                <Text>Sign In to track your XP & Streaks</Text>
-            </View>
-        );
-    },
-};
+import { Authenticator } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
+import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { getCurrentUser } from 'aws-amplify/auth';
 
 export default function LoginPage() {
+    const router = useRouter();
+
+    useEffect(() => {
+        getCurrentUser().then(() => {
+            router.push('/');
+        }).catch(() => { });
+    }, [router]);
+
     return (
-        <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-black p-4">
-            <Authenticator components={components}>
-                {({ signOut, user }) => (
-                    <main className="text-center space-y-4">
-                        <h1 className="text-2xl font-bold">Welcome back, {user?.signInDetails?.loginId}!</h1>
-                        <p>You are now logged in.</p>
-                        <Button onClick={() => window.location.href = "/"}>Go to Dashboard</Button>
-                        <Button onClick={signOut} variation="link">Sign Out</Button>
-                    </main>
-                )}
-            </Authenticator>
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col items-center justify-center p-4">
+            <div className="w-full max-w-md bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-xl">
+                <div className="text-center mb-8">
+                    <Link href="/" className="text-2xl mb-4 block">🏠</Link>
+                    <h1 className="text-2xl font-bold text-blue-600 dark:text-blue-400">Join JuSt_Greek</h1>
+                    <p className="text-gray-500">Track your XP, streaks, and progress.</p>
+                </div>
+
+                <Authenticator>
+                    {({ signOut, user }) => (
+                        <div className="text-center">
+                            <h2 className="text-xl font-bold mb-4">Welcome back, {user?.username}!</h2>
+                            <button
+                                onClick={signOut}
+                                className="bg-red-500 text-white px-6 py-2 rounded-full hover:bg-red-600"
+                            >
+                                Sign Out
+                            </button>
+                            <div className="mt-4">
+                                <Link href="/" className="text-blue-500 underline">Return Home</Link>
+                            </div>
+                        </div>
+                    )}
+                </Authenticator>
+            </div>
         </div>
     );
 }

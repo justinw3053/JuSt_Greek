@@ -1,0 +1,110 @@
+{
+  "topicId": "1.5",
+  "week": 1,
+  "month": "Month 1",
+  "title": "Chapter 1 Exam: The Alphabet",
+  "reading_greek": "REVIEW\n- Letters A-Ω\n- Diphthongs (Ou, Ai, Ei)\n- Double Consonants (Mp, Nt, Gk)\n\nCHALLENGE\n- Can you read this?\n- Μπαμπάς, Ντους, Γκια.\n- Είναι, Ουρανός, Αίμα.",
+  "reading_english": "EXAM PREPARATION\n\nThis exam requires you to:\n1. Identify Sound-to-Letter correspondence.\n2. Recognize Transliteration conventions.\n3. Distinguish between similar sounds (O vs Ω, H vs I).\n\nPass Mark: 80%",
+  "audio_script": "Welcome to your first Chapter Exam. \n\nWe are testing everything from Chapter 1. \n\nRemember: 'Mp' sounds like B. 'Nt' sounds like D. 'Ou' Sounds like U. \n\nTake deep breaths. Read carefully. You can do this.",
+  "quiz_questions": [
+    {
+      "question": "Which letters combine to make the 'B' sound?",
+      "options": [
+        "Μ + Π (Mp).",
+        "Λ.",
+        "Ν + Τ (Nt).",
+        "Ξ (KS)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mpampas."
+    },
+    {
+      "question": "Which letters combine to make the 'D' sound?",
+      "options": [
+        "Ν + Τ (Nt).",
+        "Μ + Π (Mp).",
+        "'E' (as in Egg).",
+        "Λ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ntomata."
+    },
+    {
+      "question": "Which letters combine to make the 'U' sound?",
+      "options": [
+        "Λ.",
+        "Ν + Τ (Nt).",
+        "'E' (as in Egg).",
+        "Ο + Υ (Ou)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Ouranos."
+    },
+    {
+      "question": "Translate the sound 'Gk'.",
+      "options": [
+        "Λ.",
+        "'E' (as in Egg).",
+        "Μ + Π (Mp).",
+        "Hard G (Gate)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Gkazi."
+    },
+    {
+      "question": "Which letter is 'Lambda'?",
+      "options": [
+        "Ν + Τ (Nt).",
+        "Ξ (KS).",
+        "Μ + Π (Mp).",
+        "Λ."
+      ],
+      "correctIndex": 3,
+      "explanation": "L."
+    },
+    {
+      "question": "Which letter is 'Xi'?",
+      "options": [
+        "Ψ (PS).",
+        "Ξ (KS).",
+        "Λ.",
+        "'I' (as in It)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Taxi."
+    },
+    {
+      "question": "Which letter is 'Psi'?",
+      "options": [
+        "Μ + Π (Mp).",
+        "Ψ (PS).",
+        "Ν + Τ (Nt).",
+        "Ξ (KS)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Psychology."
+    },
+    {
+      "question": "What sound does 'Ai' make?",
+      "options": [
+        "Ο + Υ (Ou).",
+        "'E' (as in Egg).",
+        "Λ.",
+        "'I' (as in It)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Aima (Ema)."
+    },
+    {
+      "question": "What sound does 'Ei' make?",
+      "options": [
+        "Μ + Π (Mp).",
+        "Hard G (Gate).",
+        "Ο + Υ (Ou).",
+        "'I' (as in It)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Eikona (Ikona)."
+    }
+  ]
+}

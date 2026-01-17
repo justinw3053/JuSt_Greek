@@ -1,0 +1,99 @@
+{
+  "topicId": "3.4",
+  "week": 3,
+  "month": "Month 1",
+  "title": "Location: 'In the' (Σε + Το = Στο)",
+  "reading_greek": "THE FORMULA (Se + Article)\nΣε + το = Στο (In the/To the - Neuter)\nΣε + τον = Στον (In the/To the - Masc)\nΣε + την = Στην (In the/To the - Fem)\n\nEXAMPLES\n1. Είμαι στο σπίτι. (I am in the house.)\n2. Πάω στο σχολείο. (I go to school.)\n3. Μένω στην Αθήνα. (I live in Athens - Fem).\n4. Ο καφές είναι στο τραπέζι. (The coffee is on the table.)\n5. Βλέπω τον Πέτρο στο πάρκο. (I see Peter in the park.)",
+  "reading_english": "GRAMMAR: PREPOSITIONS (Page 72)\n\n1. THE LITTLE WORD 'SE': It means 'in', 'at', or 'to'. \n\n2. COMBINATION: Greek hates small words next to each other. 'Se' combines with the 'The' (to/ton/tin).\n   - Se + To -> STO (Neuter)\n   - Se + Ton -> STON (Masculine)\n   - Se + Tin -> STIN (Feminine)\n\n3. MOVEMENT vs STATIC: It's the same! \n   - 'I go TO the house' = Pao STO spiti.\n   - 'I stay IN the house' = Meno STO spiti.",
+  "audio_script": "Where are you? \n\nTo answer this, you need the preposition 'Se'. But 'Se' is sticky. It glues itself to the Article.\n\nImagine 'Se' + 'To' (The). Smush them together: 'STO'. \n'Sto spiti' (In the house).\n\nIf the word is Feminine (H), use 'STIN'. \n'Stin Ellada' (In Greece).\n\nIf the word is Masculine (O), use 'STON'. \n'Ston dromo' (On the street).\n\nThis one little sound 'St-' covers 'In', 'At', 'On', and 'To'. Very efficient!",
+  "quiz_questions": [
+    {
+      "question": "What is 'Se' + 'To'?",
+      "options": [
+        "Πάω στο σχολείο.",
+        "Στην (Stin)",
+        "Στο (Sto)",
+        "Στο σπίτι."
+      ],
+      "correctIndex": 2,
+      "explanation": "Neuter form (In the / To the)."
+    },
+    {
+      "question": "What is 'Se' + 'Tin'?",
+      "options": [
+        "Στην (Stin)",
+        "No, both are usually 'Se' (Sto/Stin/Ston).",
+        "Στον (Ston)",
+        "Πάω στο σχολείο."
+      ],
+      "correctIndex": 0,
+      "explanation": "Feminine form."
+    },
+    {
+      "question": "What is 'Se' + 'Ton'?",
+      "options": [
+        "Στην Αθήνα.",
+        "Στον δρόμο.",
+        "Στο (Sto)",
+        "Στον (Ston)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Masculine form."
+    },
+    {
+      "question": "Translate: 'In the house' (Spiti - Neuter).",
+      "options": [
+        "Στην Αθήνα.",
+        "Στο σπίτι.",
+        "No, both are usually 'Se' (Sto/Stin/Ston).",
+        "Στην (Stin)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sto spiti."
+    },
+    {
+      "question": "Translate: 'In Athens' (Athina - Feminine).",
+      "options": [
+        "Στην (Stin)",
+        "Πάω στο σχολείο.",
+        "Στον δρόμο.",
+        "Στην Αθήνα."
+      ],
+      "correctIndex": 3,
+      "explanation": "Stin Athina."
+    },
+    {
+      "question": "Translate: 'On the street' (Dromos - Masculine).",
+      "options": [
+        "No, both are usually 'Se' (Sto/Stin/Ston).",
+        "Πάω στο σχολείο.",
+        "Στον (Ston)",
+        "Στον δρόμο."
+      ],
+      "correctIndex": 3,
+      "explanation": "Ston dromo."
+    },
+    {
+      "question": "Translate: 'I am going to school' (Scholeio - Neuter).",
+      "options": [
+        "Στον δρόμο.",
+        "Στον (Ston)",
+        "Στο σπίτι.",
+        "Πάω στο σχολείο."
+      ],
+      "correctIndex": 3,
+      "explanation": "Movement 'to' covers the same word 'Sto'."
+    },
+    {
+      "question": "Does Greek distinguish between 'at' and 'in'?",
+      "options": [
+        "No, both are usually 'Se' (Sto/Stin/Ston).",
+        "Πάω στο σχολείο.",
+        "Στην Αθήνα.",
+        "Στην (Stin)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Context tells the difference."
+    }
+  ]
+}

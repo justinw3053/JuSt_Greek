@@ -1,0 +1,110 @@
+{
+  "topicId": "11.4",
+  "week": 11,
+  "month": "Month 3",
+  "title": "Chapter 11 Exam: Pronouns",
+  "reading_greek": "REVIEW\n- Weak Pronouns (Me, Se, Ton)\n- Possessives (Mou, Sou - After noun)\n- Demonstratives (Aftos, Ekeinos)\n\nCHALLENGE\n- Σε θέλω.\n- Το σπίτι μου.\n- Αυτός ο άντρας.",
+  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Pronoun Placement (Before verb vs After noun).\n2. Weak forms (Me, Se, Ton, Tin).\n3. Demonstratives (This/That).\n\nPass Mark: 80%",
+  "audio_script": "Chapter 11 Exam. \n\nMe, You, Him, Her. \n\n'Me' is... Me. \n'Se' is... You. \n\nBut location matters. \n'Se vlepo' -> I see you (Object). \n'To spiti sou' -> Your house (Possessive). \n\nDon't mix them up.",
+  "quiz_questions": [
+    {
+      "question": "Translate 'I know him'.",
+      "options": [
+        "Τον ξέρω.",
+        "Το σπίτι μου.",
+        "Με βλέπεις;",
+        "Αυτός ο άντρας."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ton."
+    },
+    {
+      "question": "Translate 'My house'.",
+      "options": [
+        "Αυτός ο άντρας.",
+        "Ο καφές σου.",
+        "Το σπίτι μου.",
+        "Το θέλω."
+      ],
+      "correctIndex": 2,
+      "explanation": "Mou (Pos)."
+    },
+    {
+      "question": "Translate 'Your coffee'.",
+      "options": [
+        "Ο φίλος του.",
+        "Με βλέπεις;",
+        "Το σπίτι μου.",
+        "Ο καφές σου."
+      ],
+      "correctIndex": 3,
+      "explanation": "Sou (Pos)."
+    },
+    {
+      "question": "Translate 'This man'.",
+      "options": [
+        "Αυτό.",
+        "Με βλέπεις;",
+        "Αυτός ο άντρας.",
+        "Ο φίλος του."
+      ],
+      "correctIndex": 2,
+      "explanation": "Aftos."
+    },
+    {
+      "question": "Translate 'This (Neuter)'.",
+      "options": [
+        "Αυτό.",
+        "Τον ξέρω.",
+        "Το θέλω.",
+        "Ο φίλος του."
+      ],
+      "correctIndex": 0,
+      "explanation": "Afto."
+    },
+    {
+      "question": "Translate 'I want it'.",
+      "options": [
+        "Αυτός ο άντρας.",
+        "Ο καφές σου.",
+        "Ο φίλος της.",
+        "Το θέλω."
+      ],
+      "correctIndex": 3,
+      "explanation": "To."
+    },
+    {
+      "question": "Translate 'Do you see me?'.",
+      "options": [
+        "Τον ξέρω.",
+        "Ο καφές σου.",
+        "Με βλέπεις;",
+        "Αυτό."
+      ],
+      "correctIndex": 2,
+      "explanation": "Me."
+    },
+    {
+      "question": "Translate 'His friend'.",
+      "options": [
+        "Ο καφές σου.",
+        "Ο φίλος του.",
+        "Αυτό.",
+        "Με βλέπεις;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tou."
+    },
+    {
+      "question": "Translate 'Her friend'.",
+      "options": [
+        "Τον ξέρω.",
+        "Με βλέπεις;",
+        "Ο φίλος της.",
+        "Αυτό."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tis."
+    }
+  ]
+}

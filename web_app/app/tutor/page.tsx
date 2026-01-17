@@ -1,52 +1,31 @@
 "use client";
 
 import ChatTutor from "@/components/ChatTutor";
-import Link from 'next/link';
+import Link from "next/link";
 import { useState } from "react";
 
 export default function TutorPage() {
-    const [isChatOpen, setIsChatOpen] = useState(true); // Always open essentially
+    const [isOpen, setIsOpen] = useState(true); // Always open in this view
 
     return (
-        <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white flex flex-col p-6 pb-24">
-            <header className="mb-6 flex justify-between items-center border-b border-gray-100 dark:border-gray-800 pb-4">
-                <h1 className="text-2xl font-bold">Global Tutor</h1>
-                <Link href="/" className="bg-gray-100 dark:bg-gray-800 p-2 rounded-full">✕</Link>
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex flex-col pb-24">
+            <header className="p-4 border-b border-gray-200 dark:border-gray-800 flex items-center gap-4 bg-white dark:bg-black">
+                <Link href="/" className="text-2xl">←</Link>
+                <h1 className="text-xl font-bold">Personal Greek Tutor</h1>
             </header>
 
-            <main className="flex-1 flex flex-col items-center justify-center text-center space-y-4">
-                <div className="text-6xl mb-4">🏛️</div>
-                <h2 className="text-xl font-bold">Your Personal Greek Tutor</h2>
-                <p className="text-gray-500 max-w-sm">
-                    Ask me anything about grammar, vocabulary, or culture. I'm not tied to a specific lesson here.
-                </p>
-
-                <div className="hidden md:block text-sm text-gray-400 mt-8">
-                    (On Desktop, the chat window is bottom-right. On Mobile, it takes over.)
-                </div>
+            <main className="flex-1 relative">
+                {/* We reuse the ChatTutor component but force it open/embedded */}
+                <ChatTutor
+                    context="General Greek Tutor Mode. The user can ask any question about Greek. You are NOT bound to a specific lesson."
+                    isOpen={isOpen}
+                    setIsOpen={setIsOpen}
+                />
             </main>
-
-            <ChatTutor
-                context="You are a general Greek Language Tutor. The user is asking general questions not tied to a specific lesson. Be helpful and accurate."
-                isOpen={isChatOpen}
-                setIsOpen={setIsChatOpen}
-            />
-
-            {/* Footer Nav Integration */}
-            <div className="fixed bottom-0 left-0 w-full bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 p-4 flex justify-around shadow-lg z-50">
-                <Link href="/" className="flex flex-col items-center text-gray-400 hover:text-blue-500">
-                    <span className="text-xl">🏠</span>
-                    <span className="text-xs">Home</span>
-                </Link>
-                <Link href="/stats" className="flex flex-col items-center text-gray-400 hover:text-blue-500">
-                    <span className="text-xl">🔥</span>
-                    <span className="text-xs">Stats</span>
-                </Link>
-                <Link href="/tutor" className="flex flex-col items-center text-blue-600">
-                    <span className="text-xl">🤖</span>
-                    <span className="text-xs">Tutor</span>
-                </Link>
-            </div>
+            {/* Note: ChatTutor is a modal/drawer. We might want to adjust it to be inline if reusable, 
+                but for now, let's trust its drawer behavior or modify it if needed. 
+                Actually, ChatTutor is fixed position. Let's see if it works. 
+             */}
         </div>
     );
 }

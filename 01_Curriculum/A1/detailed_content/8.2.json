@@ -1,10 +1,88 @@
-
 {
   "topicId": "8.2",
   "week": 8,
-  "month": "Month 1",
-  "title": "Common Verbs (Kano, Meno, Thelo).",
-  "reading_greek": "ΚΕΦΑΛΑΙΟ 8 | Ο αόριστος\n\n8.1 Η μορφή του αόριστου\n\n8.1.1 Αρκετές φορές, τα ρήματα αλλάζουν λίγο όταν περνάει ο χρόνος. Αυτό συμβαίνει και με τα ρήματα που έχουμε ήδη δει. Ας δούμε τα ρήματα: κάνω, μένω, θέλω.\n\n• κάνω (imperfective stem: κάν-) → έκανα\n• μένω (imperfective stem: μεν-) → έμεινα\n• θέλω (imperfective stem: θελ-) → ήθελα\n\n8.1.3 Κανονικά ρήματα\n\nΑς δούμε μερικά ακόμα ρήματα που ακολουθούν απλούς κανόνες:\n\n• γράφω → έγραψα\n• πίνω → ήπια\n• βλέπω → είδα\n• παίζω → έπαιξα\n• ακούω → άκουσα",
-  "reading_english": "CHAPTER 8 | The Aorist\n\n8.1 The Form of the Aorist\n\n8.1.1 Several times, verbs change a little when time passes. This also happens with the verbs we have already seen. Let's look at the verbs: kano, meno, thelo.\n\n• kano (imperfective stem: kan-) → ekana\n• meno (imperfective stem: men-) → emina\n• thelo (imperfective stem: thel-) → ithela\n\n8.1.3 Regular Verbs\n\nLet's see some more verbs that follow simple rules:\n\n• grapho → egapsa\n• pino → ipia\n• vlevo → ida\n• pezo → epaiksa\n• akouo → akousa",
-  "audio_script": "Hello! Let's continue our journey into Modern Greek grammar. Today, we're focusing on some very common verbs and how they change, specifically when we talk about past actions in the aorist tense. This is covered in Chapter 8 of our textbook.\n\nIn Modern Greek, verbs often change slightly to indicate past actions. We're going to look at three essential verbs: 'kano' (to do/make), 'meno' (to stay/live), and 'thelo' (to want). These are fundamental for everyday communication.\n\nLet's start with 'kano'. The imperfective stem, which we use for present actions, is 'kan-'. When we put it into the aorist tense, it becomes 'ekana'. So, 'I did' or 'I made' is 'ekana'.\n\nNext, we have 'meno'. Its imperfective stem is 'men-'. In the aorist, it transforms into 'emina'. This means 'I stayed' or 'I lived'.\n\nAnd finally, 'thelo'. The imperfective stem here is 'thel-'. For the aorist, it changes to 'ithela', meaning 'I wanted'.\n\nNow, let's look at some other verbs that follow a similar pattern, which the textbook calls 'regular verbs' in section 8.1.3. These are also very common!\n\nWe have 'grapho', which means 'to write'. In the aorist, it becomes 'egrapsa' - 'I wrote'.\n\nThen there's 'pino', meaning 'to drink'. The aorist form is 'ipia' - 'I drank'.\n\n'Vlevo' means 'to see'. Its aorist form is 'ida' - 'I saw'.\n\n'Paizo', meaning 'to play', becomes 'epaipsa' in the aorist - 'I played'.\n\nAnd finally, 'akouo', which means 'to hear' or 'to listen'. In the aorist, it's 'akousa' - 'I heard' or 'I listened'.\n\nRemember, mastering these verb forms is crucial. Keep practicing them! We'll explore more verb tenses and forms in upcoming lessons. Thank you!"
+  "month": "Month 2",
+  "title": "Verbs Group B (-ao)",
+  "reading_greek": "THE PATTERN (Ending is Stressed)\n- Μιλάω (I speak)\n- Μιλάς (You speak)\n- Μιλάει (He/She speaks)\n- Μιλάμε (We speak)\n- Μιλάτε (You speak)\n- Μιλάνε (They speak)\n\nCOMMON VERBS\n- Αγαπάω (I love)\n- Πεινάω (I am hungry)\n- Διψάω (I am thirsty)\n- Περπατάω (I walk)\n- Ρωτάω (I ask)\n- Τραγουδάω (I sing)",
+  "reading_english": "GRAMMAR: GROUP B VERBS (Page 57)\n\n1. IDENTIFY IT: The accent is on the ENDING.\n   - mi-LA-o.\n\n2. THE 'A' SOUND: These verbs love the letter Alpha. \n   - mil-A-s, mil-A-ei, mil-A-me.\n\n3. CONTRACTED FORM: Sometimes 'Milao' becomes 'Milo'.\n   - Same verb, just shorter. Beginners stay with 'Milao'.",
+  "audio_script": "Group B Verbs. The loud ones. \n\nThe stress hits the end: 'Mi-LAO'. 'Aga-PAO'.\n\nNotice the 'AAA' sound throughout? \n- MilAs\n- MilAei\n- MilAme\n- MilAte\n\nCommon mistake: Confusing Group A and B. \n'Kano' (Group A) -> 'Kano, Kaneis'.\n'Agapao' (Group B) -> 'Agapao, Agapas'. \n\n'Agapas' (You love). Not 'Agapeis'.",
+  "quiz_questions": [
+    {
+      "question": "Conjugate 'Milao' (You speak).",
+      "options": [
+        "Group B.",
+        "Περπατάς.",
+        "Πεινάω.",
+        "Μιλάς."
+      ],
+      "correctIndex": 3,
+      "explanation": "-as."
+    },
+    {
+      "question": "Conjugate 'Milao' (He speaks).",
+      "options": [
+        "Πεινάω.",
+        "Μιλάμε.",
+        "Περπατάς.",
+        "Μιλάει."
+      ],
+      "correctIndex": 3,
+      "explanation": "-aei."
+    },
+    {
+      "question": "Conjugate 'Milao' (We speak).",
+      "options": [
+        "Μιλάμε.",
+        "Μιλάς.",
+        "Group B.",
+        "Περπατάς."
+      ],
+      "correctIndex": 0,
+      "explanation": "-ame."
+    },
+    {
+      "question": "Conjugate 'Agapao' (They love).",
+      "options": [
+        "Μιλάμε.",
+        "Πεινάω.",
+        "Αγαπάνε.",
+        "Group B."
+      ],
+      "correctIndex": 2,
+      "explanation": "-ane."
+    },
+    {
+      "question": "Translate 'I am hungry'.",
+      "options": [
+        "Μιλάει.",
+        "Μιλάμε.",
+        "Πεινάω.",
+        "Μιλάς."
+      ],
+      "correctIndex": 2,
+      "explanation": "-ao."
+    },
+    {
+      "question": "Translate 'You walk'.",
+      "options": [
+        "Περπατάς.",
+        "Αγαπάνε.",
+        "Μιλάει.",
+        "Μιλάμε."
+      ],
+      "correctIndex": 0,
+      "explanation": "-as."
+    },
+    {
+      "question": "Is 'Agapao' Group A or B?",
+      "options": [
+        "Πεινάω.",
+        "Περπατάς.",
+        "Group B.",
+        "Μιλάει."
+      ],
+      "correctIndex": 2,
+      "explanation": "Stress is on the ending."
+    }
+  ]
 }

@@ -1,10 +1,88 @@
-
 {
   "topicId": "2.3",
   "week": 2,
   "month": "Month 1",
-  "title": "Basic Intros. \"I am Justin\", \"This is the water\".",
-  "reading_greek": "1. Είμαι ο Τζάστιν.\n2. Είμαι η Μαρία.\n3. Είναι ο Πέτρος.\n4. Είναι η Κατερίνα.\n5. Είμαστε καλά.\n6. Είστε φοιτητές;\n7. Είναι το βιβλίο.\n8. Είναι ο δρόμος.\n9. Είναι η ώρα.\n10. Είναι το νερό.",
-  "reading_english": "1. I am Justin.\n2. I am Maria.\n3. He is Peter.\n4. She is Catherine.\n5. We are well.\n6. Are you students?\n7. It is the book.\n8. It is the street.\n9. It is the hour.\n10. It is the water.",
-  "audio_script": "Χαίρετε, students! Welcome back! Today, we delve into Chapter 2, building on the foundational elements we've already covered. Our focus for this lesson is on making basic introductions – specifically, how to say 'I am Justin' and 'This is the water'.\n\nLet's begin with the verb 'to be', which in Modern Greek is 'είμαι' [íme]. We saw this verb mentioned in Unit 2.2.4 as a 'passive' verb, despite its active meaning. But don't let the grammar terminology confuse you; just remember 'είμαι' means 'to be'.\n\nFirst, let's learn how to say 'I am'. The form for 'I am' is 'είμαι'. As we learned in Unit 2.2.1, Modern Greek verbs clearly show who is doing the action in their ending. This means the subject pronoun 'εγώ' (I) is often optional. So, to say 'I am Justin', you simply say: \n\nΕίμαι ο Τζάστιν.\n\nListen again: Είμαι ο Τζάστιν.\n\nNotice the 'ο' before 'Τζάστιν'. This is the masculine definite article, 'the', which we introduced in Unit 2.1.1. In Modern Greek, names often take the definite article. So, 'ο Τζάστιν' is literally 'the Justin'. If you are female, you would use 'η' – the feminine definite article. For example, 'I am Maria':\n\nΕίμαι η Μαρία.\n\nListen: Είμαι η Μαρία.\n\nNow, let's look at other persons. If you want to say 'He is Peter', you use 'Είναι ο Πέτρος'. 'Είναι' [íne] is the third-person singular form, meaning 'he/she/it is'. Peter, 'Πέτρος', is a masculine name, so it takes 'ο'.\n\nΕίναι ο Πέτρος.\n\nAnd for a female, 'She is Catherine': 'Είναι η Κατερίνα'. 'Κατερίνα' is feminine, so 'η'.\n\nΕίναι η Κατερίνα.\n\nWe can also use 'είμαστε' [ímaste] for 'we are'. For example, 'We are well', a common phrase: \n\nΕίμαστε καλά.\n\nListen: Είμαστε καλά.\n\nFor 'you are' (plural/formal), we use 'είστε' [íste]. So, if you want to ask 'Are you students?' (plural), you would say:\n\nΕίστε φοιτητές;\n\nListen: Είστε φοιτητές;\n\nNow, let's move to introducing objects, like 'This is the water'. While we haven't formally introduced demonstrative pronouns like 'this' or 'that' yet – they appear in Chapter 6 – we can still achieve this by using 'είναι' (it is) with the definite article, relying on context or pointing. Remember, from Unit 2.1.1, nouns in Modern Greek always have a gender and take a definite article: 'ο' for masculine, 'η' for feminine, and 'το' for neuter.\n\nLet's practice with some examples using the neuter article 'το'. From Unit 2.1.1, we have 'το βιβλίο' (the book). To say 'It is the book', or contextually, 'This is the book', we say:\n\nΕίναι το βιβλίο.\n\nListen: Είναι το βιβλίο.\n\nNext, using a masculine noun from Unit 2.1.1, 'ο δρόμος' (the street). 'It is the street', or 'This is the street':\n\nΕίναι ο δρόμος.\n\nListen: Είναι ο δρόμος.\n\nAnd a feminine noun, 'η ώρα' (the hour), also from Unit 2.1.1. 'It is the hour', or 'This is the hour':\n\nΕίναι η ώρα.\n\nListen: Είναι η ώρα.\n\nFinally, the specific example you asked for: 'This is the water'. 'Water' in Greek is 'νερό' [neró], which is a neuter noun, taking the article 'το'. So, we say:\n\nΕίναι το νερό.\n\nListen: Είναι το νερό.\n\nRemember, the definite articles 'ο', 'η', 'το' are crucial as they also tell you the gender of the noun. So, when learning a new noun, always learn it with its article. For example, not just 'δρόμος', but 'ο δρόμος'.\n\nExcellent work today! You've learned how to introduce yourselves and objects using the verb 'είμαι' and the essential definite articles. Keep practicing these phrases. Αντίο!"
+  "title": "Basic Intros: 'I am O Justin'",
+  "reading_greek": "INTRODUCING SELF\nΕίμαι ο Τζάστιν.\nΕίμαι η Μαρία.\n\nINTRODUCING OTHERS\nΑυτός είναι ο Πέτρος.\nΑυτή είναι η Κατερίνα.\n\nINTRODUCING OBJECTS\nΕίναι το βιβλίο.\nΕίναι ο δρόμος.\nΕίναι η ώρα.\nΕίναι το νερό.",
+  "reading_english": "GRAMMAR: PROPER NOUNS (Page 15)\n\nIn Greek, names take articles!\n- You don't say 'I am Justin'.\n- You say 'I am THE Justin' (Eimai O Justin).\n- 'I am THE Maria' (Eimai H Maria).\n\nGRAMMAR: 'THIS IS'\n- Greek doesn't strictly separate 'It is' vs 'This is' yet.\n- 'Einai to vivlio' = It is the book / This is the book.\n- Use the gender of the object (O, H, To).",
+  "audio_script": "Introductions! The biggest surprise for English speakers is the Article on Names. \n\nIf your name is Peter, you are 'O Petros'. \nIf your name is Maria, you are 'H Maria'. \n\nSo when you introduce yourself, say 'Eimai O [Name]'. \n\nAlso, to point at things, we used the verb 'Einai' (It is). \n'Einai to nero' (It is the water / This is the water). \nRemember to match the article: O dromos, H ora, To vivlio.",
+  "quiz_questions": [
+    {
+      "question": "How do you say 'I am Maria' in Greek?",
+      "options": [
+        "Είναι το βιβλίο",
+        "Είμαι η Μαρία",
+        "Είστε εδώ;",
+        "Είναι το νερό"
+      ],
+      "correctIndex": 1,
+      "explanation": "Literally 'I am THE Maria'."
+    },
+    {
+      "question": "Translate: 'He is Peter'.",
+      "options": [
+        "Είναι ο Πέτρος",
+        "Because proper nouns in Greek require the definite article.",
+        "Είμαστε Έλληνες",
+        "Είναι το νερό"
+      ],
+      "correctIndex": 0,
+      "explanation": "Einai O Petros."
+    },
+    {
+      "question": "Translate: 'This is the book'.",
+      "options": [
+        "Είναι το βιβλίο",
+        "Είμαι η Μαρία",
+        "Because proper nouns in Greek require the definite article.",
+        "Είναι το νερό"
+      ],
+      "correctIndex": 0,
+      "explanation": "Einai TO vivlio (Neuter)."
+    },
+    {
+      "question": "Translate: 'This is the water'.",
+      "options": [
+        "Είναι το βιβλίο",
+        "Είναι ο Πέτρος",
+        "Είναι το νερό",
+        "Είστε εδώ;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Einai TO nero (Neuter)."
+    },
+    {
+      "question": "Translate: 'We are Greeks'.",
+      "options": [
+        "Είμαστε Έλληνες",
+        "Είμαι η Μαρία",
+        "Είστε εδώ;",
+        "Είναι το βιβλίο"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eimaste Ellines."
+    },
+    {
+      "question": "Translate: 'Are you here?' (Plural).",
+      "options": [
+        "Είστε εδώ;",
+        "Είναι το βιβλίο",
+        "Είμαστε Έλληνες",
+        "Because proper nouns in Greek require the definite article."
+      ],
+      "correctIndex": 0,
+      "explanation": "Eiste edo?"
+    },
+    {
+      "question": "When introducing yourself, why do you add 'O' or 'H' before your name?",
+      "options": [
+        "Είμαστε Έλληνες",
+        "Είναι το βιβλίο",
+        "Είστε εδώ;",
+        "Because proper nouns in Greek require the definite article."
+      ],
+      "correctIndex": 3,
+      "explanation": "It sounds incomplete without it."
+    }
+  ]
 }

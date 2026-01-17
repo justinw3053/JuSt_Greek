@@ -1,10 +1,88 @@
-
 {
   "topicId": "9.2",
   "week": 9,
-  "month": "Month 1",
-  "title": "Daily Routine Verbs (Wake up, Eat, Work).",
-  "reading_greek": "Ξυπνάω, τρώω, δουλεύω.\n\nΓια να περιγράψουμε την καθημερινή μας ρουτίνα, χρησιμοποιούμε συγκεκριμένα ρήματα. Ας δούμε μερικά παραδείγματα.\n\n**Ξυπνάω** (to wake up):\n* Ξυπνάω στις επτά το πρωί.\n* Πότε ξυπνάς;\n\n**Τρώω** (to eat):\n* Τρώω πρωινό στις οκτώ.\n* Τι τρως συνήθως για μεσημεριανό;\n* Τρώμε όλοι μαζί το βράδυ.\n\n**Δουλεύω** (to work):\n* Δουλεύω από Δευτέρα έως Παρασκευή.\n* Πού δουλεύεις;\n* Δουλεύουμε πολλές ώρες.\n\n**Συνδυασμός ρημάτων:**\n* Πρώτα ξυπνάω, μετά τρώω πρωινό και μετά πηγαίνω στη δουλειά.\n* Ξυπνάω νωρίς και μετά δουλεύω.\n* Τρώμε και μετά ξυπνάμε.",
-  "reading_english": "I wake up, I eat, I work.\n\nTo describe our daily routine, we use specific verbs. Let's see some examples.\n\n**Wake up**:\n* I wake up at seven in the morning.\n* When do you wake up?\n\n**Eat**:\n* I eat breakfast at eight.\n* What do you usually eat for lunch?\n* We all eat together in the evening.\n\n**Work**:\n* I work from Monday to Friday.\n* Where do you work?\n* We work many hours.\n\n**Combining verbs:**\n* First I wake up, then I eat breakfast, and then I go to work.\n* I wake up early and then I work.\n* We eat and then we wake up.",
-  "audio_script": "Hello! Today, we're going to talk about verbs related to our daily routine. These are verbs we use very often to describe what we do every day. Let's start with waking up...\n\nThe verb 'to wake up' in Modern Greek is **ξυπνάω** (ksipnáo). As you can see from the examples, it follows the patterns we've learned for verbs. For instance, 'I wake up at seven in the morning' is **Ξυπνάω στις επτά το πρωί** (Ksipnáo stis eptá to proví). And a question like 'When do you wake up?' is **Πότε ξυπνάς;** (Póte ksipnás?). Remember, 'ξυπνάω' is a verb that takes the ending '-ω' for 'I' and '-εις' for 'you' (singular).\n\nNext, we have the very important verb 'to eat', which is **τρώω** (tróo). This is a common verb, and you'll use it a lot! Here are some examples: 'I eat breakfast at eight' is **Τρώω πρωινό στις οκτώ** (Tróo provinó stis októ). 'What do you usually eat for lunch?' is **Τι τρως συνήθως για μεσημεριανό;** (Ti tros sínithos ya mesimerianó?). And for a group, 'We all eat together in the evening' is **Τρώμε όλοι μαζί το βράδυ** (Tróme óli mazí to vrádi).\n\nThen, we have the verb 'to work', which is **δουλεύω** (dulévo). So, 'I work from Monday to Friday' is **Δουλεύω από Δευτέρα έως Παρασκευή** (Dulévo apó Deftéra éos Paraskeví). If you want to ask 'Where do you work?', it's **Πού δουλεύεις;** (Poú dulévis?). And for plural, 'We work many hours' becomes **Δουλεύουμε πολλές ώρες** (Dulévoome pollés óres).\n\nNow, let's see how we can combine these verbs to describe a sequence of actions in our day. For example, 'First I wake up, then I eat breakfast, and then I go to work' can be said as **Πρώτα ξυπνάω, μετά τρώω πρωινό και μετά πηγαίνω στη δουλειά** (Próta ksipnáo, metá tróo provinó ke metá pingéno sti duliyá). Another simple one is 'I wake up early and then I work': **Ξυπνάω νωρίς και μετά δουλεύω** (Ksipnáo norís ke metá dulévo).\n\nIt's important to practice these verbs in different contexts to feel comfortable using them. Try to describe your own daily routine using these words! Keep up the good work!"
+  "month": "Month 3",
+  "title": "Days, Months, and Seasons",
+  "reading_greek": "DAYS (Feminine)\n- Δευτέρα (Monday)\n- Τρίτη (Tuesday)\n- Τετάρτη (Wednesday)\n- Πέμπτη (Thursday)\n- Παρασκευή (Friday)\n- Σάββατο (Saturday - Neut)\n- Κυριακή (Sunday)\n\nSEASONS (Masculine)\n- Χειμώνας (Winter)\n- Άνοιξη (Spring - Fem)\n- Καλοκαίρι (Summer - Neut)\n- Φθινόπωρο (Autumn - Neut)\n\nMONTHS (Masculine)\n- Ιανουάριος, Φεβρουάριος... Αύγουστος.",
+  "reading_english": "VOCABULARY: CALENDAR\n\n1. ON MONDAY: Use Accusative.\n   - 'Tin Deftera' (On Monday).\n   - 'To Savvato' (On Saturday).\n\n2. IN SUMMER: Use Accusative.\n   - 'To Kalokairi' (In summer).\n\n3. THE GREETINGS:\n   - Kalo Mina (Good Month - 1st of month).\n   - Kalo Savvatokyriako (Good Weekend).",
+  "audio_script": "Let's plan our week. \n\nDays of the week are mostly Feminine.\nDeftera (2nd day), Triti (3rd day), Tetarti (4th), Pempti (5th).\nParaskevi (Preparation day).\nSavvato (Sabbath - Neuter).\nKyriaki (Lord's Day).\n\nTo say 'On Monday', we use the Accusative 'Tin'. \n'Tha se do tin Deftera' (I will see you on Monday).",
+  "quiz_questions": [
+    {
+      "question": "Translate 'Sunday'.",
+      "options": [
+        "Καλό Μήνα.",
+        "Την Δευτέρα.",
+        "Κυριακή.",
+        "Σάββατο."
+      ],
+      "correctIndex": 2,
+      "explanation": "Kyriaki."
+    },
+    {
+      "question": "Translate 'Saturday'.",
+      "options": [
+        "Καλοκαίρι.",
+        "Χειμώνας.",
+        "Σάββατο.",
+        "Κυριακή."
+      ],
+      "correctIndex": 2,
+      "explanation": "Savvato (Neuter)."
+    },
+    {
+      "question": "Translate 'On Monday'.",
+      "options": [
+        "Χειμώνας.",
+        "Κυριακή.",
+        "Την Δευτέρα.",
+        "Καλό Μήνα."
+      ],
+      "correctIndex": 2,
+      "explanation": "Accusative."
+    },
+    {
+      "question": "Translate 'Summer'.",
+      "options": [
+        "Χειμώνας.",
+        "Καλοκαίρι.",
+        "Αύγουστος.",
+        "Κυριακή."
+      ],
+      "correctIndex": 1,
+      "explanation": "Kalokairi."
+    },
+    {
+      "question": "Translate 'Winter'.",
+      "options": [
+        "Σάββατο.",
+        "Καλό Μήνα.",
+        "Κυριακή.",
+        "Χειμώνας."
+      ],
+      "correctIndex": 3,
+      "explanation": "Xeimonas."
+    },
+    {
+      "question": "Translate 'August'.",
+      "options": [
+        "Σάββατο.",
+        "Καλοκαίρι.",
+        "Την Δευτέρα.",
+        "Αύγουστος."
+      ],
+      "correctIndex": 3,
+      "explanation": "Avgoustos."
+    },
+    {
+      "question": "Translate 'Good Month'.",
+      "options": [
+        "Καλό Μήνα.",
+        "Αύγουστος.",
+        "Χειμώνας.",
+        "Κυριακή."
+      ],
+      "correctIndex": 0,
+      "explanation": "Kalo Mina."
+    }
+  ]
 }

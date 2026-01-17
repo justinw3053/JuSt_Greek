@@ -2,8 +2,98 @@
   "topicId": "7.2",
   "week": 7,
   "month": "Month 2",
-  "title": "\"Where is...?\" (Pou einai...?).",
-  "reading_greek": "1. Πού είναι ο Πέτρος; Ο Πέτρος είναι στο σχολείο. \n2. Πού είναι η Μαρία; Η Μαρία είναι στην Αθήνα. \n3. Πού είναι το βιβλίο; Το βιβλίο είναι στην τσάντα. \n4. Πού είναι το περίπτερο; Το περίπτερο είναι στον δρόμο. \n5. Πού είναι τα κλειδιά; Τα κλειδιά είναι στο τραπέζι. \n6. Πού είναι η Κατερίνα; Η Κατερίνα είναι στο σπίτι.",
-  "reading_english": "1. Where is Peter? Peter is at school. \n2. Where is Maria? Maria is in Athens. \n3. Where is the book? The book is in the bag. \n4. Where is the kiosk? The kiosk is on the street. \n5. Where are the keys? The keys are on the table. \n6. Where is Catherine? Catherine is at home.",
-  "audio_script": "Hello! As a strict Greek tutor, I expect you to remember what we've covered in earlier chapters to master today's lesson. To ask 'Where is...?' in Modern Greek, we use the word 'Πού' ... followed by the verb 'είναι', which we learned in Chapter 4. ... For example, 'Πού είναι ο Πέτρος;' ... \n\nNow, pay close attention to the answer. In Chapter 7, we study Prepositions. The most common one for location is 'σε', meaning 'in' or 'at'. ... However, you must apply the rule from Chapter 3.2.4: Nouns in prepositional phrases are ALWAYS in the Accusative case. ... \n\nLook at example one. 'Σχολείο' is a neuter noun. In the accusative, 'το' stays 'το', so we combine 'σε' and 'το' to get 'στο'. ... 'Ο Πέτρος είναι στο σχολείο.' ... \n\nIn example two, 'Αθήνα' is feminine. The article 'η' changes to 'την' in the accusative. 'Σε' plus 'την' becomes 'στην'. ... 'Η Μαρία είναι στην Αθήνα.' ... \n\nFinally, look at example four. 'Ο δρόμος' is masculine. As we learned in Table 3.1, masculine nouns lose their final 'ς' and the article becomes 'τον'. 'Σε' plus 'τον' becomes 'στον'. ... 'Το περίπτερο είναι στον δρόμο.' ... \n\nPractice these carefully. Remember: no prepositional phrase is correct unless your noun is in the Accusative!"
+  "title": "Question Words (Pou, Pote, Pos)",
+  "reading_greek": "THE BIG 5\n1. Πού; (Where?)\n2. Πότε; (When?)\n3. Πώς; (How?)\n4. Ποιος; (Who?)\n5. Τι; (What?)\n\nEXAMPLES\n- Πού είναι ο Πέτρος; (Where is Peter?)\n- Πότε έρχεσαι; (When are you coming?)\n- Πώς είσαι; (How are you?)\n- Ποιος είναι αυτός; (Who is he?)\n- Τι κάνεις; (What are you doing?)",
+  "reading_english": "GRAMMAR: QUESTIONS\n\n1. INTONATION: Remember, the '?' in Greek is ';'.\n   - Pou einai o Petros; \n\n2. ACCENTS: Question words ALWAYS have an accent mark.\n   - 'Pou' (Where) vs 'pou' (that/who - relative pronoun).\n   - 'Pos' (How) vs 'pos' (that).\n\n3. POIOS (Who): This changes gender!\n   - Poios (Masc) / Poia (Fem) / Poio (Neut).\n   - 'Poia einai auti?' (Who is she?)",
+  "audio_script": "The 5 W's (and 1 H).\n\n'Pou' is Where. 'Pou pas?' (Where are you going?).\n'Pote' is When. 'Pote pas?' (When are you going?).\n'Pos' is How. 'Pos pas?' (How are you going - by car/bus?).\n\n'Ti' is What. 'Ti kaneis?' (What are you doing?).\n\nAnd 'Poios' is Who. \nBut 'Poios' behaves like an adjective! \n- 'Poios (Masc) einai?'\n- 'Poia (Fem) einai?'\n- 'Poio (Neut) einai?' (e.g., Which child?).",
+  "quiz_questions": [
+    {
+      "question": "Translate 'When?'.",
+      "options": [
+        "Ποια είναι αυτή;",
+        "Πότε είναι το μάθημα;",
+        "Πότε;",
+        "Τι;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Accent on o."
+    },
+    {
+      "question": "Translate 'Who?'.",
+      "options": [
+        "Ποιος;",
+        "Πού είναι ο Πέτρος;",
+        "Ποια είναι αυτή;",
+        "Πότε είναι το μάθημα;"
+      ],
+      "correctIndex": 0,
+      "explanation": "Masc form."
+    },
+    {
+      "question": "Translate 'What?'.",
+      "options": [
+        "Τι;",
+        "Πότε;",
+        "Πότε είναι το μάθημα;",
+        "Ποια είναι αυτή;"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ti."
+    },
+    {
+      "question": "Translate 'How?'.",
+      "options": [
+        "Πότε;",
+        "Πώς;",
+        "Ποιος;",
+        "Τι κάνεις; / Πώς είσαι;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Accent on o."
+    },
+    {
+      "question": "Translate 'Where is Peter?'.",
+      "options": [
+        "Πότε;",
+        "Τι κάνεις; / Πώς είσαι;",
+        "Ποιος;",
+        "Πού είναι ο Πέτρος;"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pou."
+    },
+    {
+      "question": "Translate 'Who is she?'.",
+      "options": [
+        "Τι;",
+        "Ποια είναι αυτή;",
+        "Πού είναι ο Πέτρος;",
+        "Ποιος;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fem form: Poia."
+    },
+    {
+      "question": "Translate 'How are you?'.",
+      "options": [
+        "Ποιος;",
+        "Τι κάνεις; / Πώς είσαι;",
+        "Πότε είναι το μάθημα;",
+        "Ποια είναι αυτή;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Common phrases."
+    },
+    {
+      "question": "Translate 'When is the lesson?'.",
+      "options": [
+        "Πότε είναι το μάθημα;",
+        "Τι κάνεις; / Πώς είσαι;",
+        "Ποια είναι αυτή;",
+        "Ποιος;"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pote."
+    }
+  ]
 }

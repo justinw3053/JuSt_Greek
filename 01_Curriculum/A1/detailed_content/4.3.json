@@ -2,8 +2,98 @@
   "topicId": "4.3",
   "week": 4,
   "month": "Month 1",
-  "title": "\"There are\" (Yparxoun).",
-  "reading_greek": "1. Υπάρχει ένας δρόμος. \n2. Υπάρχει μία τυρόπιτα στο περίπτερο. \n3. Υπάρχει ένα βιβλίο στο τραπέζι. \n4. Υπάρχουν πολλοί δρόμοι στην Αθήνα. \n5. Υπάρχουν παιδιά στο σχολείο. \n6. Υπάρχουν πολλά πράγματα στο διαμέρισμα.",
-  "reading_english": "1. There is a street.\n2. There is a cheese pie at the kiosk.\n3. There is a book on the table.\n4. There are many streets in Athens.\n5. There are children at the school.\n6. There are many things in the apartment.",
-  "audio_script": "Hello. I am your tutor. Today we are discussing how to express existence using the verb 'υπάρχω'. In English, you say 'there is' or 'there are'. In Modern Greek, we use two specific forms of the verb 'υπάρχω' depending on the number of the subject. ... First, for singular items, we use 'υπάρχει'. Listen: 'υπάρχει'. Look at example one: 'Υπάρχει ένας δρόμος'. 'Δρόμος' is the subject, so it is in the Nominative case. Remember our grammar from Chapter 3? The subject always takes the Nominative. ... Now, for plural items, we change the ending. We use 'υπάρχουν'. Listen: 'υπάρχουν'. Look at example four: 'Υπάρχουν πολλοί δρόμοι'. Here, the ending '-ουν' tells us we have more than one street. ... It is a common mistake for beginners to use the Accusative here because they think of it as an object. Do not do that. In the sentence 'There is a book', the 'book' is what exists; it is the subject. Therefore, keep it in the Nominative. ... Pay attention to the endings we learned in Chapter 4.1.1 for Group A1 verbs. 'Υπάρχει' ends in epsilon-iota for the third person singular, and 'υπάρχουν' ends in omicron-upsilon-nu for the third person plural. Accuracy is the key to perfection. Practice these examples carefully."
+  "title": "'There is' / 'There are' (Υπάρχει)",
+  "reading_greek": "SINGULAR: Υπάρχει (Yparxei)\n1. Υπάρχει πρόβλημα; (Is there a problem?)\n2. Δεν υπάρχει χρόνος. (There is no time.)\n3. Υπάρχει ένα βιβλίο στο τραπέζι. (There is a book on the table.)\n\nPLURAL: Υπάρχουν (Yparxoun)\n4. Υπάρχουν πολλά προβλήματα. (There are many problems.)\n5. Υπάρχουν Έλληνες εδώ; (Are there Greeks here?)\n6. Δεν υπάρχουν χρήματα. (There is no money - lit. 'There are no moneys').\n\nQUESTION\n- Τι υπάρχει εκεί; (What is there?)",
+  "reading_english": "GRAMMAR: EXISTENCE (Page 51)\n\n1. THE VERB 'YPARXO': It means 'To Exist'. \n   - We use it for 'There is' / 'There are'.\n\n2. AGREEMENT: \n   - If the main noun is Singular, use 'Yparxei'.\n   - If the main noun is Plural, use 'Yparxoun'.\n\n3. NEGATION: Use 'Den'.\n   - 'Den yparxei' (There isn't).\n   - 'Den yparxoun' (There aren't).",
+  "audio_script": "When you want to say something exists, use 'Yparxei'. \n\nIt comes from 'Ypo' (Under) + 'Arxi' (Beginning). Deep stuff. \n\nBut you just need to know two forms:\n1. 'Yparxei' (There is). Use this for one thing. 'Yparxei ena spiti'.\n2. 'Yparxoun' (There are). Use this for many things. 'Yparxoun polla spitia'.\n\nIn questions, just use the voice tone: 'Yparxei provlima?' (Is there a problem?). \nAnd the negative: 'Den yparxei' (There isn't).",
+  "quiz_questions": [
+    {
+      "question": "Translate 'There are problems'.",
+      "options": [
+        "Υπάρχει χρόνος;",
+        "Υπάρχουν",
+        "Υπάρχουν προβλήματα.",
+        "To Exist"
+      ],
+      "correctIndex": 2,
+      "explanation": "Plural -> Yparxoun."
+    },
+    {
+      "question": "How do you ask 'Is there time?' in Greek?",
+      "options": [
+        "Υπάρχει (Singular)",
+        "To Exist",
+        "Υπάρχουν",
+        "Υπάρχει χρόνος;"
+      ],
+      "correctIndex": 3,
+      "explanation": "Intonation question."
+    },
+    {
+      "question": "Translate 'There is no water'.",
+      "options": [
+        "Δεν υπάρχει νερό.",
+        "Δεν υπάρχει καφές.",
+        "Υπάρχει χρόνος;",
+        "Υπάρχει (Singular)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Negative 'Den' + Singular 'Yparxei'."
+    },
+    {
+      "question": "Translate 'Are there Greeks here?'.",
+      "options": [
+        "Υπάρχουν Έλληνες εδώ;",
+        "Δεν υπάρχει καφές.",
+        "Υπάρχουν",
+        "Υπάρχουν προβλήματα."
+      ],
+      "correctIndex": 0,
+      "explanation": "Plural 'Greeks' -> Yparxoun."
+    },
+    {
+      "question": "What does 'Υπάρχω' literally mean?",
+      "options": [
+        "Δεν υπάρχει καφές.",
+        "To Exist",
+        "Υπάρχει (Singular)",
+        "Υπάρχουν Έλληνες εδώ;"
+      ],
+      "correctIndex": 1,
+      "explanation": "It is the verb of existence."
+    },
+    {
+      "question": "Translate 'There isn't coffee'.",
+      "options": [
+        "Υπάρχουν προβλήματα.",
+        "Υπάρχουν",
+        "Δεν υπάρχει καφές.",
+        "To Exist"
+      ],
+      "correctIndex": 2,
+      "explanation": "Den yparxei kafes."
+    },
+    {
+      "question": "If the subject is Plural, which form do you use?",
+      "options": [
+        "Υπάρχουν",
+        "Υπάρχουν Έλληνες εδώ;",
+        "Δεν υπάρχει νερό.",
+        "Υπάρχει (Singular)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Yparxoun."
+    },
+    {
+      "question": "If the subject is Uncountable (like Water), which form do we usually use?",
+      "options": [
+        "Δεν υπάρχει καφές.",
+        "Υπάρχει (Singular)",
+        "Υπάρχουν",
+        "Υπάρχουν προβλήματα."
+      ],
+      "correctIndex": 1,
+      "explanation": "Water is grammatically singular."
+    }
+  ]
 }

@@ -1,9 +1,88 @@
 {
-  "topicId": "3.1",
-  "week": 3,
-  "month": "Month 1",
-  "title": "Subject vs Object (O vs Ton)",
-  "reading_greek": "1. Ο Γιάννης μένει με τον Πέτρο.\n2. Ο Πέτρος αγαπάει την Μαρία.\n3. Η Μαρία αγαπάει τον Πέτρο.\n4. Τον Πέτρο αγαπάει η Μαρία.\n5. Ο δάσκαλος / τον δάσκαλο.\n6. Ο δρόμος / τον δρόμο.\n7. Ο άντρας / τον άντρα.\n8. Ο χάρτης / τον χάρτη.",
-  "reading_english": "1. John lives with Peter.\n2. Peter loves Mary.\n3. Mary loves Peter.\n4. Mary loves Peter (Object-first word order).\n5. The male teacher (Subject) / the male teacher (Object).\n6. The street (Subject) / the street (Object).\n7. The man (Subject) / the man (Object).\n8. The map (Subject) / the map (Object).",
-  "audio_script": "Welcome. Today we are looking at Chapter 3. You must understand the difference between the Subject and the Object... it is the foundation of Greek syntax. \n\nLook at your text. We use the Nominative case for the Subject and the Accusative case for the Object. For masculine nouns, this change is very visible. \n\nIn sentence one: 'O Yannis menei me ton Petro.' ... Yannis is the subject, so we use 'O'. Petro is the object of the preposition 'me', so we use 'ton'. \n\nNow, pay close attention to the form. When a masculine noun moves from Subject to Object, two things happen: One... the article 'O' becomes 'ton'. Two... the final 'sigma' is removed from the ending. So, 'O Petros' becomes 'ton Petro'. 'O dromos' becomes 'ton dromo'. \n\nGreek has a special feature called 'Free Word Order.' Look at sentences three and four. 'H Maria agapaei ton Petro' means Mary loves Peter. But even if we say 'Ton Petro agapaei h Maria', it STILL means Mary loves Peter. \n\nWhy? Because 'H Maria' is in the Nominative... she is the subject no matter where she stands. 'Ton Petro' is in the Accusative... he is the object no matter where he stands. In English, position defines the role. In Greek, the case ending defines the role. \n\nDo not forget: for feminine nouns like 'H Maria', the ending stays the same, but the article changes from 'H' to 'tin'. For Neuter nouns like 'to vivlio', nothing changes at all. \n\nStudy Table 3.1 and 3.2 carefully. In Greek, you cannot simply guess... you must know your cases."
+  "topicId": "10.1",
+  "week": 10,
+  "month": "Month 3",
+  "title": "Subject vs Object: The Concept",
+  "reading_greek": "THE ACTOR vs THE TARGET\n1. Ο Πέτρος βλέπει τον Νίκο. (Peter sees Nick)\n2. Τον Νίκο βλέπει ο Πέτρος. (Peter sees Nick - Word order doesn't matter!)\n3. Ο Νίκος βλέπει τον Πέτρο. (Nick sees Peter)\n\nTHE RULE\n- Subject acts (Nominative).\n- Object receives action (Accusative).\n\nKEY VERBS\n- Βλέπω (See)\n- Ακούω (Hear)\n- Αγαπάω (Love)\n- Ξέρω (Know)",
+  "reading_english": "GRAMMAR: CASE ROLES\n\n1. WHO DOES WHAT?\n   - In English, we say 'Dog bites Man'. If we swap it 'Man bites Dog', the meaning changes.\n   - In Greek, cases control meaning. 'Tonas skylos dagkonei ton anthropo'.\n\n2. MASCULINE IS KING OF CHANGE:\n   - Masculine nouns change the most. \n   - Nominative: -OS. (O Petros)\n   - Accusative: -O. (Ton Petro)\n   - Drop the 'S'!",
+  "audio_script": "This is the most important syntax rule in Greek. \n\nWho is doing the action? (Subject - Nominative).\nWho is receiving the action? (Object - Accusative).\n\nFor Masculine nouns, you MUST hear the difference.\nSubject: O Petros (Ends in S).\nObject: Ton Petro (No S).\n\n'O Petros vlepei ton Niko'. (Peter sees Nick).\n'O Nikos vlepei ton Petro'. (Nick sees Peter).\n\nListen for the 'S'. If you hear the 'S', he is the doer.",
+  "quiz_questions": [
+    {
+      "question": "Who is the Object?",
+      "options": [
+        "-o (usually).",
+        "The one receiving the action.",
+        "-os (usually).",
+        "Ο Πέτρος βλέπει τον Νίκο."
+      ],
+      "correctIndex": 1,
+      "explanation": "Accusative."
+    },
+    {
+      "question": "Translate 'Peter sees Nick'.",
+      "options": [
+        "Ο Πέτρος βλέπει τον Νίκο.",
+        "Ο Νίκος βλέπει τον Πέτρο.",
+        "-o (usually).",
+        "-os (usually)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Petros (Subj), Niko (Obj)."
+    },
+    {
+      "question": "Translate 'Nick sees Peter'.",
+      "options": [
+        "No, Cases determine meaning.",
+        "The one receiving the action.",
+        "Ο Νίκος βλέπει τον Πέτρο.",
+        "-o (usually)."
+      ],
+      "correctIndex": 2,
+      "explanation": "Nikos (Subj), Petro (Obj)."
+    },
+    {
+      "question": "Does word order change the meaning in Greek?",
+      "options": [
+        "The one receiving the action.",
+        "Βλέπω τον δρόμο.",
+        "-o (usually).",
+        "No, Cases determine meaning."
+      ],
+      "correctIndex": 3,
+      "explanation": "'Ton Petro vlepei o Nikos' still means Nick sees Peter."
+    },
+    {
+      "question": "Nominative Masculine ending?",
+      "options": [
+        "-os (usually).",
+        "Ο Νίκος βλέπει τον Πέτρο.",
+        "-o (usually).",
+        "The one receiving the action."
+      ],
+      "correctIndex": 0,
+      "explanation": "With Sigma."
+    },
+    {
+      "question": "Accusative Masculine ending?",
+      "options": [
+        "Ο Νίκος βλέπει τον Πέτρο.",
+        "Βλέπω τον δρόμο.",
+        "-o (usually).",
+        "The one receiving the action."
+      ],
+      "correctIndex": 2,
+      "explanation": "Drop the Sigma."
+    },
+    {
+      "question": "Translate 'I see the road'.",
+      "options": [
+        "No, Cases determine meaning.",
+        "Ο Πέτρος βλέπει τον Νίκο.",
+        "-os (usually).",
+        "Βλέπω τον δρόμο."
+      ],
+      "correctIndex": 3,
+      "explanation": "Dromos -> Dromo."
+    }
+  ]
 }

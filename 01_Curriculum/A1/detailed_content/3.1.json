@@ -1,10 +1,110 @@
-
 {
   "topicId": "3.1",
   "week": 3,
   "month": "Month 1",
-  "title": "The Verb \"To Have\" (Έχω).",
-  "reading_greek": "1. Εγώ έχω ένα βιβλίο.\n2. Εσύ έχεις ένα ποτήρι νερό;\n3. Ο Πέτρος έχει χρόνο.\n4. Η Μαρία έχει ένα αυτοκίνητο.\n5. Εμείς έχουμε πολλά πράγματα.\n6. Εσείς έχετε μια ερώτηση;\n7. Τα παιδιά έχουν πείνα.",
-  "reading_english": "1. I have a book.\n2. Do you have a glass of water?\n3. Peter has time.\n4. Maria has a car.\n5. We have many things.\n6. Do you have a question?\n7. The children are hungry. (Literally: The children have hunger.)",
-  "audio_script": "Welcome back, students. Today we tackle another fundamental verb in Modern Greek: Έχω, meaning 'to have'.\n\nRecall our discussions from Chapter 2, Unit 2.2, regarding the grammar of verbs. Greek verbs, much like nouns, are inflected words. They carry a wealth of grammatical information—person, number, tense, aspect, mood, and voice—primarily within their endings. Έχω is no exception. Its mastery is foundational, not optional.\n\nLet us examine its conjugation in the present tense. Pay close attention to the endings:\n\nFor the first person singular, 'I have', we have Εγώ έχω. The ending is -ω.\nFor the second person singular, 'you have', Εσύ έχεις. The ending is -εις.\nFor the third person singular, 'he/she/it has', Αυτός/Αυτή/Αυτό έχει. The ending is -ει.\n\nNow, for the plural:\n\nFor the first person plural, 'we have', Εμείς έχουμε. The ending is -ουμε.\nFor the second person plural, 'you (plural) have', Εσείς έχετε. The ending is -ετε.\nAnd finally, for the third person plural, 'they have', Αυτοί/Αυτές/Αυτά έχουν. The ending is -ουν.\n\nAs we established in Chapter 2, Unit 2.2.1, the subject pronoun is *optional* in Modern Greek, as the verb's ending clearly indicates the person and number. So, while you *can* say 'Εγώ έχω', 'έχω' alone is sufficient and often more natural.\n\nNow, let us turn to examples of its use. Observe these carefully:\n\n1. Έχω ένα βιβλίο. 'I have a book.' Here, 'βιβλίο' is in the accusative case, as it is the direct object. You recall our work on the accusative from Chapter 3, correct?\n\n2. Έχεις ένα ποτήρι νερό; 'Do you have a glass of water?' Again, 'ποτήρι' and 'νερό' are in the accusative, functioning as direct objects and content apposition, respectively. This demonstrates precise application of your knowledge from Chapter 3, Units 3.2.1 and 3.2.3.\n\n3. Ο Πέτρος έχει χρόνο. 'Peter has time.' 'Χρόνο' (time) in the accusative. This shows possession of an abstract noun.\n\n4. Η Μαρία έχει ένα αυτοκίνητο. 'Maria has a car.' Another clear example of possession, with 'αυτοκίνητο' in the accusative.\n\n5. Έχουμε πολλά πράγματα. 'We have many things.' Here, 'πράγματα' is a neuter plural noun, also in the accusative, as discussed in Chapter 3, Unit 3.3.\n\n6. Έχετε μια ερώτηση; 'Do you have a question?' 'Ερώτηση' is a feminine noun in the accusative. This is a common phrase for asking if someone has an inquiry.\n\n7. Τα παιδιά έχουν πείνα. 'The children are hungry.' Pay particular attention to this and similar expressions. In Modern Greek, we often use 'Έχω' with nouns to express physical states or feelings, where English uses 'to be'. For example, 'I am hungry' translates literally as 'I *have* hunger'. You will encounter 'Έχω δίψα' for 'I am thirsty', 'Έχω κρύο' for 'I am cold', and so forth. Do not attempt to force English structures onto Greek in such cases. This is a point where non-natives frequently make mistakes.\n\nFinally, concerning stress: The verb Έχω follows the general rules we established in Chapter 1.2. It bears a single stress mark on the vowel of its stem, which remains consistent across its present tense conjugations. This is not a point for confusion.\n\nYour task is to memorize these forms and understand their application. Practice the examples provided until the use of Έχω becomes instinctive. We will revisit verb conjugations in Chapter 4, but the basics must be solid now. Any questions?"
+  "title": "The Verb 'To Have' (Έχω)",
+  "reading_greek": "CONJUGATION (Present)\nΕγώ έχω (I have)\nΕσύ έχεις (You have)\nΑυτός έχει (He has)\nΕμείς έχουμε (We have)\nΕσείς έχετε (You have)\nΑυτοί έχουν (They have)\n\nEXAMPLES (Note the Accusative!)\n1. Έχω ένα βιβλίο (I have a book).\n2. Έχεις ένα αυτοκίνητο;\n3. Ο Πέτρος έχει χρόνο (Peter has time).\n4. Η Μαρία έχει δουλειά.\n5. Έχουμε φίλους (We have friends).\n6. Έχετε ερωτήσεις;\n7. Τα παιδιά έχουν πείνα (The children are hungry - literally 'have hunger').",
+  "reading_english": "GRAMMAR: THE VERB 'TO HAVE'\n\n1. OBLIGATORY ACCUSATIVE: When you 'have' something, that something is the OBJECT.\n   - You cannot say 'Exo O Petros' (I have The Peter - Nominative).\n   - You must say 'Exo TON Petro' (I have The Peter - Accusative).\n\n2. PHYSICAL STATES: Greek uses 'Have' for hunger/thirst/cold.\n   - 'Exo peina' ( I have hunger = I am hungry).\n   - 'Exo dipsa' (I have thirst = I am thirsty).",
+  "audio_script": "Chapter 3! The Verb 'Exo' (To Have). \n\nThis is the second most important verb after 'Eimai'. \nMemorize the endings: -o, -eis, -ei, -oume, -ete, -oun. \n\nCrucial Rule: The object of 'Exo' is ALWAYS in the Accusative Case. \nYou don't 'have' a subject. You 'have' an object. \n\nAlso, a fun tip: In English you 'are' hungry. In Greek, you 'have' hunger (Exo peina). \nDon't say 'Eimai peina' (I am hunger) - that means you are the abstract concept of starvation!",
+  "quiz_questions": [
+    {
+      "question": "Translate 'You have' (singular) to Greek.",
+      "options": [
+        "Έχουν (Exoun)",
+        "Έχεις χρόνο;",
+        "Τα παιδιά έχουν πείνα.",
+        "Έχεις (Exeis)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Second person singular."
+    },
+    {
+      "question": "Translate 'He/She/It has' to Greek.",
+      "options": [
+        "Accusative",
+        "Έχουμε (Exoume)",
+        "Έχει (Exei)",
+        "Έχω ένα βιβλίο."
+      ],
+      "correctIndex": 2,
+      "explanation": "Third person singular."
+    },
+    {
+      "question": "Translate 'We have' to Greek.",
+      "options": [
+        "Έχεις (Exeis)",
+        "Έχουμε (Exoume)",
+        "Έχει (Exei)",
+        "Τα παιδιά έχουν πείνα."
+      ],
+      "correctIndex": 1,
+      "explanation": "First person plural."
+    },
+    {
+      "question": "Translate 'They have' to Greek.",
+      "options": [
+        "Έχεις χρόνο;",
+        "Έχουν (Exoun)",
+        "Έχω ένα βιβλίο.",
+        "Έχουμε (Exoume)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Third person plural."
+    },
+    {
+      "question": "Translate: 'I have a book'.",
+      "options": [
+        "Έχεις (Exeis)",
+        "Έχουν (Exoun)",
+        "Έχεις χρόνο;",
+        "Έχω ένα βιβλίο."
+      ],
+      "correctIndex": 3,
+      "explanation": "'Book' is the object (Accusative case)."
+    },
+    {
+      "question": "How do you say 'I am hungry' in Greek?",
+      "options": [
+        "Έχω πείνα (Literally 'I have hunger').",
+        "Έχεις χρόνο;",
+        "Τα παιδιά έχουν πείνα.",
+        "Έχει (Exei)"
+      ],
+      "correctIndex": 0,
+      "explanation": "We use 'Have' for physical states like hunger/thirst."
+    },
+    {
+      "question": "Grammatically, the object of 'Exo' (to have) is in which case?",
+      "options": [
+        "Έχουμε (Exoume)",
+        "Accusative",
+        "Έχεις χρόνο;",
+        "Έχω πείνα (Literally 'I have hunger')."
+      ],
+      "correctIndex": 1,
+      "explanation": "Because it is the direct object of the verb."
+    },
+    {
+      "question": "Translate: 'Do you have time?'",
+      "options": [
+        "Έχεις (Exeis)",
+        "Έχεις χρόνο;",
+        "Έχουν (Exoun)",
+        "Έχουμε (Exoume)"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Xrono' is in Accusative."
+    },
+    {
+      "question": "Translate: 'The children represent hunger' (Make no sense? No, 'The children are hungry').",
+      "options": [
+        "Τα παιδιά έχουν πείνα.",
+        "Accusative",
+        "Έχω ένα βιβλίο.",
+        "Έχει (Exei)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Literally 'The children have hunger'."
+    }
+  ]
 }

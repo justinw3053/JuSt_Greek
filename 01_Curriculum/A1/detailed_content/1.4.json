@@ -1,0 +1,110 @@
+{
+  "topicId": "1.4",
+  "week": 1,
+  "month": "Month 1",
+  "title": "Special Sounds: Digraphs & Vowels",
+  "reading_greek": "DIGRAPHS (Two letters = One sound)\nΜΠ (B): Μπάλα (Ball)\nΝΤ (D): Ντομάτα (Tomato)\nΓΚ (G): Γκολ (Goal)\nΤΣ (Ts): Τσάντα (Bag)\nΤΖ (Dz): Τζάκι (Fireplace)\n\nVOWEL COMBINATIONS\nΟΥ (U): Ουρανός (Sky)\nΕΙ (i): Είμαι (I am)\nΟΙ (i): Οικογένεια (Family)\nΑΙ (e): Ναι (Yes)\n\nSPECIAL: AY / EY\nΑΥ (Av/Af): Αυτό (This)\nΕΥ (Ev/Ef): Ευρώπη (Europe)",
+  "reading_english": "RULES OF SOUND (Page 6)\n\n1. THE HARD SOUNDS: Greek has no single letter for B, D, G (hard). \n   - We combine letters to make them.\n   - M + Pi = B (Mpala -> Bala)\n   - N + Tau = D (Ntomata -> Domata)\n   - Gamma + Kappa = G (Gkol -> Gol)\n\n2. THE 'I' SOUND: Greek is famous for having many ways to write 'i'.\n   - Iota (ι)\n   - Eta (η)\n   - Upsilon (υ)\n   - Epsilon-Iota (ει)\n   - Omicron-Iota (οι)\n   All sound exactly the same: 'ee'.\n\n3. THE 'U' SOUND: To make the sound 'oo' (moon), you MUST write 'ΟΥ'.",
+  "audio_script": "This is a crucial lesson. Digraphs! \n\nIn English, 'Ph' makes an 'F' sound. In Greek, we do this a lot.\n\nKey Pairs:\n- Mu + Pi (Μπ) sounds like 'B'. 'Mpala' is pronounced 'Bala'.\n- Nu + Tau (Ντ) sounds like 'D'. 'Ntomata' is pronounced 'Domata'.\n\nAlso, Vowels:\n- 'Ou' (Omicron Upsilon) is the ONLY way to write the sound 'oo'.\n- 'Ai' (Alpha Iota) sounds like 'E' (as in 'Met'). 'Nai' (Yes) rhymes with 'Day' shortened.\n\nMastering these 4-5 combinations unlocks 90% of Greek reading.",
+  "quiz_questions": [
+    {
+      "question": "How do you pronounce 'ΝΤ' at the start of a word?",
+      "options": [
+        "D (as in Dog)",
+        "e (as in Met)",
+        "i (as in Machine)",
+        "ΑΙ (e)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nu + Tau creates a 'D' sound."
+    },
+    {
+      "question": "How do you pronounce 'ΟΥ'?",
+      "options": [
+        "oo (as in Moon)",
+        "D (as in Dog)",
+        "i (as in Machine)",
+        "e (as in Met)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Omicron + Upsilon together make 'oo'."
+    },
+    {
+      "question": "How do you pronounce 'ΑΙ'?",
+      "options": [
+        "oo (as in Moon)",
+        "Yes",
+        "e (as in Met)",
+        "ΑΙ (e)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Alpha + Iota together make a short 'e' sound."
+    },
+    {
+      "question": "How do you pronounce 'ΕΙ'?",
+      "options": [
+        "Ball",
+        "D (as in Dog)",
+        "i (as in Machine)",
+        "Tomato"
+      ],
+      "correctIndex": 2,
+      "explanation": "Epsilon + Iota make an 'ee' sound."
+    },
+    {
+      "question": "How do you pronounce 'ΟΙ'?",
+      "options": [
+        "Tomato",
+        "ΑΙ (e)",
+        "D (as in Dog)",
+        "i (as in Machine)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Omicron + Iota make an 'ee' sound."
+    },
+    {
+      "question": "Translate 'Ναι'.",
+      "options": [
+        "Yes",
+        "D (as in Dog)",
+        "e (as in Met)",
+        "Tomato"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pronounced 'Ne'."
+    },
+    {
+      "question": "Translate 'Μπάλα'.",
+      "options": [
+        "Yes",
+        "i (as in Machine)",
+        "Ball",
+        "ΑΙ (e)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pronounced 'Bala'."
+    },
+    {
+      "question": "Translate 'Ντομάτα'.",
+      "options": [
+        "i (as in Machine)",
+        "e (as in Met)",
+        "D (as in Dog)",
+        "Tomato"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pronounced 'Domata'."
+    },
+    {
+      "question": "The sound 'i' (ee) can be written in many ways. Which of these is NOT an 'i' sound?",
+      "options": [
+        "D (as in Dog)",
+        "ΑΙ (e)",
+        "i (as in Machine)",
+        "oo (as in Moon)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Eta, Iota, Upsilon, EI, OI are all 'i' sounds."
+    }
+  ]
+}

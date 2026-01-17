@@ -2,8 +2,87 @@
   "topicId": "5.2",
   "week": 5,
   "month": "Month 1",
-  "title": "Neuter Plurals (-o/-i -> -a).",
-  "reading_greek": "1. το βιβλίο -> τα βιβλία\n2. το καρότο -> τα καρότα\n3. το παιδί -> τα παιδιά\n4. το σπίτι -> τα σπίτια\n5. το ποτήρι -> τα ποτήρια\n6. το λεμόνι -> τα λεμόνια\n7. το γκαράζ -> τα γκαράζ",
-  "reading_english": "1. the book -> the books\n2. the carrot -> the carrots\n3. the child -> the children\n4. the house -> the houses\n5. the glass -> the glasses\n6. the lemon -> the lemons\n7. the garage -> the garages",
-  "audio_script": "Hello! Today we are looking at Neuter Plurals. As we saw in our grammar notes, Neuter nouns are quite friendly because they often undergo the fewest changes. Let's look at the two main patterns for nouns ending in 'o' and 'i' found in Chapter 3. ... First, the article always changes from 'to' to 'ta'. ... For nouns ending in 'o', like 'to vivlío', we simply replace the 'o' with an 'a' to get 'ta vivlía'. This works for 'to karóto' too, which becomes 'ta karóta'. ... Now, for nouns ending in 'i', it's slightly different. The 'i' stays, but we add an 'a' at the end. For example, 'to paidí' becomes 'ta paidiá'. Notice how the stress stays on the final 'a'. ... Similarly, 'to spíti' becomes 'ta spítia'. One interesting thing from our textbook is that in words like 'paidiá', the 'i' sound transforms into a consonant-like 'y' sound. ... Finally, remember our note on loanwords like 'to garáz'. These stay exactly the same in the plural, only the article changes: 'ta garáz'. ... Keep practicing these forms, as they are essential for describing the things around you!"
+  "title": "Neuter Plurals (-o -> -a)",
+  "reading_greek": "GROUP 1: -O NOUNS (The most common)\nΤο βιβλίο -> Τα βιβλία\nΤο νερό -> Τα νερά\nΤο μήλο -> Τα μήλα (Apples)\n\nGROUP 2: -I NOUNS (The 'iota' nouns)\nΤο παιδί -> Τα παιδιά (Children)\nΤο σπίτι -> Τα σπίτια (Houses)\nΤο λουλούδι -> Τα λουλούδια (Flowers)\n\nGROUP 3: -MA NOUNS (The 'expansion' nouns)\nΤο όνομα -> Τα ονόματα (Names)\nΤο πρόβλημα -> Τα προβλήματα (Problems)\nΤο μάθημα -> Τα μαθήματα (Lessons)",
+  "reading_english": "GRAMMAR: NEUTER PLURALS (Page 45)\n\n1. THE ARTICLE: Always 'Ta'. \n   - Singular: To. Plural: Ta. \n   - Easy!\n\n2. GROUP 1 (-o -> -a): \n   - Just change the o to a. (Vivlio -> Vivlia).\n\n3. GROUP 2 (-i -> -ia): \n   - Add an alpha. (Paidi -> Paidia).\n\n4. GROUP 3 (-ma -> -mata):\n   - These words get longer! They add a syllable.\n   - Onoma -> Onomata.\n   - This is very common for Greek concepts (Provlima, Mathima, Systima).",
+  "audio_script": "Neuter nouns are special. \n\nFirst, the Article is simple: 'To' becomes 'Ta'. \nAnd importantly: Neuter Nouns are IDENTICAL in Subject and Object. \n'Ta vivlia einai edo' (subject). 'Exo ta vivlia' (object). No change!\n\nThe Noun Endings have 3 distinct groups:\n1. Words in -o become -a. (Vuvlio -> Vivlia).\n2. Words in -i become -ia. (Spiti -> Spitia). Don't forget the 'i' sound!\n3. Words in -ma grow longer. They become -mata. \n   - 'To Onoma' (Name) -> 'Ta Onomata'. \n   - 'To Mathima' (Lesson) -> 'Ta Mathimata'.",
+  "quiz_questions": [
+    {
+      "question": "What is the plural of 'Το βιβλίο'?",
+      "options": [
+        "Both!",
+        "Τα βιβλία (-a)",
+        "Θέλω τα βιβλία.",
+        "Τα προβλήματα."
+      ],
+      "correctIndex": 1,
+      "explanation": "-o becomes -a."
+    },
+    {
+      "question": "What is the plural of 'Το παιδί'?",
+      "options": [
+        "Τα παιδιά (-ia)",
+        "Τα βιβλία (-a)",
+        "Both!",
+        "Τα σπίτια."
+      ],
+      "correctIndex": 0,
+      "explanation": "-i becomes -ia."
+    },
+    {
+      "question": "What is the plural of 'Το μάθημα'?",
+      "options": [
+        "Τα μαθήματα (-mata)",
+        "Θέλω τα βιβλία.",
+        "Τα σπίτια.",
+        "Both!"
+      ],
+      "correctIndex": 0,
+      "explanation": "-ma becomes -mata."
+    },
+    {
+      "question": "Translate 'The problems'.",
+      "options": [
+        "Τα παιδιά (-ia)",
+        "Both!",
+        "Τα προβλήματα.",
+        "Τα μαθήματα (-mata)"
+      ],
+      "correctIndex": 2,
+      "explanation": "-ma noun expansion."
+    },
+    {
+      "question": "Translate 'The houses'.",
+      "options": [
+        "Τα σπίτια.",
+        "Τα βιβλία (-a)",
+        "Τα μαθήματα (-mata)",
+        "Both!"
+      ],
+      "correctIndex": 0,
+      "explanation": "-i noun expansion."
+    },
+    {
+      "question": "Translate 'I want the books'.",
+      "options": [
+        "Τα παιδιά (-ia)",
+        "Τα προβλήματα.",
+        "Τα μαθήματα (-mata)",
+        "Θέλω τα βιβλία."
+      ],
+      "correctIndex": 3,
+      "explanation": "Object matches Subject form."
+    },
+    {
+      "question": "Is 'Ta' used for Subject or Object?",
+      "options": [
+        "Τα βιβλία (-a)",
+        "Τα προβλήματα.",
+        "Θέλω τα βιβλία.",
+        "Both!"
+      ],
+      "correctIndex": 3,
+      "explanation": "Neuter nouns never change between Subject/Object."
+    }
+  ]
 }

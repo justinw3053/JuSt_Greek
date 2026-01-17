@@ -1,7 +1,6 @@
 "use client";
 
 import { generateClient } from "aws-amplify/data";
-import { getUrl } from 'aws-amplify/storage';
 import type { Schema } from "@/amplify/data/resource";
 import Link from 'next/link';
 import { useEffect, useState } from "react";
@@ -9,6 +8,14 @@ import { useParams } from "next/navigation";
 import ChatTutor from "@/components/ChatTutor";
 import QuizModal from "@/components/QuizModal";
 import { getCurrentUser } from 'aws-amplify/auth';
+import {
+    BookOpenIcon,
+    SpeakerWaveIcon,
+    AcademicCapIcon,
+    CheckCircleIcon,
+    FireIcon,
+    ChatBubbleLeftRightIcon
+} from "@heroicons/react/24/solid";
 
 const client = generateClient<Schema>();
 
@@ -18,11 +25,20 @@ export default function LessonPage() {
     const targetId = idStr ? idStr.replace('_', '.') : "";
 
     const [lesson, setLesson] = useState<Schema["Syllabus"]["type"] | undefined>(undefined);
-    const [audioUrl, setAudioUrl] = useState<string>("");
     const [userId, setUserId] = useState<string>("");
     const [isCompleted, setIsCompleted] = useState(false);
     const [isChatOpen, setIsChatOpen] = useState(false);
     const [isQuizOpen, setIsQuizOpen] = useState(false);
+
+    // TTS Helper
+    const speakGreek = (text: string) => {
+        if (!text) return;
+        window.speechSynthesis.cancel(); // Stop previous
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'el-GR';
+        utterance.rate = 0.9; // Slightly slower for clarity
+        window.speechSynthesis.speak(utterance);
+    };
 
     useEffect(() => {
         getCurrentUser().then(u => setUserId(u.userId)).catch(() => { });
@@ -43,7 +59,6 @@ export default function LessonPage() {
             const now = new Date().toISOString();
 
             if (progressList.length === 0) {
-                // First time user
                 await client.models.UserProgress.create({
                     userId: userId,
                     completedTopics: [lesson.topicId],
@@ -56,7 +71,6 @@ export default function LessonPage() {
                 const cleanTopics = (prog.completedTopics || []).filter(t => t !== null) as string[];
 
                 if (!cleanTopics.includes(lesson.topicId)) {
-                    // Award XP and Streak
                     const lastDate = prog.lastActivity ? new Date(prog.lastActivity) : new Date(0);
                     const today = new Date();
                     const isSameDay = lastDate.toDateString() === today.toDateString();
@@ -88,16 +102,6 @@ export default function LessonPage() {
                 const currentLesson = items[0];
                 setLesson(currentLesson);
 
-                try {
-                    const link = await getUrl({
-                        path: `audio/topic_${idStr}.mp3`,
-                    });
-                    setAudioUrl(link.url.toString());
-                } catch (e) {
-                    console.error("Audio fetch error", e);
-                }
-
-                // Check if completed
                 if (userId) {
                     const { data: prog } = await client.models.UserProgress.list({
                         filter: { userId: { eq: userId } }
@@ -112,118 +116,155 @@ export default function LessonPage() {
         fetchData();
     }, [targetId, idStr, userId]);
 
-    if (!lesson) return <div className="p-8 text-center mt-20">Loading Lesson...</div>;
+    if (!lesson) return <div className="p-8 text-center mt-20 text-gray-500 animate-pulse">Loading Lesson Content...</div>;
+
+    // Parse Content
+    let content = { reading_greek: "", reading_english: "", audio_script: "" };
+    try {
+        if (lesson.content) {
+            const parsed = JSON.parse(lesson.content);
+            content = { ...content, ...parsed };
+        }
+    } catch (e) {
+        // Fallback for older plaintext content
+        content.audio_script = lesson.content || "";
+    }
 
     return (
-        <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white flex flex-col">
-            <header className="p-4 border-b border-gray-100 dark:border-gray-800 flex items-center gap-4">
-                <Link href="/" className="text-2xl">←</Link>
-                <div>
-                    <span className="text-xs font-mono text-blue-500 uppercase">Chapter {lesson.chapter} • Topic {lesson.topicId}</span>
-                    <h1 className="text-xl font-bold leading-tight">{lesson.title}</h1>
+        <div className="min-h-screen bg-gray-50 dark:bg-black text-black dark:text-white flex flex-col font-sans">
+            {/* Header */}
+            <header className="sticky top-0 z-10 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 p-4 flex items-center gap-4">
+                <Link href="/" className="p-2 hover:bg-gray-100 dark:hover:bg-gray-900 rounded-full transition-colors">
+                    ← Back
+                </Link>
+                <div className="flex-1">
+                    <span className="text-xs font-bold text-blue-500 uppercase tracking-widest">
+                        Chapter {lesson.chapter} • Topic {lesson.topicId}
+                    </span>
+                    <h1 className="text-xl font-extrabold tracking-tight">{lesson.title}</h1>
                 </div>
+                <button
+                    onClick={() => setIsChatOpen(true)}
+                    className="p-2 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full hover:scale-105 transition-transform"
+                >
+                    <ChatBubbleLeftRightIcon className="w-6 h-6" />
+                </button>
             </header>
 
-            <main className="flex-1 p-6 flex flex-col items-center justify-center gap-8">
+            <main className="flex-1 max-w-3xl mx-auto w-full p-4 md:p-8 space-y-8 pb-32">
 
-                <div className="w-full h-32 bg-blue-50 dark:bg-gray-900 rounded-xl flex items-center justify-center border border-blue-100 dark:border-gray-800">
-                    <span className="text-blue-200 text-4xl animate-pulse">|||||||||||||</span>
-                </div>
-
-                <div className="w-full max-w-md bg-gray-50 dark:bg-gray-800 p-6 rounded-2xl shadow-sm">
-                    <label className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4 block">Audio Lesson</label>
-                    {audioUrl ? (
-                        <audio controls className="w-full h-12" src={audioUrl}>
-                            Your browser does not support the audio element.
-                        </audio>
-                    ) : (
-                        <div className="w-full h-12 bg-gray-200 animate-pulse rounded"></div>
-                    )}
-                </div>
-
-                <div className="grid grid-cols-2 gap-4 w-full max-w-md">
-                    <button className="flex flex-col items-center justify-center p-4 bg-blue-600 text-white rounded-xl shadow-lg active:scale-95 transition-transform">
-                        <span className="text-2xl mb-1">🎙️</span>
-                        <span className="text-sm font-bold">Record</span>
-                    </button>
-                    <button
-                        onClick={() => setIsChatOpen(true)}
-                        className="flex flex-col items-center justify-center p-4 bg-purple-600 text-white rounded-xl shadow-lg active:scale-95 transition-transform"
-                    >
-                        <span className="text-2xl mb-1">🤖</span>
-                        <span className="text-sm font-bold">Ask Tutor</span>
-                    </button>
-                </div>
-
-                {/* COMPLETE LESSON BUTTON */}
-                <button
-                    onClick={() => {
-                        if (!userId) {
-                            alert("Please Sign In to track your progress and earn XP!");
-                            return;
-                        }
-                        if (isCompleted) return;
-                        setIsQuizOpen(true);
-                    }}
-                    disabled={isCompleted}
-                    className={`w-full max-w-md p-4 rounded-xl font-bold text-lg shadow-lg active:scale-95 transition-all ${isCompleted
-                        ? "bg-green-100 text-green-700 cursor-default"
-                        : "bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600"
-                        }`}
-                >
-                    {isCompleted ? "✅ Lesson Completed (+100 XP)" : "🔥 Take Challenge (Complete Lesson)"}
-                </button>
-
-                <QuizModal
-                    isOpen={isQuizOpen}
-                    onClose={() => setIsQuizOpen(false)}
-                    onComplete={() => {
-                        handleComplete();
-                        setIsQuizOpen(false);
-                    }}
-                    topicTitle={lesson.title}
-                    content={lesson.content || ""}
-                    preloadedQuestions={(() => {
-                        try {
-                            const parsed = JSON.parse(lesson.content || "{}");
-                            return parsed.quiz_questions || [];
-                        } catch { return []; }
-                    })()}
-                />
-
-                <div className="w-full max-w-md mt-4">
-                    <h3 className="font-bold text-gray-500 text-sm mb-2 uppercase">Transcript Preview</h3>
-                    <div className="text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-sm leading-relaxed">
-                        {lesson.content ? (
-                            (() => {
-                                try {
-                                    const detailed = JSON.parse(lesson.content);
-                                    return (
-                                        <div className="space-y-4">
-                                            <p className="whitespace-pre-wrap">{detailed.audio_script}</p>
-                                            <hr className="border-gray-200 dark:border-gray-800" />
-                                            <div>
-                                                <p className="font-bold mb-1 text-black dark:text-white">{detailed.reading_greek}</p>
-                                                <p className="italic text-gray-500">{detailed.reading_english}</p>
-                                            </div>
-                                        </div>
-                                    );
-                                } catch (e) {
-                                    return <p className="whitespace-pre-wrap">{lesson.content}</p>;
-                                }
-                            })()
-                        ) : (
-                            <p className="italic">No content available.</p>
-                        )}
+                {/* 1. Context / Tutor Intro */}
+                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-800">
+                    <div className="flex items-center gap-2 mb-4">
+                        <AcademicCapIcon className="w-5 h-5 text-purple-500" />
+                        <h2 className="font-bold text-gray-700 dark:text-gray-200">Introduction</h2>
+                    </div>
+                    <div className="prose dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+                        <p className="whitespace-pre-wrap">{content.audio_script}</p>
                     </div>
                 </div>
 
-                <ChatTutor
-                    context={`Topic: ${lesson.title} (${lesson.topicId})\nContent: ${lesson.content}`}
-                    isOpen={isChatOpen}
-                    setIsOpen={setIsChatOpen}
-                />
+                {/* 2. Grammar Theory (English) */}
+                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-800 border-l-4 border-l-blue-500">
+                    <div className="flex items-center gap-2 mb-4">
+                        <BookOpenIcon className="w-5 h-5 text-blue-500" />
+                        <h2 className="font-bold text-lg">Grammar & Rules</h2>
+                    </div>
+                    <div className="space-y-3">
+                        {content.reading_english.split('\n').map((line, i) => (
+                            line.trim() ? (
+                                <p key={i} className="text-gray-700 dark:text-gray-300 leading-7">
+                                    {line}
+                                </p>
+                            ) : <br key={i} />
+                        ))}
+                    </div>
+                </div>
+
+                {/* 3. Practice (Greek) */}
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl p-6 shadow-sm border border-blue-100 dark:border-gray-700">
+                    <div className="flex items-center gap-2 mb-6">
+                        <SpeakerWaveIcon className="w-5 h-5 text-indigo-500" />
+                        <h2 className="font-bold text-lg text-indigo-900 dark:text-indigo-200">Reading Practice</h2>
+                    </div>
+
+                    <div className="space-y-4">
+                        {content.reading_greek.split('\n').map((line, i) => {
+                            if (!line.trim()) return null;
+                            return (
+                                <div key={i} className="flex gap-4 items-start group">
+                                    <button
+                                        onClick={() => speakGreek(line)}
+                                        className="mt-1 p-2 bg-white dark:bg-gray-700 rounded-full shadow-sm hover:bg-indigo-100 dark:hover:bg-indigo-900 transition-colors shrink-0"
+                                        aria-label="Listen"
+                                    >
+                                        <SpeakerWaveIcon className="w-4 h-4 text-indigo-500" />
+                                    </button>
+                                    <p className="text-lg md:text-xl font-medium text-gray-800 dark:text-white leading-relaxed">
+                                        {line}
+                                    </p>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
             </main>
+
+            {/* Bottom Action Bar */}
+            <div className="fixed bottom-0 left-0 right-0 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800 p-4 safe-pb">
+                <div className="max-w-md mx-auto">
+                    <button
+                        onClick={() => {
+                            if (!userId) {
+                                alert("Sign In to save progress!");
+                                return;
+                            }
+                            if (!isCompleted) setIsQuizOpen(true);
+                        }}
+                        disabled={isCompleted}
+                        className={`w-full p-4 rounded-xl font-bold text-lg shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2 ${isCompleted
+                                ? "bg-green-100 text-green-700 cursor-default border border-green-200"
+                                : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-xl"
+                            }`}
+                    >
+                        {isCompleted ? (
+                            <>
+                                <CheckCircleIcon className="w-6 h-6" />
+                                Lesson Completed!
+                            </>
+                        ) : (
+                            <>
+                                <FireIcon className="w-6 h-6" />
+                                Take Challenge
+                            </>
+                        )}
+                    </button>
+                </div>
+            </div>
+
+            <QuizModal
+                isOpen={isQuizOpen}
+                onClose={() => setIsQuizOpen(false)}
+                onComplete={() => {
+                    handleComplete();
+                    setIsQuizOpen(false);
+                }}
+                topicTitle={lesson.title}
+                content={lesson.content || ""}
+                preloadedQuestions={(() => {
+                    try {
+                        const parsed = JSON.parse(lesson.content || "{}");
+                        return parsed.quiz_questions || [];
+                    } catch { return []; }
+                })()}
+            />
+
+            <ChatTutor
+                context={`Topic: ${lesson.title}\nContent: ${lesson.content}`}
+                isOpen={isChatOpen}
+                setIsOpen={setIsChatOpen}
+            />
         </div>
     );
 }

@@ -1,0 +1,110 @@
+{
+  "topicId": "7.4",
+  "week": 7,
+  "month": "Month 2",
+  "title": "Chapter 7 Exam: Prepositions & Family",
+  "reading_greek": "REVIEW\n- Pano, Kato, Mesa, Exo\n- Family Vocabulary (Pateras, Mitera, Pappous)\n- Question Words (Pou, Pote, Ti)\n\nCHALLENGE\n- Η γάτα είναι κάτω από το τραπέζι.\n- Πού είναι η μητέρα σου;",
+  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Prepositions of place.\n2. Family Members.\n3. Interrogatives (Who, What, Where).\n\nPass Mark: 80%",
+  "audio_script": "Chapter 7 Exam. \n\nWhere is it? 'Pano se' or 'Kato apo'? \nWho is it? 'Patera' or 'Miter'? \n\nRemember: 'Kato' (Down) uses 'Apo'. 'Mesa' (Inside) uses 'Se/Sto'. \n\nLet's test your memory.",
+  "quiz_questions": [
+    {
+      "question": "Translate 'On top'.",
+      "options": [
+        "Πού;",
+        "Έξω.",
+        "Πότε;",
+        "Πάνω."
+      ],
+      "correctIndex": 3,
+      "explanation": "Pano."
+    },
+    {
+      "question": "Translate 'Inside the house'.",
+      "options": [
+        "Πάνω.",
+        "Μέσα στο σπίτι.",
+        "Πότε;",
+        "Έξω."
+      ],
+      "correctIndex": 1,
+      "explanation": "Mesa sto."
+    },
+    {
+      "question": "Translate 'Outside'.",
+      "options": [
+        "Ο πατέρας μου.",
+        "Ποιος;",
+        "Η μητέρα μου.",
+        "Έξω."
+      ],
+      "correctIndex": 3,
+      "explanation": "Exo."
+    },
+    {
+      "question": "Translate 'My father'.",
+      "options": [
+        "Αδέρφια.",
+        "Ο πατέρας μου.",
+        "Πού;",
+        "Ποιος;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Pateras."
+    },
+    {
+      "question": "Translate 'My mother'.",
+      "options": [
+        "Πάνω.",
+        "Αδέρφια.",
+        "Πότε;",
+        "Η μητέρα μου."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mitera."
+    },
+    {
+      "question": "Translate 'Brothers/Siblings'.",
+      "options": [
+        "Πότε;",
+        "Πάνω.",
+        "Μέσα στο σπίτι.",
+        "Αδέρφια."
+      ],
+      "correctIndex": 3,
+      "explanation": "Aderfia."
+    },
+    {
+      "question": "Translate 'Who?'.",
+      "options": [
+        "Ποιος;",
+        "Πάνω.",
+        "Μέσα στο σπίτι.",
+        "Η μητέρα μου."
+      ],
+      "correctIndex": 0,
+      "explanation": "Poios."
+    },
+    {
+      "question": "Translate 'When?'.",
+      "options": [
+        "Ποιος;",
+        "Πού;",
+        "Πότε;",
+        "Αδέρφια."
+      ],
+      "correctIndex": 2,
+      "explanation": "Pote."
+    },
+    {
+      "question": "Translate 'Where?'.",
+      "options": [
+        "Πού;",
+        "Έξω.",
+        "Η μητέρα μου.",
+        "Ο πατέρας μου."
+      ],
+      "correctIndex": 0,
+      "explanation": "Pou."
+    }
+  ]
+}

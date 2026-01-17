@@ -1,4 +1,3 @@
-
 {
   "topicId": "1.1",
   "week": 1,
@@ -6,5 +5,216 @@
   "title": "The Alphabet (A - M). Sounds & Writing.",
   "reading_greek": "A/α\nΒ/β\nΓ/γ\nΔ/δ\nΕ/ε\nΖ/ζ\nΗ/η\nΘ/θ\nΙ/ι\nΚ/κ\nΛ/λ\nΜ/μ",
   "reading_english": "The letter A/α represents a short [a], like in hat.\nThis letter is not a [b], as you might expect. It’s a [v], like in vase.\nThe sound represented by Γ/γ has no equivalent in English. It is closer to the initial sound of the French word rendez-vous.\nThis letter represents [δ] like in than.\nE/ε stands for [e], like in pen.\nIt is really easy to relate the capital letter to [z], like in zoo.\nThe letter Η/η represents a short [i], like in tip.\nThis letter stands for [θ], like in thin.\nThe letter again represents [i] like in tip (see H/η). So far two different letters, Η/η and Ι/ι, represent exactly the same sound.\nThis letter stands for an unaspirated [k] sound which is close to book.\nHere we have an [l] that is closer to the light [l] of like and not the dark [l] of little.\nIt is easy to relate the capital M to an [m] sound like in make.",
-  "audio_script": "Καλημέρα! Welcome to your first Greek lesson. I am your tutor, and I expect your full attention and effort. Today, we begin with the very foundation: The Greek Alphabet. We will focus on the first twelve letters, from Alpha to Mu. Pay close attention to the sounds and how they are written.\n\nLet's start. First, we have **Α/α**... The letter Alpha, A/α, represents a short 'a' sound, just like in the English word 'hat'. In Modern Greek, we do not have long vowels, so keep it short and crisp. This sound, [a], will be a foundation as we introduce other consonants.\n\nNext, **Β/β**... Now, this is crucial. Β/β is *not* the 'b' sound you might expect from English. It is a 'v' sound, as in 'vase'. Remember this, it is a common point of confusion for beginners.\n\nMoving on, **Γ/γ**... This sound has no direct equivalent in English. It is a softer sound, closer to the 'r' in the French word 'rendez-vous'. Try to replicate that gentle, almost guttural sound. When writing the small letter, Γ/γ, notice that the typing font has no inner space at the bottom.\n\nThen, **Δ/δ**... This letter represents the 'th' sound in 'than'. It is a voiced sound, unlike its counterpart Θ/θ which we will see shortly. Practice placing your tongue for this sound.\n\nNow, **Ε/ε**... E/ε stands for the 'e' sound, like in 'pen'. Simple and straightforward.\n\nNext is **Ζ/ζ**... This one should be easy. The capital letter looks like the English 'Z', and it represents the 'z' sound, as in 'zoo'. When writing the small letter, first draw a horizontal line, then continue with a final 's' shape.\n\nMoving on to **Η/η**... The letter H/η represents a short 'i' sound, like in 'tip'. This is the first of several letters that will represent the *same* 'i' sound. Keep this in mind for spelling later.\n\nThen, **Θ/θ**... This letter stands for the 'th' sound, like in 'thin'. Unlike Δ/δ, this is a voiceless sound. Compare them: [δ] in 'than' versus [θ] in 'thin'.\n\nNext, **Ι/ι**... And here is the second representation for that 'i' sound, again, like in 'tip'. So, Η/η and Ι/ι represent *exactly* the same sound now. Why two different letters? Because in Ancient Greek, they had distinct sounds. Modern Greek preserves the writing, even though the phonetic difference is gone. Also, when writing the small letter, Ι/ι, remember it has *no dot* on top, unlike the Latin 'i'.\n\nNow, **Κ/κ**... This letter stands for an unaspirated 'k' sound, close to the 'k' in 'book'. It's not like the 'k' in 'kite' which has a puff of air.\n\nNext, **Λ/λ**... Here we have an 'l' sound. It is closer to the 'light l' in 'like', not the 'dark l' you find at the end of words like 'little' in English.\n\nAnd finally for today, **Μ/μ**... It is easy to relate the capital M to an 'm' sound, like in 'make'. To write the small letter, first draw a vertical line, then something similar to the Latin 'u'.\n\nTo summarize a few common pitfalls for these letters: Remember that **Β/β** is [v], not [b]. **Η/η** is [i], not an English 'h'. And **Ι/ι** in small form has no dot. Your memory is key here. Practice these sounds diligently. Repeat them until they become second nature. We will build upon this foundation next time. Any questions? If not, practice!"
+  "audio_script": "Καλημέρα! Welcome to your first Greek lesson. I am your tutor, and I expect your full attention and effort. Today, we begin with the very foundation: The Greek Alphabet. We will focus on the first twelve letters, from Alpha to Mu. Pay close attention to the sounds and how they are written.\n\nLet's start. First, we have **Α/α**... The letter Alpha, A/α, represents a short 'a' sound, just like in the English word 'hat'. In Modern Greek, we do not have long vowels, so keep it short and crisp. This sound, [a], will be a foundation as we introduce other consonants.\n\nNext, **Β/β**... Now, this is crucial. Β/β is *not* the 'b' sound you might expect from English. It is a 'v' sound, as in 'vase'. Remember this, it is a common point of confusion for beginners.\n\nMoving on, **Γ/γ**... This sound has no direct equivalent in English. It is a softer sound, closer to the 'r' in the French word 'rendez-vous'. Try to replicate that gentle, almost guttural sound. When writing the small letter, Γ/γ, notice that the typing font has no inner space at the bottom.\n\nThen, **Δ/δ**... This letter represents the 'th' sound in 'than'. It is a voiced sound, unlike its counterpart Θ/θ which we will see shortly. Practice placing your tongue for this sound.\n\nNow, **Ε/ε**... E/ε stands for the 'e' sound, like in 'pen'. Simple and straightforward.\n\nNext is **Ζ/ζ**... This one should be easy. The capital letter looks like the English 'Z', and it represents the 'z' sound, as in 'zoo'. When writing the small letter, first draw a horizontal line, then continue with a final 's' shape.\n\nMoving on to **Η/η**... The letter H/η represents a short 'i' sound, like in 'tip'. This is the first of several letters that will represent the *same* 'i' sound. Keep this in mind for spelling later.\n\nThen, **Θ/θ**... This letter stands for the 'th' sound, like in 'thin'. Unlike Δ/δ, this is a voiceless sound. Compare them: [δ] in 'than' versus [θ] in 'thin'.\n\nNext, **Ι/ι**... And here is the second representation for that 'i' sound, again, like in 'tip'. So, Η/η and Ι/ι represent *exactly* the same sound now. Why two different letters? Because in Ancient Greek, they had distinct sounds. Modern Greek preserves the writing, even though the phonetic difference is gone. Also, when writing the small letter, Ι/ι, remember it has *no dot* on top, unlike the Latin 'i'.\n\nNow, **Κ/κ**... This letter stands for an unaspirated 'k' sound, close to the 'k' in 'book'. It's not like the 'k' in 'kite' which has a puff of air.\n\nNext, **Λ/λ**... Here we have an 'l' sound. It is closer to the 'light l' in 'like', not the 'dark l' you find at the end of words like 'little' in English.\n\nAnd finally for today, **Μ/μ**... It is easy to relate the capital M to an 'm' sound, like in 'make'. To write the small letter, first draw a vertical line, then something similar to the Latin 'u'.\n\nTo summarize a few common pitfalls for these letters: Remember that **Β/β** is [v], not [b]. **Η/η** is [i], not an English 'h'. And **Ι/ι** in small form has no dot. Your memory is key here. Practice these sounds diligently. Repeat them until they become second nature. We will build upon this foundation next time. Any questions? If not, practice!",
+  "quiz_questions": [
+    {
+      "question": "What is the sound of the letter Beta (Β/β) in Modern Greek?",
+      "options": [
+        "It makes the 'i' sound, like in 'ski' [i]. It sounds exactly like Eta (Η).",
+        "It makes the 'v' sound, like in 'vase' [v].",
+        "It makes the 'm' sound, like in 'mother' [m].",
+        "It makes the 'k' sound, like in 'key' [k]. It is generally unaspirated (no puff of air)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct: It makes the 'v' sound, like in 'vase' [v]."
+    },
+    {
+      "question": "Does Beta (Β/β) ever make the 'b' sound in Modern Greek?",
+      "options": [
+        "You cannot distinguished them by ear; they sound exactly the same [i].",
+        "It makes the 'k' sound, like in 'key' [k]. It is generally unaspirated (no puff of air).",
+        "No, it is always 'v'. The 'b' sound is formed by the digraph 'μπ'.",
+        "It makes the 'th' sound as in 'think' or 'thin' [θ] (unvoiced)."
+      ],
+      "correctIndex": 2,
+      "explanation": "Correct: No, it is always 'v'. The 'b' sound is formed by the digraph 'μπ'."
+    },
+    {
+      "question": "What is the sound of Gamma (Γ/γ) before an 'e' or 'i' sound?",
+      "options": [
+        "It makes a soft 'y' sound, like in 'yes' [j].",
+        "Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin').",
+        "It makes the 'z' sound, like in 'zoo' [z].",
+        "Zeta (Ζ) is a consonant, so the next vowel letter is Eta (Η)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Correct: It makes a soft 'y' sound, like in 'yes' [j]."
+    },
+    {
+      "question": "What is the sound of Delta (Δ/δ)?",
+      "options": [
+        "It makes the 'i' sound, like in 'ski' [i].",
+        "It makes the 'th' sound as in 'this' or 'then' [ð] (voiced).",
+        "It makes the 'v' sound, like in 'vase' [v].",
+        "You cannot distinguished them by ear; they sound exactly the same [i]."
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct: It makes the 'th' sound as in 'this' or 'then' [ð] (voiced)."
+    },
+    {
+      "question": "What is the sound of Epsilon (Ε/ε)?",
+      "options": [
+        "Zeta (Ζ) is a consonant, so the next vowel letter is Eta (Η).",
+        "It makes the short 'e' sound, like in 'pet' [e].",
+        "It makes the 'm' sound, like in 'mother' [m].",
+        "It makes the 'z' sound, like in 'zoo' [z]."
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct: It makes the short 'e' sound, like in 'pet' [e]."
+    },
+    {
+      "question": "What is the sound of Zeta (Ζ/ζ)?",
+      "options": [
+        "δ",
+        "It makes the 'z' sound, like in 'zoo' [z].",
+        "It makes the 'v' sound, like in 'vase' [v].",
+        "No, it is a vowel pronounced 'i' (ee)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct: It makes the 'z' sound, like in 'zoo' [z]."
+    },
+    {
+      "question": "What is the sound of Eta (Η/η)?",
+      "options": [
+        "Zeta (Ζ) is a consonant, so the next vowel letter is Eta (Η).",
+        "It makes the 'th' sound as in 'this' or 'then' [ð] (voiced).",
+        "It makes the 'i' sound, like in 'ski' [i].",
+        "No, it is always 'v'. The 'b' sound is formed by the digraph 'μπ'."
+      ],
+      "correctIndex": 2,
+      "explanation": "Correct: It makes the 'i' sound, like in 'ski' [i]."
+    },
+    {
+      "question": "What is the sound of Theta (Θ/θ)?",
+      "options": [
+        "It makes the 'th' sound as in 'think' or 'thin' [θ] (unvoiced).",
+        "It makes the 'm' sound, like in 'mother' [m].",
+        "No, it is a vowel pronounced 'i' (ee).",
+        "Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin')."
+      ],
+      "correctIndex": 0,
+      "explanation": "Correct: It makes the 'th' sound as in 'think' or 'thin' [θ] (unvoiced)."
+    },
+    {
+      "question": "What is the sound of Iota (Ι/ι)?",
+      "options": [
+        "No, it is always 'v'. The 'b' sound is formed by the digraph 'μπ'.",
+        "It makes the 'i' sound, like in 'ski' [i]. It sounds exactly like Eta (Η).",
+        "It makes the 'l' sound, like in 'light' [l].",
+        "It makes a soft 'y' sound, like in 'yes' [j]."
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct: It makes the 'i' sound, like in 'ski' [i]. It sounds exactly like Eta (Η)."
+    },
+    {
+      "question": "How do you distinguish the pronunciation of Eta (Η) and Iota (Ι)?",
+      "options": [
+        "No, it is a vowel pronounced 'i' (ee).",
+        "δ",
+        "It makes the 'm' sound, like in 'mother' [m].",
+        "You cannot distinguished them by ear; they sound exactly the same [i]."
+      ],
+      "correctIndex": 3,
+      "explanation": "Correct: You cannot distinguished them by ear; they sound exactly the same [i]."
+    },
+    {
+      "question": "What is the sound of Kappa (Κ/κ)?",
+      "options": [
+        "Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin').",
+        "No, it is a vowel pronounced 'i' (ee).",
+        "Three letters: Eta (Η), Iota (Ι), and Upsilon (Υ).",
+        "It makes the 'k' sound, like in 'key' [k]. It is generally unaspirated (no puff of air)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Correct: It makes the 'k' sound, like in 'key' [k]. It is generally unaspirated (no puff of air)."
+    },
+    {
+      "question": "What is the sound of Lambda (Λ/λ)?",
+      "options": [
+        "It makes a soft 'y' sound, like in 'yes' [j].",
+        "It makes the 'l' sound, like in 'light' [l].",
+        "Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin').",
+        "It makes the short 'e' sound, like in 'pet' [e]."
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct: It makes the 'l' sound, like in 'light' [l]."
+    },
+    {
+      "question": "What is the sound of Mu (Μ/μ)?",
+      "options": [
+        "It makes the 'th' sound as in 'this' or 'then' [ð] (voiced).",
+        "It makes the 'm' sound, like in 'mother' [m].",
+        "Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin').",
+        "It makes the 'v' sound, like in 'vase' [v]."
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct: It makes the 'm' sound, like in 'mother' [m]."
+    },
+    {
+      "question": "Which vowel letter comes after Epsilon in the alphabet order?",
+      "options": [
+        "It makes the 'k' sound, like in 'key' [k]. It is generally unaspirated (no puff of air).",
+        "Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin').",
+        "Zeta (Ζ) is a consonant, so the next vowel letter is Eta (Η).",
+        "You cannot distinguished them by ear; they sound exactly the same [i]."
+      ],
+      "correctIndex": 2,
+      "explanation": "Correct: Zeta (Ζ) is a consonant, so the next vowel letter is Eta (Η)."
+    },
+    {
+      "question": "How many letters in the classic Greek alphabet represent the 'i' sound directly?",
+      "options": [
+        "It makes the 'i' sound, like in 'ski' [i].",
+        "It makes a soft 'y' sound, like in 'yes' [j].",
+        "It makes the 'i' sound, like in 'ski' [i]. It sounds exactly like Eta (Η).",
+        "Three letters: Eta (Η), Iota (Ι), and Upsilon (Υ)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Correct: Three letters: Eta (Η), Iota (Ι), and Upsilon (Υ)."
+    },
+    {
+      "question": "Is the letter 'H' (Eta) pronounced like the English 'H' in 'House'?",
+      "options": [
+        "Zeta (Ζ) is a consonant, so the next vowel letter is Eta (Η).",
+        "It makes the 'th' sound as in 'this' or 'then' [ð] (voiced).",
+        "Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin').",
+        "No, it is a vowel pronounced 'i' (ee)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Correct: No, it is a vowel pronounced 'i' (ee)."
+    },
+    {
+      "question": "What defines a 'voiced' vs 'unvoiced' th sound (Delta vs Theta)?",
+      "options": [
+        "Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin').",
+        "It makes the 'i' sound, like in 'ski' [i].",
+        "You cannot distinguished them by ear; they sound exactly the same [i].",
+        "It makes the 'th' sound as in 'think' or 'thin' [θ] (unvoiced)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Correct: Delta (Δ) makes your vocal cords vibrate (like 'then'). Theta (Θ) involves only air (like 'thin')."
+    },
+    {
+      "question": "Write the lowercase version of the letter Delta (Δ).",
+      "options": [
+        "You cannot distinguished them by ear; they sound exactly the same [i].",
+        "Three letters: Eta (Η), Iota (Ι), and Upsilon (Υ).",
+        "It makes a soft 'y' sound, like in 'yes' [j].",
+        "δ"
+      ],
+      "correctIndex": 3,
+      "explanation": "Correct: δ"
+    },
+    {
+      "question": "Write the lowercase version of the letter Theta (Θ).",
+      "options": [
+        "It makes the 'i' sound, like in 'ski' [i].",
+        "θ",
+        "It makes the short 'e' sound, like in 'pet' [e].",
+        "It makes the 'k' sound, like in 'key' [k]. It is generally unaspirated (no puff of air)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Correct: θ"
+    }
+  ]
 }

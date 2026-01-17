@@ -1,10 +1,132 @@
-
 {
   "topicId": "2.2",
   "week": 2,
   "month": "Month 1",
-  "title": "Genders (O, H, To). Identify noun genders.",
-  "reading_greek": "1. ο δρόμος\n2. η ώρα\n3. το βιβλίο\n4. ο άντρας\n5. η ζώνη\n6. το παιδί\n7. ο καφές\n8. η σοκολάτα\n9. το τσάι\n10. η καρέκλα\n11. το μολύβι\n12. ο μαρκαδόρος\n13. η πένα\n14. η πίτσα\n15. το φεστιβάλ\n16. το κομπιούτερ\n17. το ευρώ\n18. η έξοδος\n19. το κράτος",
-  "reading_english": "1. the street\n2. the hour\n3. the book\n4. the man\n5. the belt\n6. the child\n7. the coffee\n8. the chocolate\n9. the tea\n10. the chair\n11. the pencil\n12. the marker\n13. the quill pen\n14. the pizza\n15. the festival\n16. the computer\n17. the euro\n18. the exit\n19. the state",
-  "audio_script": "Alright, listen carefully! Today, we delve into the fundamental concept of **gender** in Modern Greek nouns. This is not optional; this is **crucial**! Open your textbook to Chapter 2, page 21, section 2.1.1.\n\nAs the textbook clearly states, Modern Greek nouns are **inflected words**. This means they carry grammatical information, not just lexical meaning. And one of the three major grammatical features is **gender**. Understand this: **Every single Modern Greek noun must be masculine, feminine, or neuter. There are no exceptions, no gender-free nouns.**\n\nNow, how do we identify this gender? The most reliable way for you, as absolute beginners, is through the **definite article** – that little word equivalent to 'the' in English. Look at Table 2.1 on page 22. Observe the articles:\n\nFor **masculine** nouns, we use 'ο'. Repeat after me: 'ο'.\nFor example: 'ο δρόμος' ... 'ο άντρας' ... 'ο χάρτης'.\n\nFor **feminine** nouns, we use 'η'. Repeat: 'η'.\nFor example: 'η ώρα' ... 'η ζώνη'.\n\nAnd for **neuter** nouns, we use 'το'. Repeat: 'το'.\nFor example: 'το βιβλίο' ... 'το παιδί' ... 'το πράγμα'.\n\nDo not confuse grammatical gender with biological sex! A chair in real life has no sex, yet the word 'η καρέκλα' is feminine. Your textbook gives excellent examples on page 23. Coffee, chocolate, and tea are all beverages, but their genders are entirely different:\n\n'ο καφές' (masculine) ... 'η σοκολάτα' (feminine) ... 'το τσάι' (neuter).\n\nSimilarly, writing instruments: 'το μολύβι' (neuter) ... 'ο μαρκαδόρος' (masculine) ... 'η πένα' (feminine). There is no logical reason for this, only grammar! So, what is your task? **Memorize the gender with every single noun you learn!** Do not postpone this; you *will* get lost.\n\nNow, what about loanwords? When a word like 'pizza' enters Greek, it adapts. 'η πίτσα' takes a feminine article because its ending resembles other feminine nouns. But many loanwords, especially those with unfamiliar endings like 'φεστιβάλ' (festival) or 'κομπιούτερ' (computer) or 'ευρώ' (euro), are classified as **neuter** if their endings do not match existing gender patterns. The textbook mentions this on page 24.\n\nFinally, be warned: do not attempt to guess gender from the noun's ending alone. The textbook explicitly states this on page 25, giving examples like: 'ο δρόμος' (masculine), 'η έξοδος' (feminine), 'το κράτος' (neuter). All end in '-ος', yet their genders are varied. The definite article is your friend here, not the ending of the noun itself.\n\nUnderstand? Good. Now, practice reading the examples provided. Pay close attention to the definite article and the noun it accompanies. This is not a suggestion; it is a **command**. Let's begin!"
+  "title": "Genders: Masculine, Feminine, Neuter",
+  "reading_greek": "MASCULINE (Article: Ο)\nο δρόμος (street)\nο άντρας (man)\nο χάρτης (map)\nο καφές (coffee)\n\nFEMININE (Article: Η)\nη ώρα (hour)\nη ζώνη (belt)\nη σοκολάτα (chocolate)\nη καρέκλα (chair)\n\nNEUTER (Article: ΤΟ)\nτο βιβλίο (book)\nτο παιδί (child)\nτο τσάι (tea)\nτο μολύβι (pencil)\n\nLOANWORDS (Usually Neuter)\nτο φεστιβάλ\nτο κομπιούτερ\nτο σάντουιτς\n*Exception*: η πίτσα (Feminine due to -a ending)",
+  "reading_english": "GENDER RULES (Page 22)\n\n1. THE BIG THREE: Every noun MUST be Masculine, Feminine, or Neuter.\n2. THE ARTICLE IS KING: Don't guess gender. Look at the word 'the'.\n   - 'O' = Masculine\n   - 'H' (ee) = Feminine\n   - 'To' = Neuter\n3. FALSE FRIENDS: \n   - Chairs (karekla) are Feminine.\n   - Girls (koritsi) are Neuter (grammatically 'small thing').\n   - Coffee (kafes) is Masculine.\n\n4. LOANWORD RULE (Page 24): Foreign words usually become NEUTER (to computer, to festival). Unless they sound Greek (Pizza -> Pitsa -> H Pitsa).",
+  "audio_script": "Gender! Page 22. This is the most important concept in nouns. \n\nIn English, a chair is 'it'. In Greek, a chair is 'She' (H Karekla).\nIn English, a book is 'it'. In Greek, a book is 'It' (To Vivlio).\nIn English, a coffee is 'it'. In Greek, a coffee is 'He' (O Kafes).\n\nHow do you know? Look at the Article (The).\n- Masculine: O\n- Feminine: H (Eta)\n- Neuter: To\n\nLoanwords like 'Computer' or 'Festival' don't fit the Greek patterns, so they are almost always NEUTER. 'To Computer'. But 'Pizza' ends in 'a', so it becomes Feminine: 'H Pitsa'.",
+  "quiz_questions": [
+    {
+      "question": "What is the definite article for Masculine nouns?",
+      "options": [
+        "Η (H)",
+        "Ο (O)",
+        "Ο (Masculine)",
+        "Masculine (Ο καφές)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Example: Ο δρόμος (The street)."
+    },
+    {
+      "question": "What is the definite article for Feminine nouns?",
+      "options": [
+        "Feminine (Η καρέκλα)",
+        "Η (H)",
+        "Masculine (Ο καφές)",
+        "Ο (O)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Example: Η ώρα (The hour)."
+    },
+    {
+      "question": "What is the definite article for Neuter nouns?",
+      "options": [
+        "Because it ends in -a, like many Greek feminine words.",
+        "ΤΟ (To)",
+        "Neuter (Το κομπιούτερ)",
+        "Το (Neuter)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Example: Το βιβλίο (The book)."
+    },
+    {
+      "question": "What gender is 'Καρέκλα' (Chair)?",
+      "options": [
+        "ΤΟ (To)",
+        "Feminine (Η καρέκλα)",
+        "Because it ends in -a, like many Greek feminine words.",
+        "Masculine (Ο καφές)"
+      ],
+      "correctIndex": 1,
+      "explanation": "It is grammatically feminine, regardless of being an object."
+    },
+    {
+      "question": "What gender is 'Καφές' (Coffee)?",
+      "options": [
+        "Masculine (Ο καφές)",
+        "Το (Neuter)",
+        "ΤΟ (To)",
+        "Because it ends in -a, like many Greek feminine words."
+      ],
+      "correctIndex": 0,
+      "explanation": "Grammatical gender often implies nothing about biology."
+    },
+    {
+      "question": "What gender is 'Παιδί' (Child)?",
+      "options": [
+        "Neuter (Το κομπιούτερ)",
+        "Feminine (Η καρέκλα)",
+        "ΤΟ (To)",
+        "Neuter (Το παιδί)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Grammatically it is a 'small thing'."
+    },
+    {
+      "question": "What gender are new loanwords like 'Computer' usually assigned?",
+      "options": [
+        "Η (H)",
+        "Because it ends in -a, like many Greek feminine words.",
+        "Ο (Masculine)",
+        "Neuter (Το κομπιούτερ)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Foreign words that don't fit Greek endings usually become Neuter."
+    },
+    {
+      "question": "Why is 'Pizza' (Πίτσα) Feminine?",
+      "options": [
+        "Because it ends in -a, like many Greek feminine words.",
+        "Masculine (Ο καφές)",
+        "Το (Neuter)",
+        "Neuter (Το παιδί)"
+      ],
+      "correctIndex": 0,
+      "explanation": "It adapted to the language."
+    },
+    {
+      "question": "Analyze the gender: ____ Άντρας (Man)",
+      "options": [
+        "Ο (Masculine)",
+        "Η (H)",
+        "Ο (O)",
+        "Because it ends in -a, like many Greek feminine words."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ο Άντρας"
+    },
+    {
+      "question": "Analyze the gender: ____ Ζώνη (Belt)",
+      "options": [
+        "Η (Feminine)",
+        "Το (Neuter)",
+        "Η (H)",
+        "Neuter (Το παιδί)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Η Ζώνη"
+    },
+    {
+      "question": "Analyze the gender: ____ Νερό (Water)",
+      "options": [
+        "Το (Neuter)",
+        "Masculine (Ο καφές)",
+        "Feminine (Η καρέκλα)",
+        "Neuter (Το κομπιούτερ)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Το Νερό"
+    }
+  ]
 }

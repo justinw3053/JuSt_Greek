@@ -1,9 +1,220 @@
 {
   "topicId": "12.3",
   "week": 12,
-  "month": "Interaction & Survival (Cases)",
-  "title": "**Final A1 Exam** (NotebookLM Generated).",
-  "reading_greek": "Αυτό είναι το μάθημα για την τελική εξέταση Α1. Είμαστε στην εβδομάδα δώδεκα. Πρέπει να μελετήσουμε λίγο. Θα δούμε νέες λέξεις και γραμματική.",
-  "reading_english": "This is the lesson for the final A1 exam. We are in week twelve. We need to study a little. We will see new words and grammar.",
-  "audio_script": "Welcome to Week 12. Today we focus on the **Final A1 Exam** (NotebookLM Generated).. This is our last lesson before the exam.. Listen to this Greek text: [Reading Greek]. Αυτό είναι το μάθημα για την τελική εξέταση Α1. Είμαστε στην εβδομάδα δώδεκα. Πρέπει να μελετήσουμε λίγο. Θα δούμε νέες λέξεις και γραμματική... Now, let's break it down. 'Αυτό είναι το μάθημα' means 'This is the lesson'. 'για την τελική εξέταση Α1' means 'for the final A1 exam'. 'Είμαστε στην εβδομάδα δώδεκα' means 'We are in week twelve'. 'Πρέπει να μελετήσουμε λίγο' means 'We need to study a little'. And finally, 'Θα δούμε νέες λέξεις και γραμματική' means 'We will see new words and grammar'. Practice reading this aloud. Remember to review all the material from the previous weeks. Good luck with your studies!"
+  "month": "Month 3",
+  "title": "Final A1 Exam",
+  "reading_greek": "THE CHALLENGE\n\nTest your knowledge of Chapters 1-11.\n\n1. Alphabet & Sounds\n2. Genders (O/H/To)\n3. Verbs (Eimai/Exo/Kano)\n4. Plurals (Oi/Ta/Es)\n5. Adjectives (Kalos/Kali)\n6. Numbers (Ena/Dyo)\n7. Prepositions (Se/Apo)\n8. Pronouns (Me/Sou/Ton)\n\nGood luck! (Καλή Επιτυχία!)",
+  "reading_english": "EVALUATION\n\nThis is a mixed drill covering all major topics.\n\nKey Areas:\n- Subject vs Object (Check your Sigmas!)\n- Verb Conjugation (-o, -eis, -ei).\n- Plural endings (-oi, -es, -a).\n- Dictionary Form vs Used Form.\n\nPass mark: 80%.",
+  "audio_script": "You have reached the end of Level A1. \n\nThis exam will test everything. \nFrom the Alpha to the Omega. \nFrom 'Eimai' to 'Agapao'. \nFrom 'O' to 'Ton'.\n\nTake your time. \nRemember the rules for Genders and Cases. \nRemember the Verb Groups.\n\nKali Epityxia! (Good Luck!).",
+  "quiz_questions": [
+    {
+      "question": "Sound of 'Mp'?",
+      "options": [
+        "B (Basket).",
+        "Δευτέρα.",
+        "Βιβλία.",
+        "Η μητέρα μου."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Phonics."
+    },
+    {
+      "question": "Conjugate 'Eimai' (I am).",
+      "options": [
+        "Είμαι.",
+        "Κάνουμε.",
+        "Τρεις και μισή.",
+        "Δέκα."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Verbs."
+    },
+    {
+      "question": "Plural of 'Biblio'.",
+      "options": [
+        "Ευχαριστώ.",
+        "Βιβλία.",
+        "Δέκα.",
+        "Η μητέρα μου."
+      ],
+      "correctIndex": 1,
+      "explanation": "A1 Neuter Plural."
+    },
+    {
+      "question": "Translate 'I have'.",
+      "options": [
+        "Αυτό το σπίτι.",
+        "Βλέπω τον Πέτρο.",
+        "Βιβλία.",
+        "Έχω."
+      ],
+      "correctIndex": 3,
+      "explanation": "A1 Verbs."
+    },
+    {
+      "question": "Translate 'We do'.",
+      "options": [
+        "Κάνουμε.",
+        "Αυτό το σπίτι.",
+        "Ο καλός φίλος.",
+        "Δευτέρα."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Verbs."
+    },
+    {
+      "question": "Translate 'The good friend' (Masc).",
+      "options": [
+        "Έχω.",
+        "Η μητέρα μου.",
+        "Τρεις και μισή.",
+        "Ο καλός φίλος."
+      ],
+      "correctIndex": 3,
+      "explanation": "A1 Adjective."
+    },
+    {
+      "question": "Translate 'Red'.",
+      "options": [
+        "Κόκκινο.",
+        "Ευχαριστώ.",
+        "Είμαι.",
+        "Έχω."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Colors."
+    },
+    {
+      "question": "Translate '10'.",
+      "options": [
+        "Δέκα.",
+        "Έχω.",
+        "Η μητέρα μου.",
+        "Βλέπω τον Πέτρο."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Numbers."
+    },
+    {
+      "question": "Translate 'Where?'.",
+      "options": [
+        "Η μητέρα μου.",
+        "Κάνουμε.",
+        "Πού;",
+        "Μιλάω."
+      ],
+      "correctIndex": 2,
+      "explanation": "A1 Questions."
+    },
+    {
+      "question": "Translate 'On the table'.",
+      "options": [
+        "Στο τραπέζι.",
+        "Είμαι.",
+        "Μιλάω.",
+        "Δευτέρα."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Prepositions."
+    },
+    {
+      "question": "Translate 'My mother'.",
+      "options": [
+        "Στο τραπέζι.",
+        "Η μητέρα μου.",
+        "Ο καλός φίλος.",
+        "B (Basket)."
+      ],
+      "correctIndex": 1,
+      "explanation": "A1 Family."
+    },
+    {
+      "question": "Translate 'I start' (Group A).",
+      "options": [
+        "Μιλάω.",
+        "Δέκα.",
+        "Ο καλός φίλος.",
+        "Αρχίζω."
+      ],
+      "correctIndex": 3,
+      "explanation": "A1 Verbs."
+    },
+    {
+      "question": "Translate 'I speak' (Group B).",
+      "options": [
+        "Μιλάω.",
+        "Αυτό το σπίτι.",
+        "Κάνουμε.",
+        "Στο τραπέζι."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Verbs."
+    },
+    {
+      "question": "Translate '3:30'.",
+      "options": [
+        "Δευτέρα.",
+        "Δέκα.",
+        "Πού;",
+        "Τρεις και μισή."
+      ],
+      "correctIndex": 3,
+      "explanation": "A1 Time."
+    },
+    {
+      "question": "Translate 'Monday'.",
+      "options": [
+        "Δευτέρα.",
+        "Πού;",
+        "Η μητέρα μου.",
+        "B (Basket)."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Days."
+    },
+    {
+      "question": "Translate 'I see Peter'.",
+      "options": [
+        "Αρχίζω.",
+        "Με βλέπει.",
+        "Βλέπω τον Πέτρο.",
+        "Κάνουμε."
+      ],
+      "correctIndex": 2,
+      "explanation": "A1 Syntax (Acc)."
+    },
+    {
+      "question": "Translate 'He sees me'.",
+      "options": [
+        "Με βλέπει.",
+        "Αυτό το σπίτι.",
+        "Έχω.",
+        "Τρεις και μισή."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Pronouns."
+    },
+    {
+      "question": "Translate 'This house'.",
+      "options": [
+        "Κάνουμε.",
+        "Αυτό το σπίτι.",
+        "Κόκκινο.",
+        "Τρεις και μισή."
+      ],
+      "correctIndex": 1,
+      "explanation": "A1 Dem."
+    },
+    {
+      "question": "Translate 'Thank you'.",
+      "options": [
+        "Ευχαριστώ.",
+        "Αρχίζω.",
+        "Η μητέρα μου.",
+        "Αυτό το σπίτι."
+      ],
+      "correctIndex": 0,
+      "explanation": "A1 Phrases."
+    }
+  ]
 }

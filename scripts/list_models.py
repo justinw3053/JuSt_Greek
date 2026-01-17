@@ -1,13 +1,14 @@
+
 import os
-import google.generativeai as genai
+import google.genai as genai
 
-if not os.environ.get("GOOGLE_API_KEY"):
-    print("Error: GOOGLE_API_KEY environment variable not set.")
-    exit(1)
+def list_models():
+    api_key = os.environ.get("GOOGLE_API_KEY")
+    client = genai.Client(api_key=api_key)
+    
+    print("Listing models...")
+    for model in client.models.list(config={"page_size": 100}):
+        print(f"- {model.name}")
 
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
-
-print("Listing available models:")
-for m in genai.list_models():
-    if 'generateContent' in m.supported_generation_methods:
-        print(m.name)
+if __name__ == "__main__":
+    list_models()

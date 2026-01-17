@@ -2,8 +2,87 @@
   "topicId": "6.3",
   "week": 6,
   "month": "Month 1",
-  "title": "Agreement (Matching Adjective to Noun).",
-  "reading_greek": "1. ο καλός δρόμος / τον καλό δρόμο.\n2. η καλή ώρα / την καλή ώρα.\n3. το καλό βιβλίο / το καλό βιβλίο.\n4. οι καλοί δρόμοι / τους καλούς δρόμους.\n5. οι καλές ώρες / τις καλές ώρες.\n6. τα καλά βιβλία / τα καλά βιβλία.\n7. Ο Πέτρος είναι καλός γιατρός.\n8. Θα ήθελα έναν χυμό πορτοκάλι.",
-  "reading_english": "1. the good street (Nominative) / the good street (Accusative).\n2. the good hour (Nominative) / the good hour (Accusative).\n3. the good book (Nominative) / the good book (Accusative).\n4. the good streets (Nominative) / the good streets (Accusative).\n5. the good hours (Nominative) / the good hours (Accusative).\n6. the good books (Nominative) / the good books (Accusative).\n7. Peter is a good doctor.\n8. I would like one orange juice.",
-  "audio_script": "Hello. I am your tutor, and today we are discussing one of the most vital rules in Modern Greek: Agreement. In Chapter 5 and 6 of our textbook, we learn that adjectives and other 'noun-dependent words' do not have a life of their own. They are like shadows... they must follow the noun wherever it goes. Specifically, an adjective must match the noun in three ways: Gender, Number, and Case... Look at our first example: 'o kalós drómos'. Because 'drómos' is masculine, singular, and in the nominative case, the adjective 'kalós' must also be masculine, singular, and nominative. If we change the noun to feminine, like 'óra', the adjective must change its ending to match: 'i kalí óra'. And for a neuter noun like 'vivlío', we say 'to kaló vivlío'... This doesn't just happen in the singular. If you look at examples 4, 5, and 6, you will see the plural forms: 'oi kaloí drómoi' or 'ta kalá vivlía'. Notice how the endings of the adjective mirror the endings of the noun we studied in Chapter 3. Even when the noun changes case, like when it becomes an object in the Accusative, the adjective must follow. For example: 'ton kaló drómo'. As a strict reminder: you cannot mix a masculine article with a feminine adjective. Consistency is key to being understood. Listen carefully to the endings... they are the signals that tell the listener which words belong together in a sentence."
+  "title": "Agreement Drills",
+  "reading_greek": "MATCH THE PAIRS\n\n1. Ο ____ καφές. (Good)\n   - Επιλογές: Καλός, Καλή, Καλό\n   - Σωστό: Καλός\n\n2. Η ____ Πόλη. (Big)\n   - Επιλογές: Μεγάλος, Μεγάλη, Μεγάλο\n   - Σωστό: Μεγάλη\n\n3. Το ____ Παιδί. (Small)\n   - Επιλογές: Μικρός, Μικρή, Μικρό\n   - Σωστό: Μικρό\n\nPLURAL AGREEMENT\n- Οι καλοί φίλοι. (Masc Plural - oi)\n- Οι καλές φίλες. (Fem Plural - es)\n- Τα καλά παιδιά. (Neut Plural - a)",
+  "reading_english": "GRAMMAR: PLURAL ADJECTIVES\n\n1. MASCULINE PLURAL (-oi)\n   - O kalos -> Oi kaloi.\n\n2. FEMININE PLURAL (-es)\n   - H kali -> Oi kales.\n\n3. NEUTER PLURAL (-a)\n   - To kalo -> Ta kala.\n\nNote: These endings (-oi, -es, -a) match the Noun endings exactly for the standard noun groups!",
+  "audio_script": "Now we check if you were listening. Agreement!\n\nIf the noun is Plural, the Adjective MUST be Plural.\n\n'Oi kaloi filoi' (The good friends).\n'Oi kales gynaikes' (The good women).\n'Ta kala vivlia' (The good books).\n\nNotice the rhyme?\n- Kaloi ... Filoi (-oi)\n- Kales ... Gynaikes (-es)\n- Kala ... Vivlia (-a)\n\nGreek loves rhyme. If it rhymes, it's usually grammatically correct (for standard nouns)!",
+  "quiz_questions": [
+    {
+      "question": "Translate 'The bad news'.",
+      "options": [
+        "Καλές (Kales).",
+        "Τα μεγάλα προβλήματα.",
+        "Μαύρα (Mavra).",
+        "Τα κακά νέα."
+      ],
+      "correctIndex": 3,
+      "explanation": "Neuter Plural."
+    },
+    {
+      "question": "Translate 'The big problems'.",
+      "options": [
+        "Οι μικρές ώρες.",
+        "Μαύρα (Mavra).",
+        "Μεγάλοι (Megaloi).",
+        "Τα μεγάλα προβλήματα."
+      ],
+      "correctIndex": 3,
+      "explanation": "Neuter Plural (-a)."
+    },
+    {
+      "question": "Translate 'The small hours'.",
+      "options": [
+        "Μεγάλοι (Megaloi).",
+        "Καλές (Kales).",
+        "Οι μικρές ώρες.",
+        "Τα μεγάλα προβλήματα."
+      ],
+      "correctIndex": 2,
+      "explanation": "Feminine Plural (-es)."
+    },
+    {
+      "question": "Plural of 'Megalos' (Masc)?",
+      "options": [
+        "Μεγάλοι (Megaloi).",
+        "Τα κακά νέα.",
+        "Μαύρα (Mavra).",
+        "Καλά (Kala)."
+      ],
+      "correctIndex": 0,
+      "explanation": "-oi."
+    },
+    {
+      "question": "Plural of 'Kali' (Fem)?",
+      "options": [
+        "Τα κακά νέα.",
+        "Τα μεγάλα προβλήματα.",
+        "Καλές (Kales).",
+        "Μαύρα (Mavra)."
+      ],
+      "correctIndex": 2,
+      "explanation": "-es."
+    },
+    {
+      "question": "Plural of 'Mauro' (Neut)?",
+      "options": [
+        "Τα μεγάλα προβλήματα.",
+        "Τα κακά νέα.",
+        "Καλές (Kales).",
+        "Μαύρα (Mavra)."
+      ],
+      "correctIndex": 3,
+      "explanation": "-a."
+    },
+    {
+      "question": "Match: 'Ta ____ vivlia'.",
+      "options": [
+        "Καλά (Kala).",
+        "Τα κακά νέα.",
+        "Μεγάλοι (Megaloi).",
+        "Οι μικρές ώρες."
+      ],
+      "correctIndex": 0,
+      "explanation": "Neuter Plural Agreement."
+    }
+  ]
 }

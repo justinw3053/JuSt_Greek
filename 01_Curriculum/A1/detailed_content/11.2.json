@@ -1,9 +1,77 @@
 {
   "topicId": "11.2",
   "week": 11,
-  "month": "Interaction & Survival (Cases)",
-  "title": "Neuter Accusative (Same as Nominative).",
-  "reading_greek": "Το παιδί βλέπει το δέντρο. Το δέντρο είναι μεγάλο. Βλέπω ένα ωραίο σπίτι. Το σπίτι είναι δίπλα στο δέντρο.",
-  "reading_english": "The child sees the tree. The tree is big. I see a beautiful house. The house is next to the tree.",
-  "audio_script": "Welcome to Week 11. Today, we're going to learn about a very helpful rule in Greek... the Neuter Accusative case is the same as the Neuter Nominative case. This means you don't have to change the ending of neuter nouns and adjectives when they are the direct object of a verb. Let's look at an example... Listen to this Greek text: \"Το παιδί βλέπει το δέντρο. Το δέντρο είναι μεγάλο. Βλέπω ένα ωραίο σπίτι. Το σπίτι είναι δίπλα στο δέντρο.\" ... Now, let's break it down... In the first sentence, \"Το παιδί βλέπει το δέντρο,\" 'το δέντρο' is the direct object, and it's in the neuter accusative, which looks identical to the neuter nominative. The same applies to 'το σπίτι' in the last sentence. Remember, for neuter words, the nominative and accusative forms are the same! Keep practicing, and you'll master this in no time."
+  "month": "Month 3",
+  "title": "Possessives (Mou, Sou)",
+  "reading_greek": "MY AND YOUR\n- Μου (My) - Το σπίτι μου.\n- Σου (Your) - Το όνομά σου.\n- Του (His) - Ο φίλος του.\n- Της (Her) - Η φίλη της.\n\nPOSITION\n- After the noun!\n- 'O kafes mou' (My coffee).\n\nLIKES (Mou Aresei)\n- Μου αρέσει (It pleases me = I like).\n- Σου αρέσει (You like).\n- Του αρέσει (He likes).",
+  "reading_english": "GRAMMAR: POSSESSION (Page 92)\n\n1. GENITIVE CASE:\n   - Technically 'Mou' is the Genitive of Ego.\n   - Literally 'The house of-me'.\n\n2. WORD ORDER:\n   - Always AFTER the noun.\n   - Contrast with English (My house - Before). \n\n3. MOU ARESEI:\n   - Special structure.\n   - 'Mou aresei o kafes'. \n   - 'Mou' here indicates the person feeling the pleasure.",
+  "audio_script": "Possession. 'Mine' and 'Yours'.\n\nSimple rule: Put 'Mou' or 'Sou' AFTER the noun.\n\n'To spiti' (The house) -> 'To spiti mou' (My house).\n'To onoma' (The name) -> 'To onoma sou' (Your name).\n\nDon't confuse 'Me' (Object) and 'Mou' (Possessive).\n'Me vlepeis' (You see me - Before verb).\n'O filos mou' (My friend - After noun).\n\nAlso use 'Mou' for Likes: 'Mou aresei' (I like).",
+  "quiz_questions": [
+    {
+      "question": "Translate 'Your name'.",
+      "options": [
+        "Μου αρέσει ο καφές.",
+        "Το όνομά σου.",
+        "Ο φίλος του.",
+        "Ο φίλος της."
+      ],
+      "correctIndex": 1,
+      "explanation": "Sou (after)."
+    },
+    {
+      "question": "Translate 'His friend'.",
+      "options": [
+        "Ο φίλος της.",
+        "Το σπίτι μας.",
+        "Μου αρέσει ο καφές.",
+        "Ο φίλος του."
+      ],
+      "correctIndex": 3,
+      "explanation": "Tou."
+    },
+    {
+      "question": "Translate 'Her friend'.",
+      "options": [
+        "After the noun.",
+        "Ο φίλος της.",
+        "Το σπίτι μας.",
+        "Μου αρέσει ο καφές."
+      ],
+      "correctIndex": 1,
+      "explanation": "Tis."
+    },
+    {
+      "question": "Translate 'I like coffee'.",
+      "options": [
+        "Το όνομά σου.",
+        "Ο φίλος της.",
+        "Μου αρέσει ο καφές.",
+        "Ο φίλος του."
+      ],
+      "correctIndex": 2,
+      "explanation": "Mou aresei."
+    },
+    {
+      "question": "Placement of possessives?",
+      "options": [
+        "After the noun.",
+        "Ο φίλος του.",
+        "Μου αρέσει ο καφές.",
+        "Το όνομά σου."
+      ],
+      "correctIndex": 0,
+      "explanation": "'To spiti mou'."
+    },
+    {
+      "question": "Translate 'Our house'.",
+      "options": [
+        "Μου αρέσει ο καφές.",
+        "After the noun.",
+        "Ο φίλος της.",
+        "Το σπίτι μας."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mas."
+    }
+  ]
 }

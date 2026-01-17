@@ -2,116 +2,105 @@
 
 import { generateClient } from "aws-amplify/data";
 import type { Schema } from "@/amplify/data/resource";
-import Link from 'next/link';
 import { useEffect, useState } from "react";
 import { getCurrentUser } from 'aws-amplify/auth';
+import Link from "next/link";
+import { FireIcon, BoltIcon, CheckCircleIcon } from "@heroicons/react/24/solid";
 
 const client = generateClient<Schema>();
 
 export default function StatsPage() {
-    const [user, setUser] = useState<any>(null);
-    const [progress, setProgress] = useState<Schema["UserProgress"]["type"] | null>(null);
+    const [userId, setUserId] = useState<string>("");
+    const [stats, setStats] = useState<any>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        async function loadData() {
-            try {
-                const u = await getCurrentUser();
-                setUser(u);
-
-                const { data: items } = await client.models.UserProgress.list({
-                    filter: { userId: { eq: u.userId } }
-                });
-
-                if (items.length > 0) setProgress(items[0]);
-            } catch (e) {
-                // Guest
-            } finally {
-                setLoading(false);
-            }
-        }
-        loadData();
+        getCurrentUser().then(u => setUserId(u.userId)).catch(() => setLoading(false));
     }, []);
 
-    if (loading) return <div className="p-10 text-center">Loading Stats...</div>;
+    useEffect(() => {
+        if (!userId) return;
 
-    if (!user) {
+        async function fetchStats() {
+            const { data } = await client.models.UserProgress.list({
+                filter: { userId: { eq: userId } }
+            });
+            if (data.length > 0) {
+                setStats(data[0]);
+            }
+            setLoading(false);
+        }
+        fetchStats();
+    }, [userId]);
+
+    if (loading) return <div className="p-8 text-center">Loading Stats...</div>;
+
+    if (!userId) {
         return (
-            <div className="min-h-screen flex flex-col items-center justify-center space-y-6 text-center p-6">
-                <span className="text-6xl">🔒</span>
-                <h1 className="text-2xl font-bold">Guest Mode</h1>
-                <p className="text-gray-500">Sign in to track your XP, Streaks, and Level.</p>
-                <Link href="/login" className="bg-blue-600 text-white px-8 py-3 rounded-full font-bold">
-                    Sign In / Create Account
-                </Link>
-                <Link href="/" className="text-blue-500 underline">Back Home</Link>
+            <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col items-center justify-center p-4">
+                <div className="text-center">
+                    <h1 className="text-2xl font-bold mb-4">Sign In Required</h1>
+                    <p className="mb-8 text-gray-500">You need to sign in to track your progress.</p>
+                    <Link href="/login" className="bg-blue-600 text-white px-6 py-3 rounded-full font-bold shadow-lg">
+                        Sign In
+                    </Link>
+                    <div className="mt-8">
+                        <Link href="/" className="text-gray-400 text-sm">Back Home</Link>
+                    </div>
+                </div>
             </div>
         );
     }
 
-    const level = Math.floor((progress?.xp || 0) / 1000) + 1;
-    const progressToNext = ((progress?.xp || 0) % 1000) / 10; // Percentage
-
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-black text-black dark:text-white p-6 pb-24">
-            <header className="mb-8 border-b border-gray-200 dark:border-gray-800 pb-4 flex justify-between items-center">
-                <h1 className="text-3xl font-bold">Your Progress</h1>
-                <Link href="/" className="text-2xl">✕</Link>
+        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 flex flex-col pb-24">
+            <header className="p-4 flex items-center gap-4 bg-white dark:bg-black shadow-sm">
+                <Link href="/" className="text-2xl">←</Link>
+                <h1 className="text-xl font-bold">Your Progress</h1>
             </header>
 
-            <div className="space-y-6">
-                {/* Main Stats Card */}
-                <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl p-8 text-center text-white shadow-xl">
-                    <div className="text-xs font-bold uppercase tracking-widest opacity-80 mb-2">Current Level</div>
-                    <div className="text-6xl font-black mb-2">{level}</div>
-                    <div className="text-lg font-medium opacity-90">Novice Scholar</div>
+            <main className="p-6 space-y-6">
 
-                    <div className="mt-6 bg-black/20 rounded-full h-4 overflow-hidden relative">
-                        <div className="bg-white/90 h-full transition-all duration-1000" style={{ width: `${progressToNext}%` }}></div>
-                    </div>
-                    <div className="flex justify-between text-xs mt-2 opacity-75 font-mono">
-                        <span>{progress?.xp || 0} XP</span>
-                        <span>{level * 1000} XP (Next Lvl)</span>
-                    </div>
-                </div>
-
-                {/* Grid */}
+                {/* Hero Stats */}
                 <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 text-center">
-                        <div className="text-4xl mb-2">🔥</div>
-                        <div className="text-2xl font-bold">{progress?.currentStreak || 0}</div>
-                        <div className="text-xs text-gray-400 uppercase">Day Streak</div>
+                    <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl p-6 text-white shadow-lg">
+                        <div className="flex items-center gap-2 mb-2 opacity-90">
+                            <FireIcon className="w-6 h-6" />
+                            <span className="font-bold uppercase tracking-wider text-xs">Streak</span>
+                        </div>
+                        <div className="text-4xl font-extrabold">{stats?.currentStreak || 0}</div>
+                        <div className="text-sm opacity-75">Days</div>
                     </div>
-                    <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 text-center">
-                        <div className="text-4xl mb-2">✅</div>
-                        <div className="text-2xl font-bold">{progress?.completedTopics?.length || 0}</div>
-                        <div className="text-xs text-gray-400 uppercase">Lessons Done</div>
+
+                    <div className="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-6 text-white shadow-lg">
+                        <div className="flex items-center gap-2 mb-2 opacity-90">
+                            <BoltIcon className="w-6 h-6" />
+                            <span className="font-bold uppercase tracking-wider text-xs">Total XP</span>
+                        </div>
+                        <div className="text-4xl font-extrabold">{stats?.xp || 0}</div>
+                        <div className="text-sm opacity-75">Points</div>
                     </div>
                 </div>
 
-                {/* Sign Out */}
-                <div className="pt-8 text-center">
-                    <Link href="/login" className="text-red-500 opacity-60 hover:opacity-100 text-sm font-bold">
-                        Sign Out / Switch Account
-                    </Link>
+                {/* Topics Completed */}
+                <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700">
+                    <h3 className="font-bold text-gray-500 uppercase tracking-widest text-xs mb-4">Completed Topics</h3>
+                    <div className="space-y-2">
+                        {(stats?.completedTopics || []).length === 0 ? (
+                            <p className="text-gray-400 italic">No topics completed yet. Get started!</p>
+                        ) : (
+                            (stats?.completedTopics || []).filter((t: string | null) => t).map((topicId: string) => (
+                                <div key={topicId} className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+                                    <CheckCircleIcon className="w-5 h-5 text-green-500" />
+                                    <span className="font-mono font-bold text-blue-500">{topicId}</span>
+                                    <span className="text-sm font-medium">Completed</span>
+                                </div>
+                            ))
+                        )}
+                    </div>
                 </div>
-            </div>
 
-            {/* Footer Nav Integration */}
-            <div className="fixed bottom-0 left-0 w-full bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 p-4 flex justify-around shadow-lg z-50">
-                <Link href="/" className="flex flex-col items-center text-gray-400 hover:text-blue-500">
-                    <span className="text-xl">🏠</span>
-                    <span className="text-xs">Home</span>
-                </Link>
-                <Link href="/stats" className="flex flex-col items-center text-blue-600">
-                    <span className="text-xl">🔥</span>
-                    <span className="text-xs">Stats</span>
-                </Link>
-                <Link href="/tutor" className="flex flex-col items-center text-gray-400 hover:text-blue-500">
-                    <span className="text-xl">🤖</span>
-                    <span className="text-xs">Tutor</span>
-                </Link>
-            </div>
+            </main>
         </div>
     );
 }

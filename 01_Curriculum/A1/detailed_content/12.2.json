@@ -1,9 +1,77 @@
 {
   "topicId": "12.2",
   "week": 12,
-  "month": "Interaction & Survival (Cases)",
-  "title": "Review Cases (Nominative vs Accusative).",
-  "reading_greek": "Ο μαθητής διαβάζει το βιβλίο. Η μαθήτρια γράφει την άσκηση. Ο δάσκαλος βλέπει τον μαθητή. Η δασκάλα βλέπει την μαθήτρια.",
-  "reading_english": "The male student reads the book. The female student writes the exercise. The male teacher sees the male student. The female teacher sees the female student.",
-  "audio_script": "Welcome to Week 12. Today we will review cases: Nominative and Accusative. ... In Greek, the form of a noun or pronoun changes depending on its function in a sentence. ... The Nominative case is usually the subject of the sentence. ... The Accusative case is usually the direct object. ... Let's read a short passage. ... [Reading Greek]: Ο μαθητής διαβάζει το βιβλίο. ... Η μαθήτρια γράφει την άσκηση. ... Ο δάσκαλος βλέπει τον μαθητή. ... Η δασκάλα βλέπει την μαθήτρια. ... In the first sentence, 'Ο μαθητής' (the male student) is the subject, so it's in the Nominative case. 'το βιβλίο' (the book) is the direct object, so it's in the Accusative case. ... In the second sentence, 'Η μαθήτρια' (the female student) is the subject, Nominative. 'την άσκηση' (the exercise) is the direct object, Accusative. ... In the third sentence, 'Ο δάσκαλος' (the male teacher) is the subject, Nominative. 'τον μαθητή' (the male student) is the direct object, Accusative. ... And in the last sentence, 'Η δασκάλα' (the female teacher) is the subject, Nominative. 'την μαθήτρια' (the female student) is the direct object, Accusative. ... Notice how the endings change for masculine and feminine nouns in the Accusative case. ... Great job! Let's practice more next time."
+  "month": "Month 3",
+  "title": "Review: Essential Phrases",
+  "reading_greek": "GREETINGS\n- Καλημέρα (Good morning)\n- Καλησπέρα (Good evening)\n- Καληνύχτα (Good night)\n- Γεια σου / Γεια σας (Hello / Goodbye)\n\nSURVIVAL\n- Δεν καταλαβαίνω (I don't understand)\n- Μιλάτε Αγγλικά; (Do you speak English?)\n- Πού είναι η τουαλέτα; (Where is the toilet?)\n- Πόσο κάνει; (How much does it cost?)\n- Θέλω νερό/καφέ. (I want water/coffee)",
+  "reading_english": "REVIEW: SURVIVAL KIT\n\n1. THE GREETINGS (Ch 2):\n   - Kalimera (Morning - until 12/1).\n   - Kalispera (Evening - after 5).\n\n2. THE QUESTIONS (Ch 7):\n   - Pou einai? (Where is?).\n   - Posso kanei? (How much?).\n\n3. THE VERBS (Ch 8):\n   - Thelo (I want).\n   - Exete (Do you have?).",
+  "audio_script": "Let's pack your survival kit. \n\n'Kalimera' works until noon. \n'Kalispera' works for the evening.\n\nIf you get stuck: 'Den katalaveno' (I don't understand).\n\nAnd the most useful phrase for a tourist: \n'Pou einai...?' (Where is?). \n'Pou einai h Acropoli?'.\n\n'Posso kanei?' (How much?). \n\nAnd ordering: 'Ena kafe, parakalo'. (One coffee, please).",
+  "quiz_questions": [
+    {
+      "question": "Translate 'Good night'.",
+      "options": [
+        "Δεν καταλαβαίνω.",
+        "Μιλάτε Αγγλικά;",
+        "Καληνύχτα.",
+        "Πόσο κάνει;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Kalinychta."
+    },
+    {
+      "question": "Translate 'I don't understand'.",
+      "options": [
+        "Πού είναι η τουαλέτα;",
+        "Καληνύχτα.",
+        "Δεν καταλαβαίνω.",
+        "Θέλω έναν καφέ."
+      ],
+      "correctIndex": 2,
+      "explanation": "Den katalaveno."
+    },
+    {
+      "question": "Translate 'Do you speak English?'.",
+      "options": [
+        "Καληνύχτα.",
+        "Πού είναι η τουαλέτα;",
+        "Θέλω έναν καφέ.",
+        "Μιλάτε Αγγλικά;"
+      ],
+      "correctIndex": 3,
+      "explanation": "Milate Agglika."
+    },
+    {
+      "question": "Translate 'Where is the toilet?'.",
+      "options": [
+        "Πόσο κάνει;",
+        "Δεν καταλαβαίνω.",
+        "Πού είναι η τουαλέτα;",
+        "Μιλάτε Αγγλικά;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pou einai h toualeta."
+    },
+    {
+      "question": "Translate 'How much does it cost?'.",
+      "options": [
+        "Δεν καταλαβαίνω.",
+        "Καληνύχτα.",
+        "Πόσο κάνει;",
+        "Πού είναι η τουαλέτα;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Posso kanei."
+    },
+    {
+      "question": "Translate 'I want a coffee'.",
+      "options": [
+        "Δεν καταλαβαίνω.",
+        "Καληνύχτα.",
+        "Πόσο κάνει;",
+        "Θέλω έναν καφέ."
+      ],
+      "correctIndex": 3,
+      "explanation": "Thelo enan kafe."
+    }
+  ]
 }

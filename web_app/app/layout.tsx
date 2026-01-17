@@ -4,6 +4,7 @@ import "./globals.css";
 
 import ConfigureAmplifyClientSide from "@/components/ConfigureAmplify";
 import GamificationHeader from "@/components/GamificationHeader";
+import FooterNav from "@/components/FooterNav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <ConfigureAmplifyClientSide />
         <GamificationHeader />
         {children}
+        <FooterNav />
       </body>
     </html>
   );

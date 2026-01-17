@@ -1,10 +1,88 @@
-
 {
   "topicId": "8.3",
   "week": 8,
-  "month": "Month 1",
-  "title": "\"I live in...\" / \"I want...\".",
-  "reading_greek": "1. Μένω στην Ελλάδα.\n   “I live in Greece.”\n2. Μένω στην Αθήνα.\n   “I live in Athens.”\n3. Ζω στην Κρήτη.\n   “I live in Crete.”\n4. Θέλω ένα ποτήρι νερό.\n   “I want a glass of water.”\n5. Θέλω χυμό πορτοκάλι.\n   “I want orange juice.”\n6. Θέλω να πάω σινεμά.\n   “I want to go to the cinema.”",
-  "reading_english": "1. I live in Greece.\n2. I live in Athens.\n3. I live in Crete.\n4. I want a glass of water.\n5. I want orange juice.\n6. I want to go to the cinema.",
-  "audio_script": "Hello everyone! Welcome back to our Greek lessons. Today, we're going to learn how to say \"I live in...\" and \"I want...\". These are very useful phrases for everyday communication.\n\nLet's start with \"I live in...\". In Modern Greek, we use the verb 'μένω' (meno) for 'I live' when we are talking about residing in a place. We also sometimes use 'ζω' (zo) for 'I live', which can imply a more permanent or deeper sense of living somewhere.\n\nLook at our first example: 'Μένω στην Ελλάδα.' (Meno stin Ellada). This translates to 'I live in Greece.' Here, 'στην' (stin) is a combination of the preposition 'σε' (se), meaning 'in' or 'at', and the definite article 'την' (tin) which is used with feminine nouns in the accusative case, like 'Ελλάδα' (Ellada).\n\nLet's try another one: 'Μένω στην Αθήνα.' (Meno stin Athina). This means 'I live in Athens.' Again, we use 'στην' because 'Αθήνα' (Athina) is a feminine noun.\n\nNow, for 'I live in Crete', we say: 'Ζω στην Κρήτη.' (Zo stin Kriti). Notice here we used 'ζω' (zo) which also means 'I live', and 'στην' again because 'Κρήτη' (Kriti) is feminine. This shows that the prepositional phrase 'στην' is very common when talking about living in a place.\n\nNow, let's move on to \"I want...\". The verb for 'I want' in Modern Greek is 'θέλω' (thelo).\n\nConsider this example: 'Θέλω ένα ποτήρι νερό.' (Thelo ena potiri nero). This means 'I want a glass of water.' Here, 'ένα ποτήρι' (ena potiri) means 'a glass', and 'νερό' (nero) means 'water'. Remember from Chapter 3 that nouns after certain prepositions or in specific contexts can take the accusative case. 'Νερό' is a neuter noun, and in this context, it remains the same in the accusative.\n\nAnother example: 'Θέλω χυμό πορτοκάλι.' (Thelo chymo portokali). This translates to 'I want orange juice.' 'Χυμό' (chymo) is the accusative form of 'χυμός' (chymos) meaning 'juice', and 'πορτοκάλι' (portokali) is 'orange'. This construction is common for compound nouns like 'orange juice'.\n\nFinally, we can also express wanting to do something. Look at: 'Θέλω να πάω σινεμά.' (Thelo na pao sinema). This means 'I want to go to the cinema.' The word 'να' (na) is a particle used here to connect 'θέλω' with the verb 'πάω' (pao), which means 'to go'. The phrase 'σινεμά' (sinema) means 'cinema', and it's used here without an article in this common expression.\n\nSo, to recap: 'I live in...' is often 'Μένω στην...' or 'Ζω στην...', and 'I want...' is 'Θέλω...'. Practice these phrases, and you'll find them incredibly useful. \n\nKeep up the great work!"
+  "month": "Month 2",
+  "title": "Irregular & Modal Verbs",
+  "reading_greek": "THE VERB 'TO BE' (Eimai)\n- Είμαι, Είσαι, Είναι\n- Είμαστε, Είστε, Είναι\n\nTHE VERB 'TO HAVE' (Exo - Group A but crucial)\n- Έχω, Έχεις, Έχει\n- Έχουμε, Έχετε, Έχουν\n\nMODAL VERBS (Can / Want)\n- Μπορώ (I can - Group B2)\n- Θέλω (I want - Group A)\n\nSYNTAX\n- Θέλω να φύγω. (I want TO leave).\n- Μπορώ να κάνω... (I can DO...).",
+  "reading_english": "GRAMMAR: ESSENTIAL VERBS\n\n1. EIMAI (To Be): Completely irregular. Memorize it.\n\n2. BORO (I Can): It's a B2 Group verb (Ending in -o, not -ao, but stressed!).\n   - Boro, Boreis, Borei.\n   - Boroume, Boreite, Boroun.\n\n3. THELO (I Want): Standard Group A.\n   - Thelo, Theleis, Thelei.",
+  "audio_script": "The Power Trio.\n\n1. Eimai (I am). You know this. \n2. Exo (I have). You know this. \n\n3. Boro (I can). \nNote the stress: Bo-RO. \nIt conjugates like this: Boreis, Borei, Boroume.\n\n4. Thelo (I want).\nKA-no style: Thelo, Theleis, Thelei.\n\nWe combine these with 'NA' (to). \n'Thelo na pao' (I want to go). \n'Boro na pao' (I can go).",
+  "quiz_questions": [
+    {
+      "question": "Translate 'I want'.",
+      "options": [
+        "Έχουμε.",
+        "Είμαι.",
+        "Μπορώ να πάω.",
+        "Θέλω (Thelo)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Group A."
+    },
+    {
+      "question": "Translate 'I can go'.",
+      "options": [
+        "Μπορούμε.",
+        "Μπορώ να πάω.",
+        "Είμαι.",
+        "Θέλεις."
+      ],
+      "correctIndex": 1,
+      "explanation": "Use 'Na' + Verb."
+    },
+    {
+      "question": "Translate 'I want to sleep'.",
+      "options": [
+        "Μπορούμε.",
+        "Είμαι.",
+        "Θέλεις.",
+        "Θέλω να κοιμηθώ / Θέλω να κοιμάμαι."
+      ],
+      "correctIndex": 3,
+      "explanation": "Thelo na..."
+    },
+    {
+      "question": "Conjugate 'Boro' (We can).",
+      "options": [
+        "Μπορώ να πάω.",
+        "Έχουμε.",
+        "Θέλω (Thelo).",
+        "Μπορούμε."
+      ],
+      "correctIndex": 3,
+      "explanation": "Boroume."
+    },
+    {
+      "question": "Conjugate 'Thelo' (You want).",
+      "options": [
+        "Θέλω (Thelo).",
+        "Μπορούμε.",
+        "Θέλεις.",
+        "Θέλω να κοιμηθώ / Θέλω να κοιμάμαι."
+      ],
+      "correctIndex": 2,
+      "explanation": "Theleis."
+    },
+    {
+      "question": "Translate 'I am'.",
+      "options": [
+        "Μπορούμε.",
+        "Είμαι.",
+        "Θέλεις.",
+        "Θέλω (Thelo)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Irregular."
+    },
+    {
+      "question": "Translate 'We have'.",
+      "options": [
+        "Μπορούμε.",
+        "Έχουμε.",
+        "Θέλω (Thelo).",
+        "Θέλω να κοιμηθώ / Θέλω να κοιμάμαι."
+      ],
+      "correctIndex": 1,
+      "explanation": "Exoume."
+    }
+  ]
 }

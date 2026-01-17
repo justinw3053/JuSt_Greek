@@ -1,9 +1,77 @@
 {
   "topicId": "12.1",
   "week": 12,
-  "month": "Interaction & Survival (Cases)",
-  "title": "Review Verbs (To Be, Have, Group A).",
-  "reading_greek": "Είμαι φοιτητής. Έχω ένα βιβλίο. Εγώ μιλάω ελληνικά. Εσύ είσαι καλός μαθητής. Αυτός έχει μια γάτα.",
-  "reading_english": "I am a student. I have a book. I speak Greek. You are a good student. He has a cat.",
-  "audio_script": "Welcome to Week 12... Today, we will review some important verbs: 'to be', 'to have', and Group A verbs... Listen to this reading... [Reading Greek] Είμαι φοιτητής. Έχω ένα βιβλίο. Εγώ μιλάω ελληνικά. Εσύ είσαι καλός μαθητής. Αυτός έχει μια γάτα. ... Now, let's break down the verbs... 'Είμαι' means 'I am'... 'Έχω' means 'I have'... 'Μιλάω' means 'I speak'... Notice how these verbs change depending on who is doing the action... For example, 'είμαι' (I am) becomes 'είσαι' (you are)... and 'έχω' (I have) becomes 'έχει' (he/she/it has)... Keep practicing these verbs to build a strong foundation in Greek!"
+  "month": "Month 3",
+  "title": "Politeness & Formal Speech",
+  "reading_greek": "PLURAL OF POLITENESS\n- Εσείς (You - Plural/Formal) vs Εσύ (You - Singular/Informal).\n- Τι κάνετε; (How are you? - Formal)\n- Τι κάνεις; (How are you? - Informal)\n\nTITLES\n- Κύριε (Mr. - Vocative)\n- Κυρία (Mrs. - Vocative)\n- Ευχαριστώ (Thank you - Neutral/Formal)\n- Παρακαλώ (Please/You're welcome)",
+  "reading_english": "CULTURE: POLITENESS (Page 93)\n\n1. THE 'ESEIS' RULE:\n   - Use Plural 'Eseis' for elders, professors, or strangers.\n   - 'Thelete' (Do you want? - Formal) vs 'Theleis' (Informal).\n\n2. SHIFTING:\n   - Greeks often say 'Milame ston eniko?' (Shall we speak in singular?).\n   - This invites you to drop the formality.",
+  "audio_script": "Being polite in Greece. \n\nUse the Plural 'Eseis' to show respect.\n\n'Ti kanete?' instead of 'Ti kaneis?'.\n'Thelete?' instead of 'Theleis?'.\n\nIf you speak to a 'Kyrios' (Sir) or 'Kyria' (Madam), use the Plural. \nIt sounds elegant and respectful.\n\n'Euxaristo' is the standard thank you. \n'Parakalo' is the magic word. It means Please, You're Welcome, and 'I beg your pardon?'.",
+  "quiz_questions": [
+    {
+      "question": "Translate 'Please'.",
+      "options": [
+        "Κύριε.",
+        "Τι κάνετε;",
+        "Παρακαλώ.",
+        "Κυρία."
+      ],
+      "correctIndex": 2,
+      "explanation": "Parakalo."
+    },
+    {
+      "question": "Translate 'How are you?' (Formal).",
+      "options": [
+        "Θέλετε;",
+        "Κυρία.",
+        "Τι κάνετε;",
+        "Παρακαλώ."
+      ],
+      "correctIndex": 2,
+      "explanation": "Plural."
+    },
+    {
+      "question": "Translate 'Do you want?' (Formal).",
+      "options": [
+        "Γεια σας.",
+        "Κύριε.",
+        "Θέλετε;",
+        "Τι κάνετε;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Plural."
+    },
+    {
+      "question": "Translate 'Hello' (Formal / to group).",
+      "options": [
+        "Κύριε.",
+        "Τι κάνετε;",
+        "Γεια σας.",
+        "Κυρία."
+      ],
+      "correctIndex": 2,
+      "explanation": "Geia sas."
+    },
+    {
+      "question": "Title for a man (Mr).",
+      "options": [
+        "Κυρία.",
+        "Θέλετε;",
+        "Κύριε.",
+        "Τι κάνετε;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Kyrie."
+    },
+    {
+      "question": "Title for a woman (Mrs).",
+      "options": [
+        "Κυρία.",
+        "Τι κάνετε;",
+        "Παρακαλώ.",
+        "Κύριε."
+      ],
+      "correctIndex": 0,
+      "explanation": "Kyria."
+    }
+  ]
 }
