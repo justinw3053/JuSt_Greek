@@ -35,7 +35,15 @@ def clean_text_for_speech(text):
     text = text.replace('**', '').replace('*', '')
     # Remove links
     text = re.sub(r'\[(.*?)\]\(.*?\)', r'\1', text)
-    return text.strip()
+    
+    text = text.strip()
+
+    # TTS Fix: "Οι" (The - plural) at start is often read as letters O-I by Murf.
+    # Lowercasing it to "οι" forces the engine to read it as a word.
+    if text.startswith("Οι "):
+        text = "οι" + text[2:]
+
+    return text
 
 def generate_audio(api_key, text, filename):
     """Generate audio via Murf and save to file."""
