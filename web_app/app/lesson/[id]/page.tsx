@@ -184,15 +184,34 @@ export default function LessonPage() {
                                     {parts.map((part, j) => {
                                         const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/);
                                         if (linkMatch) {
+                                            const text = linkMatch[1];
+                                            const url = linkMatch[2];
+
+                                            // Intercept PDF links
+                                            if (url.includes('.pdf') && url.includes('page=')) {
+                                                const pageNumMatch = url.match(/page=(\d+)/);
+                                                const pageNum = pageNumMatch ? pageNumMatch[1] : '1';
+
+                                                return (
+                                                    <Link
+                                                        key={j}
+                                                        href={`/pdf?page=${pageNum}`}
+                                                        className="font-semibold text-blue-400 hover:text-blue-300 underline decoration-blue-400/30 underline-offset-4"
+                                                    >
+                                                        {text}
+                                                    </Link>
+                                                );
+                                            }
+
                                             return (
                                                 <a
                                                     key={j}
-                                                    href={linkMatch[2]}
+                                                    href={url}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="font-semibold text-blue-400 hover:text-blue-300 underline decoration-blue-400/30 underline-offset-4"
                                                 >
-                                                    {linkMatch[1]}
+                                                    {text}
                                                 </a>
                                             );
                                         }
