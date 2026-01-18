@@ -95,5 +95,47 @@
       "correctIndex": 0,
       "explanation": "-ei."
     }
+  ],
+  "vocabulary": [
+    {
+      "id": "v1",
+      "item": "Μένω",
+      "match": "I live"
+    },
+    {
+      "id": "v2",
+      "item": "Περιμένω",
+      "match": "I wait"
+    },
+    {
+      "id": "v3",
+      "item": "Διαβάζω",
+      "match": "I read"
+    },
+    {
+      "id": "v4",
+      "item": "Γράφω",
+      "match": "I write"
+    },
+    {
+      "id": "v5",
+      "item": "Πίνω",
+      "match": "I drink"
+    },
+    {
+      "id": "v6",
+      "item": "Μαθαίνω",
+      "match": "I learn"
+    },
+    {
+      "id": "v7",
+      "item": "Δουλεύω",
+      "match": "I work"
+    },
+    {
+      "id": "v8",
+      "item": "Κάνω",
+      "match": "I do"
+    }
   ]
 }

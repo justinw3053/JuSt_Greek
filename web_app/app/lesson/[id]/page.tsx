@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import ChatTutor from "@/components/ChatTutor";
 import QuizModal from "@/components/QuizModal";
+import MatchingGame from "@/components/MatchingGame";
 import { getCurrentUser } from 'aws-amplify/auth';
 import {
     BookOpenIcon,
@@ -104,7 +105,14 @@ export default function LessonPage() {
     if (!lesson) return <div className="p-8 text-center mt-20 text-gray-500 animate-pulse">Loading Lesson Content...</div>;
 
     // Parse Content
-    let content = { reading_greek: "", reading_english: "", audio_script: "" };
+    interface LessonContent {
+        reading_greek: string;
+        reading_english: string;
+        audio_script: string;
+        vocabulary?: any[];
+    }
+
+    let content: LessonContent = { reading_greek: "", reading_english: "", audio_script: "" };
     try {
         if (lesson.content) {
             const parsed = JSON.parse(lesson.content);
@@ -296,6 +304,12 @@ export default function LessonPage() {
                         })}
                     </div>
                 </div>
+
+                {/* 4. Vocabulary Game (If available) */}
+                {/* @ts-ignore - Dynamic content property */}
+                {content.vocabulary && content.vocabulary.length > 0 && (
+                    <MatchingGame pairs={content.vocabulary} />
+                )}
 
             </main>
 
