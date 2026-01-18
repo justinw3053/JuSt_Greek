@@ -118,6 +118,7 @@ export default function LessonPage() {
         reading_english: string;
         audio_script: string;
         vocabulary?: any[];
+        intro_video?: string;
     }
 
     let content: LessonContent = { reading_greek: "", reading_english: "", audio_script: "" };
@@ -166,7 +167,7 @@ export default function LessonPage() {
 
             <main className="flex-1 max-w-3xl mx-auto w-full p-4 md:p-6 space-y-6 pb-40">
 
-                {/* 1. Context / Tutor Intro */}
+                {/* 1. Context / Tutor Intro (Video or Text) */}
                 <div className="bg-[#1C1C1E] rounded-[20px] p-6 border border-white/10 shadow-sm relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 rounded-full blur-3xl -mr-10 -mt-10"></div>
                     <div className="flex items-center gap-3 mb-4 relative z-10">
@@ -175,9 +176,21 @@ export default function LessonPage() {
                         </div>
                         <h2 className="font-bold text-lg text-gray-200">Introduction</h2>
                     </div>
-                    <div className="prose prose-invert max-w-none text-gray-400 text-[15px] leading-relaxed relative z-10">
-                        <p className="whitespace-pre-wrap">{content.audio_script}</p>
-                    </div>
+
+                    {content.intro_video ? (
+                        <div className="relative z-10 rounded-xl overflow-hidden shadow-2xl border border-white/5 bg-black">
+                            <video
+                                src={content.intro_video}
+                                controls
+                                className="w-full aspect-video object-cover"
+                                poster="/images/poster_placeholder.jpg"
+                            />
+                        </div>
+                    ) : (
+                        <div className="prose prose-invert max-w-none text-gray-400 text-[15px] leading-relaxed relative z-10">
+                            <p className="whitespace-pre-wrap">{content.audio_script}</p>
+                        </div>
+                    )}
                 </div>
 
                 {/* 2. Grammar Theory (English) */}
