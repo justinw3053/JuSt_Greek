@@ -3,7 +3,7 @@
   "week": 10,
   "month": "Month 3",
   "title": "Drill: Feminine & Neuter (H -> Tin, To -> To)",
-  "reading_greek": "FEMININE (Article Changes Only)\n- Η Μαρία -> Την Μαρία\n- Η Ελλάδα -> Την Ελλάδα\n- Η Τιμή -> Την Τιμή\n(Noun ending usually stays the same!)\n\nNEUTER (No Change)\n- Το Βιβλίο -> Το Βιβλίο\n- Το Παιδί -> Το Παιδί\n- Το Νερό -> Το Νερό\n\nMIXED DRILL\n- Βλέπω τον Κώστα. (M)\n- Βλέπω την Μαρία. (F)\n- Βλέπω το παιδί. (N)",
+  "reading_greek": "FEMININE (H -> Tin)\n- Η Μαρία -> Την Μαρία (Maria -> Maria [obj])\n- Η Ελλάδα -> Την Ελλάδα (Greece -> Greece [obj])\n- Η Τιμή -> Την Τιμή (The Price -> The Price [obj])\n\nNEUTER (To -> To)\n- Το Βιβλίο -> Το Βιβλίο (The Book -> The Book [obj])\n- Το Παιδί -> Το Παιδί (The Child -> The Child [obj])\n- Το Νερό -> Το Νερό (The Water -> The Water [obj])\n\nMIXED DRILL\n- Βλέπω τον Κώστα. (M)\n- Βλέπω την Μαρία. (F)\n- Βλέπω το παιδί. (N)",
   "reading_english": "GRAMMAR: FEM/NEUT ACCUSATIVE [(See Page 139)](/assets/grammar.pdf#page=139)\n\n1. FEMININE:\n   - Article: H -> Tin.\n   - Noun: Usually unchanged (exceptions exist but for -a/-i nouns like Poli/Maria, it's just the article).\n\n2. NEUTER:\n   - The easiest case.\n   - Subject = Object.\n   - 'To vivlio einai edo'. 'Thelo to vivlio'. Identical.",
   "audio_script": "Feminine and Neuter are easier.\n\nFor Feminine, focus on the article 'Tin'. The noun usually doesn't change.\n'H ora' -> 'Tin ora'.\n'H agapi' -> 'Tin agapi'.\n\nFor Neuter, relax. Nothing changes.\n'To nero'. Subject or Object, it is 'To nero'.\n\nSo only Masculine nouns require you to 'Drop the S'.",
   "quiz_questions": [
