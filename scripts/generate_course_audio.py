@@ -38,10 +38,12 @@ def clean_text_for_speech(text):
     
     text = text.strip()
 
-    # TTS Fix: "Οι" (The - plural) at start is often read as letters O-I by Murf.
-    # Lowercasing it to "οι" forces the engine to read it as a word.
-    if text.startswith("Οι "):
-        text = "οι" + text[2:]
+    # TTS Fix: "Οι" (The - plural) is often read as letters O-I.
+    # We substitute it with "Η" (The - femoral singular) which makes the EXACT same "ee" sound
+    # but is reliably read as a word.
+    # Match whole word 'Οι' -> 'Η', 'οι' -> 'η'
+    text = re.sub(r'\bΟι\b', 'Η', text) 
+    text = re.sub(r'\bοι\b', 'η', text)
 
     return text
 

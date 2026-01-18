@@ -116,12 +116,10 @@ export default function LessonPage() {
     }
 
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="min-h-screen bg-black text-white flex flex-col font-sans"
-        >
+        <div className="min-h-screen bg-black text-white font-sans selection:bg-blue-500/30 pb-32">
+
+            {/* Background Effects */}
+            <div className="fixed inset-0 bg-gradient-to-b from-blue-900/10 to-transparent pointer-events-none" />
             {/* Header */}
             <header className="sticky top-0 z-20 bg-black/50 backdrop-blur-xl border-b border-white/10 p-4 transition-all">
                 <div className="flex items-center justify-between max-w-3xl mx-auto w-full">
@@ -340,6 +338,6 @@ export default function LessonPage() {
                 isOpen={isChatOpen}
                 setIsOpen={setIsChatOpen}
             />
-        </motion.div>
+        </div>
     );
 }
