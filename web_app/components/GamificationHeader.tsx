@@ -4,6 +4,7 @@ import { generateClient } from "aws-amplify/data";
 import type { Schema } from "@/amplify/data/resource";
 import { useEffect, useState } from "react";
 import { getCurrentUser } from 'aws-amplify/auth';
+import { usePathname } from "next/navigation";
 
 const client = generateClient<Schema>();
 
@@ -11,6 +12,7 @@ export default function GamificationHeader() {
     const [xp, setXp] = useState(0);
     const [streak, setStreak] = useState(0);
     const [userId, setUserId] = useState<string>("");
+    const pathname = usePathname();
 
     useEffect(() => {
         async function checkUser() {
@@ -36,15 +38,15 @@ export default function GamificationHeader() {
                 if (items.length > 0) {
                     setXp(items[0].xp || 0);
                     setStreak(items[0].currentStreak || 0);
-                } else {
-                    // Initialize if not exists?
-                    // Usually better to do this on first action to avoid spamming DB for inactive users
                 }
             }
         });
 
         return () => sub.unsubscribe();
     }, [userId]);
+
+    // Only show on Dashboard (home)
+    if (pathname !== "/") return null;
 
     if (!userId) {
         return (

@@ -201,7 +201,7 @@ export default function LessonPage() {
 
                                         const pageMatch = part.match(/^(?:Page|page)\s+(\d+)$/);
                                         if (pageMatch) {
-                                            const pageNum = pageMatch[1];
+                                            const pageNum = parseInt(pageMatch[1]) + 9; // PDF Offset: Book Page + 9 = PDF Page
                                             return (
                                                 <a
                                                     key={j}
