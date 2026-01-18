@@ -99,43 +99,198 @@
   "vocabulary": [
     {
       "id": "v1",
-      "item": "Μένω",
-      "match": "I live"
+      "item": "Αγοράζω",
+      "match": "I buy"
     },
     {
       "id": "v2",
-      "item": "Περιμένω",
-      "match": "I wait"
+      "item": "Αλλάζω",
+      "match": "I change"
     },
     {
       "id": "v3",
-      "item": "Διαβάζω",
-      "match": "I read"
+      "item": "Ανοίγω",
+      "match": "I open"
     },
     {
       "id": "v4",
+      "item": "Αρέσει",
+      "match": "It likes (I like)"
+    },
+    {
+      "id": "v5",
+      "item": "Αρχίζω",
+      "match": "I start"
+    },
+    {
+      "id": "v6",
+      "item": "Αφήνω",
+      "match": "I leave/let"
+    },
+    {
+      "id": "v7",
+      "item": "Βγαίνω",
+      "match": "I go out"
+    },
+    {
+      "id": "v8",
+      "item": "Βλέπω",
+      "match": "I see/watch"
+    },
+    {
+      "id": "v9",
+      "item": "Βρίσκω",
+      "match": "I find"
+    },
+    {
+      "id": "v10",
       "item": "Γράφω",
       "match": "I write"
     },
     {
-      "id": "v5",
-      "item": "Πίνω",
-      "match": "I drink"
+      "id": "v11",
+      "item": "Γυρίζω",
+      "match": "I turn/return"
     },
     {
-      "id": "v6",
-      "item": "Μαθαίνω",
-      "match": "I learn"
+      "id": "v12",
+      "item": "Διαβάζω",
+      "match": "I read/study"
     },
     {
-      "id": "v7",
+      "id": "v13",
+      "item": "Δίνω",
+      "match": "I give"
+    },
+    {
+      "id": "v14",
       "item": "Δουλεύω",
       "match": "I work"
     },
     {
-      "id": "v8",
+      "id": "v15",
+      "item": "Έχω",
+      "match": "I have"
+    },
+    {
+      "id": "v16",
+      "item": "Θέλω",
+      "match": "I want"
+    },
+    {
+      "id": "v17",
       "item": "Κάνω",
       "match": "I do"
+    },
+    {
+      "id": "v18",
+      "item": "Κλείνω",
+      "match": "I close"
+    },
+    {
+      "id": "v19",
+      "item": "Κοιτάζω",
+      "match": "I look/stare"
+    },
+    {
+      "id": "v20",
+      "item": "Μαγειρεύω",
+      "match": "I cook"
+    },
+    {
+      "id": "v21",
+      "item": "Μαθαίνω",
+      "match": "I learn"
+    },
+    {
+      "id": "v22",
+      "item": "Μένω",
+      "match": "I live/stay"
+    },
+    {
+      "id": "v23",
+      "item": "Μπαίνω",
+      "match": "I enter"
+    },
+    {
+      "id": "v24",
+      "item": "Νομίζω",
+      "match": "I think"
+    },
+    {
+      "id": "v25",
+      "item": "Ξέρω",
+      "match": "I know"
+    },
+    {
+      "id": "v26",
+      "item": "Παίρνω",
+      "match": "I take/get"
+    },
+    {
+      "id": "v27",
+      "item": "Πίνω",
+      "match": "I drink"
+    },
+    {
+      "id": "v28",
+      "item": "Πρέπει",
+      "match": "Must (It is necessary)"
+    },
+    {
+      "id": "v29",
+      "item": "Στέλνω",
+      "match": "I send"
+    },
+    {
+      "id": "v30",
+      "item": "Τελειώνω",
+      "match": "I finish"
+    },
+    {
+      "id": "v31",
+      "item": "Υπάρχει",
+      "match": "There is/exists"
+    },
+    {
+      "id": "v32",
+      "item": "Φέρνω",
+      "match": "I bring"
+    },
+    {
+      "id": "v33",
+      "item": "Φεύγω",
+      "match": "I leave (depart)"
+    },
+    {
+      "id": "v34",
+      "item": "Φτάνω",
+      "match": "I arrive"
+    },
+    {
+      "id": "v35",
+      "item": "Φτιάχνω",
+      "match": "I make/fix"
+    },
+    {
+      "id": "v36",
+      "item": "Χάνω",
+      "match": "I lose/miss"
+    },
+    {
+      "id": "v37",
+      "item": "Χορεύω",
+      "match": "I dance"
+    },
+    {
+      "id": "v38",
+      "item": "Ψάχνω",
+      "match": "I look for"
+    },
+    {
+      "id": "v39",
+      "item": "Ψωνίζω",
+      "match": "I shop"
     }
   ]
 }

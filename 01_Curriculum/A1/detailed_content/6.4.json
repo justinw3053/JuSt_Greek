@@ -95,5 +95,127 @@
       "correctIndex": 0,
       "explanation": "Never say 'Evra' or 'Evroi'."
     }
+  ],
+  "vocabulary": [
+    {
+      "id": "n1",
+      "item": "Ένα",
+      "match": "One"
+    },
+    {
+      "id": "n2",
+      "item": "Δύο",
+      "match": "Two"
+    },
+    {
+      "id": "n3",
+      "item": "Τρία",
+      "match": "Three"
+    },
+    {
+      "id": "n4",
+      "item": "Τέσσερα",
+      "match": "Four"
+    },
+    {
+      "id": "n5",
+      "item": "Πέντε",
+      "match": "Five"
+    },
+    {
+      "id": "n6",
+      "item": "Έξι",
+      "match": "Six"
+    },
+    {
+      "id": "n7",
+      "item": "Εφτά",
+      "match": "Seven"
+    },
+    {
+      "id": "n8",
+      "item": "Οχτώ",
+      "match": "Eight"
+    },
+    {
+      "id": "n9",
+      "item": "Εννιά",
+      "match": "Nine"
+    },
+    {
+      "id": "n10",
+      "item": "Δέκα",
+      "match": "Ten"
+    },
+    {
+      "id": "n11",
+      "item": "Έντεκα",
+      "match": "Eleven"
+    },
+    {
+      "id": "n12",
+      "item": "Δώδεκα",
+      "match": "Twelve"
+    },
+    {
+      "id": "n13",
+      "item": "Δεκατρία",
+      "match": "Thirteen"
+    },
+    {
+      "id": "n14",
+      "item": "Δεκατέσσερα",
+      "match": "Fourteen"
+    },
+    {
+      "id": "n15",
+      "item": "Δεκαπέντε",
+      "match": "Fifteen"
+    },
+    {
+      "id": "n20",
+      "item": "Είκοσι",
+      "match": "Twenty"
+    },
+    {
+      "id": "n30",
+      "item": "Τριάντα",
+      "match": "Thirty"
+    },
+    {
+      "id": "n40",
+      "item": "Σαράντα",
+      "match": "Forty"
+    },
+    {
+      "id": "n50",
+      "item": "Πενήντα",
+      "match": "Fifty"
+    },
+    {
+      "id": "n60",
+      "item": "Εξήντα",
+      "match": "Sixty"
+    },
+    {
+      "id": "n70",
+      "item": "Εβδομήντα",
+      "match": "Seventy"
+    },
+    {
+      "id": "n80",
+      "item": "Ογδόντα",
+      "match": "Eighty"
+    },
+    {
+      "id": "n90",
+      "item": "Ενενήντα",
+      "match": "Ninety"
+    },
+    {
+      "id": "n100",
+      "item": "Εκατό",
+      "match": "One Hundred"
+    }
   ]
 }

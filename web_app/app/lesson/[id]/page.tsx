@@ -68,6 +68,14 @@ export default function LessonPage() {
         audio.play().catch(e => console.error("Audio play error", e));
     };
 
+    const playVocabAudio = (vocabId: string) => {
+        // vocab_{topic}_{id}.mp3
+        const safeTopicId = topicId.replace(/\./g, "_");
+        const key = `/audio/vocab_${safeTopicId}_${vocabId}.mp3`;
+        const audio = new Audio(key);
+        audio.play().catch(e => console.error("Audio play error", e));
+    };
+
     const hasGreek = (text: string) => /[\u0370-\u03FF]/.test(text);
 
     const handleComplete = async () => {
@@ -198,7 +206,8 @@ export default function LessonPage() {
                                             // Intercept PDF links
                                             if (url.includes('.pdf') && url.includes('page=')) {
                                                 const pageNumMatch = url.match(/page=(\d+)/);
-                                                const pageNum = pageNumMatch ? pageNumMatch[1] : '1';
+                                                // Offset applied
+                                                const pageNum = pageNumMatch ? parseInt(pageNumMatch[1]) + 9 : 1;
 
                                                 return (
                                                     <Link
@@ -305,7 +314,39 @@ export default function LessonPage() {
                     </div>
                 </div>
 
-                {/* 4. Vocabulary Game (If available) */}
+                {/* 4. Vocabulary Study (If available) */}
+                {/* @ts-ignore - Dynamic content property */}
+                {content.vocabulary && content.vocabulary.length > 0 && (
+                    <div className="bg-[#1C1C1E] rounded-[20px] p-6 border border-white/10 shadow-sm relative overflow-hidden">
+                        <div className="flex items-center gap-3 mb-6 relative z-10">
+                            <div className="p-2 bg-emerald-500/20 rounded-lg">
+                                <BookOpenIcon className="w-5 h-5 text-emerald-400" />
+                            </div>
+                            <h2 className="font-bold text-lg text-gray-200">Vocabulary Study</h2>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 relative z-10">
+                            {content.vocabulary.map((item: any) => (
+                                <div key={item.id} className="flex items-center justify-between p-3 bg-white/[0.03] rounded-xl hover:bg-white/[0.05] transition-colors group">
+                                    <div className="flex items-center gap-3">
+                                        <button
+                                            onClick={() => playVocabAudio(item.id)}
+                                            className="w-8 h-8 flex items-center justify-center bg-emerald-500/20 text-emerald-400 rounded-full hover:bg-emerald-500 hover:text-white transition-all scale-90 group-hover:scale-100"
+                                        >
+                                            <SpeakerWaveIcon className="w-4 h-4" />
+                                        </button>
+                                        <div className="flex flex-col">
+                                            <span className="font-bold text-gray-200 font-greek">{item.item}</span>
+                                        </div>
+                                    </div>
+                                    <span className="text-sm text-gray-500 font-medium bg-black/20 px-2 py-1 rounded-md">{item.match}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
+                {/* 5. Matching Game */}
                 {/* @ts-ignore - Dynamic content property */}
                 {content.vocabulary && content.vocabulary.length > 0 && (
                     <MatchingGame pairs={content.vocabulary} />

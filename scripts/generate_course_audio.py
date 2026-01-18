@@ -138,6 +138,27 @@ def process_lesson(api_key, json_path):
         
         generate_audio(api_key, clean_text, filename)
 
+    # Process Vocabulary (New Feature)
+    vocabulary = data.get('vocabulary', [])
+    if vocabulary:
+        print(f"   Processing {len(vocabulary)} vocabulary items...")
+        for item in vocabulary:
+            # { "id": "v1", "item": "Μένω", "match": "I live" }
+            vocab_id = item.get('id')
+            greek_text = item.get('item')
+            
+            if not vocab_id or not greek_text:
+                continue
+                
+            # Clean text (remove parens if any)
+            clean_text = clean_text_for_speech(greek_text)
+            
+            # Naming: vocab_{topic}_{id}.mp3
+            # Example: vocab_8_1_v1.mp3
+            filename = f"vocab_{safe_id}_{vocab_id}.mp3"
+            
+            generate_audio(api_key, clean_text, filename)
+
 def main():
     print(f"--- JuSt Greek Audio Factory ---")
     print(f"Source: {CONTENT_DIR}")
