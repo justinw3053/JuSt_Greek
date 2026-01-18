@@ -201,15 +201,13 @@ export default function LessonPage() {
                                         if (pageMatch) {
                                             const pageNum = parseInt(pageMatch[1]) + 9; // PDF Offset: Book Page + 9 = PDF Page
                                             return (
-                                                <a
+                                                <Link
                                                     key={j}
-                                                    href={`/assets/grammar.pdf#page=${pageNum}&view=Fit`}
-                                                    target="_blank"
-                                                    rel="noopener noreferrer"
+                                                    href={`/pdf?page=${pageNum}`}
                                                     className="inline-block px-1.5 py-0.5 rounded-md bg-amber-500/10 text-amber-500 font-bold hover:bg-amber-500/20 transition-colors mx-1 text-sm border border-amber-500/20"
                                                 >
                                                     {part}
-                                                </a>
+                                                </Link>
                                             );
                                         }
 
