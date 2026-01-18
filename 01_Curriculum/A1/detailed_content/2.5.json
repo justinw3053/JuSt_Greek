@@ -1,110 +1,66 @@
 {
-  "topicId": "2.5",
-  "week": 2,
-  "month": "Month 1",
-  "title": "Chapter 2 Exam: Basic Grammar",
-  "reading_greek": "REVIEW\n- To Be (Eimai)\n- Gender (O, H, To)\n- Introductions (Me lene...)\n- Verb 'Kano'\n\nCHALLENGE\n- Είμαι ο Κώστας.\n- Κάνω δουλειά.\n- Το νερό είναι εδώ.",
-  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Conjugation of 'Eimai'.\n2. Identifying Gender (Masc/Fem/Neut).\n3. Basic Greetings and Introductions.\n\nPass Mark: 80%",
-  "audio_script": "Chapter 2 Exam. \n\nAre you ready? \nRemember: masculine words usually end in -os or -as. Feminine in -a or -i. Neuter in -o or -i.\n\nAnd don't forget 'Eimai' (I am) vs 'Einai' (He is). \n\nGood luck!",
-  "quiz_questions": [
-    {
-      "question": "Conjugate 'He is'.",
-      "options": [
-        "Feminine.",
-        "Είσαι.",
-        "Masculine.",
-        "Είναι."
-      ],
-      "correctIndex": 3,
-      "explanation": "Einai."
-    },
-    {
-      "question": "Conjugate 'You are'.",
-      "options": [
-        "Το Αυτοκίνητο.",
-        "Είσαι.",
-        "Με λένε.",
-        "Feminine."
-      ],
-      "correctIndex": 1,
-      "explanation": "Eisai."
-    },
-    {
-      "question": "Gender of 'O Kafes'?",
-      "options": [
-        "Κάνω.",
-        "Masculine.",
-        "Είσαι.",
-        "Feminine."
-      ],
-      "correctIndex": 1,
-      "explanation": "Article O."
-    },
-    {
-      "question": "Gender of 'To Nero'?",
-      "options": [
-        "Είσαι.",
-        "Neuter.",
-        "Με λένε.",
-        "Το Αυτοκίνητο."
-      ],
-      "correctIndex": 1,
-      "explanation": "Article To."
-    },
-    {
-      "question": "Gender of 'H Poli'?",
-      "options": [
-        "Κάνω.",
-        "Είσαι.",
-        "Feminine.",
-        "Neuter."
-      ],
-      "correctIndex": 2,
-      "explanation": "Article H."
-    },
-    {
-      "question": "Translate 'My name is'.",
-      "options": [
-        "Το Αυτοκίνητο.",
-        "Κάνει.",
-        "Masculine.",
-        "Με λένε."
-      ],
-      "correctIndex": 3,
-      "explanation": "Me lene."
-    },
-    {
-      "question": "Translate 'I do'.",
-      "options": [
-        "Είσαι.",
-        "Neuter.",
-        "Κάνω.",
-        "Με λένε."
-      ],
-      "correctIndex": 2,
-      "explanation": "Kano."
-    },
-    {
-      "question": "Translate 'He does'.",
-      "options": [
-        "Είσαι.",
-        "Feminine.",
-        "Κάνει.",
-        "Είναι."
-      ],
-      "correctIndex": 2,
-      "explanation": "Kanei."
-    },
-    {
-      "question": "Translate 'The Car'.",
-      "options": [
-        "Κάνω.",
-        "Το Αυτοκίνητο.",
-        "Feminine.",
-        "Είσαι."
-      ],
-      "correctIndex": 1,
-      "explanation": "Neuter."
-    }
-  ]
+    "topicId": "2.5",
+    "week": 2,
+    "month": "Month 1",
+    "title": "Scenario: The Cafe",
+    "reading_greek": "DIALOGUE\n- Γεια σας. (Hello - Formal/Plural)\n- Παρακαλώ; (Yes? / How can I help?)\n- Έναν καφέ, παρακαλώ. (One coffee, please)\n- Τι καφέ; (What kind of coffee?)\n- Έναν φραπέ μέτριο με γάλα. (One frappe, medium sweetness, with milk.)\n- Εντάξει. (Okay)\n- Ευχαριστώ. (Thank you)\n\nKEY VOCAB\n- Καφές (Coffee)\n- Νερό (Water)\n- Γάλα (Milk)\n- Ζάχαρη (Sugar)\n- Μέτριο (Medium)\n- Σκέτο (Plain/Black)",
+    "reading_english": "SCENARIO: ASKING FOR THINGS\n\n1. THE MAGIC WORD: 'Parakalo'.\n   - It means 'Please'.\n   - It means 'You're welcome'.\n   - It means 'How can I help you?' (when a waiter says it).\n\n2. ACCUSATIVE CASE (Ordering):\n   - When you order, you want the object.\n   - Enas kafes (Subject) -> Enan kafe (Object).\n   - 'Thelo enan kafe' (I want a coffee).\n\n3. SWEETNESS LEVELS:\n   - Sketos (No sugar)\n   - Metrios (Medium - 1-2 spoons)\n   - Glykos (Sweet - 3+ spoons)",
+    "audio_script": "Let's go to a Greek Cafe! This is your first real-world mission. \n\nThe waiter will approach and say 'Parakalo?'. Don't panic. He is just asking 'What can I do for you?'.\n\nTo order, keep it simple. \n'Enan kafe, parakalo'. (A coffee, please). \n\nBut in Greece, coffee is an art. You must specify the sweetness. \n- Sketos (Black/Plain).\n- Metrios (Medium).\n- Glykos (Sweet).\n\nSo the full order: 'Enan frappe, metrio, me gala' (A frappe, medium, with milk).",
+    "quiz_questions": [
+        {
+            "question": "How do you say 'One coffee, please'?",
+            "options": [
+                "Enas kafes, parakalo.",
+                "Enan kafe, parakalo.",
+                "O kafes, parakalo.",
+                "Kafes, parakalo."
+            ],
+            "correctIndex": 1,
+            "explanation": "Use the Accusative (Enan) because you are ordering it (Object)."
+        },
+        {
+            "question": "What does 'Metrios' mean?",
+            "options": [
+                "Black coffee (No sugar).",
+                "With milk.",
+                "Sweet coffee.",
+                "Medium sweetness."
+            ],
+            "correctIndex": 3,
+            "explanation": "Medium sugar (usually 1-2 spoons)."
+        },
+        {
+            "question": "The waiter says 'Parakalo?'. What does he mean?",
+            "options": [
+                "You're welcome.",
+                "Please.",
+                "How can I help you?",
+                "Goodbye."
+            ],
+            "correctIndex": 2,
+            "explanation": "In this context, it is a polite question opening."
+        },
+        {
+            "question": "Translate 'Without sugar'.",
+            "options": [
+                "Metrio.",
+                "Sketo.",
+                "Glyko.",
+                "Me gala."
+            ],
+            "correctIndex": 1,
+            "explanation": "Sketos means plain/simple."
+        },
+        {
+            "question": "How do you ask for 'Water'?",
+            "options": [
+                "Nero.",
+                "Gala.",
+                "Kafes.",
+                "Zachari."
+            ],
+            "correctIndex": 0,
+            "explanation": "Nero."
+        }
+    ]
 }

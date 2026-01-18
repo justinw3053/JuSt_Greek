@@ -37,26 +37,24 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
         // 1. Priority: Pre-loaded Questions (e.g. from DB/Batch)
         if (preloadedQuestions && preloadedQuestions.length > 0) {
             const shuffled = [...preloadedQuestions].sort(() => 0.5 - Math.random());
-            setQuestions(shuffled.slice(0, 5));
-            setLoading(false);
+            setTimeout(() => {
+                setQuestions(shuffled.slice(0, 5));
+                setLoading(false);
+            }, 0);
             return;
         }
 
         // 2. Fallback: Algorithmic Generation (Client-Side, Instant)
         try {
-            // We need to parse the 'content' prop which is currently just a string? 
-            // Wait, the prop 'content' is seemingly treating it as an object in the implementation below?
-            // Let's verify what 'content' actually is. 
-            // In LessonPage it passes `lesson.content`, which is a JSON object in the DB.
-            // But here the type says `string`. This might be a bug or mismatch.
-            // content is the stringified JSON from the DB
             if (content) {
                 const parsed = JSON.parse(content);
                 if (parsed.reading_greek && parsed.reading_english) {
                     const algoQuestions = generateAlgorithmicQuiz(parsed.reading_greek, parsed.reading_english);
                     if (algoQuestions.length >= 3) {
-                        setQuestions(algoQuestions);
-                        setLoading(false);
+                        setTimeout(() => {
+                            setQuestions(algoQuestions);
+                            setLoading(false);
+                        }, 0);
                         return;
                     }
                 }
@@ -67,7 +65,7 @@ export default function QuizModal({ isOpen, onClose, onComplete, topicTitle, con
 
         // 3. Last Resort: API Fetch (Only if 1 and 2 failed)
         if (questions.length === 0) {
-            setLoading(true);
+            setTimeout(() => setLoading(true), 0);
             fetch("/api/quiz", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },

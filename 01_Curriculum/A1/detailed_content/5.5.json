@@ -1,0 +1,396 @@
+{
+  "topicId": "5.5",
+  "week": 5,
+  "month": "Month 2",
+  "title": "Chapter 5 Exam: Plurals (Fem/Neut)",
+  "reading_greek": "REVIEW\n- Feminine Plural (-es)\n- Neuter Plural (-a, -ia, -mata)\n- Countables (Dyo kafedes)\n\nCHALLENGE\n- Οι γυναίκες είναι εδώ.\n- Τα παιδιά παίζουν.\n- Δύο νερά παρακαλώ.",
+  "reading_english": "**Reference**: [(See Page 66)](/assets/grammar.pdf#page=66)\n\nEXAM PREPARATION\n\nThis exam tests:\n1. Feminine Plural (-a/-i -> -es).\n2. Neuter Plural (-o -> -a).\n3. Neuter Irregulars (Paidi -> Paidia).\n\nPass Mark: 80%",
+  "audio_script": "Welcome to the Chapter 5 Final Exam. This is the ultimate test. It includes 35 questions covering every topic in this chapter. Take a deep breath. Good luck!",
+  "quiz_questions": [
+    {
+      "question": "Plural of 'H Poli'.",
+      "options": [
+        "Οι πόλεις.",
+        "Τα ονόματα.",
+        "Τα.",
+        "Τα μαθήματα."
+      ],
+      "correctIndex": 0,
+      "explanation": "-eis."
+    },
+    {
+      "question": "Plural of 'To Biblio'.",
+      "options": [
+        "Τα παιδιά.",
+        "Δύο καφέδες.",
+        "Οι γυναίκες.",
+        "Τα βιβλία."
+      ],
+      "correctIndex": 3,
+      "explanation": "-a."
+    },
+    {
+      "question": "Plural of 'To Paidi'.",
+      "options": [
+        "Τα ονόματα.",
+        "Δύο καφέδες.",
+        "Τα παιδιά.",
+        "Τα μαθήματα."
+      ],
+      "correctIndex": 2,
+      "explanation": "-ia."
+    },
+    {
+      "question": "Plural of 'To Mathima'.",
+      "options": [
+        "Τα μαθήματα.",
+        "Δύο καφέδες.",
+        "Οι πόλεις.",
+        "Οι ζώνες."
+      ],
+      "correctIndex": 0,
+      "explanation": "-mata."
+    },
+    {
+      "question": "Translate 'The belts'.",
+      "options": [
+        "Οι γυναίκες.",
+        "Τα μαθήματα.",
+        "Οι πόλεις.",
+        "Οι ζώνες."
+      ],
+      "correctIndex": 3,
+      "explanation": "-es."
+    },
+    {
+      "question": "Translate 'Two coffees'.",
+      "options": [
+        "Τα βιβλία.",
+        "Οι γυναίκες.",
+        "Δύο καφέδες.",
+        "Τα."
+      ],
+      "correctIndex": 2,
+      "explanation": "Countable."
+    },
+    {
+      "question": "Plural of 'To onoma'.",
+      "options": [
+        "Τα βιβλία.",
+        "Τα μαθήματα.",
+        "Τα ονόματα.",
+        "Οι γυναίκες."
+      ],
+      "correctIndex": 2,
+      "explanation": "-mata."
+    },
+    {
+      "question": "Translate 'The women'.",
+      "options": [
+        "Τα βιβλία.",
+        "Τα ονόματα.",
+        "Τα παιδιά.",
+        "Οι γυναίκες."
+      ],
+      "correctIndex": 3,
+      "explanation": "-es."
+    },
+    {
+      "question": "Article for Neuter Plural?",
+      "options": [
+        "Οι γυναίκες.",
+        "Τα.",
+        "Τα βιβλία.",
+        "Τα ονόματα."
+      ],
+      "correctIndex": 1,
+      "explanation": "Ta."
+    },
+    {
+      "question": "What is the plural of 'Η πόλη'?",
+      "options": [
+        "Τις (Tis)",
+        "Οι πόλεις (Oi poleis)",
+        "Δύο ζώνες.",
+        "No, it is the same."
+      ],
+      "correctIndex": 1,
+      "explanation": "Exceptions exists, but usually -H -> -ES (TiMI -> TiMES)."
+    },
+    {
+      "question": "Translate 'I see the women'.",
+      "options": [
+        "Τις (Tis)",
+        "No, it is the same.",
+        "Οι πόλεις (Oi poleis)",
+        "Βλέπω τις γυναίκες."
+      ],
+      "correctIndex": 3,
+      "explanation": "Accusative Plural 'Tis'."
+    },
+    {
+      "question": "What is the Plural Nominative article for Feminine nouns?",
+      "options": [
+        "Οι (Oi)",
+        "Δύο ζώνες.",
+        "Τις (Tis)",
+        "Οι πίτσες."
+      ],
+      "correctIndex": 0,
+      "explanation": "Same as Masculine!"
+    },
+    {
+      "question": "What is the Plural Accusative article for Feminine nouns?",
+      "options": [
+        "No, it is the same.",
+        "Δύο ζώνες.",
+        "Βλέπω τις γυναίκες.",
+        "Τις (Tis)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Distinctive feminine sound."
+    },
+    {
+      "question": "Translate 'The pizzas'.",
+      "options": [
+        "Οι (Oi)",
+        "Οι πίτσες.",
+        "Βλέπω τις γυναίκες.",
+        "Δύο ζώνες."
+      ],
+      "correctIndex": 1,
+      "explanation": "-a becomes -es."
+    },
+    {
+      "question": "Translate 'Two belts'.",
+      "options": [
+        "Οι πόλεις (Oi poleis)",
+        "Τις (Tis)",
+        "Βλέπω τις γυναίκες.",
+        "Δύο ζώνες."
+      ],
+      "correctIndex": 3,
+      "explanation": "-h becomes -es."
+    },
+    {
+      "question": "Does the article 'Oi' tell you if it is Masculine or Feminine?",
+      "options": [
+        "Οι (Oi)",
+        "Δύο ζώνες.",
+        "No, it is the same.",
+        "Οι πίτσες."
+      ],
+      "correctIndex": 2,
+      "explanation": "You must know the noun or look at the adjective."
+    },
+    {
+      "question": "What is the plural of 'Το βιβλίο'?",
+      "options": [
+        "Both!",
+        "Τα βιβλία (-a)",
+        "Θέλω τα βιβλία.",
+        "Τα προβλήματα."
+      ],
+      "correctIndex": 1,
+      "explanation": "-o becomes -a."
+    },
+    {
+      "question": "What is the plural of 'Το παιδί'?",
+      "options": [
+        "Τα παιδιά (-ia)",
+        "Τα βιβλία (-a)",
+        "Both!",
+        "Τα σπίτια."
+      ],
+      "correctIndex": 0,
+      "explanation": "-i becomes -ia."
+    },
+    {
+      "question": "What is the plural of 'Το μάθημα'?",
+      "options": [
+        "Τα μαθήματα (-mata)",
+        "Θέλω τα βιβλία.",
+        "Τα σπίτια.",
+        "Both!"
+      ],
+      "correctIndex": 0,
+      "explanation": "-ma becomes -mata."
+    },
+    {
+      "question": "Translate 'The problems'.",
+      "options": [
+        "Τα παιδιά (-ia)",
+        "Both!",
+        "Τα προβλήματα.",
+        "Τα μαθήματα (-mata)"
+      ],
+      "correctIndex": 2,
+      "explanation": "-ma noun expansion."
+    },
+    {
+      "question": "Translate 'The houses'.",
+      "options": [
+        "Τα σπίτια.",
+        "Τα βιβλία (-a)",
+        "Τα μαθήματα (-mata)",
+        "Both!"
+      ],
+      "correctIndex": 0,
+      "explanation": "-i noun expansion."
+    },
+    {
+      "question": "Translate 'I want the books'.",
+      "options": [
+        "Τα παιδιά (-ia)",
+        "Τα προβλήματα.",
+        "Τα μαθήματα (-mata)",
+        "Θέλω τα βιβλία."
+      ],
+      "correctIndex": 3,
+      "explanation": "Object matches Subject form."
+    },
+    {
+      "question": "Is 'Ta' used for Subject or Object?",
+      "options": [
+        "Τα βιβλία (-a)",
+        "Τα προβλήματα.",
+        "Θέλω τα βιβλία.",
+        "Both!"
+      ],
+      "correctIndex": 3,
+      "explanation": "Neuter nouns never change between Subject/Object."
+    },
+    {
+      "question": "Translate 'Two waters'.",
+      "options": [
+        "Δύο νερά.",
+        "Usually No (Ta toast).",
+        "Πόσο κάνουν;",
+        "Θέλω ένα νερό."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nero -> Nera."
+    },
+    {
+      "question": "How do you ask 'How much does it cost?'",
+      "options": [
+        "Usually No (Ta toast).",
+        "Πόσο κάνει;",
+        "Δύο νερά.",
+        "Three straws / Three skewers."
+      ],
+      "correctIndex": 1,
+      "explanation": "Singular."
+    },
+    {
+      "question": "How do you ask 'How much do they cost?'",
+      "options": [
+        "Δύο νερά.",
+        "Πόσο κάνει;",
+        "Πόσο κάνουν;",
+        "Θέλω ένα νερό."
+      ],
+      "correctIndex": 2,
+      "explanation": "Plural."
+    },
+    {
+      "question": "Translate 'Tria kalamakia'.",
+      "options": [
+        "Πόσο κάνει;",
+        "Πόσο κάνουν;",
+        "Οι λογαριασμοί.",
+        "Three straws / Three skewers."
+      ],
+      "correctIndex": 3,
+      "explanation": "Neuter -i -> -ia."
+    },
+    {
+      "question": "Do loanwords like 'Toast' change in plural?",
+      "options": [
+        "Three straws / Three skewers.",
+        "Πόσο κάνει;",
+        "Θέλω ένα νερό.",
+        "Usually No (Ta toast)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Unless they have a Greek ending."
+    },
+    {
+      "question": "Translate 'I want a water'.",
+      "options": [
+        "Θέλω ένα νερό.",
+        "Δύο νερά.",
+        "Οι λογαριασμοί.",
+        "Usually No (Ta toast)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Using 'Ena' (One/A)."
+    },
+    {
+      "question": "Translate 'The accounts / bills'.",
+      "options": [
+        "Οι λογαριασμοί.",
+        "Πόσο κάνει;",
+        "Δύο νερά.",
+        "Usually No (Ta toast)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Masc: Logariasmos -> Logariasmoi."
+    },
+    {
+      "question": "Translate 'Two kilos'.",
+      "options": [
+        "Ena kilo.",
+        "Dyo kilos.",
+        "Dyo kila.",
+        "Dyo kili."
+      ],
+      "correctIndex": 2,
+      "explanation": "Kilo (Singular) -> Kila (Plural)."
+    },
+    {
+      "question": "How do you ask 'How many?' (for apples).",
+      "options": [
+        "Poso?",
+        "Posa?",
+        "Poioi?",
+        "Ti?"
+      ],
+      "correctIndex": 1,
+      "explanation": "Posa (Neuter Plural)."
+    },
+    {
+      "question": "Translate 'I want apples'.",
+      "options": [
+        "Thelo mila.",
+        "Thelo milo.",
+        "Thelo milos.",
+        "Thelo milous."
+      ],
+      "correctIndex": 0,
+      "explanation": "Mila is the plural of Milo."
+    },
+    {
+      "question": "The seller asks 'Kati allo?'. What does he mean?",
+      "options": [
+        "How much?",
+        "Something else?",
+        "Is that all?",
+        "Pay now."
+      ],
+      "correctIndex": 1,
+      "explanation": "Usually followed by 'Ochi, efcharisto' (No, thanks)."
+    },
+    {
+      "question": "Translate 'Half a kilo'.",
+      "options": [
+        "Ena kilo.",
+        "Dyo kila.",
+        "Miso kilo.",
+        "Mikro kilo."
+      ],
+      "correctIndex": 2,
+      "explanation": "Miso (Half)."
+    }
+  ]
+}

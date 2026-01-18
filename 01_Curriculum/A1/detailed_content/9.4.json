@@ -1,110 +1,66 @@
 {
-  "topicId": "9.4",
-  "week": 9,
-  "month": "Month 3",
-  "title": "Chapter 9 Exam: Time & Routine",
-  "reading_greek": "REVIEW\n- What time is it? (Ti ora einai?)\n- Days of the Week (Deftera...)\n- Routine Verbs (Xypnao, Koimamai)\n\nCHALLENGE\n- Είναι τρεις και μισή.\n- Ξυπνάω στις επτά.\n- Πάω δουλειά την Δευτέρα.",
-  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Telling Time (O'clock, Half, Quarter).\n2. Days and Months.\n3. Daily Routine Vocabulary.\n\nPass Mark: 80%",
-  "audio_script": "Chapter 9 Exam. \n\nTime flies. \nRemember: 'Mia', 'Treis', 'Tessereis' for time. Feminine only. \n\nAnd 'Xypnao' means I wake up. 'Koimamai' means I sleep. \n\nStart.",
-  "quiz_questions": [
-    {
-      "question": "Translate 'It is 1 o'clock'.",
-      "options": [
-        "Πέντε και μισή.",
-        "Ξυπνάω.",
-        "Είναι μία.",
-        "Πάω δουλειά."
-      ],
-      "correctIndex": 2,
-      "explanation": "Mia (Fem)."
-    },
-    {
-      "question": "Translate 'Half past 5'.",
-      "options": [
-        "Πάω δουλειά.",
-        "Κοιμάμαι.",
-        "Είναι μία.",
-        "Πέντε και μισή."
-      ],
-      "correctIndex": 3,
-      "explanation": "Misi."
-    },
-    {
-      "question": "Translate 'Monday'.",
-      "options": [
-        "Πάω δουλειά.",
-        "Δευτέρα.",
-        "Είναι μία.",
-        "Κοιμάμαι."
-      ],
-      "correctIndex": 1,
-      "explanation": "Deftera."
-    },
-    {
-      "question": "Translate 'Sunday'.",
-      "options": [
-        "Είναι μία.",
-        "Κυριακή.",
-        "Την Δευτέρα.",
-        "Πάω δουλειά."
-      ],
-      "correctIndex": 1,
-      "explanation": "Kyriaki."
-    },
-    {
-      "question": "Translate 'I wake up'.",
-      "options": [
-        "Την Δευτέρα.",
-        "Δευτέρα.",
-        "Τι ώρα είναι;",
-        "Ξυπνάω."
-      ],
-      "correctIndex": 3,
-      "explanation": "Xypnao."
-    },
-    {
-      "question": "Translate 'I sleep'.",
-      "options": [
-        "Ξυπνάω.",
-        "Δευτέρα.",
-        "Κοιμάμαι.",
-        "Κυριακή."
-      ],
-      "correctIndex": 2,
-      "explanation": "Koimamai."
-    },
-    {
-      "question": "Translate 'What time is it?'.",
-      "options": [
-        "Την Δευτέρα.",
-        "Ξυπνάω.",
-        "Κυριακή.",
-        "Τι ώρα είναι;"
-      ],
-      "correctIndex": 3,
-      "explanation": "Ti ora."
-    },
-    {
-      "question": "Translate 'I go to work'.",
-      "options": [
-        "Την Δευτέρα.",
-        "Πάω δουλειά.",
-        "Κυριακή.",
-        "Δευτέρα."
-      ],
-      "correctIndex": 1,
-      "explanation": "Pao."
-    },
-    {
-      "question": "Translate 'On Monday'.",
-      "options": [
-        "Δευτέρα.",
-        "Την Δευτέρα.",
-        "Τι ώρα είναι;",
-        "Ξυπνάω."
-      ],
-      "correctIndex": 1,
-      "explanation": "Accusative."
-    }
-  ]
+    "topicId": "9.4",
+    "week": 9,
+    "month": "Month 3",
+    "title": "Scenario: Travel Plans",
+    "reading_greek": "DIALOGUE\n- Τι ώρα φεύγει το πλοίο; (What time does the boat leave?)\n- Στις οκτώ. (At eight.)\n- Πόση ώρα κάνει; (How long does it take?)\n- Τρεις ώρες. (Three hours.)\n- Θέλω ένα εισιτήριο για Πάρο. (I want a ticket for Paros.)\n- Πότε θα πάτε; (When will you go?)\n- Αύριο το πρωί. (Tomorrow morning.)\n\nKEY VOCAB\n- Πλοίο (Boat/Ship)\n- Εισιτήριο (Ticket)\n- Φεύγει (Leaves)\n- Φτάνει (Arrives)\n- Αύριο (Tomorrow)\n- Σήμερα (Today)",
+    "reading_english": "SCENARIO: THE TICKET OFFICE\n\n1. TIME (Stis...): \n   - Stis okto (At eight).\n   - Stis dyo (At two).\n\n2. DURATION (Posi ora?):\n   - Posi ora kanei? (How much time does it 'do'/take?)\n   - Mia ora (One hour).\n\n3. FUTURE (Tha):\n   - Pote tha pate? (When will you go?)\n   - Tha pao avrio (I will go tomorrow).",
+    "audio_script": "You are at the port of Piraeus. You need a ticket.\n\nUse the verb 'Thelo' (I want) + Accusative. \n'Thelo ena eisitirio'. (I want a ticket).\n\nAsk about time:\n'Ti ora fevγει?' (What time does it leave?).\n'Ti ora ftanei?' (What time does it arrive?).\n\nAnd understand the answer:\n'Stis okto' (At 8).\n'Se deka lepta' (In 10 minutes).\n\nBon voyage! (Kalo taxidi!)",
+    "quiz_questions": [
+        {
+            "question": "Translate 'What time does it leave?'",
+            "options": [
+                "Ti ora ftanei?",
+                "Ti ora fevgei?",
+                "Ti ora einai?",
+                "Pote?"
+            ],
+            "correctIndex": 1,
+            "explanation": "Fevgei (Leaves)."
+        },
+        {
+            "question": "How do you say 'At 8 o'clock'?",
+            "options": [
+                "Okto.",
+                "Stis okto.",
+                "Se okto.",
+                "Me okto."
+            ],
+            "correctIndex": 1,
+            "explanation": "Stis (At the - Plural Feminine Hours)."
+        },
+        {
+            "question": "Translate 'Ticket'.",
+            "options": [
+                "Eisitirio.",
+                "Ploio.",
+                "Taxidi.",
+                "Karta."
+            ],
+            "correctIndex": 0,
+            "explanation": "Eisitirio."
+        },
+        {
+            "question": "Translate 'Tomorrow'.",
+            "options": [
+                "Simera.",
+                "Tora.",
+                "Avrio.",
+                "Chxet."
+            ],
+            "correctIndex": 2,
+            "explanation": "Avrio."
+        },
+        {
+            "question": "What does 'Posi ora kanei?' mean?",
+            "options": [
+                "What time is it?",
+                "How much does it cost?",
+                "How long does it take?",
+                "When do we leave?"
+            ],
+            "correctIndex": 2,
+            "explanation": "Literally 'How much time does it do?'."
+        }
+    ]
 }

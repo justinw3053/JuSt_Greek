@@ -4,7 +4,7 @@
   "month": "Month 1",
   "title": "Agreement Drills",
   "reading_greek": "MATCH THE PAIRS\n\n1. Ο ____ καφές. (Good)\n   - Επιλογές: Καλός, Καλή, Καλό\n   - Σωστό: Καλός\n\n2. Η ____ Πόλη. (Big)\n   - Επιλογές: Μεγάλος, Μεγάλη, Μεγάλο\n   - Σωστό: Μεγάλη\n\n3. Το ____ Παιδί. (Small)\n   - Επιλογές: Μικρός, Μικρή, Μικρό\n   - Σωστό: Μικρό\n\nPLURAL AGREEMENT\n- Οι καλοί φίλοι. (Masc Plural - oi)\n- Οι καλές φίλες. (Fem Plural - es)\n- Τα καλά παιδιά. (Neut Plural - a)",
-  "reading_english": "GRAMMAR: PLURAL ADJECTIVES\n\n1. MASCULINE PLURAL (-oi)\n   - O kalos -> Oi kaloi.\n\n2. FEMININE PLURAL (-es)\n   - H kali -> Oi kales.\n\n3. NEUTER PLURAL (-a)\n   - To kalo -> Ta kala.\n\nNote: These endings (-oi, -es, -a) match the Noun endings exactly for the standard noun groups!",
+  "reading_english": "GRAMMAR: PLURAL ADJECTIVES [(See Page 82)](/assets/grammar.pdf#page=82)\n\n1. MASCULINE PLURAL (-oi)\n   - O kalos -> Oi kaloi.\n\n2. FEMININE PLURAL (-es)\n   - H kali -> Oi kales.\n\n3. NEUTER PLURAL (-a)\n   - To kalo -> Ta kala.\n\nNote: These endings (-oi, -es, -a) match the Noun endings exactly for the standard noun groups!",
   "audio_script": "Now we check if you were listening. Agreement!\n\nIf the noun is Plural, the Adjective MUST be Plural.\n\n'Oi kaloi filoi' (The good friends).\n'Oi kales gynaikes' (The good women).\n'Ta kala vivlia' (The good books).\n\nNotice the rhyme?\n- Kaloi ... Filoi (-oi)\n- Kales ... Gynaikes (-es)\n- Kala ... Vivlia (-a)\n\nGreek loves rhyme. If it rhymes, it's usually grammatically correct (for standard nouns)!",
   "quiz_questions": [
     {

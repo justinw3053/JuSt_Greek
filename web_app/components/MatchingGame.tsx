@@ -21,14 +21,9 @@ interface GameItem {
 }
 
 export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
-    const [items, setItems] = useState<GameItem[]>([]);
-    const [selectedId, setSelectedId] = useState<string | null>(null); // uniqueId
-    const [hasCompleted, setHasCompleted] = useState(false);
-
-    useEffect(() => {
-        // Break pairs into individual items and shuffle
+    const generateItems = (currentPairs: MatchPair[]) => {
         const allItems: GameItem[] = [];
-        pairs.forEach((p, idx) => {
+        currentPairs.forEach((p, idx) => {
             allItems.push({ id: p.id, text: p.item, uniqueId: `term-${idx}`, isResolved: false });
             allItems.push({ id: p.id, text: p.match, uniqueId: `def-${idx}`, isResolved: false });
         });
@@ -38,9 +33,19 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
             const j = Math.floor(Math.random() * (i + 1));
             [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
         }
+        return allItems;
+    };
 
-        setItems(allItems);
-        setHasCompleted(false);
+    const [items, setItems] = useState<GameItem[]>(() => generateItems(pairs));
+    const [selectedId, setSelectedId] = useState<string | null>(null);
+    const [hasCompleted, setHasCompleted] = useState(false);
+
+    // Reset if pairs change (deep comparison or just length?)
+    useEffect(() => {
+        setTimeout(() => {
+            setItems(generateItems(pairs));
+            setHasCompleted(false);
+        }, 0);
     }, [pairs]);
 
     const handleCardClick = (uniqueId: string, pairId: string) => {
@@ -73,10 +78,13 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
 
         const isComplete = items.every(i => i.isResolved);
         if (isComplete && !hasCompleted) {
-            setHasCompleted(true);
-            if (onComplete) {
-                setTimeout(onComplete, 1500); // 1.5s delay for celebration
-            }
+            // Defer state update to avoid render loop
+            setTimeout(() => {
+                setHasCompleted(true);
+                if (onComplete) {
+                    setTimeout(onComplete, 1500);
+                }
+            }, 0);
         }
     }, [items, hasCompleted, onComplete]);
 

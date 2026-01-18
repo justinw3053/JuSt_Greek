@@ -4,8 +4,8 @@
   "month": "Month 2",
   "title": "Chapter 7 Exam: Prepositions & Family",
   "reading_greek": "REVIEW\n- Pano, Kato, Mesa, Exo\n- Family Vocabulary (Pateras, Mitera, Pappous)\n- Question Words (Pou, Pote, Ti)\n\nCHALLENGE\n- Η γάτα είναι κάτω από το τραπέζι.\n- Πού είναι η μητέρα σου;",
-  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Prepositions of place.\n2. Family Members.\n3. Interrogatives (Who, What, Where).\n\nPass Mark: 80%",
-  "audio_script": "Chapter 7 Exam. \n\nWhere is it? 'Pano se' or 'Kato apo'? \nWho is it? 'Patera' or 'Miter'? \n\nRemember: 'Kato' (Down) uses 'Apo'. 'Mesa' (Inside) uses 'Se/Sto'. \n\nLet's test your memory.",
+  "reading_english": "**Reference**: [(See Page 95)](/assets/grammar.pdf#page=95)\n\nEXAM PREPARATION\n\nThis exam tests:\n1. Prepositions of place.\n2. Family Members.\n3. Interrogatives (Who, What, Where).\n\nPass Mark: 80%",
+  "audio_script": "Welcome to the Chapter 7 Final Exam. This is the ultimate test. It includes 29 questions covering every topic in this chapter. Take a deep breath. Good luck!",
   "quiz_questions": [
     {
       "question": "Translate 'On top'.",
@@ -105,6 +105,226 @@
       ],
       "correctIndex": 0,
       "explanation": "Pou."
+    },
+    {
+      "question": "Translate 'Under the chair'.",
+      "options": [
+        "Μέσα στο σπίτι.",
+        "Se (Sto/Stin).",
+        "Δίπλα στον Πέτρο.",
+        "Κάτω από την καρέκλα."
+      ],
+      "correctIndex": 3,
+      "explanation": "Kato uses 'Apo' (from)."
+    },
+    {
+      "question": "Translate 'Outside the school'.",
+      "options": [
+        "Se (Sto/Stin).",
+        "Έξω από το σχολείο.",
+        "Κάτω από την καρέκλα.",
+        "Μέσα στο σπίτι."
+      ],
+      "correctIndex": 1,
+      "explanation": "Exo + Apo."
+    },
+    {
+      "question": "Translate 'Next to Peter'.",
+      "options": [
+        "Δίπλα στον Πέτρο.",
+        "Μακριά από την Αθήνα.",
+        "Μέσα στο σπίτι.",
+        "Se (Sto/Stin)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Dipla + Ston (Masc)."
+    },
+    {
+      "question": "Translate 'Far from Athens'.",
+      "options": [
+        "Apo (From).",
+        "Μακριά από την Αθήνα.",
+        "Δίπλα στον Πέτρο.",
+        "Μέσα στο σπίτι."
+      ],
+      "correctIndex": 1,
+      "explanation": "Makria + Apo."
+    },
+    {
+      "question": "Does 'Kato' (Down) use 'Se' or 'Apo'?",
+      "options": [
+        "Se (Sto/Stin).",
+        "Apo (From).",
+        "Έξω από το σχολείο.",
+        "Κάτω από την καρέκλα."
+      ],
+      "correctIndex": 1,
+      "explanation": "Kato apo..."
+    },
+    {
+      "question": "Does 'Mesa' (Inside) use 'Se' or 'Apo'?",
+      "options": [
+        "Κάτω από την καρέκλα.",
+        "Μακριά από την Αθήνα.",
+        "Apo (From).",
+        "Se (Sto/Stin)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mesa sto..."
+    },
+    {
+      "question": "Translate 'What?'.",
+      "options": [
+        "Τι;",
+        "Πότε;",
+        "Πότε είναι το μάθημα;",
+        "Ποια είναι αυτή;"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ti."
+    },
+    {
+      "question": "Translate 'How?'.",
+      "options": [
+        "Πότε;",
+        "Πώς;",
+        "Ποιος;",
+        "Τι κάνεις; / Πώς είσαι;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Accent on o."
+    },
+    {
+      "question": "Translate 'Where is Peter?'.",
+      "options": [
+        "Πότε;",
+        "Τι κάνεις; / Πώς είσαι;",
+        "Ποιος;",
+        "Πού είναι ο Πέτρος;"
+      ],
+      "correctIndex": 3,
+      "explanation": "Pou."
+    },
+    {
+      "question": "Translate 'Who is she?'.",
+      "options": [
+        "Τι;",
+        "Ποια είναι αυτή;",
+        "Πού είναι ο Πέτρος;",
+        "Ποιος;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fem form: Poia."
+    },
+    {
+      "question": "Translate 'How are you?'.",
+      "options": [
+        "Ποιος;",
+        "Τι κάνεις; / Πώς είσαι;",
+        "Πότε είναι το μάθημα;",
+        "Ποια είναι αυτή;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Common phrases."
+    },
+    {
+      "question": "Translate 'When is the lesson?'.",
+      "options": [
+        "Πότε είναι το μάθημα;",
+        "Τι κάνεις; / Πώς είσαι;",
+        "Ποια είναι αυτή;",
+        "Ποιος;"
+      ],
+      "correctIndex": 0,
+      "explanation": "Pote."
+    },
+    {
+      "question": "Translate 'Your mother'.",
+      "options": [
+        "Έχεις αδέρφια;",
+        "Ο φίλος μου.",
+        "Η μητέρα σου.",
+        "Ο αδερφός."
+      ],
+      "correctIndex": 2,
+      "explanation": "Possessive after."
+    },
+    {
+      "question": "Translate 'Grandmother'.",
+      "options": [
+        "Η γιαγιά.",
+        "Ο αδερφός.",
+        "Η μητέρα σου.",
+        "Ο παππούς."
+      ],
+      "correctIndex": 0,
+      "explanation": "Giagia."
+    },
+    {
+      "question": "Translate 'Grandfather'.",
+      "options": [
+        "Ο αδερφός.",
+        "Ο παππούς.",
+        "Οι γονείς.",
+        "Η μητέρα σου."
+      ],
+      "correctIndex": 1,
+      "explanation": "Pappous."
+    },
+    {
+      "question": "Translate 'Brother'.",
+      "options": [
+        "Οι γονείς.",
+        "Ο αδερφός.",
+        "Η αδερφή.",
+        "Η μητέρα σου."
+      ],
+      "correctIndex": 1,
+      "explanation": "Aderfos."
+    },
+    {
+      "question": "Translate 'Sister'.",
+      "options": [
+        "Η μητέρα σου.",
+        "Έχεις αδέρφια;",
+        "Η αδερφή.",
+        "Η γιαγιά."
+      ],
+      "correctIndex": 2,
+      "explanation": "Aderfi."
+    },
+    {
+      "question": "Translate 'My friend (male)'.",
+      "options": [
+        "Ο αδερφός.",
+        "Έχεις αδέρφια;",
+        "Η μητέρα σου.",
+        "Ο φίλος μου."
+      ],
+      "correctIndex": 3,
+      "explanation": "Filos mou."
+    },
+    {
+      "question": "Translate 'Parents'.",
+      "options": [
+        "Οι γονείς.",
+        "Ο φίλος μου.",
+        "Η μητέρα σου.",
+        "Έχεις αδέρφια;"
+      ],
+      "correctIndex": 0,
+      "explanation": "Goneis (Plural)."
+    },
+    {
+      "question": "Translate 'Do you have siblings?'.",
+      "options": [
+        "Ο παππούς.",
+        "Έχεις αδέρφια;",
+        "Η μητέρα σου.",
+        "Η γιαγιά."
+      ],
+      "correctIndex": 1,
+      "explanation": "Aderfia."
     }
   ]
 }

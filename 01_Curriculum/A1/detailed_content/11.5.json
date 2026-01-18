@@ -1,0 +1,319 @@
+{
+  "topicId": "11.5",
+  "week": 11,
+  "month": "Month 3",
+  "title": "Chapter 11 Exam: Pronouns",
+  "reading_greek": "REVIEW\n- Weak Pronouns (Me, Se, Ton)\n- Possessives (Mou, Sou - After noun)\n- Demonstratives (Aftos, Ekeinos)\n\nCHALLENGE\n- Σε θέλω.\n- Το σπίτι μου.\n- Αυτός ο άντρας.",
+  "reading_english": "**Reference**: [(See Page 149)](/assets/grammar.pdf#page=149)\n\nEXAM PREPARATION\n\nThis exam tests:\n1. Pronoun Placement (Before verb vs After noun).\n2. Weak forms (Me, Se, Ton, Tin).\n3. Demonstratives (This/That).\n\nPass Mark: 80%",
+  "audio_script": "Welcome to the Chapter 11 Final Exam. This is the ultimate test. It includes 28 questions covering every topic in this chapter. Take a deep breath. Good luck!",
+  "quiz_questions": [
+    {
+      "question": "Translate 'I know him'.",
+      "options": [
+        "Τον ξέρω.",
+        "Το σπίτι μου.",
+        "Με βλέπεις;",
+        "Αυτός ο άντρας."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ton."
+    },
+    {
+      "question": "Translate 'My house'.",
+      "options": [
+        "Αυτός ο άντρας.",
+        "Ο καφές σου.",
+        "Το σπίτι μου.",
+        "Το θέλω."
+      ],
+      "correctIndex": 2,
+      "explanation": "Mou (Pos)."
+    },
+    {
+      "question": "Translate 'Your coffee'.",
+      "options": [
+        "Ο φίλος του.",
+        "Με βλέπεις;",
+        "Το σπίτι μου.",
+        "Ο καφές σου."
+      ],
+      "correctIndex": 3,
+      "explanation": "Sou (Pos)."
+    },
+    {
+      "question": "Translate 'This man'.",
+      "options": [
+        "Αυτό.",
+        "Με βλέπεις;",
+        "Αυτός ο άντρας.",
+        "Ο φίλος του."
+      ],
+      "correctIndex": 2,
+      "explanation": "Aftos."
+    },
+    {
+      "question": "Translate 'This (Neuter)'.",
+      "options": [
+        "Αυτό.",
+        "Τον ξέρω.",
+        "Το θέλω.",
+        "Ο φίλος του."
+      ],
+      "correctIndex": 0,
+      "explanation": "Afto."
+    },
+    {
+      "question": "Translate 'I want it'.",
+      "options": [
+        "Αυτός ο άντρας.",
+        "Ο καφές σου.",
+        "Ο φίλος της.",
+        "Το θέλω."
+      ],
+      "correctIndex": 3,
+      "explanation": "To."
+    },
+    {
+      "question": "Translate 'Do you see me?'.",
+      "options": [
+        "Τον ξέρω.",
+        "Ο καφές σου.",
+        "Με βλέπεις;",
+        "Αυτό."
+      ],
+      "correctIndex": 2,
+      "explanation": "Me."
+    },
+    {
+      "question": "Translate 'His friend'.",
+      "options": [
+        "Ο καφές σου.",
+        "Ο φίλος του.",
+        "Αυτό.",
+        "Με βλέπεις;"
+      ],
+      "correctIndex": 1,
+      "explanation": "Tou."
+    },
+    {
+      "question": "Translate 'Her friend'.",
+      "options": [
+        "Τον ξέρω.",
+        "Με βλέπεις;",
+        "Ο φίλος της.",
+        "Αυτό."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tis."
+    },
+    {
+      "question": "Translate 'Do you hear me?'.",
+      "options": [
+        "Τον ξέρω.",
+        "Με ακούς;",
+        "Το θέλω.",
+        "Την αγαπάω."
+      ],
+      "correctIndex": 1,
+      "explanation": "Me."
+    },
+    {
+      "question": "Translate 'I love her'.",
+      "options": [
+        "Before the verb.",
+        "Τον ξέρω.",
+        "Την αγαπάω.",
+        "Το θέλω."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tin."
+    },
+    {
+      "question": "Strong form of 'Me'.",
+      "options": [
+        "Τον ξέρω.",
+        "Τους βλέπω.",
+        "Εμένα.",
+        "Με ακούς;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Emprhasis."
+    },
+    {
+      "question": "Placement of weak pronouns?",
+      "options": [
+        "Τον ξέρω.",
+        "Τους βλέπω.",
+        "Με ακούς;",
+        "Before the verb."
+      ],
+      "correctIndex": 3,
+      "explanation": "'Se vlepo', not 'Vlepo se'."
+    },
+    {
+      "question": "Translate 'I see them (masc)'.",
+      "options": [
+        "Τους βλέπω.",
+        "Τον ξέρω.",
+        "Before the verb.",
+        "Εμένα."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tous."
+    },
+    {
+      "question": "Translate 'Your name'.",
+      "options": [
+        "Μου αρέσει ο καφές.",
+        "Το όνομά σου.",
+        "Ο φίλος του.",
+        "Ο φίλος της."
+      ],
+      "correctIndex": 1,
+      "explanation": "Sou (after)."
+    },
+    {
+      "question": "Translate 'I like coffee'.",
+      "options": [
+        "Το όνομά σου.",
+        "Ο φίλος της.",
+        "Μου αρέσει ο καφές.",
+        "Ο φίλος του."
+      ],
+      "correctIndex": 2,
+      "explanation": "Mou aresei."
+    },
+    {
+      "question": "Placement of possessives?",
+      "options": [
+        "After the noun.",
+        "Ο φίλος του.",
+        "Μου αρέσει ο καφές.",
+        "Το όνομά σου."
+      ],
+      "correctIndex": 0,
+      "explanation": "'To spiti mou'."
+    },
+    {
+      "question": "Translate 'Our house'.",
+      "options": [
+        "Μου αρέσει ο καφές.",
+        "After the noun.",
+        "Ο φίλος της.",
+        "Το σπίτι μας."
+      ],
+      "correctIndex": 3,
+      "explanation": "Mas."
+    },
+    {
+      "question": "Translate 'That'.",
+      "options": [
+        "Εκείνο / Εκείνος.",
+        "Αυτό το σπίτι.",
+        "Τι είναι αυτό;",
+        "Τι είναι εκείνο;"
+      ],
+      "correctIndex": 0,
+      "explanation": "Far."
+    },
+    {
+      "question": "Translate 'This house'.",
+      "options": [
+        "Αυτό το σπίτι.",
+        "Τι είναι αυτό;",
+        "Εκείνο / Εκείνος.",
+        "Εκείνος ο άντρας."
+      ],
+      "correctIndex": 0,
+      "explanation": "Requires Article."
+    },
+    {
+      "question": "Translate 'That man'.",
+      "options": [
+        "Εκείνο / Εκείνος.",
+        "Αυτό το σπίτι.",
+        "Τι είναι εκείνο;",
+        "Εκείνος ο άντρας."
+      ],
+      "correctIndex": 3,
+      "explanation": "Requires Article."
+    },
+    {
+      "question": "Translate 'What is this?'.",
+      "options": [
+        "Τι είναι αυτό;",
+        "Αυτό το σπίτι.",
+        "Εκείνος ο άντρας.",
+        "Τι είναι εκείνο;"
+      ],
+      "correctIndex": 0,
+      "explanation": "Afto."
+    },
+    {
+      "question": "Translate 'What is that?'.",
+      "options": [
+        "Αυτό το σπίτι.",
+        "Τι είναι εκείνο;",
+        "Τι είναι αυτό;",
+        "Εκείνος ο άντρας."
+      ],
+      "correctIndex": 1,
+      "explanation": "Ekeino."
+    },
+    {
+      "question": "Translate 'Help!'",
+      "options": [
+        "Voithia!",
+        "Stamata!",
+        "Giatre!",
+        "Astynomia!"
+      ],
+      "correctIndex": 0,
+      "explanation": "Voithia."
+    },
+    {
+      "question": "Translate 'I need a doctor'.",
+      "options": [
+        "Thelo giatro.",
+        "Xreiazomai giatro.",
+        "Eimai giatros.",
+        "Pou einai o giatros?"
+      ],
+      "correctIndex": 1,
+      "explanation": "Xreiazomai implies need/necessity."
+    },
+    {
+      "question": "What is a 'Farmakeio'?",
+      "options": [
+        "Farm/Market.",
+        "Hospital.",
+        "Pharmacy.",
+        "Police Station."
+      ],
+      "correctIndex": 2,
+      "explanation": "Pharmacy (Green Cross)."
+    },
+    {
+      "question": "Translate 'It hurts here'.",
+      "options": [
+        "Ponao edo.",
+        "Edo einai.",
+        "Ochi edo.",
+        "Ponaei ekei."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ponao (I hurt) + Edo (Here)."
+    },
+    {
+      "question": "Who do you call if you need the 'Astynomia'?",
+      "options": [
+        "Doctor.",
+        "Ambulance.",
+        "Police.",
+        "Firefighters."
+      ],
+      "correctIndex": 2,
+      "explanation": "Police."
+    }
+  ]
+}

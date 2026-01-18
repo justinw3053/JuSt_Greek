@@ -4,8 +4,8 @@
   "month": "Month 1",
   "title": "Chapter 4 Exam: Plurals & Verbs",
   "reading_greek": "REVIEW\n- Masculine Plurals (-os -> -oi)\n- Article Plural (O -> Oi)\n- Yparxei (There is/are)\n\nCHALLENGE\n- Οι δρόμοι είναι μεγάλοι.\n- Υπάρχουν πολλοί άνθρωποι.\n- Οι φίλοι μου.",
-  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Masculine Plural Rules.\n2. 'O' vs 'Oi'.\n3. 'Yparxei' (Singular) vs 'Yparxoun' (Plural).\n\nPass Mark: 80%",
-  "audio_script": "Chapter 4 Exam. \n\nPlurals! \nMasculine is tricky. \nO Filos -> Oi Filoi. \nO Dromos -> Oi Dromoi. \n\nAnd 'Yparxei'. \n'Yparxei ena provlima' (There is a problem). \n'Yparxoun polla provlimata' (There are many problems). \n\nLets go.",
+  "reading_english": "**Reference**: [(See Page 52)](/assets/grammar.pdf#page=52)\n\nEXAM PREPARATION\n\nThis exam tests:\n1. Masculine Plural Rules.\n2. 'O' vs 'Oi'.\n3. 'Yparxei' (Singular) vs 'Yparxoun' (Plural).\n\nPass Mark: 80%",
+  "audio_script": "Welcome to the Chapter 4 Final Exam. This is the ultimate test. It includes 33 questions covering every topic in this chapter. Take a deep breath. Good luck!",
   "quiz_questions": [
     {
       "question": "Plural of 'O Dromos'.",
@@ -105,6 +105,270 @@
       ],
       "correctIndex": 2,
       "explanation": "-oi."
+    },
+    {
+      "question": "What is the plural of 'Ο φίλος'?",
+      "options": [
+        "Βλέπω τους άντρες.",
+        "Οι άντρες (Oi antres)",
+        "Οι φίλοι (Oi filoi)",
+        "-ους (-ous)"
+      ],
+      "correctIndex": 2,
+      "explanation": "-os nouns become -oi."
+    },
+    {
+      "question": "What is the plural of 'Ο άντρας'?",
+      "options": [
+        "Οι άντρες (Oi antres)",
+        "-ες (-es)",
+        "-ους (-ous)",
+        "Οι χάρτες (Oi xartes)"
+      ],
+      "correctIndex": 0,
+      "explanation": "-as nouns become -es."
+    },
+    {
+      "question": "What is the plural of 'Ο χάρτης'?",
+      "options": [
+        "-ους (-ous)",
+        "Οι χάρτες (Oi xartes)",
+        "Οι άντρες (Oi antres)",
+        "Οι φίλοι"
+      ],
+      "correctIndex": 1,
+      "explanation": "-is nouns become -es."
+    },
+    {
+      "question": "Translate 'The friends' (Nominative).",
+      "options": [
+        "-ους (-ous)",
+        "Βλέπω τους φίλους.",
+        "Οι φίλοι",
+        "Οι χάρτες (Oi xartes)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Article 'Oi' + Noun '-oi'."
+    },
+    {
+      "question": "Translate 'I see the friends' (Accusative).",
+      "options": [
+        "Οι χάρτες (Oi xartes)",
+        "Οι άντρες (Oi antres)",
+        "Βλέπω τους φίλους.",
+        "Οι φίλοι"
+      ],
+      "correctIndex": 2,
+      "explanation": "Object Plural: 'Tous' + '-ous'."
+    },
+    {
+      "question": "What is the Accusative Plural ending for -os nouns?",
+      "options": [
+        "Οι άντρες (Oi antres)",
+        "Οι χάρτες (Oi xartes)",
+        "Βλέπω τους φίλους.",
+        "-ους (-ous)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Dromous, Filous, Anthropous."
+    },
+    {
+      "question": "What is the Accusative Plural ending for -as/-is nouns?",
+      "options": [
+        "Οι φίλοι (Oi filoi)",
+        "Βλέπω τους φίλους.",
+        "-ες (-es)",
+        "-ους (-ous)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Antres, Xartes, Mathites."
+    },
+    {
+      "question": "Translate 'The men are here'.",
+      "options": [
+        "Οι άντρες είναι εδώ.",
+        "Οι φίλοι (Oi filoi)",
+        "-ες (-es)",
+        "-ους (-ous)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Subject Plural (-es)."
+    },
+    {
+      "question": "Translate 'I see the men'.",
+      "options": [
+        "Οι φίλοι",
+        "-ους (-ous)",
+        "Βλέπω τους άντρες.",
+        "Οι άντρες (Oi antres)"
+      ],
+      "correctIndex": 2,
+      "explanation": "Object Plural (-es). Note: Same ending as Subject for this group!"
+    },
+    {
+      "question": "What is the Plural Accusative article for Masculine nouns?",
+      "options": [
+        "Έχω τους χάρτες.",
+        "Τους (Tous)",
+        "The streets (Subject)",
+        "Οι χάρτες είναι παλοί."
+      ],
+      "correctIndex": 1,
+      "explanation": "'Ton' becomes 'Tous'."
+    },
+    {
+      "question": "Translate 'Οι δρόμοι'.",
+      "options": [
+        "The streets (Subject)",
+        "Οι χάρτες είναι παλοί.",
+        "Τους (Tous)",
+        "Yes!"
+      ],
+      "correctIndex": 0,
+      "explanation": "Nominative Plural."
+    },
+    {
+      "question": "Translate 'Τους δρόμους'.",
+      "options": [
+        "The streets (Object)",
+        "No, Feminine Plural also uses 'Oi'.",
+        "Τους (Tous)",
+        "Οι χάρτες είναι παλοί."
+      ],
+      "correctIndex": 0,
+      "explanation": "Accusative Plural."
+    },
+    {
+      "question": "If you hear 'Oi' before a noun, can you be sure it is Masculine?",
+      "options": [
+        "Έχω τους χάρτες.",
+        "No, Feminine Plural also uses 'Oi'.",
+        "Οι χάρτες είναι παλοί.",
+        "Yes!"
+      ],
+      "correctIndex": 1,
+      "explanation": "You must know the gender from the singular."
+    },
+    {
+      "question": "If you hear 'Tous' before a noun, can you be sure it is Masculine?",
+      "options": [
+        "Yes!",
+        "Έχω τους χάρτες.",
+        "Οι χάρτες είναι παλοί.",
+        "Τους (Tous)"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Tous' is exclusively Masculine Plural Accusative."
+    },
+    {
+      "question": "Translate 'I have the maps'.",
+      "options": [
+        "Yes!",
+        "Έχω τους χάρτες.",
+        "Οι χάρτες είναι παλοί.",
+        "The streets (Object)"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Xartes' is Masculine Object Plural -> Tous."
+    },
+    {
+      "question": "Translate 'The maps are old'.",
+      "options": [
+        "Τους (Tous)",
+        "The streets (Subject)",
+        "The streets (Object)",
+        "Οι χάρτες είναι παλοί."
+      ],
+      "correctIndex": 3,
+      "explanation": "'Xartes' is Subject Plural -> Oi."
+    },
+    {
+      "question": "Translate 'There are problems'.",
+      "options": [
+        "Υπάρχει χρόνος;",
+        "Υπάρχουν",
+        "Υπάρχουν προβλήματα.",
+        "To Exist"
+      ],
+      "correctIndex": 2,
+      "explanation": "Plural -> Yparxoun."
+    },
+    {
+      "question": "How do you ask 'Is there time?' in Greek?",
+      "options": [
+        "Υπάρχει (Singular)",
+        "To Exist",
+        "Υπάρχουν",
+        "Υπάρχει χρόνος;"
+      ],
+      "correctIndex": 3,
+      "explanation": "Intonation question."
+    },
+    {
+      "question": "Translate 'There is no water'.",
+      "options": [
+        "Δεν υπάρχει νερό.",
+        "Δεν υπάρχει καφές.",
+        "Υπάρχει χρόνος;",
+        "Υπάρχει (Singular)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Negative 'Den' + Singular 'Yparxei'."
+    },
+    {
+      "question": "Translate 'Are there Greeks here?'.",
+      "options": [
+        "Υπάρχουν Έλληνες εδώ;",
+        "Δεν υπάρχει καφές.",
+        "Υπάρχουν",
+        "Υπάρχουν προβλήματα."
+      ],
+      "correctIndex": 0,
+      "explanation": "Plural 'Greeks' -> Yparxoun."
+    },
+    {
+      "question": "What does 'Υπάρχω' literally mean?",
+      "options": [
+        "Δεν υπάρχει καφές.",
+        "To Exist",
+        "Υπάρχει (Singular)",
+        "Υπάρχουν Έλληνες εδώ;"
+      ],
+      "correctIndex": 1,
+      "explanation": "It is the verb of existence."
+    },
+    {
+      "question": "Translate 'There isn't coffee'.",
+      "options": [
+        "Υπάρχουν προβλήματα.",
+        "Υπάρχουν",
+        "Δεν υπάρχει καφές.",
+        "To Exist"
+      ],
+      "correctIndex": 2,
+      "explanation": "Den yparxei kafes."
+    },
+    {
+      "question": "If the subject is Plural, which form do you use?",
+      "options": [
+        "Υπάρχουν",
+        "Υπάρχουν Έλληνες εδώ;",
+        "Δεν υπάρχει νερό.",
+        "Υπάρχει (Singular)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Yparxoun."
+    },
+    {
+      "question": "If the subject is Uncountable (like Water), which form do we usually use?",
+      "options": [
+        "Δεν υπάρχει καφές.",
+        "Υπάρχει (Singular)",
+        "Υπάρχουν",
+        "Υπάρχουν προβλήματα."
+      ],
+      "correctIndex": 1,
+      "explanation": "Water is grammatically singular."
     }
   ]
 }

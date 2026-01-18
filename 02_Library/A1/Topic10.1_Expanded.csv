@@ -1,8 +1,0 @@
-"Who is the Subject?","The one doing the action.","Nominative."
-"Who is the Object?","The one receiving the action.","Accusative."
-"Translate 'Peter sees Nick'.","Ο Πέτρος βλέπει τον Νίκο.","Petros (Subj), Niko (Obj)."
-"Translate 'Nick sees Peter'.","Ο Νίκος βλέπει τον Πέτρο.","Nikos (Subj), Petro (Obj)."
-"Does word order change the meaning in Greek?","No, Cases determine meaning.","'Ton Petro vlepei o Nikos' still means Nick sees Peter."
-"Nominative Masculine ending?","-os (usually).","With Sigma."
-"Accusative Masculine ending?","-o (usually).","Drop the Sigma."
-"Translate 'I see the road'.","Βλέπω τον δρόμο.","Dromos -> Dromo."

@@ -1,0 +1,539 @@
+{
+  "topicId": "2.6",
+  "week": 2,
+  "month": "Month 1",
+  "title": "Chapter 2 Exam: Basic Grammar",
+  "reading_greek": "REVIEW\n- To Be (Eimai)\n- Gender (O, H, To)\n- Introductions (Me lene...)\n- Verb 'Kano'\n\nCHALLENGE\n- Είμαι ο Κώστας.\n- Κάνω δουλειά.\n- Το νερό είναι εδώ.",
+  "reading_english": "**Reference**: [(See Page 21)](/assets/grammar.pdf#page=21)\n\nEXAM PREPARATION\n\nThis exam tests:\n1. Conjugation of 'Eimai'.\n2. Identifying Gender (Masc/Fem/Neut).\n3. Basic Greetings and Introductions.\n\nPass Mark: 80%",
+  "audio_script": "Welcome to the Chapter 2 Final Exam. This is the ultimate test. It includes 48 questions covering every topic in this chapter. Take a deep breath. Good luck!",
+  "quiz_questions": [
+    {
+      "question": "Conjugate 'He is'.",
+      "options": [
+        "Feminine.",
+        "Είσαι.",
+        "Masculine.",
+        "Είναι."
+      ],
+      "correctIndex": 3,
+      "explanation": "Einai."
+    },
+    {
+      "question": "Conjugate 'You are'.",
+      "options": [
+        "Το Αυτοκίνητο.",
+        "Είσαι.",
+        "Με λένε.",
+        "Feminine."
+      ],
+      "correctIndex": 1,
+      "explanation": "Eisai."
+    },
+    {
+      "question": "Gender of 'O Kafes'?",
+      "options": [
+        "Κάνω.",
+        "Masculine.",
+        "Είσαι.",
+        "Feminine."
+      ],
+      "correctIndex": 1,
+      "explanation": "Article O."
+    },
+    {
+      "question": "Gender of 'To Nero'?",
+      "options": [
+        "Είσαι.",
+        "Neuter.",
+        "Με λένε.",
+        "Το Αυτοκίνητο."
+      ],
+      "correctIndex": 1,
+      "explanation": "Article To."
+    },
+    {
+      "question": "Gender of 'H Poli'?",
+      "options": [
+        "Κάνω.",
+        "Είσαι.",
+        "Feminine.",
+        "Neuter."
+      ],
+      "correctIndex": 2,
+      "explanation": "Article H."
+    },
+    {
+      "question": "Translate 'My name is'.",
+      "options": [
+        "Το Αυτοκίνητο.",
+        "Κάνει.",
+        "Masculine.",
+        "Με λένε."
+      ],
+      "correctIndex": 3,
+      "explanation": "Me lene."
+    },
+    {
+      "question": "Translate 'I do'.",
+      "options": [
+        "Είσαι.",
+        "Neuter.",
+        "Κάνω.",
+        "Με λένε."
+      ],
+      "correctIndex": 2,
+      "explanation": "Kano."
+    },
+    {
+      "question": "Translate 'He does'.",
+      "options": [
+        "Είσαι.",
+        "Feminine.",
+        "Κάνει.",
+        "Είναι."
+      ],
+      "correctIndex": 2,
+      "explanation": "Kanei."
+    },
+    {
+      "question": "Translate 'The Car'.",
+      "options": [
+        "Κάνω.",
+        "Το Αυτοκίνητο.",
+        "Feminine.",
+        "Είσαι."
+      ],
+      "correctIndex": 1,
+      "explanation": "Neuter."
+    },
+    {
+      "question": "Translate 'I am' to Greek.",
+      "options": [
+        "Είναι",
+        "Είμαι",
+        "Είσαι",
+        "Είμαστε"
+      ],
+      "correctIndex": 1,
+      "explanation": "Eimai [ime]"
+    },
+    {
+      "question": "Translate 'You are' (singular/informal) to Greek.",
+      "options": [
+        "The change in a word's ending to show grammatical meaning.",
+        "Είσαι",
+        "Είναι",
+        "Είμαστε"
+      ],
+      "correctIndex": 1,
+      "explanation": "Eisai [ise]"
+    },
+    {
+      "question": "Translate 'He/She/It is' to Greek.",
+      "options": [
+        "No, the verb 'Είμαι' already includes the 'I'.",
+        "Είναι",
+        "Είμαστε",
+        "Είσαι"
+      ],
+      "correctIndex": 1,
+      "explanation": "Einai [ine]"
+    },
+    {
+      "question": "Translate 'We are' to Greek.",
+      "options": [
+        "Είμαστε",
+        "No, the verb 'Είμαι' already includes the 'I'.",
+        "Είστε",
+        "Είμαι από την Ιταλία."
+      ],
+      "correctIndex": 0,
+      "explanation": "Eimaste [imaste]"
+    },
+    {
+      "question": "Translate 'You are' (plural/formal) to Greek.",
+      "options": [
+        "Είστε",
+        "The change in a word's ending to show grammatical meaning.",
+        "Είμαι από την Ιταλία.",
+        "Είναι"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eiste [iste]"
+    },
+    {
+      "question": "Translate 'They are' to Greek.",
+      "options": [
+        "Είμαστε",
+        "Είμαι από την Ιταλία.",
+        "Είμαι",
+        "Είναι"
+      ],
+      "correctIndex": 3,
+      "explanation": "Einai [ine] (Same as singular 'He is'!)"
+    },
+    {
+      "question": "Do you need to say 'Εγώ' (I) when saying 'I am'?",
+      "options": [
+        "Είναι",
+        "Είμαι",
+        "Είμαι από την Ιταλία.",
+        "No, the verb 'Είμαι' already includes the 'I'."
+      ],
+      "correctIndex": 3,
+      "explanation": "This is the 'Optional Subject' rule."
+    },
+    {
+      "question": "What is 'Inflection'?",
+      "options": [
+        "Είσαι",
+        "Είμαστε",
+        "Είναι",
+        "The change in a word's ending to show grammatical meaning."
+      ],
+      "correctIndex": 3,
+      "explanation": "Greek words change form based on number, case, or person."
+    },
+    {
+      "question": "Translate: 'I am from Italy'.",
+      "options": [
+        "Είμαι",
+        "Είναι",
+        "Είμαι από την Ιταλία.",
+        "Είναι"
+      ],
+      "correctIndex": 2,
+      "explanation": "Eimai apo tin Italia."
+    },
+    {
+      "question": "What is the definite article for Masculine nouns?",
+      "options": [
+        "Η (H)",
+        "Ο (O)",
+        "Ο (Masculine)",
+        "Masculine (Ο καφές)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Example: Ο δρόμος (The street)."
+    },
+    {
+      "question": "What is the definite article for Feminine nouns?",
+      "options": [
+        "Feminine (Η καρέκλα)",
+        "Η (H)",
+        "Masculine (Ο καφές)",
+        "Ο (O)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Example: Η ώρα (The hour)."
+    },
+    {
+      "question": "What is the definite article for Neuter nouns?",
+      "options": [
+        "Because it ends in -a, like many Greek feminine words.",
+        "ΤΟ (To)",
+        "Neuter (Το κομπιούτερ)",
+        "Το (Neuter)"
+      ],
+      "correctIndex": 1,
+      "explanation": "Example: Το βιβλίο (The book)."
+    },
+    {
+      "question": "What gender is 'Καρέκλα' (Chair)?",
+      "options": [
+        "ΤΟ (To)",
+        "Feminine (Η καρέκλα)",
+        "Because it ends in -a, like many Greek feminine words.",
+        "Masculine (Ο καφές)"
+      ],
+      "correctIndex": 1,
+      "explanation": "It is grammatically feminine, regardless of being an object."
+    },
+    {
+      "question": "What gender is 'Καφές' (Coffee)?",
+      "options": [
+        "Masculine (Ο καφές)",
+        "Το (Neuter)",
+        "ΤΟ (To)",
+        "Because it ends in -a, like many Greek feminine words."
+      ],
+      "correctIndex": 0,
+      "explanation": "Grammatical gender often implies nothing about biology."
+    },
+    {
+      "question": "What gender is 'Παιδί' (Child)?",
+      "options": [
+        "Neuter (Το κομπιούτερ)",
+        "Feminine (Η καρέκλα)",
+        "ΤΟ (To)",
+        "Neuter (Το παιδί)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Grammatically it is a 'small thing'."
+    },
+    {
+      "question": "What gender are new loanwords like 'Computer' usually assigned?",
+      "options": [
+        "Η (H)",
+        "Because it ends in -a, like many Greek feminine words.",
+        "Ο (Masculine)",
+        "Neuter (Το κομπιούτερ)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Foreign words that don't fit Greek endings usually become Neuter."
+    },
+    {
+      "question": "Why is 'Pizza' (Πίτσα) Feminine?",
+      "options": [
+        "Because it ends in -a, like many Greek feminine words.",
+        "Masculine (Ο καφές)",
+        "Το (Neuter)",
+        "Neuter (Το παιδί)"
+      ],
+      "correctIndex": 0,
+      "explanation": "It adapted to the language."
+    },
+    {
+      "question": "Analyze the gender: ____ Άντρας (Man)",
+      "options": [
+        "Ο (Masculine)",
+        "Η (H)",
+        "Ο (O)",
+        "Because it ends in -a, like many Greek feminine words."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ο Άντρας"
+    },
+    {
+      "question": "Analyze the gender: ____ Ζώνη (Belt)",
+      "options": [
+        "Η (Feminine)",
+        "Το (Neuter)",
+        "Η (H)",
+        "Neuter (Το παιδί)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Η Ζώνη"
+    },
+    {
+      "question": "Analyze the gender: ____ Νερό (Water)",
+      "options": [
+        "Το (Neuter)",
+        "Masculine (Ο καφές)",
+        "Feminine (Η καρέκλα)",
+        "Neuter (Το κομπιούτερ)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Το Νερό"
+    },
+    {
+      "question": "How do you say 'I am Maria' in Greek?",
+      "options": [
+        "Είναι το βιβλίο",
+        "Είμαι η Μαρία",
+        "Είστε εδώ;",
+        "Είναι το νερό"
+      ],
+      "correctIndex": 1,
+      "explanation": "Literally 'I am THE Maria'."
+    },
+    {
+      "question": "Translate: 'He is Peter'.",
+      "options": [
+        "Είναι ο Πέτρος",
+        "Because proper nouns in Greek require the definite article.",
+        "Είμαστε Έλληνες",
+        "Είναι το νερό"
+      ],
+      "correctIndex": 0,
+      "explanation": "Einai O Petros."
+    },
+    {
+      "question": "Translate: 'This is the book'.",
+      "options": [
+        "Είναι το βιβλίο",
+        "Είμαι η Μαρία",
+        "Because proper nouns in Greek require the definite article.",
+        "Είναι το νερό"
+      ],
+      "correctIndex": 0,
+      "explanation": "Einai TO vivlio (Neuter)."
+    },
+    {
+      "question": "Translate: 'This is the water'.",
+      "options": [
+        "Είναι το βιβλίο",
+        "Είναι ο Πέτρος",
+        "Είναι το νερό",
+        "Είστε εδώ;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Einai TO nero (Neuter)."
+    },
+    {
+      "question": "Translate: 'We are Greeks'.",
+      "options": [
+        "Είμαστε Έλληνες",
+        "Είμαι η Μαρία",
+        "Είστε εδώ;",
+        "Είναι το βιβλίο"
+      ],
+      "correctIndex": 0,
+      "explanation": "Eimaste Ellines."
+    },
+    {
+      "question": "Translate: 'Are you here?' (Plural).",
+      "options": [
+        "Είστε εδώ;",
+        "Είναι το βιβλίο",
+        "Είμαστε Έλληνες",
+        "Because proper nouns in Greek require the definite article."
+      ],
+      "correctIndex": 0,
+      "explanation": "Eiste edo?"
+    },
+    {
+      "question": "When introducing yourself, why do you add 'O' or 'H' before your name?",
+      "options": [
+        "Είμαστε Έλληνες",
+        "Είναι το βιβλίο",
+        "Είστε εδώ;",
+        "Because proper nouns in Greek require the definite article."
+      ],
+      "correctIndex": 3,
+      "explanation": "It sounds incomplete without it."
+    },
+    {
+      "question": "Translate 'Κάνω δουλειά'.",
+      "options": [
+        "Κάνετε (Kanete)",
+        "I am doing work / I work.",
+        "Κάνει καφέ.",
+        "Τι κάνει ο Πέτρος;"
+      ],
+      "correctIndex": 1,
+      "explanation": "'Kano' means 'to do'."
+    },
+    {
+      "question": "Conjugate 'We do': Εμείς ____.",
+      "options": [
+        "Κάνει καφέ.",
+        "No, 'Kano' covers both 'I do' and 'I am doing'.",
+        "Κάνουμε (Kanoume)",
+        "Κάνουμε πάρτι."
+      ],
+      "correctIndex": 2,
+      "explanation": "First person plural."
+    },
+    {
+      "question": "Conjugate 'You (plural) do': Εσείς ____.",
+      "options": [
+        "Τι κάνει ο Πέτρος;",
+        "Κάνουμε πάρτι.",
+        "I am doing work / I work.",
+        "Κάνετε (Kanete)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Second person plural."
+    },
+    {
+      "question": "Translate 'He is making coffee'.",
+      "options": [
+        "Κάνει καφέ.",
+        "Κάνετε (Kanete)",
+        "I am doing work / I work.",
+        "Κάνουμε (Kanoume)"
+      ],
+      "correctIndex": 0,
+      "explanation": "'Kano' also means 'to make'."
+    },
+    {
+      "question": "Does 'Kano' have a continuous form (I am doing)?",
+      "options": [
+        "Κάνουμε (Kanoume)",
+        "Τι κάνει ο Πέτρος;",
+        "I am doing work / I work.",
+        "No, 'Kano' covers both 'I do' and 'I am doing'."
+      ],
+      "correctIndex": 3,
+      "explanation": "Greek Present Tense is broad."
+    },
+    {
+      "question": "Translate 'What is Peter doing?'.",
+      "options": [
+        "Τι κάνει ο Πέτρος;",
+        "Κάνει καφέ.",
+        "I am doing work / I work.",
+        "Κάνετε (Kanete)"
+      ],
+      "correctIndex": 0,
+      "explanation": "Third person singular."
+    },
+    {
+      "question": "Translate 'We are having a party'.",
+      "options": [
+        "Κάνουμε πάρτι.",
+        "Κάνουμε (Kanoume)",
+        "Τι κάνει ο Πέτρος;",
+        "Κάνει καφέ."
+      ],
+      "correctIndex": 0,
+      "explanation": "Literally 'We are doing a party'."
+    },
+    {
+      "question": "How do you say 'One coffee, please'?",
+      "options": [
+        "Enas kafes, parakalo.",
+        "Enan kafe, parakalo.",
+        "O kafes, parakalo.",
+        "Kafes, parakalo."
+      ],
+      "correctIndex": 1,
+      "explanation": "Use the Accusative (Enan) because you are ordering it (Object)."
+    },
+    {
+      "question": "What does 'Metrios' mean?",
+      "options": [
+        "Black coffee (No sugar).",
+        "With milk.",
+        "Sweet coffee.",
+        "Medium sweetness."
+      ],
+      "correctIndex": 3,
+      "explanation": "Medium sugar (usually 1-2 spoons)."
+    },
+    {
+      "question": "The waiter says 'Parakalo?'. What does he mean?",
+      "options": [
+        "You're welcome.",
+        "Please.",
+        "How can I help you?",
+        "Goodbye."
+      ],
+      "correctIndex": 2,
+      "explanation": "In this context, it is a polite question opening."
+    },
+    {
+      "question": "Translate 'Without sugar'.",
+      "options": [
+        "Metrio.",
+        "Sketo.",
+        "Glyko.",
+        "Me gala."
+      ],
+      "correctIndex": 1,
+      "explanation": "Sketos means plain/simple."
+    },
+    {
+      "question": "How do you ask for 'Water'?",
+      "options": [
+        "Nero.",
+        "Gala.",
+        "Kafes.",
+        "Zachari."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nero."
+    }
+  ]
+}

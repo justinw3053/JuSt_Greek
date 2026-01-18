@@ -4,7 +4,7 @@
   "month": "Month 3",
   "title": "Subject vs Object: The Concept",
   "reading_greek": "THE ACTOR vs THE TARGET\n1. Ο Πέτρος βλέπει τον Νίκο. (Peter sees Nick)\n2. Τον Νίκο βλέπει ο Πέτρος. (Peter sees Nick - Word order doesn't matter!)\n3. Ο Νίκος βλέπει τον Πέτρο. (Nick sees Peter)\n\nTHE RULE\n- Subject acts (Nominative).\n- Object receives action (Accusative).\n\nKEY VERBS\n- Βλέπω (See)\n- Ακούω (Hear)\n- Αγαπάω (Love)\n- Ξέρω (Know)",
-  "reading_english": "GRAMMAR: CASE ROLES\n\n1. WHO DOES WHAT?\n   - In English, we say 'Dog bites Man'. If we swap it 'Man bites Dog', the meaning changes.\n   - In Greek, cases control meaning. 'Tonas skylos dagkonei ton anthropo'.\n\n2. MASCULINE IS KING OF CHANGE:\n   - Masculine nouns change the most. \n   - Nominative: -OS. (O Petros)\n   - Accusative: -O. (Ton Petro)\n   - Drop the 'S'!",
+  "reading_english": "GRAMMAR: CASE ROLES [(See Page 139)](/assets/grammar.pdf#page=139)\n\n1. WHO DOES WHAT?\n   - In English, we say 'Dog bites Man'. If we swap it 'Man bites Dog', the meaning changes.\n   - In Greek, cases control meaning. 'Tonas skylos dagkonei ton anthropo'.\n\n2. MASCULINE IS KING OF CHANGE:\n   - Masculine nouns change the most. \n   - Nominative: -OS. (O Petros)\n   - Accusative: -O. (Ton Petro)\n   - Drop the 'S'!",
   "audio_script": "This is the most important syntax rule in Greek. \n\nWho is doing the action? (Subject - Nominative).\nWho is receiving the action? (Object - Accusative).\n\nFor Masculine nouns, you MUST hear the difference.\nSubject: O Petros (Ends in S).\nObject: Ton Petro (No S).\n\n'O Petros vlepei ton Niko'. (Peter sees Nick).\n'O Nikos vlepei ton Petro'. (Nick sees Peter).\n\nListen for the 'S'. If you hear the 'S', he is the doer.",
   "quiz_questions": [
     {

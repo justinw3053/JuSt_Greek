@@ -1,110 +1,66 @@
 {
-  "topicId": "11.4",
-  "week": 11,
-  "month": "Month 3",
-  "title": "Chapter 11 Exam: Pronouns",
-  "reading_greek": "REVIEW\n- Weak Pronouns (Me, Se, Ton)\n- Possessives (Mou, Sou - After noun)\n- Demonstratives (Aftos, Ekeinos)\n\nCHALLENGE\n- Σε θέλω.\n- Το σπίτι μου.\n- Αυτός ο άντρας.",
-  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Pronoun Placement (Before verb vs After noun).\n2. Weak forms (Me, Se, Ton, Tin).\n3. Demonstratives (This/That).\n\nPass Mark: 80%",
-  "audio_script": "Chapter 11 Exam. \n\nMe, You, Him, Her. \n\n'Me' is... Me. \n'Se' is... You. \n\nBut location matters. \n'Se vlepo' -> I see you (Object). \n'To spiti sou' -> Your house (Possessive). \n\nDon't mix them up.",
-  "quiz_questions": [
-    {
-      "question": "Translate 'I know him'.",
-      "options": [
-        "Τον ξέρω.",
-        "Το σπίτι μου.",
-        "Με βλέπεις;",
-        "Αυτός ο άντρας."
-      ],
-      "correctIndex": 0,
-      "explanation": "Ton."
-    },
-    {
-      "question": "Translate 'My house'.",
-      "options": [
-        "Αυτός ο άντρας.",
-        "Ο καφές σου.",
-        "Το σπίτι μου.",
-        "Το θέλω."
-      ],
-      "correctIndex": 2,
-      "explanation": "Mou (Pos)."
-    },
-    {
-      "question": "Translate 'Your coffee'.",
-      "options": [
-        "Ο φίλος του.",
-        "Με βλέπεις;",
-        "Το σπίτι μου.",
-        "Ο καφές σου."
-      ],
-      "correctIndex": 3,
-      "explanation": "Sou (Pos)."
-    },
-    {
-      "question": "Translate 'This man'.",
-      "options": [
-        "Αυτό.",
-        "Με βλέπεις;",
-        "Αυτός ο άντρας.",
-        "Ο φίλος του."
-      ],
-      "correctIndex": 2,
-      "explanation": "Aftos."
-    },
-    {
-      "question": "Translate 'This (Neuter)'.",
-      "options": [
-        "Αυτό.",
-        "Τον ξέρω.",
-        "Το θέλω.",
-        "Ο φίλος του."
-      ],
-      "correctIndex": 0,
-      "explanation": "Afto."
-    },
-    {
-      "question": "Translate 'I want it'.",
-      "options": [
-        "Αυτός ο άντρας.",
-        "Ο καφές σου.",
-        "Ο φίλος της.",
-        "Το θέλω."
-      ],
-      "correctIndex": 3,
-      "explanation": "To."
-    },
-    {
-      "question": "Translate 'Do you see me?'.",
-      "options": [
-        "Τον ξέρω.",
-        "Ο καφές σου.",
-        "Με βλέπεις;",
-        "Αυτό."
-      ],
-      "correctIndex": 2,
-      "explanation": "Me."
-    },
-    {
-      "question": "Translate 'His friend'.",
-      "options": [
-        "Ο καφές σου.",
-        "Ο φίλος του.",
-        "Αυτό.",
-        "Με βλέπεις;"
-      ],
-      "correctIndex": 1,
-      "explanation": "Tou."
-    },
-    {
-      "question": "Translate 'Her friend'.",
-      "options": [
-        "Τον ξέρω.",
-        "Με βλέπεις;",
-        "Ο φίλος της.",
-        "Αυτό."
-      ],
-      "correctIndex": 2,
-      "explanation": "Tis."
-    }
-  ]
+    "topicId": "11.4",
+    "week": 11,
+    "month": "Month 3",
+    "title": "Scenario: Emergency",
+    "reading_greek": "DIALOGUE\n- Βοήθεια! (Help!)\n- Τι συμβαίνει; (What is happening?)\n- Χρειάζομαι γιατρό. (I need a doctor.)\n- Πονάτε; (Are you in pain? - Formal)\n- Ναι, εδώ. (Yes, here.)\n- Καλέστε ασθενοφόρο! (Call an ambulance!)\n- Πού είναι το φαρμακείο; (Where is the pharmacy?)\n\nKEY VOCAB\n- Βοήθεια (Help)\n- Γιατρός (Doctor)\n- Νοσοκομείο (Hospital)\n- Φαρμακείο (Pharmacy)\n- Πονάω (I am in pain / It hurts)\n- Αστυνομία (Police)",
+    "reading_english": "SCENARIO: EMERGENCIES\n\n1. I NEED (Xreiazomai): \n   - Xreiazomai giatro (I need a doctor).\n   - This is different from 'Thelo' (I want). It implies necessity.\n\n2. IMPERATIVES (Commands):\n   - Kaleste! (Call! - Plural/Polite).\n   - Voithia! (Help! - Noun).\n\n3. PAIN (Ponao):\n   - Ponao edo (I hurt here).\n   - Ponaei to kefali mou (My head hurts).",
+    "audio_script": "Ideally, you never use this lesson. But you must know it.\n\nThe most important word: 'Voithia!' (Help!).\n\nIf you need medical attention: 'Xreiazomai giatro' (I need a doctor). \nOr 'Pou einai to nosokomeio?' (Where is the hospital?).\n\nFor smaller issues like a headache, look for a 'Farmakeio' (Pharmacy), indicated by a green cross.",
+    "quiz_questions": [
+        {
+            "question": "Translate 'Help!'",
+            "options": [
+                "Voithia!",
+                "Stamata!",
+                "Giatre!",
+                "Astynomia!"
+            ],
+            "correctIndex": 0,
+            "explanation": "Voithia."
+        },
+        {
+            "question": "Translate 'I need a doctor'.",
+            "options": [
+                "Thelo giatro.",
+                "Xreiazomai giatro.",
+                "Eimai giatros.",
+                "Pou einai o giatros?"
+            ],
+            "correctIndex": 1,
+            "explanation": "Xreiazomai implies need/necessity."
+        },
+        {
+            "question": "What is a 'Farmakeio'?",
+            "options": [
+                "Farm/Market.",
+                "Hospital.",
+                "Pharmacy.",
+                "Police Station."
+            ],
+            "correctIndex": 2,
+            "explanation": "Pharmacy (Green Cross)."
+        },
+        {
+            "question": "Translate 'It hurts here'.",
+            "options": [
+                "Ponao edo.",
+                "Edo einai.",
+                "Ochi edo.",
+                "Ponaei ekei."
+            ],
+            "correctIndex": 0,
+            "explanation": "Ponao (I hurt) + Edo (Here)."
+        },
+        {
+            "question": "Who do you call if you need the 'Astynomia'?",
+            "options": [
+                "Doctor.",
+                "Ambulance.",
+                "Police.",
+                "Firefighters."
+            ],
+            "correctIndex": 2,
+            "explanation": "Police."
+        }
+    ]
 }

@@ -21,4 +21,9 @@ Top 100 Greek Verbs (A1/A2)
 18. περιμένω (perimeno) - to wait
 19. γράφω (grafo) - to write
 20. διαβάζω (diavazo) - to read
+21. μπορώ (mporo) - can / to be able to
+22. αγαπάω (agapao) - to love
+23. οδηγώ (odigo) - to drive
+24. κοιμάμαι (kimamai) - to sleep
+25. ρωτάω (rotao) - to ask
 ... (List continues for NotebookLM to digest)

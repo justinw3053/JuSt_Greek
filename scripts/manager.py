@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 import argparse
-import os
 import json
-from datetime import datetime
+from datetime import datetime, date
 from pathlib import Path
+from typing import List, Optional
+
+from pydantic import BaseModel, Field, field_validator
 from tabulate import tabulate
 
 BASE_DIR = Path(__file__).parent.parent
@@ -11,9 +13,103 @@ CURRICULUM_DIR = BASE_DIR / "01_Curriculum"
 ADMIN_DIR = BASE_DIR / "00_Admin"
 LOG_FILE = ADMIN_DIR / "study_log.json"
 
+
+class StudySession(BaseModel):
+    date: datetime = Field(default_factory=datetime.now)
+    hours: float = Field(..., gt=0, description="Hours spent studying")
+    activity: str = Field(..., min_length=2)
+    topic: str = "General"
+    notes: Optional[str] = ""
+
+    @field_validator("hours")
+    @classmethod
+    def validate_hours(cls, v: float) -> float:
+        return round(v, 2)
+
+    model_config = {
+        "json_encoders": {
+            datetime: lambda v: v.isoformat()
+        }
+    }
+
+
+class StudyLog(BaseModel):
+    sessions: List[StudySession] = []
+
+    def add_session(self, session: StudySession):
+        self.sessions.append(session)
+        self.save()
+
+    def save(self):
+        # We save as a list for backward compatibility with the existing JSON structure
+        data = [s.model_dump(mode='json') for s in self.sessions]
+        with open(LOG_FILE, 'w') as f:
+            json.dump(data, f, indent=2)
+
+    @classmethod
+    def load(cls) -> "StudyLog":
+        if not LOG_FILE.exists():
+            return cls()
+        
+        try:
+            with open(LOG_FILE, 'r') as f:
+                data = json.load(f)
+            # Handle potential list vs dict structure if schema changes in future
+            if isinstance(data, list):
+                sessions = [StudySession(**item) for item in data]
+                return cls(sessions=sessions)
+            return cls()
+        except (json.JSONDecodeError, ValueError) as e:
+            print(f"Error loading logs: {e}")
+            return cls()
+
+    @property
+    def total_hours(self) -> float:
+        return sum(s.hours for s in self.sessions)
+    
+    @property
+    def current_streak(self) -> int:
+        if not self.sessions:
+            return 0
+            
+        dates = sorted({s.date.date() for s in self.sessions}, reverse=True)
+        if not dates:
+            return 0
+            
+        today = date.today()
+        # If last study was not today or yesterday, streak is broken
+        if dates[0] != today and dates[0] != date.fromordinal(today.toordinal() - 1):
+            return 0
+            
+        streak = 0
+        current = today
+        
+        # Check if we studied today to start counting
+        if dates[0] == today:
+            streak = 1
+            current = date.fromordinal(current.toordinal() - 1)
+        elif dates[0] == date.fromordinal(today.toordinal() - 1):
+             # Logic handled below, just setup loop
+             pass
+             
+        # Simple consecutive check
+        check_dates = set(dates)
+        # Re-calc precisely
+        streak = 0
+        # Start from today or yesterday
+        test_date = today
+        if test_date not in check_dates:
+             test_date = date.fromordinal(test_date.toordinal() - 1)
+             
+        while test_date in check_dates:
+            streak += 1
+            test_date = date.fromordinal(test_date.toordinal() - 1)
+            
+        return streak
+
+
 def init_env():
     """Initialize the environment if not already present."""
-    # Ensure directories exist
     dirs = [
         CURRICULUM_DIR,
         ADMIN_DIR,
@@ -23,61 +119,42 @@ def init_env():
         BASE_DIR / "03_Voice_Lab" / "input",
         BASE_DIR / "03_Voice_Lab" / "output",
         BASE_DIR / "03_Voice_Lab" / "user_practice",
+        BASE_DIR / "web_app" / "public" / "audio"
     ]
     for d in dirs:
         d.mkdir(parents=True, exist_ok=True)
         print(f"[OK] {d}")
 
     if not LOG_FILE.exists():
-        with open(LOG_FILE, 'w') as f:
-            json.dump([], f)
+        StudyLog().save()
         print(f"[OK] Created log file: {LOG_FILE}")
 
-def log_session(hours, activity, notes=""):
-    """Log a study session."""
-    if not LOG_FILE.exists():
-        init_env()
-    
-    entry = {
-        "date": datetime.now().isoformat(),
-        "hours": float(hours),
-        "activity": activity,
-        "notes": notes
-    }
-    
-    with open(LOG_FILE, 'r') as f:
-        logs = json.load(f)
-    
-    logs.append(entry)
-    
-    with open(LOG_FILE, 'w') as f:
-        json.dump(logs, f, indent=2)
-    
-    print(f"Logged {hours} hours of '{activity}'.")
 
 def show_status():
-    """Show study statistics."""
-    if not LOG_FILE.exists():
-        print("No logs found. Run 'init' first.")
-        return
-
-    with open(LOG_FILE, 'r') as f:
-        logs = json.load(f)
-
-    if not logs:
+    log = StudyLog.load()
+    if not log.sessions:
         print("No study sessions logged yet.")
         return
 
-    total_hours = sum(log['hours'] for log in logs)
-    print(f"\nTotal Study Hours: {total_hours:.2f}")
+    print(f"\nTotal Study Hours: {log.total_hours:.2f}")
+    print(f"Current Streak: {log.current_streak} days")
     
-    # Recent sessions
     print("\nRecent Sessions:")
     table = []
-    for log in logs[-5:]:
-        table.append([log['date'][:10], log['hours'], log['activity'], log['notes']])
+    # Sort by date descending
+    sorted_sessions = sorted(log.sessions, key=lambda s: s.date, reverse=True)
     
-    print(tabulate(table, headers=["Date", "Hours", "Activity", "Notes"]))
+    for s in sorted_sessions[:5]:
+        table.append([
+            s.date.strftime("%Y-%m-%d"), 
+            s.hours, 
+            s.activity, 
+            s.topic,
+            s.notes
+        ])
+    
+    print(tabulate(table, headers=["Date", "Hours", "Activity", "Topic", "Notes"]))
+
 
 def main():
     parser = argparse.ArgumentParser(description="JuSt_Greek Manager")
@@ -90,101 +167,45 @@ def main():
     log_parser = subparsers.add_parser("log", help="Log a study session")
     log_parser.add_argument("hours", type=float, help="Hours spent")
     log_parser.add_argument("activity", type=str, help="Activity (e.g., Reading, Listening)")
-    log_parser.add_argument("--topic", type=str, default="General", help="Current Topic (e.g., 'Week 1.2')")
+    log_parser.add_argument("--topic", type=str, default="General", help="Current Topic")
     log_parser.add_argument("--notes", type=str, default="", help="Optional notes")
 
-    # report
-    subparsers.add_parser("report", help="Generate status report for NotebookLM")
+    # status
+    subparsers.add_parser("status", help="Show study statistics")
 
     # check
-    parser.add_argument("--check", action="store_true", help="Check if studied today (silent check)")
-
-    # streak
-    parser.add_argument("--streak", action="store_true", help="Show current streak")
+    parser.add_argument("--check", action="store_true", help="Check if studied today")
 
     args = parser.parse_args()
 
     if args.command == "init":
         init_env()
     elif args.command == "log":
-        log_session(args.hours, args.activity, args.topic, args.notes)
+        log = StudyLog.load()
+        session = StudySession(
+            hours=args.hours,
+            activity=args.activity,
+            topic=args.topic,
+            notes=args.notes
+        )
+        log.add_session(session)
+        print(f"Logged {session.hours} hours of '{session.activity}'.")
     elif args.command == "status":
         show_status()
-    elif args.command == "report":
-        generate_report()
     elif args.check:
-        check_daily_status()
-    elif args.streak:
-        calculate_streak()
-    else:
-        # If no subcommand but flags present, handle them
-        if args.check:
-            check_daily_status()
-        elif args.streak:
-            calculate_streak()
-        else:
-            parser.print_help()
-
-def check_daily_status():
-    """Check if a session has been logged today."""
-    if not LOG_FILE.exists():
-        return
-    
-    today = datetime.now().strftime("%Y-%m-%d")
-    with open(LOG_FILE, 'r') as f:
-        logs = json.load(f)
+        log = StudyLog.load()
+        today_str = date.today().isoformat()
+        has_studied = any(s.date.date() == date.today() for s in log.sessions)
         
-    has_studied = any(log['date'].startswith(today) for log in logs)
-    
-    if has_studied:
-        print("✅ You have studied today. Good job!")
-        exit(0)
+        if has_studied:
+            print("✅ You have studied today. Good job!")
+            exit(0)
+        else:
+            print("⚠️  You have NOT studied yet today.")
+            exit(1)
     else:
-        print("⚠️  You have NOT studied yet today.")
-        print("   Run: ./manager.py log [hours] [activity]")
-        exit(1)
-
-def calculate_streak():
-    """Calculate current day streak."""
-    if not LOG_FILE.exists():
-        print("Streak: 0 days")
-        return
-
-    with open(LOG_FILE, 'r') as f:
-        logs = json.load(f)
-    
-    if not logs:
-        print("Streak: 0 days")
-        return
-
-    # Extract unique dates
-    dates = sorted(list(set(log['date'][:10] for log in logs)), reverse=True)
-    
-    if not dates:
-        print("Streak: 0 days")
-        return
-
-    today = datetime.now().strftime("%Y-%m-%d")
-    yesterday = (datetime.now().date().toordinal() - 1)
-    
-    # Check if streak starts today or yesterday
-    streak = 0
-    current_check = datetime.now().date()
-    
-    # If not studied today yet, check if studied yesterday to keep streak alive
-    if dates[0] == today:
-        streak = 1
-        current_check = current_check.replace(day=current_check.day - 1) # Check yesterday next
-        dates.pop(0)
-    elif dates[0] != str(datetime.fromordinal(yesterday)):
-        # Streak broken
-        print(f"Streak: 0 days (Last breakdown: {dates[0]})")
-        return
-
-    # Count backwards
-    # This is a simple streak calc, could be improved with libraries but trying to keep deps low
-    print(f"Current Streak: {len(dates) + streak if streak else 0} days") # Simplified for now
-
+        if not args.command:
+            parser.print_help()
 
 if __name__ == "__main__":
     main()

@@ -4,8 +4,8 @@
   "month": "Month 3",
   "title": "Chapter 10 Exam: Subject vs Object",
   "reading_greek": "REVIEW\n- Nominative (Subject)\n- Accusative (Object)\n- Masculine Change (O -> Ton, -s -> _)\n\nCHALLENGE\n- Ο Πέτρος βλέπει τον Κώστα.\n- Τον Κώστα βλέπει ο Πέτρος.\n- Θέλω τον καφέ.",
-  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Identifying Subject vs Object.\n2. Masculine changes (Dropping the sigma).\n3. Article changes (O -> Ton, H -> Tin).\n\nPass Mark: 80%",
-  "audio_script": "Chapter 10 Exam. \n\nSyntax. \nWho does it? Nominative. \nWho receives it? Accusative. \n\nIf it's a man, check the 'S'. \nHas 'S'? Subject. \nNo 'S'? Object. \n\nFocus.",
+  "reading_english": "**Reference**: [(See Page 139)](/assets/grammar.pdf#page=139)\n\nEXAM PREPARATION\n\nThis exam tests:\n1. Identifying Subject vs Object.\n2. Masculine changes (Dropping the sigma).\n3. Article changes (O -> Ton, H -> Tin).\n\nPass Mark: 80%",
+  "audio_script": "Welcome to the Chapter 10 Final Exam. This is the ultimate test. It includes 29 questions covering every topic in this chapter. Take a deep breath. Good luck!",
   "quiz_questions": [
     {
       "question": "Accusative of 'O Kafes'.",
@@ -105,6 +105,226 @@
       ],
       "correctIndex": 0,
       "explanation": "O."
+    },
+    {
+      "question": "Who is the Object?",
+      "options": [
+        "-o (usually).",
+        "The one receiving the action.",
+        "-os (usually).",
+        "Ο Πέτρος βλέπει τον Νίκο."
+      ],
+      "correctIndex": 1,
+      "explanation": "Accusative."
+    },
+    {
+      "question": "Translate 'Peter sees Nick'.",
+      "options": [
+        "Ο Πέτρος βλέπει τον Νίκο.",
+        "Ο Νίκος βλέπει τον Πέτρο.",
+        "-o (usually).",
+        "-os (usually)."
+      ],
+      "correctIndex": 0,
+      "explanation": "Petros (Subj), Niko (Obj)."
+    },
+    {
+      "question": "Translate 'Nick sees Peter'.",
+      "options": [
+        "No, Cases determine meaning.",
+        "The one receiving the action.",
+        "Ο Νίκος βλέπει τον Πέτρο.",
+        "-o (usually)."
+      ],
+      "correctIndex": 2,
+      "explanation": "Nikos (Subj), Petro (Obj)."
+    },
+    {
+      "question": "Does word order change the meaning in Greek?",
+      "options": [
+        "The one receiving the action.",
+        "Βλέπω τον δρόμο.",
+        "-o (usually).",
+        "No, Cases determine meaning."
+      ],
+      "correctIndex": 3,
+      "explanation": "'Ton Petro vlepei o Nikos' still means Nick sees Peter."
+    },
+    {
+      "question": "Nominative Masculine ending?",
+      "options": [
+        "-os (usually).",
+        "Ο Νίκος βλέπει τον Πέτρο.",
+        "-o (usually).",
+        "The one receiving the action."
+      ],
+      "correctIndex": 0,
+      "explanation": "With Sigma."
+    },
+    {
+      "question": "Accusative Masculine ending?",
+      "options": [
+        "Ο Νίκος βλέπει τον Πέτρο.",
+        "Βλέπω τον δρόμο.",
+        "-o (usually).",
+        "The one receiving the action."
+      ],
+      "correctIndex": 2,
+      "explanation": "Drop the Sigma."
+    },
+    {
+      "question": "Translate 'I see the road'.",
+      "options": [
+        "No, Cases determine meaning.",
+        "Ο Πέτρος βλέπει τον Νίκο.",
+        "-os (usually).",
+        "Βλέπω τον δρόμο."
+      ],
+      "correctIndex": 3,
+      "explanation": "Dromos -> Dromo."
+    },
+    {
+      "question": "Accusative of 'O Pateras'.",
+      "options": [
+        "Βλέπεις τον Κωνσταντίνο;",
+        "Τον Πατέρα.",
+        "Θέλω τον λογαριασμό.",
+        "Πίνω τον καφέ."
+      ],
+      "correctIndex": 1,
+      "explanation": "Drop s."
+    },
+    {
+      "question": "Accusative of 'O Filos'.",
+      "options": [
+        "Τον Πατέρα.",
+        "Περιμένω τον γιατρό.",
+        "Πίνω τον καφέ.",
+        "Τον Φίλο."
+      ],
+      "correctIndex": 3,
+      "explanation": "Drop s."
+    },
+    {
+      "question": "Translate 'I want the bill'.",
+      "options": [
+        "Θέλω τον λογαριασμό.",
+        "Βλέπεις τον Κωνσταντίνο;",
+        "Πίνω τον καφέ.",
+        "Τον Φίλο."
+      ],
+      "correctIndex": 0,
+      "explanation": "Logariasmos -> Logariasmo."
+    },
+    {
+      "question": "Translate 'I wait for the doctor'.",
+      "options": [
+        "Θέλω τον λογαριασμό.",
+        "Περιμένω τον γιατρό.",
+        "Βλέπεις τον Κωνσταντίνο;",
+        "Τον Φίλο."
+      ],
+      "correctIndex": 1,
+      "explanation": "Giatros -> Giatro."
+    },
+    {
+      "question": "Translate 'Do you see Constantino?'.",
+      "options": [
+        "Περιμένω τον γιατρό.",
+        "Τον Πατέρα.",
+        "Βλέπεις τον Κωνσταντίνο;",
+        "Τον Φίλο."
+      ],
+      "correctIndex": 2,
+      "explanation": "Konstantinos -> Konstantino."
+    },
+    {
+      "question": "Translate 'I drink the coffee'.",
+      "options": [
+        "Πίνω τον καφέ.",
+        "Βλέπεις τον Κωνσταντίνο;",
+        "Τον Πατέρα.",
+        "Περιμένω τον γιατρό."
+      ],
+      "correctIndex": 0,
+      "explanation": "Kafes -> Kafe."
+    },
+    {
+      "question": "Accusative of 'To Vivlio'.",
+      "options": [
+        "No.",
+        "Βλέπω την Μαρία.",
+        "Την Πόλη.",
+        "Το Βιβλίο."
+      ],
+      "correctIndex": 3,
+      "explanation": "No change."
+    },
+    {
+      "question": "Accusative of 'H Poli'.",
+      "options": [
+        "Βλέπω την Μαρία.",
+        "Την Πόλη.",
+        "No.",
+        "Το Βιβλίο."
+      ],
+      "correctIndex": 1,
+      "explanation": "Tin."
+    },
+    {
+      "question": "Translate 'I see the city'.",
+      "options": [
+        "Το Βιβλίο.",
+        "Την Πόλη.",
+        "Βλέπω την πόλη.",
+        "Βλέπω την Μαρία."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tin poli."
+    },
+    {
+      "question": "Translate 'I want the water'.",
+      "options": [
+        "No.",
+        "Το Βιβλίο.",
+        "Βλέπω την Μαρία.",
+        "Θέλω το νερό."
+      ],
+      "correctIndex": 3,
+      "explanation": "To nero."
+    },
+    {
+      "question": "Translate 'I see Mary'.",
+      "options": [
+        "Την Πόλη.",
+        "Το Βιβλίο.",
+        "Βλέπω την Μαρία.",
+        "No (for basic nouns)."
+      ],
+      "correctIndex": 2,
+      "explanation": "Tin Maria."
+    },
+    {
+      "question": "Does Neuter change in Accusative?",
+      "options": [
+        "Θέλω το νερό.",
+        "Βλέπω την Μαρία.",
+        "No.",
+        "Την Πόλη."
+      ],
+      "correctIndex": 2,
+      "explanation": "To -> To."
+    },
+    {
+      "question": "Does Feminine Noun ending usually change?",
+      "options": [
+        "No (for basic nouns).",
+        "Θέλω το νερό.",
+        "Την Πόλη.",
+        "Βλέπω την Μαρία."
+      ],
+      "correctIndex": 0,
+      "explanation": "Just the article (H -> Tin)."
     }
   ]
 }

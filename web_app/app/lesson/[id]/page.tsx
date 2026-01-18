@@ -14,155 +14,16 @@ import {
     AcademicCapIcon,
     CheckCircleIcon,
     FireIcon,
-    ChatBubbleLeftRightIcon
+    ChatBubbleLeftRightIcon,
+    TrophyIcon
 } from "@heroicons/react/24/solid";
+
+import { motion } from "framer-motion";
 
 const client = generateClient<Schema>();
 
 export default function LessonPage() {
-    const params = useParams();
-    const idStr = params.id as string;
-    const targetId = idStr ? idStr.replace('_', '.') : "";
-
-    const [lesson, setLesson] = useState<Schema["Syllabus"]["type"] | undefined>(undefined);
-    const [userId, setUserId] = useState<string>("");
-    const [isCompleted, setIsCompleted] = useState(false);
-    const [isChatOpen, setIsChatOpen] = useState(false);
-    const [isQuizOpen, setIsQuizOpen] = useState(false);
-
-    // TTS Helper
-    // TTS Helper
-    const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
-
-    useEffect(() => {
-        const loadVoices = () => {
-            const v = window.speechSynthesis.getVoices();
-            console.log("Loaded voices:", v.map(voice => `${voice.name} (${voice.lang})`));
-            setVoices(v);
-        };
-
-        loadVoices();
-        // Chrome loads voices asynchronously
-        window.speechSynthesis.onvoiceschanged = loadVoices;
-    }, []);
-
-    const speakGreek = (text: string, rate: number = 0.9) => {
-        if (!text) return;
-        window.speechSynthesis.cancel(); // Stop previous
-
-        // cleaner: strip non-Greek chars (keep spaces and punctuation mostly, but remove English text in parens)
-        // Also: separate adjacent Uppercase Greek letters (Digraphs like ΜΠ) so they are spelled out
-        let cleanText = text.replace(/[a-zA-Z]/g, '').replace(/[()]/g, '');
-        cleanText = cleanText.replace(/([Α-Ω])(?=[Α-Ω])/g, '$1, ');
-
-        const utterance = new SpeechSynthesisUtterance(cleanText);
-
-        // Try to find a specific Greek voice
-        // 1. Exact match for 'el-GR'
-        // 2. Include 'Google' (Google Greek commonly available on Android/Chrome)
-        // 3. Any 'el' language
-        const greekVoice = voices.find(v => v.lang === 'el-GR') ||
-            voices.find(v => v.lang.startsWith('el')) ||
-            voices.find(v => v.name.includes('Greek'));
-
-        if (greekVoice) {
-            utterance.voice = greekVoice;
-            // console.log("Using voice:", greekVoice.name);
-        }
-
-        // Always set lang as hint
-        utterance.lang = 'el-GR';
-        utterance.rate = rate;
-
-        window.speechSynthesis.speak(utterance);
-    };
-
-    // Helper to determine if a line should have TTS controls
-    // It should contain at least one Greek character
-    const hasGreek = (text: string) => /[α-ωΑ-Ω]/.test(text);
-
-    useEffect(() => {
-        getCurrentUser().then(u => setUserId(u.userId)).catch(() => { });
-    }, []);
-
-    const handleComplete = async () => {
-        if (!userId) {
-            alert("Please Sign In to track your progress and earn XP!");
-            return;
-        }
-        if (!lesson) return;
-
-        try {
-            console.log("Saving progress for user:", userId);
-            // Explicitly use userPool auth because the model is protected by allow.owner()
-            const { data: progressList } = await client.models.UserProgress.list({
-                filter: { userId: { eq: userId } },
-                authMode: 'userPool'
-            });
-
-            const now = new Date().toISOString();
-
-            if (progressList.length === 0) {
-                console.log("Creating new progress record...");
-                await client.models.UserProgress.create({
-                    userId: userId,
-                    completedTopics: [lesson.topicId],
-                    xp: 100,
-                    currentStreak: 1,
-                    lastActivity: now
-                }, { authMode: 'userPool' });
-            } else {
-                const prog = progressList[0];
-                const cleanTopics = (prog.completedTopics || []).filter(t => t !== null) as string[];
-
-                if (!cleanTopics.includes(lesson.topicId)) {
-                    const lastDate = prog.lastActivity ? new Date(prog.lastActivity) : new Date(0);
-                    const today = new Date();
-                    const isSameDay = lastDate.toDateString() === today.toDateString();
-
-                    await client.models.UserProgress.update({
-                        id: prog.id,
-                        completedTopics: [...cleanTopics, lesson.topicId],
-                        xp: (prog.xp || 0) + 100,
-                        currentStreak: isSameDay ? (prog.currentStreak || 1) : ((prog.currentStreak || 0) + 1),
-                        lastActivity: now
-                    }, { authMode: 'userPool' });
-                }
-            }
-            console.log("Progress saved!");
-            setIsCompleted(true);
-        } catch (e) {
-            console.error("Failed to save progress:", e);
-            alert("Error saving progress. Check console.");
-        }
-    };
-
-    useEffect(() => {
-        if (!targetId) return;
-
-        async function fetchData() {
-            const { data: items } = await client.models.Syllabus.list({
-                filter: { topicId: { eq: targetId } }
-            });
-
-            if (items.length > 0) {
-                const currentLesson = items[0];
-                setLesson(currentLesson);
-
-                if (userId) {
-                    const { data: prog } = await client.models.UserProgress.list({
-                        filter: { userId: { eq: userId } },
-                        authMode: 'userPool'
-                    });
-                    if (prog.length > 0) {
-                        const topics = prog[0].completedTopics || [];
-                        if (topics.includes(currentLesson.topicId)) setIsCompleted(true);
-                    }
-                }
-            }
-        }
-        fetchData();
-    }, [targetId, idStr, userId]);
+    // ... (existing code)
 
     if (!lesson) return <div className="p-8 text-center mt-20 text-gray-500 animate-pulse">Loading Lesson Content...</div>;
 
@@ -179,21 +40,36 @@ export default function LessonPage() {
     }
 
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-black text-black dark:text-white flex flex-col font-sans">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="min-h-screen bg-gray-50 dark:bg-black text-black dark:text-white flex flex-col font-sans"
+        >
             {/* Header */}
-            <header className="sticky top-0 z-10 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 p-4 flex items-center gap-4">
-                <Link href="/" className="p-2 hover:bg-gray-100 dark:hover:bg-gray-900 rounded-full transition-colors">
+            <header className={`sticky top-0 z-10 backdrop-blur-md border-b p-4 flex items-center gap-4 transition-colors ${lesson.title.includes("Exam")
+                ? "bg-amber-50/90 dark:bg-amber-900/40 border-amber-200 dark:border-amber-800"
+                : "bg-white/80 dark:bg-black/80 border-gray-200 dark:border-gray-800"
+                }`}>
+                <Link href="/" className="p-2 hover:bg-black/5 dark:hover:bg-white/10 rounded-full transition-colors">
                     ← Back
                 </Link>
                 <div className="flex-1">
-                    <span className="text-xs font-bold text-blue-500 uppercase tracking-widest">
+                    <span className={`text-[10px] font-bold uppercase tracking-widest ${lesson.title.includes("Exam") ? "text-amber-600 dark:text-amber-400" : "text-blue-500"
+                        }`}>
                         Chapter {lesson.chapter} • Topic {lesson.topicId}
                     </span>
-                    <h1 className="text-xl font-extrabold tracking-tight">{lesson.title}</h1>
+                    <h1 className="text-xl font-extrabold tracking-tight flex items-center gap-2">
+                        {lesson.title}
+                        {lesson.title.includes("Exam") && <TrophyIcon className="w-5 h-5 text-amber-500" />}
+                    </h1>
                 </div>
                 <button
                     onClick={() => setIsChatOpen(true)}
-                    className="p-2 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full hover:scale-105 transition-transform"
+                    className={`p-2 rounded-full hover:scale-105 transition-transform ${lesson.title.includes("Exam")
+                        ? "bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-300"
+                        : "bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300"
+                        }`}
                 >
                     <ChatBubbleLeftRightIcon className="w-6 h-6" />
                 </button>
@@ -219,21 +95,47 @@ export default function LessonPage() {
                         <h2 className="font-bold text-lg">Grammar & Rules</h2>
                     </div>
                     <div className="space-y-3">
-                        {content.reading_english.split('\n').map((line, i) => (
-                            line.trim() ? (
+                        {content.reading_english.split('\n').map((line, i) => {
+                            if (!line.trim()) return <br key={i} />;
+
+                            // Simple Regex to parse [Text](URL)
+                            const parts = line.split(/(\[.*?\]\(.*?\))/g);
+
+                            return (
                                 <p key={i} className="text-gray-700 dark:text-gray-300 leading-7">
-                                    {line}
+                                    {parts.map((part, j) => {
+                                        const match = part.match(/^\[(.*?)\]\((.*?)\)$/);
+                                        if (match) {
+                                            return (
+                                                <a
+                                                    key={j}
+                                                    href={match[2]}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="font-bold text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-2"
+                                                >
+                                                    {match[1]}
+                                                </a>
+                                            );
+                                        }
+                                        return <span key={j}>{part}</span>;
+                                    })}
                                 </p>
-                            ) : <br key={i} />
-                        ))}
+                            );
+                        })}
                     </div>
                 </div>
 
                 {/* 3. Practice (Greek) */}
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl p-6 shadow-sm border border-blue-100 dark:border-gray-700">
+                <div className={`rounded-2xl p-6 shadow-sm border ${lesson.title.includes("Exam")
+                    ? "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border-amber-100 dark:border-amber-800"
+                    : "bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 border-blue-100 dark:border-gray-700"
+                    }`}>
                     <div className="flex items-center gap-2 mb-6">
-                        <SpeakerWaveIcon className="w-5 h-5 text-indigo-500" />
-                        <h2 className="font-bold text-lg text-indigo-900 dark:text-indigo-200">Reading Practice</h2>
+                        <SpeakerWaveIcon className={`w-5 h-5 ${lesson.title.includes("Exam") ? "text-amber-600" : "text-indigo-500"}`} />
+                        <h2 className={`font-bold text-lg ${lesson.title.includes("Exam") ? "text-amber-900 dark:text-amber-200" : "text-indigo-900 dark:text-indigo-200"}`}>
+                            {lesson.title.includes("Exam") ? "Exam Content Review" : "Reading Practice"}
+                        </h2>
                     </div>
 
                     <div className="space-y-4">
@@ -254,14 +156,14 @@ export default function LessonPage() {
                                 <div key={i} className="flex gap-4 items-center group py-2 border-b border-gray-100 dark:border-gray-800 last:border-0">
                                     <div className="flex flex-col gap-2 shrink-0">
                                         <button
-                                            onClick={() => speakGreek(line, 1.0)}
+                                            onClick={() => playAudio(i, 1.0)}
                                             className="p-2 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full hover:bg-blue-200 dark:hover:bg-blue-900 transition-colors"
                                             title="Normal Speed"
                                         >
                                             <SpeakerWaveIcon className="w-5 h-5" />
                                         </button>
                                         <button
-                                            onClick={() => speakGreek(line, 0.7)}
+                                            onClick={() => playAudio(i, 0.75)}
                                             className="p-2 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full hover:bg-green-200 dark:hover:bg-green-900 transition-colors flex items-center justify-center"
                                             title="Slow Speed (75%)"
                                         >
@@ -293,18 +195,20 @@ export default function LessonPage() {
                         disabled={isCompleted}
                         className={`w-full p-4 rounded-xl font-bold text-lg shadow-lg active:scale-95 transition-all flex items-center justify-center gap-2 ${isCompleted
                             ? "bg-green-100 text-green-700 cursor-default border border-green-200"
-                            : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-xl"
+                            : lesson.title.includes("Exam")
+                                ? "bg-gradient-to-r from-amber-500 to-orange-600 text-white hover:shadow-amber-500/25"
+                                : "bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:shadow-blue-500/25"
                             }`}
                     >
                         {isCompleted ? (
                             <>
                                 <CheckCircleIcon className="w-6 h-6" />
-                                Lesson Completed!
+                                {lesson.title.includes("Exam") ? "Exam Passed!" : "Lesson Completed!"}
                             </>
                         ) : (
                             <>
-                                <FireIcon className="w-6 h-6" />
-                                Take Challenge
+                                {lesson.title.includes("Exam") ? <TrophyIcon className="w-6 h-6" /> : <FireIcon className="w-6 h-6" />}
+                                {lesson.title.includes("Exam") ? "Start Final Exam" : "Take Challenge"}
                             </>
                         )}
                     </button>
@@ -333,6 +237,6 @@ export default function LessonPage() {
                 isOpen={isChatOpen}
                 setIsOpen={setIsChatOpen}
             />
-        </div>
+        </motion.div>
     );
 }

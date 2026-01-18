@@ -4,8 +4,8 @@
   "month": "Month 3",
   "title": "Final A1 Exam",
   "reading_greek": "THE CHALLENGE\n\nTest your knowledge of Chapters 1-11.\n\n1. Alphabet & Sounds\n2. Genders (O/H/To)\n3. Verbs (Eimai/Exo/Kano)\n4. Plurals (Oi/Ta/Es)\n5. Adjectives (Kalos/Kali)\n6. Numbers (Ena/Dyo)\n7. Prepositions (Se/Apo)\n8. Pronouns (Me/Sou/Ton)\n\nGood luck! (Καλή Επιτυχία!)",
-  "reading_english": "EVALUATION\n\nThis is a mixed drill covering all major topics.\n\nKey Areas:\n- Subject vs Object (Check your Sigmas!)\n- Verb Conjugation (-o, -eis, -ei).\n- Plural endings (-oi, -es, -a).\n- Dictionary Form vs Used Form.\n\nPass mark: 80%.",
-  "audio_script": "You have reached the end of Level A1. \n\nThis exam will test everything. \nFrom the Alpha to the Omega. \nFrom 'Eimai' to 'Agapao'. \nFrom 'O' to 'Ton'.\n\nTake your time. \nRemember the rules for Genders and Cases. \nRemember the Verb Groups.\n\nKali Epityxia! (Good Luck!).",
+  "reading_english": "**Reference**: [(See Page 162)](/assets/grammar.pdf#page=162)\n\nEVALUATION\n\nThis is a mixed drill covering all major topics.\n\nKey Areas:\n- Subject vs Object (Check your Sigmas!)\n- Verb Conjugation (-o, -eis, -ei).\n- Plural endings (-oi, -es, -a).\n- Dictionary Form vs Used Form.\n\nPass mark: 80%.",
+  "audio_script": "Welcome to the Chapter 12 Final Exam. This is the ultimate test. It includes 25 questions covering every topic in this chapter. Take a deep breath. Good luck!",
   "quiz_questions": [
     {
       "question": "Sound of 'Mp'?",
@@ -215,6 +215,72 @@
       ],
       "correctIndex": 0,
       "explanation": "A1 Phrases."
+    },
+    {
+      "question": "Translate 'Please'.",
+      "options": [
+        "Κύριε.",
+        "Τι κάνετε;",
+        "Παρακαλώ.",
+        "Κυρία."
+      ],
+      "correctIndex": 2,
+      "explanation": "Parakalo."
+    },
+    {
+      "question": "Translate 'How are you?' (Formal).",
+      "options": [
+        "Θέλετε;",
+        "Κυρία.",
+        "Τι κάνετε;",
+        "Παρακαλώ."
+      ],
+      "correctIndex": 2,
+      "explanation": "Plural."
+    },
+    {
+      "question": "Translate 'Do you want?' (Formal).",
+      "options": [
+        "Γεια σας.",
+        "Κύριε.",
+        "Θέλετε;",
+        "Τι κάνετε;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Plural."
+    },
+    {
+      "question": "Translate 'Hello' (Formal / to group).",
+      "options": [
+        "Κύριε.",
+        "Τι κάνετε;",
+        "Γεια σας.",
+        "Κυρία."
+      ],
+      "correctIndex": 2,
+      "explanation": "Geia sas."
+    },
+    {
+      "question": "Title for a man (Mr).",
+      "options": [
+        "Κυρία.",
+        "Θέλετε;",
+        "Κύριε.",
+        "Τι κάνετε;"
+      ],
+      "correctIndex": 2,
+      "explanation": "Kyrie."
+    },
+    {
+      "question": "Title for a woman (Mrs).",
+      "options": [
+        "Κυρία.",
+        "Τι κάνετε;",
+        "Παρακαλώ.",
+        "Κύριε."
+      ],
+      "correctIndex": 0,
+      "explanation": "Kyria."
     }
   ]
 }

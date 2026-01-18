@@ -69,8 +69,8 @@
 
 ### Chapter 9: Routine & Questions
 *   **Topic 9.1**: Interrogatives (Who, What, Where, When).
-*   **Topic 9.2**: Daily Routine Verbs (Wake up, Eat, Work).
-*   **Topic 9.3**: Telling Time (Basic).
+*   **Topic 9.2**: Daily Routine & Time (Wake up, Work, 3:00 PM).
+*   **Topic 9.3**: **Verbs Group B** (Milao, Agapo). "I speak Greek".
 
 ### Chapter 10: The Accusative Case (Masculine)
 *   *Hardest Concept Alert*

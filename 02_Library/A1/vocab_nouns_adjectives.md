@@ -6,6 +6,10 @@
 *   **3**: Τρία (Tria)
 *   **4**: Τέσσερα (Tessera)
 *   **5**: Πέντε (Pente)
+*   **6**: Έξι (Exi)
+*   **7**: Επτά (Epta)
+*   **8**: Οκτώ (Okto)
+*   **9**: Εννέα (Ennea)
 *   **10**: Δέκα (Deka)
 *   **20**: Είκοσι (Ikosi)
 *   **50**: Πενήντα (Peninta)
@@ -27,6 +31,13 @@
 *   **Blue**: Μπλε (Ble)
 *   **Green**: Πράσινο (Prasino)
 *   **Yellow**: Κίτρινο (Kitrino)
+
+## 5. Basic Descriptors (Επίθετα)
+*   **Good**: Καλός (Kalos)
+*   **Bad**: Κακός (Kakos)
+*   **Big**: Μεγάλος (Megalos)
+*   **Small**: Μικρός (Mikros)
+*   **Beautiful**: Ωραίος (Oreos)
 
 ## 4. Family (Οικογένεια)
 *   **Mother**: Η μητέρα / μαμά

@@ -1,110 +1,66 @@
 {
-  "topicId": "5.4",
-  "week": 5,
-  "month": "Month 2",
-  "title": "Chapter 5 Exam: Plurals (Fem/Neut)",
-  "reading_greek": "REVIEW\n- Feminine Plural (-es)\n- Neuter Plural (-a, -ia, -mata)\n- Countables (Dyo kafedes)\n\nCHALLENGE\n- Οι γυναίκες είναι εδώ.\n- Τα παιδιά παίζουν.\n- Δύο νερά παρακαλώ.",
-  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Feminine Plural (-a/-i -> -es).\n2. Neuter Plural (-o -> -a).\n3. Neuter Irregulars (Paidi -> Paidia).\n\nPass Mark: 80%",
-  "audio_script": "Chapter 5 Exam. \n\nFeminine is easy: Always 'Es'. 'Gynaikes', 'Poli', 'Ores'. \n\nNeuter is fun. 'Viblia' (-a). 'Paidia' (-ia). 'Mathimata' (-mata). \n\nProve you know them.",
-  "quiz_questions": [
-    {
-      "question": "Plural of 'H Poli'.",
-      "options": [
-        "Οι πόλεις.",
-        "Τα ονόματα.",
-        "Τα.",
-        "Τα μαθήματα."
-      ],
-      "correctIndex": 0,
-      "explanation": "-eis."
-    },
-    {
-      "question": "Plural of 'To Biblio'.",
-      "options": [
-        "Τα παιδιά.",
-        "Δύο καφέδες.",
-        "Οι γυναίκες.",
-        "Τα βιβλία."
-      ],
-      "correctIndex": 3,
-      "explanation": "-a."
-    },
-    {
-      "question": "Plural of 'To Paidi'.",
-      "options": [
-        "Τα ονόματα.",
-        "Δύο καφέδες.",
-        "Τα παιδιά.",
-        "Τα μαθήματα."
-      ],
-      "correctIndex": 2,
-      "explanation": "-ia."
-    },
-    {
-      "question": "Plural of 'To Mathima'.",
-      "options": [
-        "Τα μαθήματα.",
-        "Δύο καφέδες.",
-        "Οι πόλεις.",
-        "Οι ζώνες."
-      ],
-      "correctIndex": 0,
-      "explanation": "-mata."
-    },
-    {
-      "question": "Translate 'The belts'.",
-      "options": [
-        "Οι γυναίκες.",
-        "Τα μαθήματα.",
-        "Οι πόλεις.",
-        "Οι ζώνες."
-      ],
-      "correctIndex": 3,
-      "explanation": "-es."
-    },
-    {
-      "question": "Translate 'Two coffees'.",
-      "options": [
-        "Τα βιβλία.",
-        "Οι γυναίκες.",
-        "Δύο καφέδες.",
-        "Τα."
-      ],
-      "correctIndex": 2,
-      "explanation": "Countable."
-    },
-    {
-      "question": "Plural of 'To onoma'.",
-      "options": [
-        "Τα βιβλία.",
-        "Τα μαθήματα.",
-        "Τα ονόματα.",
-        "Οι γυναίκες."
-      ],
-      "correctIndex": 2,
-      "explanation": "-mata."
-    },
-    {
-      "question": "Translate 'The women'.",
-      "options": [
-        "Τα βιβλία.",
-        "Τα ονόματα.",
-        "Τα παιδιά.",
-        "Οι γυναίκες."
-      ],
-      "correctIndex": 3,
-      "explanation": "-es."
-    },
-    {
-      "question": "Article for Neuter Plural?",
-      "options": [
-        "Οι γυναίκες.",
-        "Τα.",
-        "Τα βιβλία.",
-        "Τα ονόματα."
-      ],
-      "correctIndex": 1,
-      "explanation": "Ta."
-    }
-  ]
+    "topicId": "5.4",
+    "week": 5,
+    "month": "Month 2",
+    "title": "Scenario: The Market",
+    "reading_greek": "DIALOGUE\n- Παρακαλώ; (Yes?)\n- Θέλω μήλα. (I want apples.)\n- Πόσα; (How many?)\n- Δύο κιλά. (Two kilos.)\n- Κάτι άλλο; (Something else?)\n- Ναι, πορτοκάλια. (Yes, oranges.)\n- Πόσα; (How many?)\n- Ένα κιλό. (One kilo.)\n- Αυτά. (That's all / These ones.)\n\nKEY VOCAB\n- Μήλο / Μήλα (Apple/s)\n- Πορτοκάλι / Πορτοκάλια (Orange/s)\n- Κιλό / Κιλά (Kilo/s)\n- Πόσα; (How many? - Neuter Plural)",
+    "reading_english": "SCENARIO: BUYING FRUIT\n\n1. PLURALS IN ACTION: \n   - Milo (1) -> Mila (Many).\n   - Portokali (1) -> Portokalia (Many).\n   - Kilo (1) -> Kila (Many).\n\n2. QUANTITY:\n   - Ena kilo (1 Kilo - Neuter).\n   - Dyo kila (2 Kilos - Neuter Plural).\n   - Posa? (How many? - Neuter Plural).\n\n3. CLOSING THE DEAL:\n   - 'Kati allo?' (Something else?).\n   - 'Afta' (That's all / Literally: These things).",
+    "audio_script": "The Laiki (Farmers Market) is the heart of Greek food. Let's buy some fruit.\n\nEverything here is Neuter Plural! \n- Mila (Apples).\n- Portokalia (Oranges).\n\nThe seller asks: 'Posa?' (How many?). \n\nYou answer with quantities:\n- Ena kilo (One kilo).\n- Dyo kila (Two kilos).\n- Miso kilo (Half a kilo).\n\nNotice how '-o' becomes '-a' everywhere? \nTo Milo -> Ta Mila.\nTo Portokali -> Ta Portokalia.\nTo Kilo -> Ta Kila.",
+    "quiz_questions": [
+        {
+            "question": "Translate 'Two kilos'.",
+            "options": [
+                "Ena kilo.",
+                "Dyo kilos.",
+                "Dyo kila.",
+                "Dyo kili."
+            ],
+            "correctIndex": 2,
+            "explanation": "Kilo (Singular) -> Kila (Plural)."
+        },
+        {
+            "question": "How do you ask 'How many?' (for apples).",
+            "options": [
+                "Poso?",
+                "Posa?",
+                "Poioi?",
+                "Ti?"
+            ],
+            "correctIndex": 1,
+            "explanation": "Posa (Neuter Plural)."
+        },
+        {
+            "question": "Translate 'I want apples'.",
+            "options": [
+                "Thelo mila.",
+                "Thelo milo.",
+                "Thelo milos.",
+                "Thelo milous."
+            ],
+            "correctIndex": 0,
+            "explanation": "Mila is the plural of Milo."
+        },
+        {
+            "question": "The seller asks 'Kati allo?'. What does he mean?",
+            "options": [
+                "How much?",
+                "Something else?",
+                "Is that all?",
+                "Pay now."
+            ],
+            "correctIndex": 1,
+            "explanation": "Usually followed by 'Ochi, efcharisto' (No, thanks)."
+        },
+        {
+            "question": "Translate 'Half a kilo'.",
+            "options": [
+                "Ena kilo.",
+                "Dyo kila.",
+                "Miso kilo.",
+                "Mikro kilo."
+            ],
+            "correctIndex": 2,
+            "explanation": "Miso (Half)."
+        }
+    ]
 }

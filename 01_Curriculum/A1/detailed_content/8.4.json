@@ -4,8 +4,8 @@
   "month": "Month 2",
   "title": "Chapter 8 Exam: Verbs",
   "reading_greek": "REVIEW\n- Group A (Kano)\n- Group B (Milao)\n- Irregulars (Eimai, Exo, Boro)\n\nCHALLENGE\n- Εμείς κάνουμε.\n- Αυτοί μιλάνε.\n- Εγώ μπορώ να...",
-  "reading_english": "EXAM PREPARATION\n\nThis exam tests:\n1. Conjugation endings (-o vs -ao).\n2. Stress patterns.\n3. Essential verbs (Have, Be, Can, Want).\n\nPass Mark: 80%",
-  "audio_script": "Chapter 8 Exam. \n\nThe engine of the language. Verbs. \n\nCan you conjugate 'Kano'? \nCan you conjugate 'Milao'? \n\nRemember: Group B has the stress on the end. 'Milo' or 'Milao'. \n\nDo your best.",
+  "reading_english": "**Reference**: [(See Page 113)](/assets/grammar.pdf#page=113)\n\nEXAM PREPARATION\n\nThis exam tests:\n1. Conjugation endings (-o vs -ao).\n2. Stress patterns.\n3. Essential verbs (Have, Be, Can, Want).\n\nPass Mark: 80%",
+  "audio_script": "Welcome to the Chapter 8 Final Exam. This is the ultimate test. It includes 31 questions covering every topic in this chapter. Take a deep breath. Good luck!",
   "quiz_questions": [
     {
       "question": "Conjugate 'They speak'.",
@@ -105,6 +105,248 @@
       ],
       "correctIndex": 1,
       "explanation": "Perpatao."
+    },
+    {
+      "question": "Conjugate 'Kano' (You do).",
+      "options": [
+        "Κάνεις.",
+        "Γράφει.",
+        "Διαβάζουμε.",
+        "Κάνουν."
+      ],
+      "correctIndex": 0,
+      "explanation": "-eis."
+    },
+    {
+      "question": "Conjugate 'Kano' (He does).",
+      "options": [
+        "Κάνεις.",
+        "Γράφει.",
+        "Κάνει.",
+        "Κάνουμε."
+      ],
+      "correctIndex": 2,
+      "explanation": "-ei."
+    },
+    {
+      "question": "Conjugate 'Kano' (We do).",
+      "options": [
+        "Κάνει.",
+        "Δουλεύω.",
+        "Διαβάζουμε.",
+        "Κάνουμε."
+      ],
+      "correctIndex": 3,
+      "explanation": "-oume."
+    },
+    {
+      "question": "Conjugate 'Kano' (You pl. do).",
+      "options": [
+        "Γράφει.",
+        "Κάνει.",
+        "Κάνεις.",
+        "Κάνετε."
+      ],
+      "correctIndex": 3,
+      "explanation": "-ete."
+    },
+    {
+      "question": "Conjugate 'Kano' (They do).",
+      "options": [
+        "Δουλεύω.",
+        "Κάνεις.",
+        "Κάνουμε.",
+        "Κάνουν."
+      ],
+      "correctIndex": 3,
+      "explanation": "-oun."
+    },
+    {
+      "question": "Translate 'I work'.",
+      "options": [
+        "Διαβάζουμε.",
+        "Γράφει.",
+        "Κάνουν.",
+        "Δουλεύω."
+      ],
+      "correctIndex": 3,
+      "explanation": "-o."
+    },
+    {
+      "question": "Translate 'We read'.",
+      "options": [
+        "Διαβάζουμε.",
+        "Κάνουμε.",
+        "Κάνεις.",
+        "Γράφει."
+      ],
+      "correctIndex": 0,
+      "explanation": "-oume."
+    },
+    {
+      "question": "Translate 'He writes'.",
+      "options": [
+        "Γράφει.",
+        "Κάνετε.",
+        "Δουλεύω.",
+        "Κάνουμε."
+      ],
+      "correctIndex": 0,
+      "explanation": "-ei."
+    },
+    {
+      "question": "Conjugate 'Milao' (You speak).",
+      "options": [
+        "Group B.",
+        "Περπατάς.",
+        "Πεινάω.",
+        "Μιλάς."
+      ],
+      "correctIndex": 3,
+      "explanation": "-as."
+    },
+    {
+      "question": "Conjugate 'Milao' (He speaks).",
+      "options": [
+        "Πεινάω.",
+        "Μιλάμε.",
+        "Περπατάς.",
+        "Μιλάει."
+      ],
+      "correctIndex": 3,
+      "explanation": "-aei."
+    },
+    {
+      "question": "Conjugate 'Milao' (We speak).",
+      "options": [
+        "Μιλάμε.",
+        "Μιλάς.",
+        "Group B.",
+        "Περπατάς."
+      ],
+      "correctIndex": 0,
+      "explanation": "-ame."
+    },
+    {
+      "question": "Conjugate 'Agapao' (They love).",
+      "options": [
+        "Μιλάμε.",
+        "Πεινάω.",
+        "Αγαπάνε.",
+        "Group B."
+      ],
+      "correctIndex": 2,
+      "explanation": "-ane."
+    },
+    {
+      "question": "Translate 'I am hungry'.",
+      "options": [
+        "Μιλάει.",
+        "Μιλάμε.",
+        "Πεινάω.",
+        "Μιλάς."
+      ],
+      "correctIndex": 2,
+      "explanation": "-ao."
+    },
+    {
+      "question": "Translate 'You walk'.",
+      "options": [
+        "Περπατάς.",
+        "Αγαπάνε.",
+        "Μιλάει.",
+        "Μιλάμε."
+      ],
+      "correctIndex": 0,
+      "explanation": "-as."
+    },
+    {
+      "question": "Is 'Agapao' Group A or B?",
+      "options": [
+        "Πεινάω.",
+        "Περπατάς.",
+        "Group B.",
+        "Μιλάει."
+      ],
+      "correctIndex": 2,
+      "explanation": "Stress is on the ending."
+    },
+    {
+      "question": "Translate 'I want'.",
+      "options": [
+        "Έχουμε.",
+        "Είμαι.",
+        "Μπορώ να πάω.",
+        "Θέλω (Thelo)."
+      ],
+      "correctIndex": 3,
+      "explanation": "Group A."
+    },
+    {
+      "question": "Translate 'I can go'.",
+      "options": [
+        "Μπορούμε.",
+        "Μπορώ να πάω.",
+        "Είμαι.",
+        "Θέλεις."
+      ],
+      "correctIndex": 1,
+      "explanation": "Use 'Na' + Verb."
+    },
+    {
+      "question": "Translate 'I want to sleep'.",
+      "options": [
+        "Μπορούμε.",
+        "Είμαι.",
+        "Θέλεις.",
+        "Θέλω να κοιμηθώ / Θέλω να κοιμάμαι."
+      ],
+      "correctIndex": 3,
+      "explanation": "Thelo na..."
+    },
+    {
+      "question": "Conjugate 'Boro' (We can).",
+      "options": [
+        "Μπορώ να πάω.",
+        "Έχουμε.",
+        "Θέλω (Thelo).",
+        "Μπορούμε."
+      ],
+      "correctIndex": 3,
+      "explanation": "Boroume."
+    },
+    {
+      "question": "Conjugate 'Thelo' (You want).",
+      "options": [
+        "Θέλω (Thelo).",
+        "Μπορούμε.",
+        "Θέλεις.",
+        "Θέλω να κοιμηθώ / Θέλω να κοιμάμαι."
+      ],
+      "correctIndex": 2,
+      "explanation": "Theleis."
+    },
+    {
+      "question": "Translate 'I am'.",
+      "options": [
+        "Μπορούμε.",
+        "Είμαι.",
+        "Θέλεις.",
+        "Θέλω (Thelo)."
+      ],
+      "correctIndex": 1,
+      "explanation": "Irregular."
+    },
+    {
+      "question": "Translate 'We have'.",
+      "options": [
+        "Μπορούμε.",
+        "Έχουμε.",
+        "Θέλω (Thelo).",
+        "Θέλω να κοιμηθώ / Θέλω να κοιμάμαι."
+      ],
+      "correctIndex": 1,
+      "explanation": "Exoume."
     }
   ]
 }
