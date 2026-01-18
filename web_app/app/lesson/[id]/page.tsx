@@ -60,7 +60,8 @@ export default function LessonPage() {
     }, [topicId]);
 
     const playAudio = (index: number, rate: number) => {
-        const key = `/audio/topic_${topicId.replace(/\./g, "_")}_${index + 1}.mp3`;
+        // Generator uses 0-based index matching line number
+        const key = `/audio/topic_${topicId.replace(/\./g, "_")}_${index}.mp3`;
         const audio = new Audio(key);
         audio.playbackRate = rate;
         audio.play().catch(e => console.error("Audio play error", e));
@@ -173,26 +174,45 @@ export default function LessonPage() {
                         {content.reading_english.split('\n').map((line, i) => {
                             if (!line.trim()) return <br key={i} />;
 
-                            // Simple Regex to parse [Text](URL)
-                            const parts = line.split(/(\[.*?\]\(.*?\))/g);
+                            // Parse [Text](URL) AND "Page X" / "page X"
+                            const parts = line.split(/(\[.*?\]\(.*?\)|(?:Page|page)\s+\d+)/g);
 
                             return (
                                 <p key={i} className="text-gray-700 dark:text-gray-300 leading-7">
                                     {parts.map((part, j) => {
-                                        const match = part.match(/^\[(.*?)\]\((.*?)\)$/);
-                                        if (match) {
+                                        // 1. Markdown Link
+                                        const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/);
+                                        if (linkMatch) {
                                             return (
                                                 <a
                                                     key={j}
-                                                    href={match[2]}
+                                                    href={linkMatch[2]}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
                                                     className="font-bold text-blue-600 hover:text-blue-800 underline decoration-blue-300 underline-offset-2"
                                                 >
-                                                    {match[1]}
+                                                    {linkMatch[1]}
                                                 </a>
                                             );
                                         }
+
+                                        // 2. Page Reference (PDF Link)
+                                        const pageMatch = part.match(/^(?:Page|page)\s+(\d+)$/);
+                                        if (pageMatch) {
+                                            const pageNum = pageMatch[1];
+                                            return (
+                                                <a
+                                                    key={j}
+                                                    href={`/assets/grammar.pdf#page=${pageNum}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="font-bold text-amber-600 hover:text-amber-800 underline decoration-amber-300 underline-offset-2 mx-1"
+                                                >
+                                                    {part}
+                                                </a>
+                                            );
+                                        }
+
                                         return <span key={j}>{part}</span>;
                                     })}
                                 </p>
