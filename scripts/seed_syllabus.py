@@ -58,7 +58,8 @@ def scan_detailed_content():
     return syllabus_items
 
 def seed_database():
-    session = boto3.Session(profile_name=PROFILE, region_name=REGION)
+    # Use default credentials
+    session = boto3.Session(region_name=REGION)
     dynamodb = session.client('dynamodb')
     
     # Switch to scanning JSONs directly
