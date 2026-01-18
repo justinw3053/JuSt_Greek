@@ -23,7 +23,82 @@ import { motion } from "framer-motion";
 const client = generateClient<Schema>();
 
 export default function LessonPage() {
-    // ... (existing code)
+    const { id } = useParams();
+    const topicId = (id as string).replace(/_/g, ".");
+
+    const [lesson, setLesson] = useState<Schema["Syllabus"]["type"] | null>(null);
+    const [isQuizOpen, setIsQuizOpen] = useState(false);
+    const [isChatOpen, setIsChatOpen] = useState(false);
+    const [isCompleted, setIsCompleted] = useState(false);
+    const [userId, setUserId] = useState<string | null>(null);
+
+    // Fetch Lesson
+    useEffect(() => {
+        client.models.Syllabus.list({
+            filter: { topicId: { eq: topicId } }
+        }).then(res => {
+            if (res.data.length > 0) {
+                setLesson(res.data[0]);
+            }
+        });
+    }, [topicId]);
+
+    // Check Progress
+    useEffect(() => {
+        getCurrentUser().then(u => {
+            setUserId(u.userId);
+            client.models.UserProgress.list({
+                filter: { userId: { eq: u.userId } },
+                authMode: 'userPool'
+            }).then(res => {
+                if (res.data.length > 0) {
+                    const completed = (res.data[0].completedTopics || []).filter(t => t !== null) as string[];
+                    if (completed.includes(topicId)) setIsCompleted(true);
+                }
+            });
+        }).catch(() => console.log("Not signed in"));
+    }, [topicId]);
+
+    const playAudio = (index: number, rate: number) => {
+        const key = `/audio/topic_${topicId.replace(/\./g, "_")}_${index + 1}.mp3`;
+        const audio = new Audio(key);
+        audio.playbackRate = rate;
+        audio.play().catch(e => console.error("Audio play error", e));
+    };
+
+    const hasGreek = (text: string) => /[\u0370-\u03FF]/.test(text);
+
+    const handleComplete = async () => {
+        if (!userId || !lesson) return;
+        setIsCompleted(true);
+
+        try {
+            const { data: prog } = await client.models.UserProgress.list({
+                filter: { userId: { eq: userId } },
+                authMode: 'userPool'
+            });
+
+            if (prog.length > 0) {
+                const p = prog[0];
+                const current = (p.completedTopics || []).filter(t => t !== null) as string[];
+                if (!current.includes(topicId)) {
+                    await client.models.UserProgress.update({
+                        id: p.id,
+                        completedTopics: [...current, topicId],
+                        xp: (p.xp || 0) + 10
+                    });
+                }
+            } else {
+                await client.models.UserProgress.create({
+                    userId,
+                    completedTopics: [topicId],
+                    xp: 10
+                });
+            }
+        } catch (e) {
+            console.error(e);
+        }
+    };
 
     if (!lesson) return <div className="p-8 text-center mt-20 text-gray-500 animate-pulse">Loading Lesson Content...</div>;
 
