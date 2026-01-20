@@ -1,66 +1,67 @@
 {
-    "topicId": "2.5",
-    "week": 2,
-    "month": "Month 1",
-    "title": "Scenario: The Cafe",
-    "reading_greek": "DIALOGUE\n- Γεια σας. (Hello - Formal/Plural)\n- Παρακαλώ; (Yes? / How can I help?)\n- Έναν καφέ, παρακαλώ. (One coffee, please)\n- Τι καφέ; (What kind of coffee?)\n- Έναν φραπέ μέτριο με γάλα. (One frappe, medium sweetness, with milk.)\n- Εντάξει. (Okay)\n- Ευχαριστώ. (Thank you)\n\nKEY VOCAB\n- Καφές (Coffee)\n- Νερό (Water)\n- Γάλα (Milk)\n- Ζάχαρη (Sugar)\n- Μέτριο (Medium)\n- Σκέτο (Plain/Black)",
-    "reading_english": "SCENARIO: ASKING FOR THINGS\n\n1. THE MAGIC WORD: 'Parakalo'.\n   - It means 'Please'.\n   - It means 'You're welcome'.\n   - It means 'How can I help you?' (when a waiter says it).\n\n2. ACCUSATIVE CASE (Ordering):\n   - When you order, you want the object.\n   - Enas kafes (Subject) -> Enan kafe (Object).\n   - 'Thelo enan kafe' (I want a coffee).\n\n3. SWEETNESS LEVELS:\n   - Sketos (No sugar)\n   - Metrios (Medium - 1-2 spoons)\n   - Glykos (Sweet - 3+ spoons)",
-    "audio_script": "Let's go to a Greek Cafe! This is your first real-world mission. \n\nThe waiter will approach and say 'Parakalo?'. Don't panic. He is just asking 'What can I do for you?'.\n\nTo order, keep it simple. \n'Enan kafe, parakalo'. (A coffee, please). \n\nBut in Greece, coffee is an art. You must specify the sweetness. \n- Sketos (Black/Plain).\n- Metrios (Medium).\n- Glykos (Sweet).\n\nSo the full order: 'Enan frappe, metrio, me gala' (A frappe, medium, with milk).",
-    "quiz_questions": [
-        {
-            "question": "How do you say 'One coffee, please'?",
-            "options": [
-                "Enas kafes, parakalo.",
-                "Enan kafe, parakalo.",
-                "O kafes, parakalo.",
-                "Kafes, parakalo."
-            ],
-            "correctIndex": 1,
-            "explanation": "Use the Accusative (Enan) because you are ordering it (Object)."
-        },
-        {
-            "question": "What does 'Metrios' mean?",
-            "options": [
-                "Black coffee (No sugar).",
-                "With milk.",
-                "Sweet coffee.",
-                "Medium sweetness."
-            ],
-            "correctIndex": 3,
-            "explanation": "Medium sugar (usually 1-2 spoons)."
-        },
-        {
-            "question": "The waiter says 'Parakalo?'. What does he mean?",
-            "options": [
-                "You're welcome.",
-                "Please.",
-                "How can I help you?",
-                "Goodbye."
-            ],
-            "correctIndex": 2,
-            "explanation": "In this context, it is a polite question opening."
-        },
-        {
-            "question": "Translate 'Without sugar'.",
-            "options": [
-                "Metrio.",
-                "Sketo.",
-                "Glyko.",
-                "Me gala."
-            ],
-            "correctIndex": 1,
-            "explanation": "Sketos means plain/simple."
-        },
-        {
-            "question": "How do you ask for 'Water'?",
-            "options": [
-                "Nero.",
-                "Gala.",
-                "Kafes.",
-                "Zachari."
-            ],
-            "correctIndex": 0,
-            "explanation": "Nero."
-        }
-    ]
+  "topicId": "2.5",
+  "week": 2,
+  "month": "Month 1",
+  "title": "Scenario: The Cafe",
+  "reading_greek": "DIALOGUE\n- Γεια σας. (Hello - Formal/Plural)\n- Παρακαλώ; (Yes? / How can I help?)\n- Έναν καφέ, παρακαλώ. (One coffee, please)\n- Τι καφέ; (What kind of coffee?)\n- Έναν φραπέ μέτριο με γάλα. (One frappe, medium sweetness, with milk.)\n- Εντάξει. (Okay)\n- Ευχαριστώ. (Thank you)\n\nKEY VOCAB\n- Καφές (Coffee)\n- Νερό (Water)\n- Γάλα (Milk)\n- Ζάχαρη (Sugar)\n- Μέτριο (Medium)\n- Σκέτο (Plain/Black)",
+  "reading_english": "SCENARIO: ASKING FOR THINGS\n\n1. THE MAGIC WORD: 'Parakalo'.\n   - It means 'Please'.\n   - It means 'You're welcome'.\n   - It means 'How can I help you?' (when a waiter says it).\n\n2. ACCUSATIVE CASE (Ordering):\n   - When you order, you want the object.\n   - Enas kafes (Subject) -> Enan kafe (Object).\n   - 'Thelo enan kafe' (I want a coffee).\n\n3. SWEETNESS LEVELS:\n   - Sketos (No sugar)\n   - Metrios (Medium - 1-2 spoons)\n   - Glykos (Sweet - 3+ spoons)",
+  "audio_script": "Let's go to a Greek Cafe! This is your first real-world mission. \n\nThe waiter will approach and say 'Parakalo?'. Don't panic. He is just asking 'What can I do for you?'.\n\nTo order, keep it simple. \n'Enan kafe, parakalo'. (A coffee, please). \n\nBut in Greece, coffee is an art. You must specify the sweetness. \n- Sketos (Black/Plain).\n- Metrios (Medium).\n- Glykos (Sweet).\n\nSo the full order: 'Enan frappe, metrio, me gala' (A frappe, medium, with milk).",
+  "quiz_questions": [
+    {
+      "question": "How do you say 'One coffee, please'?",
+      "options": [
+        "Enas kafes, parakalo.",
+        "Enan kafe, parakalo.",
+        "O kafes, parakalo.",
+        "Kafes, parakalo."
+      ],
+      "correctIndex": 1,
+      "explanation": "Use the Accusative (Enan) because you are ordering it (Object)."
+    },
+    {
+      "question": "What does 'Metrios' mean?",
+      "options": [
+        "Black coffee (No sugar).",
+        "With milk.",
+        "Sweet coffee.",
+        "Medium sweetness."
+      ],
+      "correctIndex": 3,
+      "explanation": "Medium sugar (usually 1-2 spoons)."
+    },
+    {
+      "question": "The waiter says 'Parakalo?'. What does he mean?",
+      "options": [
+        "You're welcome.",
+        "Please.",
+        "How can I help you?",
+        "Goodbye."
+      ],
+      "correctIndex": 2,
+      "explanation": "In this context, it is a polite question opening."
+    },
+    {
+      "question": "Translate 'Without sugar'.",
+      "options": [
+        "Metrio.",
+        "Sketo.",
+        "Glyko.",
+        "Me gala."
+      ],
+      "correctIndex": 1,
+      "explanation": "Sketos means plain/simple."
+    },
+    {
+      "question": "How do you ask for 'Water'?",
+      "options": [
+        "Nero.",
+        "Gala.",
+        "Kafes.",
+        "Zachari."
+      ],
+      "correctIndex": 0,
+      "explanation": "Nero."
+    }
+  ],
+  "intro_video": "/videos/intro_2_5.mp4"
 }

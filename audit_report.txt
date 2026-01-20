@@ -1,0 +1,147 @@
+Scanning 57 lesson files for quiz coverage...
+
+
+File: 1.2.json
+  - Q5 Ans: 'f (as in fish)' not found in Chapter text.
+
+File: 1.3.json
+  - Q5 Ans: 'It is pronounced like 'd'.' not found in Chapter text.
+  - Q9 Ans: 'Efcharisto' not found in Chapter text.
+  - Q10 Ans: 'Nero' not found in Chapter text.
+  - Q11 Ans: 'Psomi' not found in Chapter text.
+  - Q12 Ans: 'Gata' not found in Chapter text.
+  - Q13 Ans: 'Ochi' not found in Chapter text.
+
+File: 1.4.json
+  - Q1 Ans: 'D (as in Dog)' not found in Chapter text.
+  - Q3 Ans: 'e (as in Met)' not found in Chapter text.
+  - Q4 Ans: 'i (as in Machine)' not found in Chapter text.
+  - Q5 Ans: 'i (as in Machine)' not found in Chapter text.
+
+File: 1.5.json
+  - Q1 Ans: 'Μ + Π (Mp).' not found in Chapter text.
+  - Q2 Ans: 'Ν + Τ (Nt).' not found in Chapter text.
+  - Q3 Ans: 'Ο + Υ (Ou).' not found in Chapter text.
+  - Q6 Ans: 'Ξ (KS).' not found in Chapter text.
+  - Q33 Ans: 'f (as in fish)' not found in Chapter text.
+  - Q46 Ans: 'Efcharisto' not found in Chapter text.
+  - Q47 Ans: 'Nero' not found in Chapter text.
+  - Q48 Ans: 'Psomi' not found in Chapter text.
+  - Q49 Ans: 'Gata' not found in Chapter text.
+  - Q50 Ans: 'Ochi' not found in Chapter text.
+  - Q52 Ans: 'D (as in Dog)' not found in Chapter text.
+  - Q54 Ans: 'e (as in Met)' not found in Chapter text.
+
+File: 10.1.json
+  - Q5 Ans: '-os (usually).' not found in Chapter text.
+  - Q6 Ans: '-o (usually).' not found in Chapter text.
+
+File: 10.4.json
+  - Q6 Ans: '-os/as/is.' not found in Chapter text.
+  - Q7 Ans: '-o/a/i.' not found in Chapter text.
+  - Q9 Ans: 'Ο δρόμος.' not found in Chapter text.
+
+File: 11.1.json
+  - Q3 Ans: 'Με ακούς;' not found in Chapter text.
+  - Q5 Ans: 'Εμένα.' not found in Chapter text.
+
+File: 11.5.json
+  - Q7 Ans: 'Με βλέπεις;' not found in Chapter text.
+  - Q10 Ans: 'Με ακούς;' not found in Chapter text.
+  - Q12 Ans: 'Εμένα.' not found in Chapter text.
+
+File: 12.1.json
+  - Q3 Ans: 'Θέλετε;' not found in Chapter text.
+  - Q4 Ans: 'Γεια σας.' not found in Chapter text.
+
+File: 12.3.json
+  - Q1 Ans: 'B (Basket).' not found in Chapter text.
+  - Q3 Ans: 'Βιβλία.' not found in Chapter text.
+  - Q5 Ans: 'Κάνουμε.' not found in Chapter text.
+  - Q6 Ans: 'Ο καλός φίλος.' not found in Chapter text.
+  - Q7 Ans: 'Κόκκινο.' not found in Chapter text.
+  - Q8 Ans: 'Δέκα.' not found in Chapter text.
+  - Q11 Ans: 'Η μητέρα μου.' not found in Chapter text.
+  - Q12 Ans: 'Αρχίζω.' not found in Chapter text.
+  - Q13 Ans: 'Μιλάω.' not found in Chapter text.
+  - Q15 Ans: 'Δευτέρα.' not found in Chapter text.
+  - Q16 Ans: 'Βλέπω τον Πέτρο.' not found in Chapter text.
+  - Q17 Ans: 'Με βλέπει.' not found in Chapter text.
+  - Q22 Ans: 'Θέλετε;' not found in Chapter text.
+
+File: 2.2.json
+  - Q1 Ans: 'Ο (O)' not found in Chapter text.
+  - Q2 Ans: 'Η (H)' not found in Chapter text.
+  - Q3 Ans: 'ΤΟ (To)' not found in Chapter text.
+
+File: 2.3.json
+  - Q5 Ans: 'Είμαστε Έλληνες' not found in Chapter text.
+  - Q6 Ans: 'Είστε εδώ;' not found in Chapter text.
+
+File: 2.5.json
+  - Q5 Ans: 'Nero.' not found in Chapter text.
+
+File: 2.6.json
+  - Q6 Ans: 'Με λένε.' not found in Chapter text.
+  - Q9 Ans: 'Το Αυτοκίνητο.' not found in Chapter text.
+  - Q19 Ans: 'Ο (O)' not found in Chapter text.
+  - Q20 Ans: 'Η (H)' not found in Chapter text.
+  - Q21 Ans: 'ΤΟ (To)' not found in Chapter text.
+
+File: 3.3.json
+  - Q6 Ans: 'Never.' not found in Chapter text.
+
+File: 3.6.json
+  - Q33 Ans: 'Never.' not found in Chapter text.
+
+File: 4.1.json
+  - Q7 Ans: '-ες (-es)' not found in Chapter text.
+
+File: 4.2.json
+  - Q5 Ans: 'Yes!' not found in Chapter text.
+
+File: 4.4.json
+  - Q5 Ans: 'Οι (Oi).' not found in Chapter text.
+  - Q9 Ans: 'Οι σκύλοι.' not found in Chapter text.
+  - Q16 Ans: '-ες (-es)' not found in Chapter text.
+  - Q23 Ans: 'Yes!' not found in Chapter text.
+
+File: 5.1.json
+  - Q3 Ans: 'Οι (Oi)' not found in Chapter text.
+
+File: 5.2.json
+  - Q7 Ans: 'Both!' not found in Chapter text.
+
+File: 5.5.json
+  - Q7 Ans: 'Τα ονόματα.' not found in Chapter text.
+  - Q12 Ans: 'Οι (Oi)' not found in Chapter text.
+  - Q23 Ans: 'Both!' not found in Chapter text.
+
+File: 6.3.json
+  - Q2 Ans: 'Τα μεγάλα προβλήματα.' not found in Chapter text.
+  - Q4 Ans: 'Μεγάλοι (Megaloi).' not found in Chapter text.
+  - Q6 Ans: 'Μαύρα (Mavra).' not found in Chapter text.
+
+File: 6.4.json
+  - Q7 Ans: 'Πόσο κάνει;' not found in Chapter text.
+  - Q8 Ans: 'It is indeclinable (looks singular).' not found in Chapter text.
+
+File: 6.6.json
+  - Q24 Ans: 'Τα μεγάλα προβλήματα.' not found in Chapter text.
+  - Q26 Ans: 'Μεγάλοι (Megaloi).' not found in Chapter text.
+  - Q28 Ans: 'Μαύρα (Mavra).' not found in Chapter text.
+
+File: 7.1.json
+  - Q7 Ans: 'Se (Sto/Stin).' not found in Chapter text.
+
+File: 7.3.json
+  - Q8 Ans: 'Έχεις αδέρφια;' not found in Chapter text.
+
+File: 7.4.json
+  - Q6 Ans: 'Αδέρφια.' not found in Chapter text.
+  - Q15 Ans: 'Se (Sto/Stin).' not found in Chapter text.
+  - Q29 Ans: 'Έχεις αδέρφια;' not found in Chapter text.
+
+Audit Complete.
+Files flagged: 28/57
+Total potential gaps: 85

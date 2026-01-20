@@ -24,7 +24,7 @@ def get_learning_content(data):
         content += " " + data["audio_script"]
     return normalize_text(content)
 
-def check_coverage(file_path):
+def check_coverage(file_path, all_files_content=None):
     with open(file_path, 'r', encoding='utf-8') as f:
         try:
             data = json.load(f)
@@ -32,9 +32,18 @@ def check_coverage(file_path):
             print(f"Error decoding {file_path}")
             return []
 
+    # 1. Get Local Content
     learning_content = get_learning_content(data)
-    # Create a set of words for faster lookup, filtering out small common words if needed
-    # But for now, simple substring check or token check involves less risk of lemma issues.
+    
+    # 2. If Exam, append content from ENTIRE chapter
+    topic_id = data.get("topicId", "")
+    if "Exam" in data.get("title", "") and "." in topic_id:
+        chapter_prefix = topic_id.split(".")[0] + "." # e.g. "1."
+        if all_files_content:
+            for other_id, other_content in all_files_content.items():
+                if other_id.startswith(chapter_prefix) and other_id != topic_id:
+                    learning_content += " " + other_content
+
     learning_tokens = set(learning_content.split())
     
     missing_items = []
@@ -53,28 +62,19 @@ def check_coverage(file_path):
         correct_answer = options[correct_idx]
         
         # We clean the answer to extracting key terms. 
-        # e.g. "Οι γυναίκες (The women)" -> check for "γυναίκες" or "women"
-        # We want to be lenient: if *part* of the answer is in the text, it's likely covered.
         answer_tokens = normalize_text(correct_answer).split()
-        
-        # Filter out very common/generic stop words might be overkill, let's just see.
-        # Check if at least ONE meaningful word from the answer exists in the content
-        found = False
-        
-        # We can also check expectations. If it's a "Translate X" question, X should be in content.
-        # But checking the ANSWER is a good proxy for "can the user Pick this?"
         
         # Heuristic: If >50% of the long words (>2 chars) in the answer are missing, flag it.
         long_tokens = [t for t in answer_tokens if len(t) > 2]
         
+        found = False
         if not long_tokens:
              # Answer might be "A" or "1". Check exact match.
              if normalize_text(correct_answer) in learning_tokens:
                  found = True
         else:
-            # Check overlap
+            # Check overlap - strict! we want at least ONE significant word to be found
             matches = [t for t in long_tokens if t in learning_tokens]
-            # If we match specific greek words, we are good.
             if len(matches) > 0:
                 found = True
         
@@ -84,10 +84,7 @@ def check_coverage(file_path):
                 found = True
                 
         if not found:
-            # Maybe the question explains it? "What is the capital of Greece (Athens)?" 
-            # unlikely, but let's check Question text too just in case it's a self-contained logic puzzle.
-            # actually strict audit is better: content must be in LEARNING material.
-            missing_items.append(f"Q{idx+1} Ans: '{correct_answer}' not found in text.")
+            missing_items.append(f"Q{idx+1} Ans: '{correct_answer}' not found in Chapter text.")
 
     if missing_items:
         return [f"\nFile: {os.path.basename(file_path)}"] + [f"  - {m}" for m in missing_items]
@@ -99,11 +96,19 @@ def main():
     
     print(f"Scanning {len(files)} lesson files for quiz coverage...\n")
     
+    # Pre-load all content for fast chapter lookups
+    all_content_map = {} # { "1.1": "text...", "1.2": "text..." }
+    for file_path in files:
+        with open(file_path, 'r') as f:
+            d = json.load(f)
+            tid = d.get("topicId", "")
+            all_content_map[tid] = get_learning_content(d)
+
     total_issues = 0
     files_with_issues = 0
     
     for file_path in files:
-        issues = check_coverage(file_path)
+        issues = check_coverage(file_path, all_files_content=all_content_map)
         if issues:
             print("\n".join(issues))
             total_issues += len(issues) - 1 # subtract filename header
@@ -111,7 +116,8 @@ def main():
             
     print(f"\nAudit Complete.")
     print(f"Files flagged: {files_with_issues}/{len(files)}")
-    print(f"Total potentially uncovered questions: {total_issues}")
+    print(f"Total potential gaps: {total_issues}")
+
 
 if __name__ == "__main__":
     main()
