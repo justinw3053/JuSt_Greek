@@ -31,7 +31,11 @@ def clean_text_for_speech(text):
     """
     Remove Markdown, parenthesis hints, and structural artifacts.
     """
-    text = re.sub(r'\([a-zA-Z\s]+\)', '', text)
+    # Remove content in parens (usually English translations)
+    # Matches (anything except closing paren OR Greek characters)
+    # This removes (Georgios) but keeps (είμαι)
+    text = re.sub(r'\([^)\u0370-\u03FF]*\)', '', text)
+    
     text = text.replace('**', '').replace('*', '')
     text = re.sub(r'\[(.*?)\]\(.*?\)', r'\1', text)
     
